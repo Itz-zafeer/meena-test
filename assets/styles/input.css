@@ -1,0 +1,178 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Ping AR + LT";
+    src: url(../fonts/PingAR+LT-Light.otf);
+    font-weight: 300;
+    display: block;
+}
+
+@font-face {
+    font-family: "Ping AR + LT";
+    src: url(../fonts/PingAR+LT-Regular.otf);
+    font-weight: 400;
+    display: block;
+}
+
+@font-face {
+    font-family: "Ping AR + LT";
+    src: url(../fonts/PingAR+LT-Medium.otf);
+    font-weight: 500;
+    display: block;
+}
+
+@font-face {
+    font-family: "Ping AR + LT";
+    src: url(../fonts/PingAR+LT-Bold.otf);
+    font-weight: 700;
+    display: block;
+}
+
+body {
+    font-family: "Ping AR + LT";
+}
+
+@layer components {
+    .Container1680 {
+        @apply md:w-[87.5vw] mx-[auto] w-[87%]
+    }
+    .Container1440 {
+        @apply md:w-[75vw] mx-[auto] w-[87%]
+    }
+    .text14 {
+        @apply md:text-[0.72916666666vw] md:leading-[1.14583333333vw]
+        font-[400]
+    }
+    .text16 {
+        @apply md:text-[0.8333333333333333vw] md:leading-[1.45833333333vw]
+        font-[400]
+    }
+    .text18 {
+        @apply md:text-[0.9375vw] md:leading-[1.45833333333vw]
+        font-[500] text-[4.44444444444vw] leading-[7vw]
+    }
+    .text20 {
+        @apply md:text-[1.04166666667vw] md:leading-[1.66666666667vw]
+        font-[500]
+    }
+    .text22 {
+        @apply md:text-[1.14583333333vw] md:leading-[1.66666666667vw]
+        font-[400] text-[5vw] leading-[8vw]
+    }
+    .text26 {
+        @apply md:text-[1.354166666666667vw] md:leading-[2.1875vw]
+        font-[500] text-[6.38888888889vw] leading-[9vw]
+    }
+    .heading54 {
+        @apply md:text-[2.8125vw] md:leading-[3.333333333333333vw]
+        font-[700] md:tracking-[0.084375vw] text-[8.88888888889vw]
+        leading-[11.5vw]
+    }
+    .links li{
+        @apply relative overflow-hidden
+    }
+    .links li img{
+        @apply md:w-full absolute bottom-0 left-0
+        transform translate-x-[-10vw] transition-all duration-300
+    }
+    .anchor1{
+        @apply bg-[#845FFF] text16 md:rounded-[1.614583333333333vw] rounded-[31px] md:w-[9.895833333333333vw] w-[70%] h-[13vw]
+        md:h-[3.229166666666667vw] flex justify-center items-center 
+    }
+    .anchor1 div{
+        @apply flex md:gap-x-[0.4166666666666667vw] items-center  md:items-baseline gap-x-[2.22222222222vw]
+    }
+    .anchor1 div img{
+        @apply  md:w-[0.5729166666666667vw] object-contain
+    }
+    .anchor2{
+        @apply bg-[#845FFF] text18 md:rounded-[1.614583333333333vw] rounded-[31px] md:w-[9.895833333333333vw] w-[70%] h-[13vw]
+        md:h-[3.229166666666667vw] flex justify-center items-center 
+    }
+    .anchor2 div{
+        @apply flex md:gap-x-[0.625vw] items-baseline gap-x-[3.33333333333vw]
+    }
+    .anchor2 div img{
+        @apply  md:w-[0.8333333333333333vw]
+    }
+    .ltr .arToggler {
+        @apply font-[300] text16 ;
+      }
+    .rtl .arToggler {
+        @apply font-[700] text16 pointer-events-none;
+      }
+      .ltr .enToggler {
+        @apply font-[700] text16 pointer-events-none;
+      }
+      .rtl .enToggler {
+        @apply font-[300] text16 ;
+      }
+      .toggle {
+        @apply w-[26px] relative h-[6.5px] md:h-[0.72916666666vw] md:w-[2.91666666667vw] bg-[#DCDCDC] rounded-[10px] md:rounded-[1vw];
+      }
+      .toggle span {
+        @apply md:w-[1.35416666667vw] transition-all duration-[800ms] md:h-[1.35416666667vw] w-[12px] h-[12px] rounded-[50%] bg-[#8458FF] absolute top-[50%] transform translate-y-[-50%] left-[-2px];
+      }
+      .active .toggle span {
+        @apply left-[58%];
+      }
+  
+}
+.links li:hover img{
+    transform: translateX(0);
+}
+.healthCare__Overlay{
+    background: transparent linear-gradient(180deg, #F5EBE800 0%, #F5EBE8B3 48%, #F5EBE800 100%) 0% 0% no-repeat padding-box;
+}
+.doctorsSwiper .swiper-wrapper .swiper-slide{
+overflow: hidden;
+    background-color: #F5EBE8;
+}
+.homeSwipers .swiper-button-next:after,
+ .homeSwipers .swiper-button-prev:after{
+display: none !important;
+}
+.homeSwipers .swiper-button-next img,
+.homeSwipers .swiper-button-prev img{
+ width: 100%!important;
+}
+@media (min-width:768px){
+    .doctorsSwiper .swiper-wrapper .swiper-slide{
+       width: 16.875vw !important;
+       border-radius: 1.04166666667vw;
+ }
+ .homeSwipers  .swiper-slide{
+       width: 23.33333333333333vw !important;
+   }
+       
+      .homeSwipers .swiper-button-next,
+       .homeSwipers .swiper-button-prev{
+        width: 3.28125vw !important;
+        top:0.625vw !important;
+      }
+      .homeSwipers .swiper-button-prev{
+        left: unset !important;
+        right: 4.6875vw !important;
+      }
+     
+}
+@media (max-width:768px){
+    .doctorsSwiper .swiper-wrapper .swiper-slide{
+       width: 280px !important;
+       border-radius: 20px;
+      }
+      .homeSwipers .swiper-button-next,
+      .homeSwipers .swiper-button-prev{
+       width: 15% !important; 
+       top: 7% !important;
+     }
+     .homeSwipers .swiper-button-prev{
+        left: unset !important;
+        right: 25% !important;
+      }
+      .homeSwipers  .swiper-slide{
+        width: 95% !important;
+    }
+}

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="41.046" height="41.046" viewBox="0 0 41.046 41.046">
+  <g id="hospital_1_" data-name="hospital (1)" transform="translate(0.5 0.5)">
+    <g id="Group_89399" data-name="Group 89399">
+      <g id="Group_89398" data-name="Group 89398">
+        <rect id="Rectangle_69394" data-name="Rectangle 69394" width="3.926" height="1.963" transform="translate(17.936 24.983)" fill="#8450ff"/>
+        <rect id="Rectangle_69395" data-name="Rectangle 69395" width="2.945" height="3.926" transform="translate(12.122 18.18)" fill="#8450ff"/>
+        <rect id="Rectangle_69396" data-name="Rectangle 69396" width="2.945" height="1.963" transform="translate(12.122 24.983)" fill="#8450ff"/>
+        <path id="Path_100869" data-name="Path 100869" d="M205.49,73.163h-3.163V70h-3.163v3.163H196v3.163h3.163V79.49h3.163V76.327h3.163Z" transform="translate(-180.722 -64.464)" fill="#8450ff"/>
+        <path id="Path_100870" data-name="Path 100870" d="M35.353,8.6H34.1V4.693A4.7,4.7,0,0,0,29.409,0H10.637A4.7,4.7,0,0,0,5.944,4.693V8.6H4.693A4.7,4.7,0,0,0,0,13.3V40.046H16.894V33.632h6.257v6.414H40.046V13.3A4.7,4.7,0,0,0,35.353,8.6ZM5.944,36.917H3.129V13.3a1.566,1.566,0,0,1,1.564-1.564H5.944Zm25.029,0H26.28V30.5H13.766v6.414H9.073V4.693a1.566,1.566,0,0,1,1.564-1.564H29.409a1.566,1.566,0,0,1,1.564,1.564Zm5.944,0H34.1V11.732h1.251A1.566,1.566,0,0,1,36.917,13.3Z" fill="#3b3659" stroke="#f1eff9" stroke-width="1"/>
+        <rect id="Rectangle_69397" data-name="Rectangle 69397" width="3.926" height="3.926" transform="translate(24.722 18.18)" fill="#8450ff"/>
+        <rect id="Rectangle_69398" data-name="Rectangle 69398" width="3.926" height="3.926" transform="translate(17.936 18.18)" fill="#8450ff"/>
+        <rect id="Rectangle_69399" data-name="Rectangle 69399" width="3.926" height="1.963" transform="translate(24.722 24.983)" fill="#8450ff"/>
+      </g>
+    </g>
+  </g>
+</svg>
