@@ -43,7 +43,7 @@ body {
     }
     .text14 {
         @apply md:text-[0.72916666666vw] md:leading-[1.14583333333vw]
-        font-[400]
+        font-[400] text-[3.888888888888889vw]
     }
     .text16 {
         @apply md:text-[0.8333333333333333vw] md:leading-[1.45833333333vw]
@@ -110,7 +110,7 @@ body {
         @apply font-[300] text16 ;
       }
       .toggle {
-        @apply w-[26px] relative h-[6.5px] md:h-[0.72916666666vw] md:w-[2.91666666667vw] bg-[#DCDCDC] rounded-[10px] md:rounded-[1vw];
+        @apply w-[26px] min-w-[26px] md:min-w-[unset] relative h-[6.5px] md:h-[0.72916666666vw] md:w-[2.91666666667vw] bg-[#DCDCDC] rounded-[10px] md:rounded-[1vw];
       }
       .toggle span {
         @apply md:w-[1.35416666667vw] transition-all duration-[800ms] md:h-[1.35416666667vw] w-[12px] h-[12px] rounded-[50%] bg-[#8458FF] absolute top-[50%] transform translate-y-[-50%] left-[-2px];
@@ -138,7 +138,70 @@ display: none !important;
 .homeSwipers .swiper-button-prev img{
  width: 100%!important;
 }
-@media (min-width:768px){
+
+
+/* HAMBURGER  */
+
+ 
+  
+   
+  
+  .menu {
+    position: relative;
+  }
+  
+  .menu span {
+    display: block;
+    width: 100%;  
+    margin: auto;
+    margin-bottom: 4px;
+    transition: all 400ms linear;
+    cursor: pointer;
+  }
+  
+  .li2ne {
+    opacity: 0;
+  }
+  
+  .l1ine {
+    transform: rotate(-45deg);
+    position: relative;
+    top: 7.5px;
+  }
+  
+  .lin3e {
+    transform: rotate(45deg);
+    bottom: 6px;
+    position: relative;
+  }
+  
+  .sidebar{
+    -webkit-backdrop-filter: blur(30px) brightness(0.7);
+            backdrop-filter: blur(30px) brightness(0.7); 
+    transition: all .5s;
+    pointer-events: none;
+  }
+  
+  .sidebar.active{
+    opacity: 1 !important;
+    pointer-events: initial !important;
+    z-index: 2;
+  }
+  
+  body.active{
+    overflow: hidden !important;
+    height: 100% !important;
+  }
+  .footerLinks li a{
+    transition: all .5s;
+  }
+  .footerLinks li a:hover{
+    opacity: 0.5;
+  }
+
+
+
+  @media (min-width:768px){
     .doctorsSwiper .swiper-wrapper .swiper-slide{
        width: 16.875vw !important;
        border-radius: 1.04166666667vw;
@@ -176,3 +239,5 @@ display: none !important;
         width: 95% !important;
     }
 }
+
+  

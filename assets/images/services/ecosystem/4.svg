@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58">
+  <g id="Group_89924" data-name="Group 89924" transform="translate(-2 -2)">
+    <circle id="Ellipse_14012" data-name="Ellipse 14012" cx="6.417" cy="6.417" r="6.417" transform="translate(10 46.167)" fill="none" stroke="#3b3659" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <circle id="Ellipse_14013" data-name="Ellipse 14013" cx="6.417" cy="6.417" r="6.417" transform="translate(38 46.167)" fill="none" stroke="#3b3659" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Path_101437" data-name="Path 101437" d="M20.687,14h3.552a.7.7,0,0,1,.549.258l5.841,7.323a.644.644,0,0,1-.549,1.034H20.687A.667.667,0,0,1,20,21.969V14.646A.667.667,0,0,1,20.687,14Z" transform="translate(19.615 12.692)" fill="#8450ff"/>
+    <path id="Path_101438" data-name="Path 101438" d="M28.538,13.769c0,8.641-10.769,21.538-10.769,21.538S7,22.43,7,13.769a10.769,10.769,0,1,1,21.538,0Z" transform="translate(4.615 0)" fill="none" stroke="#3b3659" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <ellipse id="Ellipse_14014" data-name="Ellipse 14014" cx="1.75" cy="2.333" rx="1.75" ry="2.333" transform="translate(20.5 11.167)" fill="none" stroke="#3b3659" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Path_101439" data-name="Path 101439" d="M47.367,12.5A4.311,4.311,0,0,0,44.1,11H31.678c-2.942,7.452-9.294,15.077-9.294,15.077S16.029,18.459,13.086,11H5.154A2.155,2.155,0,0,0,3,13.154V39a2.155,2.155,0,0,0,2.154,2.154h4.7a6.424,6.424,0,0,1,12.13,0H37.856a6.424,6.424,0,0,1,12.13,0h6.86A2.155,2.155,0,0,0,59,39V26.077Z" transform="translate(0 9.231)" fill="none" stroke="#8450ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>

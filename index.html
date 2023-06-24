@@ -10,16 +10,16 @@
 </head>
 
 <body>
-    <header class="absolute left-0 w-full md:pt-[1.66666666667vw]">
-        <div class="Container1680 flex items-start justify-between">
+    <header class="absolute left-0 w-full md:pt-[1.66666666667vw] pt-[8.33333333333vw] z-[3]">
+        <div class="relative z-[3] Container1680 flex items-center md:items-start justify-between">
             <div>
                 <a href="">
-                    <img src="./assets/images/icons/header-logo.svg" alt="logo" class="md:w-[12.7083333333vw]">
+                    <img src="./assets/images/icons/header-logo.svg" alt="logo" class="md:w-[12.7083333333vw] w-[70%]">
                 </a>
             </div>
             <div class="flex flex-col md:gap-y-[1.14583333333vw]">
                 <div class="flex items-center justify-end md:gap-x-[2.91666666667vw]">
-                    <ul class="links text18 flex items-center md:gap-x-[2.08333333333vw] ">
+                    <ul class="hidden links text18 md:flex items-center md:gap-x-[2.08333333333vw] ">
                         <li>
                             <a href="">About meena</a>
                             <img src="./assets/images/icons/links-style2.svg" alt="style">
@@ -29,20 +29,25 @@
                             <img src="./assets/images/icons/links-style.svg" alt="style">
 
                     </ul>
-                    <div class="flex items-center gap-x-[8px] md:gap-x-[0.625vw] text-white">
-                        <span onclick="handleLang(this)" class="enToggler  cursor-pointer">
+                    <div class="flex items-center gap-x-[5vw] md:gap-x-[0.625vw] text-white">
+                        <span onclick="handleLang(this)" class="hidden md:block enToggler  cursor-pointer">
                             English
                         </span>
                         <div onclick="handleLang(this)" class="toggle cursor-pointer">
                             <span> </span>
                         </div>
-                        <span onclick="handleLang(this)" class="arToggler  cursor-pointer">
+                        <span onclick="handleLang(this)" class="hidden md:block arToggler  cursor-pointer">
                             العربية
                         </span>
+                        <div class="menu md:hidden block w-[7.222222222222222vw]">
+                            <span class="bg-[#FFFFFF] line-1 h-[0.8333333333333333vw]"></span>
+                            <span class="bg-[#FFFFFF] line-2 h-[0.8333333333333333vw]"></span>
+                            <span class="bg-[#FFFFFF] line-3 h-[0.8333333333333333vw]"></span>
+                        </div>
                     </div>
                 </div>
-                <div class="flex items-center md:gap-x-[2.08333333333vw]">
-                    <ul class="links text20 flex items-center md:gap-x-[2.08333333333vw] ">
+                <div class="hidden md:flex items-center md:gap-x-[2.08333333333vw]">
+                    <ul class=" links text20 flex items-center md:gap-x-[2.08333333333vw] ">
                         <li>
                             <a href="">Home</a>
                             <img src="./assets/images/icons/links-style.svg" alt="style">
@@ -67,6 +72,38 @@
                         </span>
                     </a>
                 </div>
+            </div>
+        </div>
+        <div class="block md:hidden sidebar w-full h-[100vh] absolute top-0 left-0 bg-transparent opacity-0">
+            <div class="w-[90%] mx-[auto] h-full flex flex-col justify-end pb-[14%]">
+                <ul
+                    class="w-full text-white font-[500] text-[6.666666666666667vw] flex flex-col gap-y-[8.333333333333333vw] ">
+                    <li class="border-white border-b-[1px]">
+                        <a href="">Home</a>
+                    </li>
+                    <li class="border-white border-b-[1px]">
+                        <a href="">Services</a>
+                    </li>
+                    <li class="border-white border-b-[1px]">
+                        <a href="">Locations</a>
+                    </li>
+                    <li class="border-white border-b-[1px]">
+                        <a href="">Help & support</a>
+                    </li>
+                    <li class="border-white border-b-[1px]">
+                        <a href="">About meena</a>
+                    </li>
+                    <li class="border-white border-b-[1px]">
+                        <a href="">Careers</a>
+
+                    </li>
+                </ul>
+                <a href=""
+                    class="mt-[11.11111111111111vw] bg-[#845FFF] text-white text-[5.555555555555556vw] rounded-[5.555555555555556vw] w-full py-[4.444444444444444vw] flex justify-center items-center font-[400]">
+                    <span>
+                        Download app
+                    </span>
+                </a>
             </div>
         </div>
     </header>
@@ -858,7 +895,8 @@
                         </div>
                     </div>
                     <div class="Container1440">
-                        <a href="" class="md:mt-[3.33333333333vw] mt-[10vw] mx-[auto] bg-[#8450FF] text18 md:rounded-[5.20833333333vw] rounded-[100px] md:w-[10.9895833333vw] md:py-[0.88541666666vw] py-[5vw] flex justify-center items-center hover:bg-[#3B3659] transition-all duration-300 font-[400] text-[#FFFFFF]">
+                        <a href=""
+                            class="md:mt-[3.33333333333vw] mt-[10vw] mx-[auto] bg-[#8450FF] text18 md:rounded-[5.20833333333vw] rounded-[100px] md:w-[10.9895833333vw] md:py-[0.88541666666vw] py-[5vw] flex justify-center items-center hover:bg-[#3B3659] transition-all duration-300 font-[400] text-[#FFFFFF]">
                             <span>
                                 View all news
                             </span>
@@ -868,156 +906,167 @@
                 <div class="relative">
                     <span class="healthCare__Overlay absolute w-full h-full bottom-0 left-0">
                     </span>
-                    <div class="relative z-[2] Container1440 flex justify-between items-center pb-[22.2222222222vw] pt-[11.1111111111vw] md:pt-[4.6875vw] md:pb-[10.7291666667vw] flex-col-reverse md:flex-row flex-wrap gap-y-[6.66666666667vw]">
-                      <div class="md:w-[33.75vw]">
-                        <h3 class="  heading54 
+                    <div
+                        class="relative z-[2] Container1440 flex justify-between items-center pb-[22.2222222222vw] pt-[11.1111111111vw] md:pt-[4.6875vw] md:pb-[10.7291666667vw] flex-col-reverse md:flex-row flex-wrap gap-y-[6.66666666667vw]">
+                        <div class="md:w-[33.75vw]">
+                            <h3 class="  heading54 
                         tracking-[unset] font-[400] text-[#3B3659] ">
-                        Book your  
-                       <span class="font-[700]">
-                           appointment
-                       </span>
-                       today
-                   </h3>
-                   <p class="text22 text-[#505050] md:w-[32.1875vw] md:mt-[0.83333333333vw] mt-[2.22222222222vw]">
-                       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                   </p>
-                   <div class="text-[#FFFFFF] flex items-center md:gap-x-[1.25vw] gap-x-[4.44444444444vw] mt-[4.44444444444vw] md:mt-[2.5vw] flex-wrap gap-y-[4.44444444444vw]">
-                       <a href="" class="anchor1">
-                           <div>
-                               <span>
-                                   Get app
-                               </span>
-                               <img src="./assets/images/icons/get-app.svg" alt="get-app">
-                           </div>
-                       </a>
-                       <a href="" class="anchor2">
-                           <div>
-                               <span class="font-[400]">
-                                   9200 11111
-                               </span>
-                               <img src="./assets/images/icons/phone.svg" alt="phone">
-                           </div>
-                       </a>
-                   </div>
-                      </div>
-                      <div class="md:w-[30.2083333333vw]">
-                        <img src="./assets/images/home/appointment.jpg" alt="appointment"
-                        class="w-full">
-                      </div>
+                                Book your
+                                <span class="font-[700]">
+                                    appointment
+                                </span>
+                                today
+                            </h3>
+                            <p
+                                class="text22 text-[#505050] md:w-[32.1875vw] md:mt-[0.83333333333vw] mt-[2.22222222222vw]">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                            </p>
+                            <div
+                                class="text-[#FFFFFF] flex items-center md:gap-x-[1.25vw] gap-x-[4.44444444444vw] mt-[4.44444444444vw] md:mt-[2.5vw] flex-wrap gap-y-[4.44444444444vw]">
+                                <a href="" class="anchor1">
+                                    <div>
+                                        <span>
+                                            Get app
+                                        </span>
+                                        <img src="./assets/images/icons/get-app.svg" alt="get-app">
+                                    </div>
+                                </a>
+                                <a href="" class="anchor2">
+                                    <div>
+                                        <span class="font-[400]">
+                                            9200 11111
+                                        </span>
+                                        <img src="./assets/images/icons/phone.svg" alt="phone">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="md:w-[30.2083333333vw]">
+                            <img src="./assets/images/home/appointment.jpg" alt="appointment" class="w-full">
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
     <footer>
-       <div class="bg-[#3B3659] relative">
-        <img src="./assets/images/icons/footerbg-design.png" alt="footerbg-design"
-        class="md:w-[18.6458333333vw] absolute right-0 top-0 opacity-[0.4]">
-        <div class="relative z-[2] Container1680 md:pt-[4.16666666667vw]
+        <div class="bg-[#3B3659] relative">
+            <img src="./assets/images/icons/footerbg-design.png" alt="footerbg-design"
+                class="md:w-[18.6458333333vw] absolute right-0 top-0 opacity-[0.4]">
+            <div class="relative z-[2] Container1680 md:pt-[4.16666666667vw]
         md:pb-[4.47916666667vw] py-[13.8888888889vw]">
-            <div class="flex md:gap-x-[9.375vw] flex-wrap gap-y-[8.33333333333vw] gap-x-[13.8888888889vw]">
-                <div class="md:w-[22.9166666667vw]">
-                    <a href="">
-                        <img src="./assets/images/icons/footer-logo.svg" alt="logo"
-                        class="md:w-[15.1041666667vw]">
-                    </a>
-                    <p class="text16 font-[300] text-[#FFFFFF] md:mt-[1.66666666667vw] mt-[2.77777777778vw]">
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                    </p>
-                </div>
-                <div class="text-[#E6E7E7]">
-                    <h5 class="text22 font-[500]">
-                        Site map
-                    </h5>
-                    <ul class="text18 font-[400] md:mt-[0.41666666666vw]  mt-[2.77777777778vw]
+                <div class="flex md:gap-x-[9.375vw] flex-wrap gap-y-[8.33333333333vw] gap-x-[13.8888888889vw]">
+                    <div class="md:w-[22.9166666667vw]">
+                        <a href="">
+                            <img src="./assets/images/icons/footer-logo.svg" alt="logo" class="md:w-[15.1041666667vw]">
+                        </a>
+                        <p class="text16 font-[300] text-[#FFFFFF] md:mt-[1.66666666667vw] mt-[6%]">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                        </p>
+                    </div>
+                    <div class="text-[#E6E7E7]">
+                        <h5 class="text22 font-[500]">
+                            Site map
+                        </h5>
+                        <ul class="footerLinks text18 font-[400] md:mt-[0.41666666666vw]  mt-[2.77777777778vw]
                     flex flex-col md:gap-y-[0.26041666666vw] gap-y-[1.66666666667vw]">
-                        <li>
-                            <a href="">
-                                <span>Home</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <span>Services</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <span>Locations</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <span>Help & support</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="text-[#E6E7E7]">
-                    <h5 class="text22 font-[500]">
-                        Other links
-                    </h5>
-                    <ul class="text18 font-[400] md:mt-[0.41666666666vw]
+                            <li>
+                                <a href="">
+                                    <span>Home</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>Services</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>Locations</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>Help & support</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="text-[#E6E7E7]">
+                        <h5 class="text22 font-[500]">
+                            Other links
+                        </h5>
+                        <ul class="footerLinks text18 font-[400] md:mt-[0.41666666666vw]
                     flex flex-col md:gap-y-[0.26041666666vw] gap-y-[1.66666666667vw] mt-[2.77777777778vw]">
-                        <li>
-                            <a href="">
-                                <span>About meena</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <span>Careers</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <span>Terms & conditions</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <span>Privacy policy</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h5 class="text22 font-[500] text-[#E6E7E7]">
-                        Follow us
-                    </h5>
-                    <div class="flex items-center md:gap-x-[1.25vw] md:mt-[0.41666666666vw] mt-[2.77777777778vw] gap-x-[6.66666666667vw]">
-                       <a href="">
-                        <img src="./assets/images/icons/social-links/twitter.svg" alt="twitter"
-                        class="md:w-[1.77083333333vw] w-[25px]">
-                       </a>
-                    <a href="">
-                        <img src="./assets/images/icons/social-links/linkedin.svg" alt="linkedin"
-                        class="md:w-[1.77083333333vw] w-[25px]">
-                    </a>
-                    <a href="">
-                        <img src="./assets/images/icons/social-links/insta.svg" alt="instagram"
-                        class="md:w-[1.77083333333vw] w-[25px]">
-                    </a>
+                            <li>
+                                <a href="">
+                                    <span>About meena</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>Careers</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>Terms & conditions</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>Privacy policy</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5 class="text22 font-[500] text-[#E6E7E7]">
+                            Follow us
+                        </h5>
+                        <ul
+                            class="footerLinks flex items-center md:gap-x-[1.25vw] md:mt-[0.41666666666vw] mt-[2.77777777778vw] gap-x-[6.66666666667vw]">
+                            <li>
+                                <a href="">
+                                    <img src="./assets/images/icons/social-links/twitter.svg" alt="twitter"
+                                        class="md:w-[1.77083333333vw] w-[6.944444444444444vw]">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./assets/images/icons/social-links/linkedin.svg" alt="linkedin"
+                                        class="md:w-[1.77083333333vw] w-[6.944444444444444vw]">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <img src="./assets/images/icons/social-links/insta.svg" alt="instagram"
+                                        class="md:w-[1.77083333333vw] w-[6.944444444444444vw]">
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </div>
 
+            </div>
         </div>
-       </div>
-       <div class="bg-[#474166] md:py-[0.390625vw] py-[4.44444444444vw]">
-<div class="Container1680 flex items-center justify-center md:justify-between text-[#E6E7E7] text16
+        <div class="bg-[#474166] md:py-[0.390625vw] py-[4.44444444444vw]">
+            <div class="Container1680 flex items-center justify-center md:justify-between text-[#E6E7E7] text16
 flex-wrap gap-y-[1.66666666667vw]">
-<span>meena. All Rights Reserved @ 2023</span>
-<div>
-    <span>
-        Developed By 
-    </span>
-    <a href="">
-        Brackets Technology
-    </a>
-</div>
-</div>
-       </div>
+                <span>meena. All Rights Reserved @ 2023</span>
+                <div>
+                    <span>
+                        Developed By
+                    </span>
+                    <a href="">
+                        Brackets Technology
+                    </a>
+                </div>
+            </div>
+        </div>
     </footer>
     <script src="./assets/javascripts/swiper-bundle.min.js"></script>
     <script src="./assets/javascripts/jquery.min.js"></script>
