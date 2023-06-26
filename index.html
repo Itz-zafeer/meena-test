@@ -10,11 +10,12 @@
 </head>
 
 <body>
-    <header class="absolute left-0 w-full md:pt-[1.66666666667vw] pt-[8.33333333333vw] z-[3]">
+    <header class="text-[#FFFFFF] absolute left-0 w-full md:pt-[1.66666666667vw] pt-[8.33333333333vw] z-[3]">
         <div class="relative z-[3] Container1680 flex items-center md:items-start justify-between">
             <div>
                 <a href="">
-                    <img src="./assets/images/icons/header-logo.svg" alt="logo" class="md:w-[12.7083333333vw] w-[31.7948717949vw]">
+                    <img src="./assets/images/icons/header-logo.svg" alt="logo"
+                        class="md:w-[12.7083333333vw] w-[31.7948717949vw]">
                 </a>
             </div>
             <div class="flex flex-col md:gap-y-[1.14583333333vw]">
@@ -50,8 +51,7 @@
                     <ul class=" links text20 flex items-center md:gap-x-[2.08333333333vw] ">
                         <li>
                             <a href="">Home</a>
-                            <img src="./assets/images/icons/links-style.svg" alt="style"
-                            class="active">
+                            <img src="./assets/images/icons/links-style.svg" alt="style" class="active">
                         </li>
                         <li>
                             <a href="">Services</a>
@@ -75,32 +75,37 @@
                 </div>
             </div>
         </div>
-        <div class="block md:hidden sidebar w-full h-[100vh] absolute top-0 left-0 bg-transparent opacity-0">
-            <div class="w-[90%] mx-[auto] h-full flex flex-col justify-end pb-[14%]">
+        <div class="block md:hidden sidebar bg-[#3B3659] bg-opacity-[0.9] w-full h-[100vh] absolute top-0 left-0 opacity-0">
+            <div class="w-[90%] mx-[auto] h-full flex flex-col pt-[54.8717948718vw] ">
                 <ul
-                    class="w-full text-white font-[500] text-[6.666666666666667vw] flex flex-col gap-y-[8.333333333333333vw] ">
-                    <li class="border-white border-b-[1px]">
+                    class="links w-full text-white font-[400] text-[4.87179487179vw] flex flex-col gap-y-[4.10256410256vw] ">
+                    <li>
                         <a href="">Home</a>
+                        <img src="./assets/images/icons/links-style.svg" alt="style" class="active">
                     </li>
-                    <li class="border-white border-b-[1px]">
+                    <li>
                         <a href="">Services</a>
+                        <img src="./assets/images/icons/links-style.svg" alt="style">
                     </li>
-                    <li class="border-white border-b-[1px]">
+                    <li>
                         <a href="">Locations</a>
+                        <img src="./assets/images/icons/links-style.svg" alt="style">
                     </li>
-                    <li class="border-white border-b-[1px]">
-                        <a href="">Help & support</a>
+                    <li>
+                        <a href="">Help & Support</a>
+                        <img src="./assets/images/icons/links-style2.svg" alt="style">
                     </li>
-                    <li class="border-white border-b-[1px]">
-                        <a href="">About meena</a>
+                    <li>
+                        <a href="">About Meena</a>
+                        <img src="./assets/images/icons/links-style2.svg" alt="style">
                     </li>
-                    <li class="border-white border-b-[1px]">
-                        <a href="">Careers</a>
-
+                    <li>
+                        <a href="">Meena Careers</a>
+                        <img src="./assets/images/icons/links-style2.svg" alt="style">
                     </li>
                 </ul>
                 <a href=""
-                    class="mt-[11.11111111111111vw] bg-[#845FFF] text-white text-[5.555555555555556vw] rounded-[5.555555555555556vw] w-full py-[4.444444444444444vw] flex justify-center items-center font-[400]">
+                    class="mt-[12.3076923077vw] bg-[#845FFF] text-white text-[3.84615384615vw] rounded-[7.94871794872vw] w-full py-[1.15384615385vw] flex justify-center items-center font-[400]">
                     <span>
                         Download app
                     </span>
@@ -110,9 +115,21 @@
     </header>
     <main>
         <section>
-            <div class="h-[137.692307692vw] md:h-screen bg-[#ccc] flex items-end
-            md:pb-[18.22916666666667vw] pb-[31.2820512821vw]">
-                <div class="Container1680 relative z-[2] text-[#3B3659]">
+            <div class="h-[123.333333333vw] md:h-screen flex items-end
+            md:pb-[18.22916666666667vw] pb-[33.3333333333vw]">
+                <div class="w-full h-[inherit]  md:h-full absolute top-0 left-0"> 
+                    <span class="hero__Overlay1 absolute top-0 left-0 w-full
+                    md:h-[42.1875vw] h-[92.5641025641vw]"></span>
+                    <span class="hero__Overlay2 absolute bottom-0 left-0 w-full
+                    md:h-[49.4270833333vw] h-[108.461538462vw]"></span>
+                    <span class="hero__Overlay3 absolute bottom-0 left-0 w-full
+                    h-full bg-[#3B3659] bg-opacity-[0.1]"></span>
+                    <img src="./assets/images/home/hero.jpg" alt="hero"
+                     class="w-full h-full object-contain hidden md:block">
+                    <img src="./assets/images/home/hero-mob.jpg" alt="hero"
+                     class="w-full h-full md:hidden block">
+                </div>
+                <div class="Container1680 relative z-[2] text-white md:text-[#3B3659]">
                     <div class=" md:w-[32.03125vw]">
                         <h1 class="heading54">The future of
                             <span class="relative inline-block">
@@ -154,7 +171,8 @@
                     <span class="healthCare__Overlay absolute w-full h-full top-0 left-0 hidden md:block">
                     </span>
                     <div class=" Container1680 relative z-[2]">
-                        <div class=" flex justify-center items-center flex-col md:gap-y-[6.25vw] gap-y-[20.5128205128vw]">
+                        <div
+                            class=" flex justify-center items-center flex-col md:gap-y-[6.25vw] gap-y-[20.5128205128vw]">
                             <div
                                 class="w-full flex justify-center items-stretch md:gap-x-[2.5vw] md:mt-[-5.41666666667vw] flex-wrap gap-y-[4.10256410256vw] mt-[-22vw]">
                                 <div
@@ -215,28 +233,32 @@
                                     class="md:w-[27.03125vw]">
                             </div>
                             <div class="flex flex-col md:gap-y-[1.66666666667vw] gap-y-[6.15384615385vw]">
-                                <div class="flex justify-center md:justify-start items-start md:gap-x-[1.04166666667vw] flex-wrap gap-y-[4.10256410256vw]">
+                                <div
+                                    class="flex justify-center md:justify-start items-start md:gap-x-[1.04166666667vw] flex-wrap gap-y-[4.10256410256vw]">
                                     <img src="./assets/images/icons/big-phone.svg" alt="phone"
                                         class="md:w-[1.19791666667vw] w-[4.87179487179vw]">
                                     <div class="md:w-[32.2916666667vw] text-center md:text-start">
                                         <h5 class="text26 text-[#3B3659]">
                                             Digital app
                                         </h5>
-                                        <p class="text22 text-[#707070] md:text-[#505050] md:mt-[0.52083333333vw] mt-[2vw]">
+                                        <p
+                                            class="text22 text-[#707070] md:text-[#505050] md:mt-[0.52083333333vw] mt-[2vw]">
                                             Lorem ipsum dolor sit amet, consetetur temporod t isadipscing elitr, sed
                                             diam nonumy
                                             eirmod tempood tr invidunt ut labore et dolore magna aliquyam erat, sed diam
                                         </p>
                                     </div>
                                 </div>
-                                <div class="flex justify-center md:justify-start items-start md:gap-x-[1.04166666667vw] flex-wrap gap-y-[4.10256410256vw]">
+                                <div
+                                    class="flex justify-center md:justify-start items-start md:gap-x-[1.04166666667vw] flex-wrap gap-y-[4.10256410256vw]">
                                     <img src="./assets/images/icons/clinic.svg" alt="clinic"
                                         class="md:w-[2.08333333333vw] w-[8.20512820513vw]">
                                     <div class="md:w-[32.2916666667vw] text-center md:text-start">
                                         <h5 class="text26 text-[#3B3659]">
                                             Yalla clinic
                                         </h5>
-                                        <p class="text22 text-[#707070] md:text-[#505050] md:mt-[0.52083333333vw] mt-[2vw]">
+                                        <p
+                                            class="text22 text-[#707070] md:text-[#505050] md:mt-[0.52083333333vw] mt-[2vw]">
                                             Lorem ipsum dolor sit amet, ctempor itempor ietur sadipscing elitr, sed diam
                                             nonum
                                             ahacfteirmod tempor invidunt ut labore et dolore mtempor iagna aliquyam
@@ -245,14 +267,16 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="flex justify-center md:justify-start items-start md:gap-x-[1.04166666667vw] flex-wrap gap-y-[4.10256410256vw]">
+                                <div
+                                    class="flex justify-center md:justify-start items-start md:gap-x-[1.04166666667vw] flex-wrap gap-y-[4.10256410256vw]">
                                     <img src="./assets/images/icons/nest-clinic.svg" alt="nest-clinic"
                                         class="md:w-[2.08333333333vw] w-[8.20512820513vw]">
                                     <div class="md:w-[32.2916666667vw] text-center md:text-start">
                                         <h5 class="text26 text-[#3B3659]">
                                             Nest clinic
                                         </h5>
-                                        <p class="text22 text-[#707070] md:text-[#505050] md:mt-[0.52083333333vw] mt-[2vw]">
+                                        <p
+                                            class="text22 text-[#707070] md:text-[#505050] md:mt-[0.52083333333vw] mt-[2vw]">
                                             Lorem ipsum dolor sit amet, consetetur sadiscing elitr, sed diam nonumy
                                             eirmod
                                             tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
@@ -387,7 +411,8 @@
         <section>
             <div>
                 <div class="relative">
-                    <span class="healthCare__Overlay absolute w-full h-[149.743589744vw] md:h-[41.3541666667vw] bottom-0 left-0">
+                    <span
+                        class="healthCare__Overlay absolute w-full h-[149.743589744vw] md:h-[41.3541666667vw] bottom-0 left-0">
                     </span>
                     <div class="relative z-[2]">
                         <h3
@@ -687,13 +712,14 @@
                                     locations
                                 </span>
                             </h3>
-                            <p class="text22 text-[#707070] md:text-[#505050] text-center mt-[2.051282051282051vw] md:mt-[0.625vw]">
+                            <p
+                                class="text22 text-[#707070] md:text-[#505050] text-center mt-[2.051282051282051vw] md:mt-[0.625vw]">
                                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
                                 invidunt ut labore et dolore magna aliquyam erat,
                             </p>
                         </div>
                         <div
-                            class="w-[94.1025641025641vw] md:w-[unset] overflow-scroll md:overflow-auto flex items-center md:gap-x-[2.5vw] gap-x-[4.102564102564103vw] md:pt-[2.5vw] pt-[6.66666666667vw] ">
+                            class="w-[94.1025641025641vw] md:w-[unset] hideScroll overflow-scroll md:overflow-auto flex items-center md:gap-x-[2.5vw] gap-x-[4.102564102564103vw] md:pt-[2.5vw] pt-[6.66666666667vw] ">
                             <div class="min-w-[70.25641025641026vw] md:min-w-[unset] md:w-[23.33333333333333vw]">
                                 <div class=" md:rounded-[1.04166666667vw] rounded-[20px] overflow-hidden
                             relative">
@@ -783,7 +809,8 @@
                                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
                                             eirmod tempor invidunt ut labore et dolore magna aliquyam erat
                                         </p>
-                                        <a class="text18 font-[400] md:mt-[1.25vw] mt-[5.641025641025641vw] block" href="">
+                                        <a class="text18 font-[400] md:mt-[1.25vw] mt-[5.641025641025641vw] block"
+                                            href="">
                                             Read more
                                         </a>
                                     </div>
@@ -804,7 +831,8 @@
                                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
                                             eirmod tempor invidunt ut labore et dolore magna aliquyam erat
                                         </p>
-                                        <a class="text18 font-[400] md:mt-[1.25vw] mt-[5.641025641025641vw] block" href="">
+                                        <a class="text18 font-[400] md:mt-[1.25vw] mt-[5.641025641025641vw] block"
+                                            href="">
                                             Read more
                                         </a>
                                     </div>
@@ -825,7 +853,8 @@
                                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
                                             eirmod tempor invidunt ut labore et dolore magna aliquyam erat
                                         </p>
-                                        <a class="text18 font-[400] md:mt-[1.25vw] mt-[5.641025641025641vw] block" href="">
+                                        <a class="text18 font-[400] md:mt-[1.25vw] mt-[5.641025641025641vw] block"
+                                            href="">
                                             Read more
                                         </a>
                                     </div>
@@ -846,7 +875,8 @@
                                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
                                             eirmod tempor invidunt ut labore et dolore magna aliquyam erat
                                         </p>
-                                        <a class="text18 font-[400] md:mt-[1.25vw] mt-[5.641025641025641vw] block" href="">
+                                        <a class="text18 font-[400] md:mt-[1.25vw] mt-[5.641025641025641vw] block"
+                                            href="">
                                             Read more
                                         </a>
                                     </div>
@@ -867,7 +897,8 @@
                                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
                                             eirmod tempor invidunt ut labore et dolore magna aliquyam erat
                                         </p>
-                                        <a class="text18 font-[400] md:mt-[1.25vw] mt-[5.641025641025641vw] block" href="">
+                                        <a class="text18 font-[400] md:mt-[1.25vw] mt-[5.641025641025641vw] block"
+                                            href="">
                                             Read more
                                         </a>
                                     </div>
@@ -888,7 +919,8 @@
                                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
                                             eirmod tempor invidunt ut labore et dolore magna aliquyam erat
                                         </p>
-                                        <a class="text18 font-[400] md:mt-[1.25vw] mt-[5.641025641025641vw] block" href="">
+                                        <a class="text18 font-[400] md:mt-[1.25vw] mt-[5.641025641025641vw] block"
+                                            href="">
                                             Read more
                                         </a>
                                     </div>
@@ -919,7 +951,7 @@
                     </span>
                     <div
                         class="relative z-[2] Container1440 flex justify-between items-center py-[20.51282051282051vw] md:pt-[4.6875vw] md:pb-[10.7291666667vw] flex-col-reverse md:flex-row flex-wrap gap-y-[6.153846153846154vw]">
-                        
+
                         <div class="md:w-[33.75vw]">
                             <h3 class="hidden md:block heading54 
                         tracking-[unset] font-[400] text-[#3B3659] ">
@@ -959,12 +991,12 @@
                         </div>
                         <h3 class="md:hidden block heading54 
                         tracking-[unset] font-[400] text-[#3B3659] ">
-                                Book your
-                                <span class="font-[700]">
-                                    appointment
-                                </span>
-                                today
-                            </h3>
+                            Book your
+                            <span class="font-[700]">
+                                appointment
+                            </span>
+                            today
+                        </h3>
                     </div>
                 </div>
             </div>
@@ -978,19 +1010,22 @@
                 class="md:hidden block w-[35.64102564102564vw] absolute right-0 bottom-0 ">
             <div class="relative z-[2] Container1680 md:pt-[4.16666666667vw]
         md:pb-[4.47916666667vw] py-[12.30769230769231vw]">
-                <div class="flex md:gap-x-[9.375vw] flex-wrap gap-y-[12.30769230769231vw] gap-x-[12.30769230769231vw] justify-center md:justify-normal">
+                <div
+                    class="flex md:gap-x-[9.375vw] flex-wrap gap-y-[12.30769230769231vw] gap-x-[12.30769230769231vw] justify-center md:justify-normal">
                     <div class="md:w-[22.9166666667vw] text-center md:text-start">
                         <a href="">
                             <img src="./assets/images/icons/footer-logo.svg" alt="logo"
-                             class="md:w-[15.1041666667vw] w-[48.46153846153846vw] mx-[auto] md:mx-[unset]">
+                                class="md:w-[15.1041666667vw] w-[48.46153846153846vw] mx-[auto] md:mx-[unset]">
                         </a>
-                        <p class="md:text-[0.8333333333333333vw] md:leading-[1.45833333333vw] text-[3.076923076923077vw] font-[300] text-[#FFFFFF] md:mt-[1.66666666667vw] mt-[4.102564102564103vw]">
+                        <p
+                            class="md:text-[0.8333333333333333vw] md:leading-[1.45833333333vw] text-[3.076923076923077vw] font-[300] text-[#FFFFFF] md:mt-[1.66666666667vw] mt-[4.102564102564103vw]">
                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
                             invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
                         </p>
                     </div>
                     <div class="text-[#E6E7E7]">
-                        <h5 class="md:text-[1.14583333333vw] md:leading-[1.66666666667vw] text-[3.846153846153846vw] font-[500] text-center md:text-start">
+                        <h5
+                            class="md:text-[1.14583333333vw] md:leading-[1.66666666667vw] text-[3.846153846153846vw] font-[500] text-center md:text-start">
                             Site map
                         </h5>
                         <ul class="items-center md:items-start footerLinks md:text-[0.9375vw] md:leading-[1.45833333333vw] text-[3.076923076923077vw] font-[400] md:mt-[0.41666666666vw]  mt-[3.076923076923077vw]
@@ -1018,7 +1053,8 @@
                         </ul>
                     </div>
                     <div class="text-[#E6E7E7]">
-                        <h5 class="md:text-[1.14583333333vw] md:leading-[1.66666666667vw] text-[3.846153846153846vw] font-[500] text-center md:text-start">
+                        <h5
+                            class="md:text-[1.14583333333vw] md:leading-[1.66666666667vw] text-[3.846153846153846vw] font-[500] text-center md:text-start">
                             Other links
                         </h5>
                         <ul class="items-center md:items-start footerLinks md:text-[0.9375vw] md:leading-[1.45833333333vw] text-[3.076923076923077vw] font-[400] md:mt-[0.41666666666vw]
@@ -1078,7 +1114,8 @@
             </div>
         </div>
         <div class="bg-[#474166] md:py-[0.390625vw] py-[3.205128205128205vw]">
-            <div class="Container1680 flex items-center justify-center md:justify-between text-[#E6E7E7] md:text-[0.8333333333333333vw] md:leading-[1.45833333333vw] text-[2.564102564102564vw] ">
+            <div
+                class="Container1680 flex items-center justify-center md:justify-between text-[#E6E7E7] md:text-[0.8333333333333333vw] md:leading-[1.45833333333vw] text-[2.564102564102564vw] ">
                 <span>meena. All Rights Reserved @ 2023</span>
                 <div>
                     <span>

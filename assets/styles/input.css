@@ -75,7 +75,7 @@ body {
     }
     .links li img{
         @apply md:w-full absolute bottom-0 left-0
-        transform translate-x-[-10vw] transition-all duration-300
+        transform translate-x-[-40vw] md:translate-x-[-10vw] transition-all duration-300
     }
     .anchor1{
         @apply bg-[#845FFF] text16 md:leading-[0.88541666666vw] md:rounded-[1.614583333333333vw] rounded-[31px] md:w-[9.895833333333333vw] w-[31.2820512821vw] h-[9.23076923077vw]
@@ -134,6 +134,20 @@ opacity: 1;
 .healthCare__Overlay{
     background: transparent linear-gradient(180deg, #F5EBE800 0%, #F5EBE8B3 48%, #F5EBE800 100%) 0% 0% no-repeat padding-box;
 }
+.hero__Overlay1{
+  background: transparent linear-gradient(180deg, #AB99D600 0%, #3B3659B3 100%) 0% 0% no-repeat padding-box;
+  opacity: 0.8;
+  mix-blend-mode: hard-light;
+  transform: matrix(-1, 0, 0, -1, 0, 0);
+}
+.hero__Overlay2{
+  background: transparent linear-gradient(180deg, #AB99D600 0%, #3B365999 100%) 0% 0% no-repeat padding-box;  opacity: 0.8;
+  opacity: 0.8;
+  mix-blend-mode: hard-light;
+}
+.hero__Overlay3{ 
+  mix-blend-mode: hard-light;
+}
 .doctorsSwiper .swiper-wrapper .swiper-slide{
 overflow: hidden;
     background-color: #F5EBE8;
@@ -150,7 +164,17 @@ display: none !important;
   left: 0;
   z-index: 5;
 }
+.hideScroll {
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  /* Firefox */
+}
 
+.hideScroll::-webkit-scrollbar {
+  display: none;
+  /* Safari and Chrome */
+}
 
 /* HAMBURGER  */
 
@@ -187,9 +211,7 @@ display: none !important;
     position: relative;
   }
   
-  .sidebar{
-    -webkit-backdrop-filter: blur(30px) brightness(0.7);
-            backdrop-filter: blur(30px) brightness(0.7); 
+  .sidebar{ 
     transition: all .5s;
     pointer-events: none;
   }
