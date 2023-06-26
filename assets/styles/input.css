@@ -59,7 +59,7 @@ body {
     }
     .text22 {
         @apply md:text-[1.14583333333vw] md:leading-[1.66666666667vw]
-        md:font-[400] font-[300] text-[3.58974358974vw] leading-[6.15384615385vw]
+         font-[400] text-[3.58974358974vw] leading-[6.15384615385vw]
     }
     .text26 {
         @apply md:text-[1.354166666666667vw] md:leading-[2.1875vw]

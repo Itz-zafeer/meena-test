@@ -630,14 +630,13 @@ video {
 
 .text22 {
   font-size: 3.58974358974vw;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 6.15384615385vw;
 }
 
 @media (min-width: 768px) {
   .text22 {
     font-size: 1.14583333333vw;
-    font-weight: 400;
     line-height: 1.66666666667vw;
   }
 }
@@ -4594,6 +4593,10 @@ body.active{
 
   .md\:text-\[1\.354166666666667vw\] {
     font-size: 1.354166666666667vw;
+  }
+
+  .md\:font-\[400\] {
+    font-weight: 400;
   }
 
   .md\:leading-\[1\.45833333333vw\] {
