@@ -36,22 +36,22 @@ body {
 
 @layer components {
     .Container1680 {
-        @apply md:w-[87.5vw] mx-[auto] w-[87%]
+        @apply md:w-[87.5vw] mx-[auto] w-[88.7179487179vw]
     }
     .Container1440 {
-        @apply md:w-[75vw] mx-[auto] w-[87%]
+        @apply md:w-[75vw] mx-[auto] w-[88.7179487179vw]
     }
     .text14 {
         @apply md:text-[0.72916666666vw] md:leading-[1.14583333333vw]
-        font-[400] text-[3.888888888888889vw]
+        font-[400] text-[3.076923076923077vw]
     }
     .text16 {
         @apply md:text-[0.8333333333333333vw] md:leading-[1.45833333333vw]
-        font-[400]
+        font-[400] text-[3.333333333333333vw]
     }
     .text18 {
         @apply md:text-[0.9375vw] md:leading-[1.45833333333vw]
-        font-[500] text-[4.44444444444vw] leading-[7vw]
+        font-[500] text-[3.58974358974vw] leading-[6.15384615385vw]
     }
     .text20 {
         @apply md:text-[1.04166666667vw] md:leading-[1.66666666667vw]
@@ -59,16 +59,16 @@ body {
     }
     .text22 {
         @apply md:text-[1.14583333333vw] md:leading-[1.66666666667vw]
-        font-[400] text-[5vw] leading-[8vw]
+        md:font-[400] font-[300] text-[3.58974358974vw] leading-[6.15384615385vw]
     }
     .text26 {
         @apply md:text-[1.354166666666667vw] md:leading-[2.1875vw]
-        font-[500] text-[6.38888888889vw] leading-[9vw]
+        font-[500] text-[4.87179487179vw] leading-[7.69230769231vw]
     }
     .heading54 {
         @apply md:text-[2.8125vw] md:leading-[3.333333333333333vw]
-        font-[700] md:tracking-[0.084375vw] text-[8.88888888889vw]
-        leading-[11.5vw]
+        font-[700] md:tracking-[0.084375vw] text-[7.69230769231vw]
+        leading-[10.2564102564vw]
     }
     .links li{
         @apply relative overflow-hidden
@@ -78,24 +78,24 @@ body {
         transform translate-x-[-10vw] transition-all duration-300
     }
     .anchor1{
-        @apply bg-[#845FFF] text16 md:rounded-[1.614583333333333vw] rounded-[31px] md:w-[9.895833333333333vw] w-[70%] h-[13vw]
+        @apply bg-[#845FFF] text16 md:leading-[0.88541666666vw] md:rounded-[1.614583333333333vw] rounded-[31px] md:w-[9.895833333333333vw] w-[31.2820512821vw] h-[9.23076923077vw]
         md:h-[3.229166666666667vw] flex justify-center items-center 
     }
     .anchor1 div{
-        @apply flex md:gap-x-[0.4166666666666667vw] items-center  md:items-baseline gap-x-[2.22222222222vw]
+        @apply flex md:gap-x-[0.4166666666666667vw] items-center  md:items-start gap-x-[2.22222222222vw]
     }
     .anchor1 div img{
-        @apply  md:w-[0.5729166666666667vw] object-contain
+        @apply  md:w-[0.5729166666666667vw] w-[2.82051282051vw] object-contain
     }
     .anchor2{
-        @apply bg-[#845FFF] text18 md:rounded-[1.614583333333333vw] rounded-[31px] md:w-[9.895833333333333vw] w-[70%] h-[13vw]
+        @apply bg-[#845FFF] md:text-[0.9375vw] text-[3.07692307692vw]  md:leading-[0.88541666666vw] md:rounded-[1.614583333333333vw] rounded-[31px] md:w-[9.895833333333333vw] w-[31.2820512821vw] h-[9.23076923077vw]
         md:h-[3.229166666666667vw] flex justify-center items-center 
     }
     .anchor2 div{
         @apply flex md:gap-x-[0.625vw] items-baseline gap-x-[3.33333333333vw]
     }
     .anchor2 div img{
-        @apply  md:w-[0.8333333333333333vw]
+        @apply  md:w-[0.8333333333333333vw] w-[2.82051282051vw] object-contain
     }
     .ltr .arToggler {
         @apply font-[300] text16 ;
@@ -118,9 +118,17 @@ body {
       .active .toggle span {
         @apply left-[58%];
       }
-  
+      .checkedIcon{
+        @apply  w-full h-full absolute left-0 top-0  opacity-0 object-cover
+      }
+       
+    
 }
-.links li:hover img{
+.category input[type='checkbox']:checked + .checkedIcon{
+opacity: 1;
+}
+.links li:hover img,
+.links li img.active{
     transform: translateX(0);
 }
 .healthCare__Overlay{
@@ -137,6 +145,10 @@ display: none !important;
 .homeSwipers .swiper-button-next img,
 .homeSwipers .swiper-button-prev img{
  width: 100%!important;
+}
+.filter.active{
+  left: 0;
+  z-index: 5;
 }
 
 
@@ -198,7 +210,7 @@ display: none !important;
   .footerLinks li a:hover{
     opacity: 0.5;
   }
-
+ 
 
 
   @media (min-width:768px){
@@ -223,20 +235,23 @@ display: none !important;
 }
 @media (max-width:768px){
     .doctorsSwiper .swiper-wrapper .swiper-slide{
-       width: 280px !important;
+       width: 70vw !important;
        border-radius: 20px;
       }
       .homeSwipers .swiper-button-next,
       .homeSwipers .swiper-button-prev{
-       width: 15% !important; 
-       top: 7% !important;
+       width: 11.5384615385vw !important; 
+       bottom: 2.82051282051vw !important;
+       top: unset !important;
+     }
+     .homeSwipers .swiper-button-next{
+      right: 5.64102564103vw !important;
      }
      .homeSwipers .swiper-button-prev{
-        left: unset !important;
-        right: 25% !important;
+        left: 0 !important; 
       }
       .homeSwipers  .swiper-slide{
-        width: 95% !important;
+        width: 70.2564102564vw !important;
     }
 }
 

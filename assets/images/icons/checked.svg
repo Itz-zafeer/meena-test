@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Group_89935" data-name="Group 89935" transform="translate(-152 -689)">
+    <g id="Rectangle_69403" data-name="Rectangle 69403" transform="translate(152 689)" fill="#3b3659" stroke="#3b3659" stroke-width="1">
+      <rect width="24" height="24" rx="4" stroke="none"/>
+      <rect x="0.5" y="0.5" width="23" height="23" rx="3.5" fill="none"/>
+    </g>
+    <path id="Icon_awesome-check" data-name="Icon awesome-check" d="M4.907,15.138l-4.7-4.7a.722.722,0,0,1,0-1.022L1.233,8.4a.722.722,0,0,1,1.022,0l3.163,3.163,6.774-6.774a.722.722,0,0,1,1.022,0L14.235,5.81a.722.722,0,0,1,0,1.022L5.928,15.138A.722.722,0,0,1,4.907,15.138Z" transform="translate(156.777 691.036)" fill="#fff"/>
+  </g>
+</svg>

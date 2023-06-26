@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/styles/output.css">
+    <title>Locations</title>
+</head>
+
+<body>
+    <header class="text-[#3B3659] absolute left-0 w-full md:pt-[1.66666666667vw] pt-[8.33333333333vw] z-[3]">
+        <div class="relative z-[3] Container1680 flex items-center md:items-start justify-between">
+            <div>
+                <a href="">
+                    <img src="./assets/images/icons/header-logo-blue.svg" alt="logo"
+                        class="md:w-[12.7083333333vw] w-[31.7948717949vw]">
+                </a>
+            </div>
+            <div class="flex flex-col md:gap-y-[1.14583333333vw]">
+                <div class="flex items-center justify-end md:gap-x-[2.91666666667vw]">
+                    <ul class="hidden links text16 font-[500] md:flex items-center md:gap-x-[2.08333333333vw] ">
+                        <li>
+                            <a href="">About meena</a>
+                            <img src="./assets/images/icons/links-style2.svg" alt="style">
+                        </li>
+                        <li>
+                            <a href="">Careers</a>
+                            <img src="./assets/images/icons/links-style.svg" alt="style">
+
+                    </ul>
+                    <div class="flex items-center gap-x-[5vw] md:gap-x-[0.625vw] text-[#3B3659]">
+                        <span onclick="handleLang(this)" class="hidden md:block enToggler  cursor-pointer">
+                            English
+                        </span>
+                        <div onclick="handleLang(this)" class="toggle cursor-pointer">
+                            <span> </span>
+                        </div>
+                        <span onclick="handleLang(this)" class="hidden md:block arToggler  cursor-pointer">
+                            العربية
+                        </span>
+                        <div class="menu md:hidden block w-[6.15384615385vw]">
+                            <span class="bg-[#3B3659] line-1 h-[0.8333333333333333vw]"></span>
+                            <span class="bg-[#3B3659] line-2 h-[0.8333333333333333vw]"></span>
+                            <span class="bg-[#3B3659] line-3 h-[0.8333333333333333vw]"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center md:gap-x-[2.08333333333vw]">
+                    <ul class=" links text20 flex items-center md:gap-x-[2.08333333333vw] ">
+                        <li>
+                            <a href="">Home</a>
+                            <img src="./assets/images/icons/links-style.svg" alt="style">
+                        </li>
+                        <li>
+                            <a href="">Services</a>
+                            <img src="./assets/images/icons/links-style.svg" alt="style">
+                        </li>
+                        <li>
+                            <a href="">Locations</a>
+                            <img src="./assets/images/icons/links-style.svg" alt="style">
+                        </li>
+                        <li>
+                            <a href="">Help & support</a>
+                            <img src="./assets/images/icons/links-style2.svg" alt="style">
+                        </li>
+                    </ul>
+                    <a href=""
+                        class="bg-[#845FFF] text-[#FFFFFF] text18 md:rounded-[1.35416666667vw] md:w-[9.47916666667vw] md:py-[0.625vw] flex justify-center items-center hover:bg-[#3B3659] transition-all duration-300 font-[400]">
+                        <span>
+                            Download app
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="block md:hidden sidebar w-full h-[100vh] absolute top-0 left-0 bg-transparent opacity-0">
+            <div class="w-[90%] mx-[auto] h-full flex flex-col justify-end pb-[14%]">
+                <ul
+                    class="w-full text-white font-[500] text-[6.666666666666667vw] flex flex-col gap-y-[8.333333333333333vw] ">
+                    <li class="border-white border-b-[1px]">
+                        <a href="">Home</a>
+                    </li>
+                    <li class="border-white border-b-[1px]">
+                        <a href="">Services</a>
+                    </li>
+                    <li class="border-white border-b-[1px]">
+                        <a href="">Locations</a>
+                    </li>
+                    <li class="border-white border-b-[1px]">
+                        <a href="">Help & support</a>
+                    </li>
+                    <li class="border-white border-b-[1px]">
+                        <a href="">About meena</a>
+                    </li>
+                    <li class="border-white border-b-[1px]">
+                        <a href="">Careers</a>
+
+                    </li>
+                </ul>
+                <a href=""
+                    class="mt-[11.11111111111111vw] bg-[#845FFF] text-white text-[5.555555555555556vw] rounded-[5.555555555555556vw] w-full py-[4.444444444444444vw] flex justify-center items-center font-[400]">
+                    <span>
+                        Download app
+                    </span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="Container1680 md:pt-[13.9583333333vw] pt-[80%]">
+                <div>
+                    <a href="./index.html">
+                        <img src="./assets/images/icons/home.svg" alt="home" class="md:w-[2.44791666667vw]">
+                    </a>
+
+                </div>
+                <div class="md:w-[37.5vw] md:mt-[0.625vw] mt-[6%]">
+                    <h1 class="font-[400] heading54 tracking-[unset] text-[#3B3659] ">
+                        Meena <span class="font-[700]">
+                            locations
+                        </span>
+                    </h1>
+                    <p class="text22 text-[#505050] md:mt-[0.625vw]">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna
+                    </p>
+                </div>
+            </div>
+            <div
+                class="relative md:pt-[4.16666666667vw] gap-y-[8.33333333333vw] md:pb-[10.4166666667vw] py-[15%] flex justify-center items-stretch flex-col md:flex-row">
+               <div class="  md:hidden   mx-[auto] md:mx-[unset] w-[90%] flex">
+                <div class="px-[3vw] py-[2vw] rounded-[2.77777777778vw] border-[#B2ADAD] border-[1px]
+                " onclick="filterOpen()">
+                    <img src="./assets/images/icons/filtericon.svg"
+                     alt="filtericon" class="w-[11.1111111111vw] ">
+                </div>
+               </div>
+                <div class="filter transition-all duration-300 fixed left-[-200%] top-0 md:static overflow-scroll h-[100vh] md:h-[unset] md:w-[25vw] bg-[#F0F0F0] md:rounded-tl-[1.04166666667vw] md:rounded-bl-[1.04166666667vw] rounded-[unset] md:overflow-hidden">
+                    <div class="flex justify-end md:hidden pt-[5%] px-[5%]" onclick="filterClose()">
+                        <img src="./assets/images/icons/close.svg" 
+                        alt="close" class="w-[11.1111111111vw]">
+                    </div>
+                    <div
+                        class="md:pt-[1.66666666667vw] md:pb-[0.98958333333vw] md:w-[21.71875vw] py-[10%] mx-[auto] w-[90%]">
+                        <div class="flex items-center justify-between">
+                            <h5 class="text22 text-[#3B3659] font-[700]">
+                                Filter by
+                            </h5>
+                            <a href=""
+                                class="bg-[#3B3659] text-[#FFFFFF] text18 md:rounded-[1.35416666667vw] rounded-[26px] w-[30%] md:w-[7.91666666667vw] md:py-[0.625vw] py-[2%] flex justify-center items-center font-[400]">
+                                <span>
+                                    Nearby
+                                </span>
+                            </a>
+                        </div>
+                        <div class="md:pt-[2.08333333333vw] md:pb-[1.77083333333vw] pt-[6%] pb-[5%] border-[#B2ADAD] border-b-[1px]
+                        flex items-center flex-wrap md:gap-x-[2.91666666667vw] md:gap-y-[1.25vw] gap-x-[10.5555555556vw] gap-y-[3.33333333333vw]">
+                            <label for="All" class="category flex md:items-start md:gap-x-[0.41666666666vw] gap-x-[1.38888888889vw]">
+                                
+                                <div class="relative  
+                                md:w-[1.25vw] md:h-[1.25vw] w-[4.44444444444vw] h-[5vw] border-[#B2ADAD] border-[1px] md:rounded-[0.20833333333vw] rounded-[4px] overflow-hidden">
+                                    <input type="checkbox" id="All" class="appearance-none w-full h-full">
+                                    <img src="./assets/images/icons/checked.svg" alt="checked"
+                                    class="checkedIcon">
+                                </div>
+                                <span class="text18 text-[#3B3659] font-[400]">
+                                    All
+                                </span>
+                            </label>
+                            <label for="Yalla Clinic" class="category flex md:items-start md:gap-x-[0.41666666666vw] gap-x-[1.38888888889vw]">
+                                
+                                <div class="relative  
+                                md:w-[1.25vw] md:h-[1.25vw] w-[4.44444444444vw] h-[5vw] border-[#B2ADAD] border-[1px] md:rounded-[0.20833333333vw] rounded-[4px] overflow-hidden">
+                                    <input type="checkbox" id="Yalla Clinic" class="appearance-none w-full h-full">
+                                    <img src="./assets/images/icons/checked.svg" alt="checked"
+                                    class="checkedIcon">
+                                </div>
+                                <span class="text18 text-[#3B3659] font-[400]">
+                                    Yalla Clinic
+                                </span>
+                            </label>
+                            <label for="NEST Clinic" class="category flex md:items-start md:gap-x-[0.41666666666vw] gap-x-[1.38888888889vw]">
+                                
+                                <div class="relative  
+                                md:w-[1.25vw] md:h-[1.25vw] w-[4.44444444444vw] h-[5vw] border-[#B2ADAD] border-[1px] md:rounded-[0.20833333333vw] rounded-[4px] overflow-hidden">
+                                    <input type="checkbox" id="NEST Clinic" class="appearance-none w-full h-full">
+                                    <img src="./assets/images/icons/checked.svg" alt="checked"
+                                    class="checkedIcon">
+                                </div>
+                                <span class="text18 text-[#3B3659] font-[400]">
+                                    NEST Clinic
+                                </span>
+                            </label>
+                            <label for="Open Now" class="category flex md:items-start md:gap-x-[0.41666666666vw] gap-x-[1.38888888889vw]">
+                                
+                                <div class="relative  
+                                md:w-[1.25vw] md:h-[1.25vw] w-[4.44444444444vw] h-[5vw] border-[#B2ADAD] border-[1px] md:rounded-[0.20833333333vw] rounded-[4px] overflow-hidden">
+                                    <input type="checkbox" id="Open Now" class="appearance-none w-full h-full">
+                                    <img src="./assets/images/icons/checked.svg" alt="checked"
+                                    class="checkedIcon">
+                                </div>
+                                <span class="text18 text-[#3B3659] font-[400]">
+                                    Open Now
+                                </span>
+                            </label>
+                            
+                        </div>
+                        <div class="md:pt-[1.25vw] flex flex-col md:gap-y-[1.30208333333vw] pt-[6%] gap-y-[5.55555555556vw]">
+                            <div class="md:pb-[1.30208333333vw] border-[#B2ADAD] border-b-[1px] pb-[5%]">
+                                <h5 class="text22 text-[#3B3659]">
+                                    Albaha clinic
+                                </h5>
+                                <div class="md:pt-[0.41666666666vw] pt-[3%] flex flex-col md:gap-y-[0.3125vw] gap-y-[2.77777777778vw]">
+                                    <div class="flex items-start md:gap-x-[0.625vw] gap-x-[2.22222222222vw]">
+                                        <img src="./assets/images/icons/clock1.svg" alt="clock"
+                                        class="md:w-[1.04166666667vw]">
+                                        <span class="text18 font-[300] text-[#505050]">
+                                            Sat-Thu (7AM - 4PM)
+                                        </span>
+                                    </div>
+                                    <a href="tel:+966 000 0000 00" class="flex items-start md:gap-x-[0.625vw] gap-x-[2.22222222222vw]">
+                                        <img src="./assets/images/icons/phone1.svg" alt="phone"
+                                        class="md:w-[1.04166666667vw] w-[5.55555555556vw]">
+                                        <span class="text18 font-[300] text-[#505050]">
+                                            +966 000 0000 00
+                                        </span>
+                                    </a>
+                                    <a href="" class="flex items-start md:gap-x-[0.625vw] gap-x-[2.22222222222vw]">
+                                        <img src="./assets/images/icons/open.svg" alt="open"
+                                        class="md:w-[1.04166666667vw] w-[5.55555555556vw]">
+                                        <span class="text18 font-[500] text-[#3B3659]">
+                                            Open In Google Map
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="md:pb-[1.30208333333vw] border-[#B2ADAD] border-b-[1px] pb-[5%]">
+                                <h5 class="text22 text-[#3B3659]">
+                                    Albaha clinic
+                                </h5>
+                                <div class="md:pt-[0.41666666666vw] pt-[3%] flex flex-col md:gap-y-[0.3125vw] gap-y-[2.77777777778vw]">
+                                    <div class="flex items-start md:gap-x-[0.625vw] gap-x-[2.22222222222vw]">
+                                        <img src="./assets/images/icons/clock1.svg" alt="clock"
+                                        class="md:w-[1.04166666667vw]">
+                                        <span class="text18 font-[300] text-[#505050]">
+                                            Sat-Thu (7AM - 4PM)
+                                        </span>
+                                    </div>
+                                    <a href="tel:+966 000 0000 00" class="flex items-start md:gap-x-[0.625vw] gap-x-[2.22222222222vw]">
+                                        <img src="./assets/images/icons/phone1.svg" alt="phone"
+                                        class="md:w-[1.04166666667vw] w-[5.55555555556vw]">
+                                        <span class="text18 font-[300] text-[#505050]">
+                                            +966 000 0000 00
+                                        </span>
+                                    </a>
+                                    <a href="" class="flex items-start md:gap-x-[0.625vw] gap-x-[2.22222222222vw]">
+                                        <img src="./assets/images/icons/open.svg" alt="open"
+                                        class="md:w-[1.04166666667vw] w-[5.55555555556vw]">
+                                        <span class="text18 font-[500] text-[#3B3659]">
+                                            Open In Google Map
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="md:pb-[1.30208333333vw] border-[#B2ADAD] border-b-[1px] pb-[5%]">
+                                <h5 class="text22 text-[#3B3659]">
+                                    Albaha clinic
+                                </h5>
+                                <div class="md:pt-[0.41666666666vw] pt-[3%] flex flex-col md:gap-y-[0.3125vw] gap-y-[2.77777777778vw]">
+                                    <div class="flex items-start md:gap-x-[0.625vw] gap-x-[2.22222222222vw]">
+                                        <img src="./assets/images/icons/clock1.svg" alt="clock"
+                                        class="md:w-[1.04166666667vw]">
+                                        <span class="text18 font-[300] text-[#505050]">
+                                            Sat-Thu (7AM - 4PM)
+                                        </span>
+                                    </div>
+                                    <a href="tel:+966 000 0000 00" class="flex items-start md:gap-x-[0.625vw] gap-x-[2.22222222222vw]">
+                                        <img src="./assets/images/icons/phone1.svg" alt="phone"
+                                        class="md:w-[1.04166666667vw] w-[5.55555555556vw]">
+                                        <span class="text18 font-[300] text-[#505050]">
+                                            +966 000 0000 00
+                                        </span>
+                                    </a>
+                                    <a href="" class="flex items-start md:gap-x-[0.625vw] gap-x-[2.22222222222vw]">
+                                        <img src="./assets/images/icons/open.svg" alt="open"
+                                        class="md:w-[1.04166666667vw] w-[5.55555555556vw]">
+                                        <span class="text18 font-[500] text-[#3B3659]">
+                                            Open In Google Map
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div>
+                                <h5 class="text22 text-[#3B3659]">
+                                    Albaha clinic
+                                </h5>
+                                <div class="md:pt-[0.41666666666vw] pt-[3%] flex flex-col md:gap-y-[0.3125vw] gap-y-[2.77777777778vw]">
+                                    <div class="flex items-start md:gap-x-[0.625vw] gap-x-[2.22222222222vw]">
+                                        <img src="./assets/images/icons/clock1.svg" alt="clock"
+                                        class="md:w-[1.04166666667vw]">
+                                        <span class="text18 font-[300] text-[#505050]">
+                                            Sat-Thu (7AM - 4PM)
+                                        </span>
+                                    </div>
+                                    <a href="tel:+966 000 0000 00" class="flex items-start md:gap-x-[0.625vw] gap-x-[2.22222222222vw]">
+                                        <img src="./assets/images/icons/phone1.svg" alt="phone"
+                                        class="md:w-[1.04166666667vw] w-[5.55555555556vw]">
+                                        <span class="text18 font-[300] text-[#505050]">
+                                            +966 000 0000 00
+                                        </span>
+                                    </a>
+                                    <a href="" class="flex items-start md:gap-x-[0.625vw] gap-x-[2.22222222222vw]">
+                                        <img src="./assets/images/icons/open.svg" alt="open"
+                                        class="md:w-[1.04166666667vw] w-[5.55555555556vw]">
+                                        <span class="text18 font-[500] text-[#3B3659]">
+                                            Open In Google Map
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="overflow-hidden mx-[auto] md:mx-[unset] w-[90%] md:w-[62.5vw] md:rounded-tr-[1.04166666667vw] md:rounded-br-[1.04166666667vw] rounded-[unset]">
+                    <img src="./assets/images/locations/map.jpg" alt="map"
+                    class="w-full h-[100vw] md:h-full  object-cover">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="bg-[#3B3659] relative">
+            <img src="./assets/images/icons/footerbg-design.png" alt="footerbg-design"
+                class="md:w-[18.6458333333vw] absolute right-0 top-0 opacity-[0.4]">
+            <div class="relative z-[2] Container1680 md:pt-[4.16666666667vw]
+        md:pb-[4.47916666667vw] py-[13.8888888889vw]">
+                <div class="flex md:gap-x-[9.375vw] flex-wrap gap-y-[8.33333333333vw] gap-x-[13.8888888889vw]">
+                    <div class="md:w-[22.9166666667vw]">
+                        <a href="">
+                            <img src="./assets/images/icons/footer-logo.svg" alt="logo" class="md:w-[15.1041666667vw]">
+                        </a>
+                        <p class="text16 font-[300] text-[#FFFFFF] md:mt-[1.66666666667vw] mt-[6%]">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                        </p>
+                    </div>
+                    <div class="text-[#E6E7E7]">
+                        <h5 class="text22 font-[500]">
+                            Site map
+                        </h5>
+                        <ul class="footerLinks text18 font-[400] md:mt-[0.41666666666vw]  mt-[2.77777777778vw]
+                    flex flex-col md:gap-y-[0.26041666666vw] gap-y-[1.66666666667vw]">
+                            <li>
+                                <a href="">
+                                    <span>Home</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>Services</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>Locations</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>Help & support</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="text-[#E6E7E7]">
+                        <h5 class="text22 font-[500]">
+                            Other links
+                        </h5>
+                        <ul class="footerLinks text18 font-[400] md:mt-[0.41666666666vw]
+                    flex flex-col md:gap-y-[0.26041666666vw] gap-y-[1.66666666667vw] mt-[2.77777777778vw]">
+                            <li>
+                                <a href="">
+                                    <span>About meena</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>Careers</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>Terms & conditions</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>Privacy policy</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5 class="text22 font-[500] text-[#E6E7E7]">
+                            Follow us
+                        </h5>
+                        <ul
+                            class="footerLinks flex items-center md:gap-x-[1.25vw] md:mt-[0.41666666666vw] mt-[2.77777777778vw] gap-x-[6.66666666667vw]">
+                            <li>
+                                <a href="">
+                                    <img src="./assets/images/icons/social-links/twitter.svg" alt="twitter"
+                                        class="md:w-[1.77083333333vw] w-[6.944444444444444vw]">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./assets/images/icons/social-links/linkedin.svg" alt="linkedin"
+                                        class="md:w-[1.77083333333vw] w-[6.944444444444444vw]">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <img src="./assets/images/icons/social-links/insta.svg" alt="instagram"
+                                        class="md:w-[1.77083333333vw] w-[6.944444444444444vw]">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="bg-[#474166] md:py-[0.390625vw] py-[4.44444444444vw]">
+            <div class="Container1680 flex items-center justify-center md:justify-between text-[#E6E7E7] text16
+flex-wrap gap-y-[1.66666666667vw]">
+                <span>meena. All Rights Reserved @ 2023</span>
+                <div>
+                    <span>
+                        Developed By
+                    </span>
+                    <a href="">
+                        Brackets Technology
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/javascripts/swiper-bundle.min.js"></script>
+    <script src="./assets/javascripts/jquery.min.js"></script>
+    <script src="./assets/javascripts/global.js"></script>
+    <script src="./assets/javascripts/home-swiper-sliders.js"></script>
+</body>
+
+</html>

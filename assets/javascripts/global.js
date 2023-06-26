@@ -26,3 +26,11 @@ menu.onclick = () => {
   sidebar.classList.toggle("active");
   body.classList.toggle("active");
 };
+const filter = document.querySelector(".filter")
+
+filterOpen=()=>{
+ filter.classList.add("active")
+}
+filterClose=()=>{
+ filter.classList.remove("active")
+}
