@@ -149,6 +149,31 @@ body {
         absolute bottom-0 right-0 transition-all duration-500 origin-bottom-right
         flex flex-col items-center justify-center
        }
+       .question{
+        @apply  flex items-center gap-x-[0.625vw] min-w-[36.4102564103vw]
+        h-[11.5384615385vw] md:w-[unset] md:min-w-[unset] md:h-[unset]  rounded-[12.3076923077vw] md:rounded-[unset]
+        justify-center md:justify-normal cursor-pointer bg-[#D6D1ED] md:bg-[unset]
+       }
+       .faq{
+        @apply  text-[#3B3659] flex flex-col bg-[#EBF0F7] md:rounded-[1.04166666667vw] rounded-[3.84615384615vw]
+        md:px-[2.08333333333vw] px-[4.10256410256vw] md:py-[2.161458333333333vw] py-[6.15384615385vw]
+       }
+       .faq.active{
+        @apply md:py-[1.69270833333vw] py-[6.28205128205vw]
+       }
+       .faq__Question{
+        @apply flex items-center justify-between
+       }
+       .faq__Question h5{
+        @apply md:text-[1.14583333333vw] 
+        md:leading-[1.82291666667vw]  leading-[6.66666666667vw] text-[4.10256410256vw] 
+       }
+       .faq__Answer{
+        @apply  max-h-0 overflow-hidden md:w-[41.25vw] w-[72.3076923077vw] transition-all 
+       }
+       .faq__Answer p{
+        @apply md:pt-[0.83333333333vw] pt-[4.10256410256vw] md:text-[1.04166666667vw] md:leading-[1.5625vw] leading-[6.05128205128vw] text-[3.58974358974vw] 
+       }
     
 }
 .category input[type='checkbox']:checked + .checkedIcon{
@@ -202,7 +227,9 @@ display: none !important;
   display: none;
   /* Safari and Chrome */
 }
-
+.Booking{
+  box-shadow: 0px 3px 10px #D6D1ED66;
+}
 /* HAMBURGER  */
 
  
@@ -263,6 +290,36 @@ display: none !important;
   .cta:hover .cta__Menu{
     transform: scale(1);
   } 
+  
+  .question.active #Path_101507,
+  .question.active #Path_101508,
+  .question:hover #Path_101507,
+  .question:hover #Path_101508
+  {
+stroke: #3B3659;
+  }
+  .question.active #Path_101508,
+  .question:hover #Path_101508{
+    fill: #3B3659;
+  }
+
+.faq.active .faq__Question svg{
+  transform: rotate(180deg);
+}
+.faq .faq__Question #Ellipse_1{
+  opacity: 0.4;
+}
+.faq.active .faq__Question #Ellipse_1{
+  opacity: 1;
+}
+
+.faq.active .faq__Answer{
+  max-height: 300px;
+  overflow: unset;
+}
+.error span{
+  display: block !important;
+}
 
   /* SCROLL PROGREESS CSS      */
  
@@ -334,6 +391,10 @@ display: none !important;
        width: 16.875vw !important;
        border-radius: 1.04166666667vw;
  }
+ .question.active h5,
+  .question:hover h5{
+    color: #3B3659;
+  }
  .homeSwipers  .swiper-slide{
        width: 23.33333333333333vw !important;
    }
@@ -350,6 +411,14 @@ display: none !important;
      
 }
 @media (max-width:768px){
+  .question.active h5,
+  .question:hover h5{
+    color: #FFFFFF;
+  }
+  .question.active,
+  .question:hover{
+    background-color: #8450FF;
+  }
     .doctorsSwiper .swiper-wrapper .swiper-slide{
        width: 70vw !important;
        border-radius: 20px;

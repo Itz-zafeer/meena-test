@@ -26,11 +26,37 @@ menu.onclick = () => {
   sidebar.classList.toggle("active");
   body.classList.toggle("active");
 };
-const filter = document.querySelector(".filter")
+const faqQuestionEl = document.querySelectorAll(".faq__Question")
 
-filterOpen=()=>{
- filter.classList.add("active")
+faqQuestionEl.forEach((faqQuestion)=>{
+  faqQuestion.addEventListener("click",()=>{
+  const selectedFaq = faqQuestion.parentElement
+  faqQuestionEl.forEach((v)=>{
+   const otherFaq = v.parentElement
+   if(otherFaq === selectedFaq){
+    otherFaq.classList.toggle("active")
+   }else{
+    otherFaq.classList.remove("active")
+   }
+  }) 
+  })
+})
+
+const allInputEl = document.querySelectorAll(["input","textarea"]) 
+const handelForm = (e)=>{
+  e.preventDefault()  
+  
+  allInputEl.forEach((allInput)=>{
+    if(!allInput.value){
+  allInput.parentElement.parentElement.classList.add("error")
+
+setTimeout(()=>{
+  allInput.parentElement.parentElement.classList.remove("error")
+
+},1000)
+    }
+  })
+  
 }
-filterClose=()=>{
- filter.classList.remove("active")
-}
+
+document.querySelector("form").addEventListener("submit",handelForm)
