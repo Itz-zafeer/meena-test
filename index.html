@@ -10,6 +10,60 @@
 </head>
 
 <body>
+    <div class="circle-container">
+        <svg
+          class="circle-progress svg-content"
+          width="100%"
+          height="100%"
+          viewBox="-1 -1 102 102"
+        >
+          <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+        <div class="">
+          <img src="./assets/images/icons/scrolltotop.svg" alt="" class="" />
+        </div>
+      </div>
+      
+      <div class="cta">
+<img src="./assets/images/icons/Icon feather-calendar.svg"
+ alt="calendar" class="md:w-[1.25vw] w-[5.12820512821vw]">
+ <div class="cta__Menu">
+<span class="md:text-[0.9375vw] md:leading-[1.45833333333vw] PingAR-Light text-[#FFFFFF] leading-[5.64102564103vw]
+text-[3.58974358974vw]">
+    Book an Appointment
+</span>
+<div class="text-[#FFFFFF] flex items-center mt-[4.10256410256vw] 
+md:mt-[0.83333333333vw] flex-col md:gap-y-[0.625vw] 
+gap-y-[3.07692307692vw]">
+    <a href="" class="md:w-[6.35416666667vw] w-[31.2820512821vw]
+    md:rounded-[31.2820512821vw] rounded-[7.94871794872vw]
+    bg-[#845FFF] md:h-[1.66666666667vw] h-[8.20512820513vw]
+    flex items-center justify-center">
+        <div class="flex md:gap-x-[0.41666666666vw] 
+        gap-x-[2.05128205128vw]">
+            <span class="PingAR-Light md:text-[0.9375vw] text-[3.07692307692vw]">
+                Get app
+            </span>
+            <img src="./assets/images/icons/get-app.svg" 
+            alt="get-app" class="w-[2.82051282051vw] md:w-[0.625vw]">
+        </div>
+    </a>
+    <a href="" class="md:w-[6.35416666667vw] w-[31.2820512821vw]
+    md:rounded-[31.2820512821vw] rounded-[7.94871794872vw]
+    bg-[#845FFF] md:h-[1.66666666667vw] h-[8.20512820513vw]
+    flex items-center justify-center">
+        <div class="flex md:gap-x-[0.41666666666vw] gap-x-[2.05128205128vw]">
+            <span class="PingAR-Light md:text-[0.9375vw] text-[3.07692307692vw]">
+                9200 11111
+            </span>
+            <img src="./assets/images/icons/phone.svg" 
+            alt="phone" class="w-[3.07692307692vw] md:w-[0.625vw]">
+        </div>
+    </a>
+    
+</div>
+ </div>
+      </div>
     <header class="text-[#FFFFFF] absolute left-0 w-full md:pt-[1.66666666667vw] pt-[8.33333333333vw] z-[3]">
         <div class="relative z-[3] Container1680 flex items-center md:items-start justify-between">
             <div>
@@ -20,7 +74,7 @@
             </div>
             <div class="flex flex-col md:gap-y-[1.14583333333vw]">
                 <div class="flex items-center justify-end md:gap-x-[2.91666666667vw]">
-                    <ul class="hidden links text18 md:flex items-center md:gap-x-[2.08333333333vw] ">
+                    <ul class="hidden links PingAR-Light md:text-[0.9375vw] md:leading-[1.45833333333vw] md:flex items-center md:gap-x-[2.08333333333vw] ">
                         <li>
                             <a href="">About meena</a>
                             <img src="./assets/images/icons/links-style2.svg" alt="style">
@@ -34,11 +88,14 @@
                         <span onclick="handleLang(this)" class="hidden md:block enToggler  cursor-pointer">
                             English
                         </span>
-                        <div onclick="handleLang(this)" class="toggle cursor-pointer">
+                        <div onclick="handleLang(this)" class="hidden md:block toggle cursor-pointer">
                             <span> </span>
                         </div>
                         <span onclick="handleLang(this)" class="hidden md:block arToggler  cursor-pointer">
                             العربية
+                        </span>
+                        <span onclick="handleLang(this)" class="md:hidden block arToggler  cursor-pointer">
+                            ع
                         </span>
                         <div class="menu md:hidden block w-[6.15384615385vw]">
                             <span class="bg-[#FFFFFF] line-1 h-[0.8333333333333333vw]"></span>
@@ -48,7 +105,7 @@
                     </div>
                 </div>
                 <div class="hidden md:flex items-center md:gap-x-[2.08333333333vw]">
-                    <ul class=" links text20 flex items-center md:gap-x-[2.08333333333vw] ">
+                    <ul class=" links PingAR-Light md:text-[1.04166666667vw] md:leading-[1.45833333333vw] flex items-center md:gap-x-[2.08333333333vw] ">
                         <li>
                             <a href="">Home</a>
                             <img src="./assets/images/icons/links-style.svg" alt="style" class="active">
@@ -67,7 +124,7 @@
                         </li>
                     </ul>
                     <a href=""
-                        class="bg-[#845FFF] text-[#FFFFFF] text18 md:rounded-[1.35416666667vw] md:w-[9.47916666667vw] md:py-[0.625vw] flex justify-center items-center hover:bg-[#3B3659] transition-all duration-300 font-[400]">
+                        class="bg-[#845FFF] text-[#FFFFFF] PingAR-Light text18 md:rounded-[1.35416666667vw] md:w-[9.47916666667vw] md:py-[0.625vw] flex justify-center items-center hover:bg-[#3B3659] transition-all duration-300 ">
                         <span>
                             Download app
                         </span>
@@ -78,7 +135,7 @@
         <div class="block md:hidden sidebar bg-[#3B3659] bg-opacity-[0.9] w-full h-[100vh] absolute top-0 left-0 opacity-0">
             <div class="w-[90%] mx-[auto] h-full flex flex-col pt-[54.8717948718vw] ">
                 <ul
-                    class="links w-full text-white font-[400] text-[4.87179487179vw] flex flex-col gap-y-[4.10256410256vw] ">
+                    class="links w-full text-white  text-[4.87179487179vw] flex flex-col gap-y-[4.10256410256vw] ">
                     <li>
                         <a href="">Home</a>
                         <img src="./assets/images/icons/links-style.svg" alt="style" class="active">
@@ -105,7 +162,7 @@
                     </li>
                 </ul>
                 <a href=""
-                    class="mt-[12.3076923077vw] bg-[#845FFF] text-white text-[3.84615384615vw] rounded-[7.94871794872vw] w-full py-[1.15384615385vw] flex justify-center items-center font-[400]">
+                    class="mt-[12.3076923077vw] bg-[#845FFF] text-white text-[3.84615384615vw] rounded-[7.94871794872vw] w-full h-[10.5128205128vw] flex justify-center items-center ">
                     <span>
                         Download app
                     </span>
@@ -116,7 +173,7 @@
     <main>
         <section>
             <div class="h-[123.333333333vw] md:h-screen flex items-end
-            md:pb-[18.22916666666667vw] pb-[33.3333333333vw]">
+            md:pb-[18.22916666666667vw] pb-[31.28205128205128vw]">
                 <div class="w-full h-[inherit]  md:h-full absolute top-0 left-0"> 
                     <span class="hero__Overlay1 absolute top-0 left-0 w-full
                     md:h-[42.1875vw] h-[92.5641025641vw]"></span>
@@ -131,8 +188,8 @@
                 </div>
                 <div class="Container1680 relative z-[2] text-white md:text-[#3B3659]">
                     <div class=" md:w-[32.03125vw]">
-                        <h1 class="heading54">The future of
-                            <span class="relative inline-block">
+                        <h1 class="heading54 ">The future of
+                            <span class="relative inline-block ">
                                 primary
                                 <img src="./assets/images/icons/links-style3.svg" alt="style"
                                     class="absolute left-0 bottom-[-5px] md:bottom-[-0.7vw] w-full">
@@ -140,10 +197,10 @@
                             healthcare
                         </h1>
                         <div class="md:mt-[2.291666666666667vw] mt-[4.10256410256vw]">
-                            <p class="text26">Book your appointment</p>
+                            <p class="md:text-[1.354166666666667vw] text-[4.871794871794872vw] md:leading-[2.1875vw] PingAR-Medium">Book your appointment</p>
                             <div
-                                class="text-[#FFFFFF] flex items-center md:gap-x-[1.25vw] gap-x-[3.07692307692vw] md:mt-[0.8333333333333333vw] mt-[2.05128205128vw] flex-wrap gap-y-[4.44444444444vw]">
-                                <a href="" class="anchor1">
+                                class=" text-[#FFFFFF] flex items-center md:gap-x-[1.25vw] gap-x-[3.07692307692vw] md:mt-[0.8333333333333333vw] mt-[2.05128205128vw] flex-wrap gap-y-[4.44444444444vw]">
+                                <a href="" class=" anchor1">
                                     <div>
                                         <span>
                                             Get app
@@ -151,9 +208,9 @@
                                         <img src="./assets/images/icons/get-app.svg" alt="get-app">
                                     </div>
                                 </a>
-                                <a href="" class="anchor2">
+                                <a href="" class=" anchor2">
                                     <div>
-                                        <span class="font-[400]">
+                                        <span class="">
                                             9200 11111
                                         </span>
                                         <img src="./assets/images/icons/phone.svg" alt="phone">
@@ -176,13 +233,13 @@
                             <div
                                 class="w-full flex justify-center items-stretch md:gap-x-[2.5vw] md:mt-[-5.41666666667vw] flex-wrap gap-y-[4.10256410256vw] mt-[-22vw]">
                                 <div
-                                    class="md:pb-[1.74479166667vw] items-start w-full md:pt-[1.74479166667vw] pt-[8.20512820513vw] md:h-[11.1979166667vw] h-[43.3333333333vw] md:w-[23.3333333333vw] bg-[#F5EBE8] md:rounded-[1.04166666667vw] rounded-[3.84615384615vw] flex md:items-stretch">
+                                    class="md:pb-[2.34375vw] items-start w-full md:pt-[1.74479166667vw] pt-[8.20512820513vw] md:h-[11.1979166667vw] h-[43.3333333333vw] md:w-[23.3333333333vw] bg-[#F5EBE8] md:rounded-[1.04166666667vw] rounded-[3.84615384615vw] flex md:items-stretch">
                                     <div
                                         class="w-[76.6666666667vw] gap-y-[2vw] md:w-[19.1666666667vw] mx-[auto] flex flex-col md:gap-y-[0.41666666666vw]">
-                                        <h4 class="text26 text-[#845FFF] font-[700] flex-grow-[1]">
+                                        <h4 class="text-[4.871794871794872vw] md:text-[1.354166666666667vw] md:leading-[1.875vw] PingAR-Medium text-[#845FFF]  flex-grow-[1]">
                                             Open 24/7
                                         </h4>
-                                        <p class="text18 text-[#505050] font-[400]">
+                                        <p class="md:text-[0.9375vw] md:leading-[1.45833333333vw] PingAR-Light text-[#505050] ">
                                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
                                             eirmod
                                         </p>
@@ -192,10 +249,10 @@
                                     class="flex items-start w-full md:pt-[1.74479166667vw] pt-[8.20512820513vw] md:h-[11.1979166667vw] h-[43.3333333333vw] md:w-[23.3333333333vw] bg-[#F5EBE8] md:rounded-[1.04166666667vw] rounded-[3.84615384615vw]">
                                     <div
                                         class="w-[76.6666666667vw] gap-y-[2vw] md:w-[19.1666666667vw] mx-[auto] flex flex-col md:gap-y-[0.41666666666vw]">
-                                        <h4 class="text26 text-[#845FFF] font-[700]">
+                                        <h4 class="text-[4.871794871794872vw] md:text-[1.354166666666667vw] md:leading-[1.875vw] PingAR-Medium text-[#845FFF] ">
                                             World-Renowned medical experts
                                         </h4>
-                                        <p class="text18 text-[#505050] font-[400]">
+                                        <p class="md:text-[0.9375vw] md:leading-[1.45833333333vw] PingAR-Light text-[#505050] ">
                                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonu
                                         </p>
                                     </div>
@@ -204,23 +261,24 @@
                                     class="flex items-start w-full md:pt-[1.74479166667vw] pt-[8.20512820513vw] md:h-[11.1979166667vw] h-[43.3333333333vw] md:w-[23.3333333333vw] bg-[#F5EBE8] md:rounded-[1.04166666667vw] rounded-[3.84615384615vw]">
                                     <div
                                         class="w-[76.6666666667vw] gap-y-[2vw] md:w-[19.1666666667vw] mx-[auto] flex flex-col md:gap-y-[0.41666666666vw]">
-                                        <h4 class="text26 text-[#845FFF] font-[700]">
+                                        <h4 class="text-[4.871794871794872vw] md:text-[1.354166666666667vw] md:leading-[1.875vw] PingAR-Medium text-[#845FFF] ">
                                             Trusted advice wherever you are
                                         </h4>
-                                        <p class="text18 text-[#505050] font-[400]">
+                                        <p class="md:text-[0.9375vw] md:leading-[1.45833333333vw] PingAR-Light text-[#505050] ">
                                             LoLorem ipsum dolor sit amet, consetetur sadipscing elitr.
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             <h2
-                                class="md:w-[38.5416666667vw]  heading54 tracking-[unset] font-[400] text-[#3B3659] text-center">
+                                class="md:w-[38.5416666667vw]  heading54 tracking-[unset]
+                                  text-[#3B3659] text-center PingAR-Regular">
                                 Putting
-                                <span class="font-[700]">
+                                <span class="PingAR-Bold">
                                     you
                                 </span>
                                 at the center of
-                                <span class="font-[700]">
+                                <span class="PingAR-Bold">
                                     your
                                 </span>
                                 healthcare journey
@@ -232,17 +290,17 @@
                                 <img src="./assets/images/home/healthcare journey.png" alt="healthcare journey"
                                     class="md:w-[27.03125vw]">
                             </div>
-                            <div class="flex flex-col md:gap-y-[1.66666666667vw] gap-y-[6.15384615385vw]">
+                            <div class="flex flex-col md:gap-y-[1.66666666667vw] gap-y-[6.15384615385vw] md:items-end">
                                 <div
                                     class="flex justify-center md:justify-start items-start md:gap-x-[1.04166666667vw] flex-wrap gap-y-[4.10256410256vw]">
                                     <img src="./assets/images/icons/big-phone.svg" alt="phone"
                                         class="md:w-[1.19791666667vw] w-[4.87179487179vw]">
                                     <div class="md:w-[32.2916666667vw] text-center md:text-start">
-                                        <h5 class="text26 text-[#3B3659]">
+                                        <h5 class="md:text-[1.354166666666667vw] md:leading-[1.979166666666667vw] text-[4.871794871794872vw] leading-[9.743589743589744vw] PingAR-Medium text-[#3B3659]">
                                             Digital app
                                         </h5>
                                         <p
-                                            class="font-[300] md:font-[400] text22 text-[#707070] md:text-[#505050] md:mt-[0.52083333333vw] mt-[2vw]">
+                                            class="md:text-[1.14583333333vw] md:leading-[1.666666666666667vw] text-[3.58974358974359vw] leading-[6.153846153846154vw] PingAR-Light text-[#707070] md:text-[#505050] md:mt-[0.625vw] mt-[2vw]">
                                             Lorem ipsum dolor sit amet, consetetur temporod t isadipscing elitr, sed
                                             diam nonumy
                                             eirmod tempood tr invidunt ut labore et dolore magna aliquyam erat, sed diam
@@ -254,11 +312,11 @@
                                     <img src="./assets/images/icons/clinic.svg" alt="clinic"
                                         class="md:w-[2.08333333333vw] w-[8.20512820513vw]">
                                     <div class="md:w-[32.2916666667vw] text-center md:text-start">
-                                        <h5 class="text26 text-[#3B3659]">
+                                        <h5 class="md:text-[1.354166666666667vw] md:leading-[1.979166666666667vw] text-[4.871794871794872vw] leading-[9.743589743589744vw] PingAR-Medium text-[#3B3659]">
                                             Yalla clinic
                                         </h5>
                                         <p
-                                            class="font-[300] md:font-[400] text22 text-[#707070] md:text-[#505050] md:mt-[0.52083333333vw] mt-[2vw]">
+                                            class="md:text-[1.14583333333vw] md:leading-[1.666666666666667vw] text-[3.58974358974359vw] leading-[6.153846153846154vw] PingAR-Light text-[#707070] md:text-[#505050] md:mt-[0.625vw] mt-[2vw]">
                                             Lorem ipsum dolor sit amet, ctempor itempor ietur sadipscing elitr, sed diam
                                             nonum
                                             ahacfteirmod tempor invidunt ut labore et dolore mtempor iagna aliquyam
@@ -272,11 +330,11 @@
                                     <img src="./assets/images/icons/nest-clinic.svg" alt="nest-clinic"
                                         class="md:w-[2.08333333333vw] w-[8.20512820513vw]">
                                     <div class="md:w-[32.2916666667vw] text-center md:text-start">
-                                        <h5 class="text26 text-[#3B3659]">
+                                        <h5 class="md:text-[1.354166666666667vw] md:leading-[1.979166666666667vw] text-[4.871794871794872vw] leading-[9.743589743589744vw] PingAR-Medium text-[#3B3659]">
                                             Nest clinic
                                         </h5>
                                         <p
-                                            class="font-[300] md:font-[400] text22 text-[#707070] md:text-[#505050] md:mt-[0.52083333333vw] mt-[2vw]">
+                                            class="md:text-[1.14583333333vw] md:leading-[1.666666666666667vw] text-[3.58974358974359vw] leading-[6.153846153846154vw] PingAR-Light text-[#707070] md:text-[#505050] md:mt-[0.625vw] mt-[2vw]">
                                             Lorem ipsum dolor sit amet, consetetur sadiscing elitr, sed diam nonumy
                                             eirmod
                                             tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
@@ -292,9 +350,9 @@
                         class=" absolute md:w-full md:h-full bottom-0 md:top-0 left-0  ">
                     <div
                         class="Container1440 relative z-[2] md:pt-[1.45833333333vw] md:pb-[10.8854166667vw] pt-[10.2564102564vw] pb-[20.5128205128vw]">
-                        <h3 class="md:w-[34.2708333333vw]  heading54 tracking-[unset] font-[400] text-[#3B3659] ">
+                        <h3 class="md:w-[34.2708333333vw] PingAR-Regular heading54 tracking-[unset]  text-[#3B3659] ">
                             Bringing loving care to
-                            <span class="font-[700]">
+                            <span class="PingAR-Bold">
                                 health care.
                             </span>
 
@@ -308,10 +366,10 @@
                                     <img src="./assets/images/icons/healthcare-icons-home/1.svg" alt="healthcare-icons"
                                         class="md:w-[3.59375vw] w-[12.5641025641vw]">
                                     <div class="text-center">
-                                        <h5 class="text26 text-[#3B3659]">
+                                        <h5 class="md:text-[1.354166666666667vw] md:leading-[1.979166666666667vw] text-[4.871794871794872vw] leading-[9.743589743589744vw] PingAR-Medium text-[#3B3659]">
                                             Regular health checkups
                                         </h5>
-                                        <p class="text22 text-[#707070] md:mt-[0.52083333333vw] mt-[2vw] ">
+                                        <p class="md:text-[1.14583333333vw] md:leading-[1.458333333333333vw] text-[3.58974358974359vw] leading-[6.153846153846154vw] PingAR-Light text-[#707070] md:mt-[0.4166666666666667vw] mt-[2vw] ">
                                             Take care of your overall well-being with regular checkups.
                                         </p>
                                     </div>
@@ -324,10 +382,10 @@
                                     <img src="./assets/images/icons/healthcare-icons-home/2.svg" alt="healthcare-icons"
                                         class="md:w-[2.8125vw] w-[10vw]">
                                     <div class="text-center">
-                                        <h5 class="text26 text-[#3B3659]">
+                                        <h5 class="md:text-[1.354166666666667vw] md:leading-[1.979166666666667vw] text-[4.871794871794872vw] leading-[9.743589743589744vw] PingAR-Medium text-[#3B3659]">
                                             Urgent care
                                         </h5>
-                                        <p class="text22 text-[#707070] md:mt-[0.52083333333vw] mt-[2vw] ">
+                                        <p class="md:text-[1.14583333333vw] md:leading-[1.458333333333333vw] text-[3.58974358974359vw] leading-[6.153846153846154vw] PingAR-Light text-[#707070] md:mt-[0.4166666666666667vw] mt-[2vw] ">
                                             Get prompt care for non-emergency medical needs.
                                         </p>
                                     </div>
@@ -340,10 +398,10 @@
                                     <img src="./assets/images/icons/healthcare-icons-home/3.svg" alt="healthcare-icons"
                                         class="md:w-[1.875vw] w-[6.41025641026vw]">
                                     <div class="text-center">
-                                        <h5 class="text26 text-[#3B3659]">
+                                        <h5 class="md:text-[1.354166666666667vw] md:leading-[1.979166666666667vw] text-[4.871794871794872vw] leading-[9.743589743589744vw] PingAR-Medium text-[#3B3659]">
                                             Women's wellness
                                         </h5>
-                                        <p class="text22 text-[#707070] md:mt-[0.52083333333vw] mt-[2vw] ">
+                                        <p class="md:text-[1.14583333333vw] md:leading-[1.458333333333333vw] text-[3.58974358974359vw] leading-[6.153846153846154vw] PingAR-Light text-[#707070] md:mt-[0.4166666666666667vw] mt-[2vw] ">
                                             Comprehensive healthcare tailored for women.
                                         </p>
                                     </div>
@@ -356,10 +414,10 @@
                                     <img src="./assets/images/icons/healthcare-icons-home/4.svg" alt="healthcare-icons"
                                         class="md:w-[2.76041666667vw] w-[9.48717948718vw]">
                                     <div class="text-center">
-                                        <h5 class="text26 text-[#3B3659]">
+                                        <h5 class="md:text-[1.354166666666667vw] md:leading-[1.979166666666667vw] text-[4.871794871794872vw] leading-[9.743589743589744vw] PingAR-Medium text-[#3B3659]">
                                             Caring for kids
                                         </h5>
-                                        <p class="text22 text-[#707070] md:mt-[0.52083333333vw] mt-[2vw] ">
+                                        <p class="md:text-[1.14583333333vw] md:leading-[1.458333333333333vw] text-[3.58974358974359vw] leading-[6.153846153846154vw] PingAR-Light text-[#707070] md:mt-[0.4166666666666667vw] mt-[2vw] ">
                                             Expert healthcare for your little ones.
                                         </p>
                                     </div>
@@ -372,10 +430,10 @@
                                     <img src="./assets/images/icons/healthcare-icons-home/5.svg" alt="healthcare-icons"
                                         class="md:w-[2.91666666667vw] w-[10.2564102564vw]">
                                     <div class="text-center">
-                                        <h5 class="text26 text-[#3B3659]">
+                                        <h5 class="md:text-[1.354166666666667vw] md:leading-[1.979166666666667vw] text-[4.871794871794872vw] leading-[9.743589743589744vw] PingAR-Medium text-[#3B3659]">
                                             Managing long-term health
                                         </h5>
-                                        <p class="text22 text-[#707070] md:mt-[0.52083333333vw] mt-[2vw] ">
+                                        <p class="md:text-[1.14583333333vw] md:leading-[1.458333333333333vw] text-[3.58974358974359vw] leading-[6.153846153846154vw] PingAR-Light text-[#707070] md:mt-[0.4166666666666667vw] mt-[2vw] ">
                                             Partner with us to handle your ongoing health needs.
                                         </p>
                                     </div>
@@ -388,10 +446,10 @@
                                     <img src="./assets/images/icons/healthcare-icons-home/6.svg" alt="healthcare-icons"
                                         class="md:w-[2.55208333333vw] w-[8.97435897436vw]">
                                     <div class="text-center">
-                                        <h5 class="text26 text-[#3B3659]">
+                                        <h5 class="md:text-[1.354166666666667vw] md:leading-[1.979166666666667vw] text-[4.871794871794872vw] leading-[9.743589743589744vw] PingAR-Medium text-[#3B3659]">
                                             Specialized care for seniors
                                         </h5>
-                                        <p class="text22 text-[#707070] md:mt-[0.52083333333vw] mt-[2vw] ">
+                                        <p class="md:text-[1.14583333333vw] md:leading-[1.458333333333333vw] text-[3.58974358974359vw] leading-[6.153846153846154vw] PingAR-Light text-[#707070] md:mt-[0.4166666666666667vw] mt-[2vw] ">
                                             Personalized support for older adults.
                                         </p>
                                     </div>
@@ -399,7 +457,7 @@
                             </div>
                         </div>
                         <a href=""
-                            class="md:mt-[3.33333333333vw] mt-[6.15384615385vw] mx-[auto] bg-[#8450FF] md:text-[0.9375vw] md:leading-[1.45833333333vw] text-[3.07692307692vw] md:rounded-[5.20833333333vw] rounded-[7.948717948717949vw] md:w-[12.1875vw] w-[31.7948717949vw] md:py-[0.88541666666vw] py-[2.307692307692308vw] flex justify-center items-center hover:bg-[#3B3659] transition-all duration-300 font-[400] text-[#FFFFFF]">
+                            class="md:mt-[3.33333333333vw] mt-[6.15384615385vw] mx-[auto] bg-[#8450FF] md:text-[0.9375vw] md:leading-[1.45833333333vw] PingAR-Light text-[3.07692307692vw] md:rounded-[5.20833333333vw] rounded-[7.948717948717949vw] md:w-[12.1875vw] w-[31.7948717949vw] md:py-[0.88541666666vw] py-[2.307692307692308vw] flex justify-center items-center hover:bg-[#3B3659] transition-all duration-300  text-[#FFFFFF]">
                             <span>
                                 View all services
                             </span>
@@ -416,9 +474,9 @@
                     </span>
                     <div class="relative z-[2]">
                         <h3
-                            class="Container1440  md:pt-[0.98958333333vw] heading54 tracking-[unset] font-[400] text-[#3B3659] ">
+                            class="Container1440 PingAR-Regular  md:pt-[0.98958333333vw] heading54 tracking-[unset]  text-[#3B3659] ">
                             Meet our
-                            <span class="font-[700]">
+                            <span class="PingAR-Bold">
                                 doctors
                             </span>
 
@@ -427,16 +485,16 @@
                     md:w-[75vw] w-[93%] md:mx-[auto] ml-[auto]">
                             <!-- Swiper -->
                             <div class="swiper homeSwipers doctorsSwiper w-full
-                    md:pt-[2.5vw] pt-[6.15384615385vw] pb-[14.358974359vw] md:pb-[5.885416666666667vw]">
+                    md:pt-[2.5vw] pt-[6.15384615385vw]  pb-[14.358974359vw] md:pb-[5.885416666666667vw]">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <img src="./assets/images/home/doctors/1.jpg" alt="doctors" class="w-full">
                                         <div
-                                            class="text-[#3B3659] md:mx-[1.25vw] md:mt-[0.625vw] md:mb-[1.40625vw] my-[6%] mx-[8%]">
-                                            <h5 class="text26">
+                                            class="text-[#3B3659] md:mx-[1.25vw] md:mt-[0.625vw] md:mb-[1.25vw] my-[2.820512820512821vw] mx-[6.153846153846154vw]">
+                                            <h5 class="md:text-[1.354166666666667vw] md:leading-[1.979166666666667vw] text-[4.871794871794872vw] leading-[9.743589743589744vw] PingAR-Medium">
                                                 Name Of Doctor
                                             </h5>
-                                            <span class="text18 font-[400]">
+                                            <span class="md:text-[0.9375vw] md:leading-[1.458333333333333vw] text-[3.58974358974359vw] leading-[7.179487179487179vw] PingAR-Light md:mt-[0.3645833333333333vw]  block">
                                                 Speciality name
                                             </span>
                                         </div>
@@ -444,11 +502,11 @@
                                     <div class="swiper-slide">
                                         <img src="./assets/images/home/doctors/2.jpg" alt="doctors" class="w-full">
                                         <div
-                                            class="text-[#3B3659] md:mx-[1.25vw] md:mt-[0.625vw] md:mb-[1.40625vw] my-[6%] mx-[8%]">
-                                            <h5 class="text26">
+                                            class="text-[#3B3659] md:mx-[1.25vw] md:mt-[0.625vw] md:mb-[1.25vw] my-[2.820512820512821vw] mx-[6.153846153846154vw]">
+                                            <h5 class="md:text-[1.354166666666667vw] md:leading-[1.979166666666667vw] text-[4.871794871794872vw] leading-[9.743589743589744vw] PingAR-Medium">
                                                 Name Of Doctor
                                             </h5>
-                                            <span class="text18 font-[400]">
+                                            <span class="md:text-[0.9375vw] md:leading-[1.458333333333333vw] text-[3.58974358974359vw] leading-[7.179487179487179vw] PingAR-Light md:mt-[0.3645833333333333vw]  block">
                                                 Speciality name
                                             </span>
                                         </div>
@@ -456,11 +514,11 @@
                                     <div class="swiper-slide">
                                         <img src="./assets/images/home/doctors/3.jpg" alt="doctors" class="w-full">
                                         <div
-                                            class="text-[#3B3659] md:mx-[1.25vw] md:mt-[0.625vw] md:mb-[1.40625vw] my-[6%] mx-[8%]">
-                                            <h5 class="text26">
+                                            class="text-[#3B3659] md:mx-[1.25vw] md:mt-[0.625vw] md:mb-[1.25vw] my-[2.820512820512821vw] mx-[6.153846153846154vw]">
+                                            <h5 class="md:text-[1.354166666666667vw] md:leading-[1.979166666666667vw] text-[4.871794871794872vw] leading-[9.743589743589744vw] PingAR-Medium">
                                                 Name Of Doctor
                                             </h5>
-                                            <span class="text18 font-[400]">
+                                            <span class="md:text-[0.9375vw] md:leading-[1.458333333333333vw] text-[3.58974358974359vw] leading-[7.179487179487179vw] PingAR-Light md:mt-[0.3645833333333333vw]  block">
                                                 Speciality name
                                             </span>
                                         </div>
@@ -468,11 +526,11 @@
                                     <div class="swiper-slide">
                                         <img src="./assets/images/home/doctors/4.jpg" alt="doctors" class="w-full">
                                         <div
-                                            class="text-[#3B3659] md:mx-[1.25vw] md:mt-[0.625vw] md:mb-[1.40625vw] my-[6%] mx-[8%]">
-                                            <h5 class="text26">
+                                            class="text-[#3B3659] md:mx-[1.25vw] md:mt-[0.625vw] md:mb-[1.25vw] my-[2.820512820512821vw] mx-[6.153846153846154vw]">
+                                            <h5 class="md:text-[1.354166666666667vw] md:leading-[1.979166666666667vw] text-[4.871794871794872vw] leading-[9.743589743589744vw] PingAR-Medium">
                                                 Name Of Doctor
                                             </h5>
-                                            <span class="text18 font-[400]">
+                                            <span class="md:text-[0.9375vw] md:leading-[1.458333333333333vw] text-[3.58974358974359vw] leading-[7.179487179487179vw] PingAR-Light md:mt-[0.3645833333333333vw]  block">
                                                 Speciality name
                                             </span>
                                         </div>
@@ -480,11 +538,11 @@
                                     <div class="swiper-slide">
                                         <img src="./assets/images/home/doctors/1.jpg" alt="doctors" class="w-full">
                                         <div
-                                            class="text-[#3B3659] md:mx-[1.25vw] md:mt-[0.625vw] md:mb-[1.40625vw] my-[6%] mx-[8%]">
-                                            <h5 class="text26">
+                                            class="text-[#3B3659] md:mx-[1.25vw] md:mt-[0.625vw] md:mb-[1.25vw] my-[2.820512820512821vw] mx-[6.153846153846154vw]">
+                                            <h5 class="md:text-[1.354166666666667vw] md:leading-[1.979166666666667vw] text-[4.871794871794872vw] leading-[9.743589743589744vw] PingAR-Medium">
                                                 Name Of Doctor
                                             </h5>
-                                            <span class="text18 font-[400]">
+                                            <span class="md:text-[0.9375vw] md:leading-[1.458333333333333vw] text-[3.58974358974359vw] leading-[7.179487179487179vw] PingAR-Light md:mt-[0.3645833333333333vw]  block">
                                                 Speciality name
                                             </span>
                                         </div>
@@ -492,11 +550,11 @@
                                     <div class="swiper-slide">
                                         <img src="./assets/images/home/doctors/2.jpg" alt="doctors" class="w-full">
                                         <div
-                                            class="text-[#3B3659] md:mx-[1.25vw] md:mt-[0.625vw] md:mb-[1.40625vw] my-[6%] mx-[8%]">
-                                            <h5 class="text26">
+                                            class="text-[#3B3659] md:mx-[1.25vw] md:mt-[0.625vw] md:mb-[1.25vw] my-[2.820512820512821vw] mx-[6.153846153846154vw]">
+                                            <h5 class="md:text-[1.354166666666667vw] md:leading-[1.979166666666667vw] text-[4.871794871794872vw] leading-[9.743589743589744vw] PingAR-Medium">
                                                 Name Of Doctor
                                             </h5>
-                                            <span class="text18 font-[400]">
+                                            <span class="md:text-[0.9375vw] md:leading-[1.458333333333333vw] text-[3.58974358974359vw] leading-[7.179487179487179vw] PingAR-Light md:mt-[0.3645833333333333vw]  block">
                                                 Speciality name
                                             </span>
                                         </div>
@@ -504,11 +562,11 @@
                                     <div class="swiper-slide">
                                         <img src="./assets/images/home/doctors/3.jpg" alt="doctors" class="w-full">
                                         <div
-                                            class="text-[#3B3659] md:mx-[1.25vw] md:mt-[0.625vw] md:mb-[1.40625vw] my-[6%] mx-[8%]">
-                                            <h5 class="text26">
+                                            class="text-[#3B3659] md:mx-[1.25vw] md:mt-[0.625vw] md:mb-[1.25vw] my-[2.820512820512821vw] mx-[6.153846153846154vw]">
+                                            <h5 class="md:text-[1.354166666666667vw] md:leading-[1.979166666666667vw] text-[4.871794871794872vw] leading-[9.743589743589744vw] PingAR-Medium">
                                                 Name Of Doctor
                                             </h5>
-                                            <span class="text18 font-[400]">
+                                            <span class="md:text-[0.9375vw] md:leading-[1.458333333333333vw] text-[3.58974358974359vw] leading-[7.179487179487179vw] PingAR-Light md:mt-[0.3645833333333333vw]  block">
                                                 Speciality name
                                             </span>
                                         </div>
@@ -516,11 +574,11 @@
                                     <div class="swiper-slide">
                                         <img src="./assets/images/home/doctors/4.jpg" alt="doctors" class="w-full">
                                         <div
-                                            class="text-[#3B3659] md:mx-[1.25vw] md:mt-[0.625vw] md:mb-[1.40625vw] my-[6%] mx-[8%]">
-                                            <h5 class="text26">
+                                            class="text-[#3B3659] md:mx-[1.25vw] md:mt-[0.625vw] md:mb-[1.25vw] my-[2.820512820512821vw] mx-[6.153846153846154vw]">
+                                            <h5 class="md:text-[1.354166666666667vw] md:leading-[1.979166666666667vw] text-[4.871794871794872vw] leading-[9.743589743589744vw] PingAR-Medium">
                                                 Name Of Doctor
                                             </h5>
-                                            <span class="text18 font-[400]">
+                                            <span class="md:text-[0.9375vw] md:leading-[1.458333333333333vw] text-[3.58974358974359vw] leading-[7.179487179487179vw] PingAR-Light md:mt-[0.3645833333333333vw]  block">
                                                 Speciality name
                                             </span>
                                         </div>
@@ -545,9 +603,9 @@
                     <div>
                         <h3 class="Container1440 pt-[12.3076923077vw]
                              md:pt-[4.53125vw] heading54 
-                             tracking-[unset] font-[400] text-[#3B3659] md:text-center">
+                             tracking-[unset] PingAR-Regular text-[#3B3659] md:text-center">
                             What
-                            <span class="font-[700]">
+                            <span class="PingAR-Bold">
                                 our patients
                             </span>
                             say
@@ -562,17 +620,17 @@
                                         <div
                                             class="text-center md:w-[20.52083333333333vw] w-[57.9487179487vw] mx-[auto] md:pt-[3.489583333333333vw] md:pb-[1.5625vw] py-[7.82051282051vw]">
                                             <div class="relative">
-                                                <p class="text22 text-[#505050] ">
+                                                <p class="md:text-[1.14583333333vw] md:leading-[1.666666666666667vw] text-[3.58974358974359vw] leading-[6.153846153846154vw] PingAR-Light text-[#505050] ">
                                                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
                                                     nonumy eirmod tempor invidunt ut labore et dolore magna
                                                 </p>
                                                 <img src="./assets/images/icons/quote-up.svg" alt="quote"
-                                                    class="absolute md:top-[-0.78125vw] top-[-12%] md:left-[1.09375vw] md:w-[0.9895833333333333vw]">
+                                                    class="w-[3.58974358974vw] absolute md:top-[-0.78125vw] top-[-12%] md:left-[1.09375vw] md:w-[0.9895833333333333vw]">
                                                 <img src="./assets/images/icons/quote-down.svg" alt="quote"
-                                                    class="absolute md:bottom-[0.15625vw] bottom-[3%] right-[30%] md:right-[2.13541666667vw] md:w-[0.9895833333333333vw]">
+                                                    class="w-[3.58974358974vw] absolute md:bottom-[0.15625vw] bottom-[3%] right-[30%] md:right-[2.13541666667vw] md:w-[0.9895833333333333vw]">
                                             </div>
                                             <span
-                                                class="text26 text-[#3B3659] md:mt-[0.7291666666666667vw] block mt-[2.222222222222222vw]">
+                                                class="md:text-[1.354166666666667vw] md:leading-[1.979166666666667vw] text-[4.871794871794872vw] leading-[9.743589743589744vw] PingAR-Medium text-[#3B3659] md:mt-[0.7291666666666667vw] block mt-[2.222222222222222vw]">
                                                 First name
                                             </span>
                                         </div>
@@ -581,17 +639,17 @@
                                         <div
                                             class="text-center md:w-[20.52083333333333vw] w-[57.9487179487vw] mx-[auto] md:pt-[3.489583333333333vw] md:pb-[1.5625vw] py-[7.82051282051vw]">
                                             <div class="relative">
-                                                <p class="text22 text-[#505050] ">
+                                                <p class="md:text-[1.14583333333vw] md:leading-[1.666666666666667vw] text-[3.58974358974359vw] leading-[6.153846153846154vw] PingAR-Light text-[#505050] ">
                                                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
                                                     nonumy eirmod tempor invidunt ut labore et dolore magna
                                                 </p>
                                                 <img src="./assets/images/icons/quote-up.svg" alt="quote"
-                                                    class="absolute md:top-[-0.78125vw] top-[-12%] md:left-[1.09375vw] md:w-[0.9895833333333333vw]">
+                                                    class="w-[3.58974358974vw] absolute md:top-[-0.78125vw] top-[-12%] md:left-[1.09375vw] md:w-[0.9895833333333333vw]">
                                                 <img src="./assets/images/icons/quote-down.svg" alt="quote"
-                                                    class="absolute md:bottom-[0.15625vw] bottom-[3%] right-[30%] md:right-[2.13541666667vw] md:w-[0.9895833333333333vw]">
+                                                    class="w-[3.58974358974vw] absolute md:bottom-[0.15625vw] bottom-[3%] right-[30%] md:right-[2.13541666667vw] md:w-[0.9895833333333333vw]">
                                             </div>
                                             <span
-                                                class="text26 text-[#3B3659] md:mt-[0.7291666666666667vw] block mt-[2.222222222222222vw]">
+                                                class="md:text-[1.354166666666667vw] md:leading-[1.979166666666667vw] text-[4.871794871794872vw] leading-[9.743589743589744vw] PingAR-Medium text-[#3B3659] md:mt-[0.7291666666666667vw] block mt-[2.222222222222222vw]">
                                                 First name
                                             </span>
                                         </div>
@@ -600,17 +658,17 @@
                                         <div
                                             class="text-center md:w-[20.52083333333333vw] w-[57.9487179487vw] mx-[auto] md:pt-[3.489583333333333vw] md:pb-[1.5625vw] py-[7.82051282051vw]">
                                             <div class="relative">
-                                                <p class="text22 text-[#505050] ">
+                                                <p class="md:text-[1.14583333333vw] md:leading-[1.666666666666667vw] text-[3.58974358974359vw] leading-[6.153846153846154vw] PingAR-Light text-[#505050] ">
                                                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
                                                     nonumy eirmod tempor invidunt ut labore et dolore magna
                                                 </p>
                                                 <img src="./assets/images/icons/quote-up.svg" alt="quote"
-                                                    class="absolute md:top-[-0.78125vw] top-[-12%] md:left-[1.09375vw] md:w-[0.9895833333333333vw]">
+                                                    class="w-[3.58974358974vw] absolute md:top-[-0.78125vw] top-[-12%] md:left-[1.09375vw] md:w-[0.9895833333333333vw]">
                                                 <img src="./assets/images/icons/quote-down.svg" alt="quote"
-                                                    class="absolute md:bottom-[0.15625vw] bottom-[3%] right-[30%] md:right-[2.13541666667vw] md:w-[0.9895833333333333vw]">
+                                                    class="w-[3.58974358974vw] absolute md:bottom-[0.15625vw] bottom-[3%] right-[30%] md:right-[2.13541666667vw] md:w-[0.9895833333333333vw]">
                                             </div>
                                             <span
-                                                class="text26 text-[#3B3659] md:mt-[0.7291666666666667vw] block mt-[2.222222222222222vw]">
+                                                class="md:text-[1.354166666666667vw] md:leading-[1.979166666666667vw] text-[4.871794871794872vw] leading-[9.743589743589744vw] PingAR-Medium text-[#3B3659] md:mt-[0.7291666666666667vw] block mt-[2.222222222222222vw]">
                                                 First name
                                             </span>
                                         </div>
@@ -619,17 +677,17 @@
                                         <div
                                             class="text-center md:w-[20.52083333333333vw] w-[57.9487179487vw] mx-[auto] md:pt-[3.489583333333333vw] md:pb-[1.5625vw] py-[7.82051282051vw]">
                                             <div class="relative">
-                                                <p class="text22 text-[#505050] ">
+                                                <p class="md:text-[1.14583333333vw] md:leading-[1.666666666666667vw] text-[3.58974358974359vw] leading-[6.153846153846154vw] PingAR-Light text-[#505050] ">
                                                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
                                                     nonumy eirmod tempor invidunt ut labore et dolore magna
                                                 </p>
                                                 <img src="./assets/images/icons/quote-up.svg" alt="quote"
-                                                    class="absolute md:top-[-0.78125vw] top-[-12%] md:left-[1.09375vw] md:w-[0.9895833333333333vw]">
+                                                    class="w-[3.58974358974vw] absolute md:top-[-0.78125vw] top-[-12%] md:left-[1.09375vw] md:w-[0.9895833333333333vw]">
                                                 <img src="./assets/images/icons/quote-down.svg" alt="quote"
-                                                    class="absolute md:bottom-[0.15625vw] bottom-[3%] right-[30%] md:right-[2.13541666667vw] md:w-[0.9895833333333333vw]">
+                                                    class="w-[3.58974358974vw] absolute md:bottom-[0.15625vw] bottom-[3%] right-[30%] md:right-[2.13541666667vw] md:w-[0.9895833333333333vw]">
                                             </div>
                                             <span
-                                                class="text26 text-[#3B3659] md:mt-[0.7291666666666667vw] block mt-[2.222222222222222vw]">
+                                                class="md:text-[1.354166666666667vw] md:leading-[1.979166666666667vw] text-[4.871794871794872vw] leading-[9.743589743589744vw] PingAR-Medium text-[#3B3659] md:mt-[0.7291666666666667vw] block mt-[2.222222222222222vw]">
                                                 First name
                                             </span>
                                         </div>
@@ -638,17 +696,17 @@
                                         <div
                                             class="text-center md:w-[20.52083333333333vw] w-[57.9487179487vw] mx-[auto] md:pt-[3.489583333333333vw] md:pb-[1.5625vw] py-[7.82051282051vw]">
                                             <div class="relative">
-                                                <p class="text22 text-[#505050] ">
+                                                <p class="md:text-[1.14583333333vw] md:leading-[1.666666666666667vw] text-[3.58974358974359vw] leading-[6.153846153846154vw] PingAR-Light text-[#505050] ">
                                                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
                                                     nonumy eirmod tempor invidunt ut labore et dolore magna
                                                 </p>
                                                 <img src="./assets/images/icons/quote-up.svg" alt="quote"
-                                                    class="absolute md:top-[-0.78125vw] top-[-12%] md:left-[1.09375vw] md:w-[0.9895833333333333vw]">
+                                                    class="w-[3.58974358974vw] absolute md:top-[-0.78125vw] top-[-12%] md:left-[1.09375vw] md:w-[0.9895833333333333vw]">
                                                 <img src="./assets/images/icons/quote-down.svg" alt="quote"
-                                                    class="absolute md:bottom-[0.15625vw] bottom-[3%] right-[30%] md:right-[2.13541666667vw] md:w-[0.9895833333333333vw]">
+                                                    class="w-[3.58974358974vw] absolute md:bottom-[0.15625vw] bottom-[3%] right-[30%] md:right-[2.13541666667vw] md:w-[0.9895833333333333vw]">
                                             </div>
                                             <span
-                                                class="text26 text-[#3B3659] md:mt-[0.7291666666666667vw] block mt-[2.222222222222222vw]">
+                                                class="md:text-[1.354166666666667vw] md:leading-[1.979166666666667vw] text-[4.871794871794872vw] leading-[9.743589743589744vw] PingAR-Medium text-[#3B3659] md:mt-[0.7291666666666667vw] block mt-[2.222222222222222vw]">
                                                 First name
                                             </span>
                                         </div>
@@ -657,17 +715,17 @@
                                         <div
                                             class="text-center md:w-[20.52083333333333vw] w-[57.9487179487vw] mx-[auto] md:pt-[3.489583333333333vw] md:pb-[1.5625vw] py-[7.82051282051vw]">
                                             <div class="relative">
-                                                <p class="text22 text-[#505050] ">
+                                                <p class="md:text-[1.14583333333vw] md:leading-[1.666666666666667vw] text-[3.58974358974359vw] leading-[6.153846153846154vw] PingAR-Light text-[#505050] ">
                                                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
                                                     nonumy eirmod tempor invidunt ut labore et dolore magna
                                                 </p>
                                                 <img src="./assets/images/icons/quote-up.svg" alt="quote"
-                                                    class="absolute md:top-[-0.78125vw] top-[-12%] md:left-[1.09375vw] md:w-[0.9895833333333333vw]">
+                                                    class="w-[3.58974358974vw] absolute md:top-[-0.78125vw] top-[-12%] md:left-[1.09375vw] md:w-[0.9895833333333333vw]">
                                                 <img src="./assets/images/icons/quote-down.svg" alt="quote"
-                                                    class="absolute md:bottom-[0.15625vw] bottom-[3%] right-[30%] md:right-[2.13541666667vw] md:w-[0.9895833333333333vw]">
+                                                    class="w-[3.58974358974vw] absolute md:bottom-[0.15625vw] bottom-[3%] right-[30%] md:right-[2.13541666667vw] md:w-[0.9895833333333333vw]">
                                             </div>
                                             <span
-                                                class="text26 text-[#3B3659] md:mt-[0.7291666666666667vw] block mt-[2.222222222222222vw]">
+                                                class="md:text-[1.354166666666667vw] md:leading-[1.979166666666667vw] text-[4.871794871794872vw] leading-[9.743589743589744vw] PingAR-Medium text-[#3B3659] md:mt-[0.7291666666666667vw] block mt-[2.222222222222222vw]">
                                                 First name
                                             </span>
                                         </div>
@@ -706,14 +764,14 @@
                     md:pt-[4.6875vw] md:pb-[5.98958333333vw]">
                         <div class="md:w-[37.5vw] mx-[auto]">
                             <h3
-                                class=" heading54  text-center tracking-[unset] font-[400] text-[#3B3659] md:text-center">
+                                class=" heading54 PingAR-Regular text-center tracking-[unset]  text-[#3B3659] md:text-center">
                                 Meena
-                                <span class="font-[700]">
+                                <span class="PingAR-Bold">
                                     locations
                                 </span>
                             </h3>
                             <p
-                                class="font-[300]  md:font-[400] text22 text-[#707070] md:text-[#505050] text-center mt-[2.051282051282051vw] md:mt-[0.625vw]">
+                                class=" md:text-[1.14583333333vw] md:leading-[1.666666666666667vw] text-[3.58974358974359vw] leading-[6.153846153846154vw] PingAR-Light text-[#707070] md:text-[#505050] text-center mt-[2.051282051282051vw] md:mt-[0.625vw]">
                                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
                                 invidunt ut labore et dolore magna aliquyam erat,
                             </p>
@@ -728,7 +786,7 @@
                                         class="absolute w-full h-full top-0 left-0 bg-[#3B3659] bg-opacity-[0.2]"></span>
                                 </div>
                                 <span
-                                    class="text26 text-[#3B3659] text-center block md:mt-[0.83333333333vw] mt-[2.77777777778vw]">
+                                    class="md:text-[1.354166666666667vw] md:leading-[1.458333333333333vw] text-[4.871794871794872vw] leading-[7.692307692307692vw] PingAR-Medium text-[#3B3659] text-center block md:mt-[1.25vw] md:mb-[0.3125vw] mb-[5.93333333333vw] mt-[3.07692307692vw]">
                                     Clinic name 1
                                 </span>
 
@@ -741,7 +799,7 @@
                                         class="absolute w-full h-full top-0 left-0 bg-[#3B3659] bg-opacity-[0.2]"></span>
                                 </div>
                                 <span
-                                    class="text26 text-[#3B3659] text-center block md:mt-[0.83333333333vw] mt-[2.77777777778vw]">
+                                    class="md:text-[1.354166666666667vw] md:leading-[1.458333333333333vw] text-[4.871794871794872vw] leading-[7.692307692307692vw] PingAR-Medium text-[#3B3659] text-center block md:mt-[1.25vw] md:mb-[0.3125vw] mb-[5.93333333333vw] mt-[3.07692307692vw]">
                                     Clinic name 2
                                 </span>
 
@@ -760,14 +818,14 @@
                                     </div>
                                 </div>
                                 <span
-                                    class="text26 text-[#3B3659] text-center block md:mt-[0.83333333333vw] mt-[2.77777777778vw]">
+                                    class="md:text-[1.354166666666667vw] md:leading-[1.458333333333333vw] text-[4.871794871794872vw] leading-[7.692307692307692vw] PingAR-Medium text-[#3B3659] text-center block md:mt-[1.25vw] md:mb-[0.3125vw] mb-[5.93333333333vw] mt-[3.07692307692vw]">
                                     Clinic name 3
                                 </span>
 
                             </div>
                         </div>
                         <a href=""
-                            class="md:mt-[3.33333333333vw] mt-[8.205128205128205vw] mx-[auto] bg-[#8450FF] md:text-[0.9375vw] md:leading-[1.45833333333vw] text-[3.076923076923077vw] md:rounded-[5.20833333333vw] rounded-[7.948717948717949vw] md:w-[12.7604166667vw] w-[37.94871794871795vw] md:py-[0.88541666666vw] py-[2.307692307692308vw] flex justify-center items-center hover:bg-[#3B3659] transition-all duration-300 font-[400] text-[#FFFFFF]">
+                            class="md:mt-[3.33333333333vw] mt-[8.205128205128205vw] mx-[auto] bg-[#8450FF] md:text-[0.9375vw] md:leading-[1.45833333333vw] text-[3.076923076923077vw] PingAR-Light md:rounded-[5.20833333333vw] rounded-[7.948717948717949vw] md:w-[12.7604166667vw] w-[37.94871794871795vw] md:py-[0.88541666666vw] py-[2.307692307692308vw] flex justify-center items-center hover:bg-[#3B3659] transition-all duration-300  text-[#FFFFFF]">
                             <span>
                                 View all locations
                             </span>
@@ -781,9 +839,9 @@
                 <div class=" pt-[14.35897435897436vw]
                 md:pt-[5.72916666667vw] md:pb-[5.72916666667vw]">
                     <h3 class="Container1440  heading54 
-                         tracking-[unset] font-[400] text-[#3B3659] ">
+                         tracking-[unset] PingAR-Regular text-[#3B3659] ">
                         Latest
-                        <span class="font-[700]">
+                        <span class="PingAR-Bold">
                             news
                         </span>
                     </h3>
@@ -791,25 +849,25 @@
                 md:w-[75vw] w-[93%] md:mx-[auto] ml-[auto]">
                         <!-- Swiper -->
                         <div class="swiper homeSwipers w-full
-                md:pt-[2.5vw] pt-[6.153846153846154vw]  pb-[12.30769230769231vw]">
+                md:pt-[2.5vw] pt-[6.153846153846154vw] md:pb-[unset] pb-[12.30769230769231vw]">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <img src="./assets/images/home/news/1.jpg" alt="news"
-                                        class="md:h-[unset] h-[68.71794871794872vw] w-full md:rounded-[1.04166666667vw] rounded-[3.846153846153846vw] ">
-                                    <div class=" text-[#3B3659] md:pt-[0.67708333333vw] pt-[4.102564102564103vw]">
-                                        <span class="text14">
+                                        class="md:h-[unset] h-[71.7948717949vw] w-full md:rounded-[1.04166666667vw] rounded-[3.846153846153846vw] ">
+                                    <div class=" text-[#3B3659] md:pt-[1.25vw] pt-[4.102564102564103vw]">
+                                        <span class="md:text-[0.72916666666vw] md:leading-[1.14583333333vw] text-[3.07692307692vw] leading-[4.87179487179vw] PingAR-Light">
                                             20 Feb 2023
                                         </span>
                                         <h5 class="md:text-[1.354166666666667vw] md:leading-[2.1875vw]
-        font-[500] text-[4.102564102564103vw]">
+         text-[4.102564102564103vw] leading-[6.66666666667vw] PingAR-Medium">
                                             Lorem ipsum dolor sit amet
                                         </h5>
                                         <p
-                                            class="text16 text-[#505050] font-[400] md:mt-[0.52083333333vw] mt-[2.22222222222vw]">
+                                            class="md:text-[0.8333333333333333vw] md:leading-[1.21527777778vw] text-[3.33333333333vw] leading-[5.55555555556vw] PingAR-Light text-[#505050]  md:mt-[0.67708333333vw] mt-[2.22222222222vw]">
                                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
                                             eirmod tempor invidunt ut labore et dolore magna aliquyam erat
                                         </p>
-                                        <a class="text18 font-[400] md:mt-[1.25vw] mt-[5.641025641025641vw] block"
+                                        <a class="md:text-[0.9375vw] md:leading-[1.51041666667vw] text-[3.58974358974vw] leading-[5.64102564103vw] PingAR-Light md:mt-[1.25vw] mt-[5.641025641025641vw] block"
                                             href="">
                                             Read more
                                         </a>
@@ -817,21 +875,21 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <img src="./assets/images/home/news/2.jpg" alt="news"
-                                        class="md:h-[unset] h-[68.71794871794872vw] w-full md:rounded-[1.04166666667vw] rounded-[3.846153846153846vw] ">
-                                    <div class=" text-[#3B3659] md:pt-[0.67708333333vw] pt-[4.102564102564103vw]">
-                                        <span class="text14">
+                                        class="md:h-[unset] h-[71.7948717949vw] w-full md:rounded-[1.04166666667vw] rounded-[3.846153846153846vw] ">
+                                    <div class=" text-[#3B3659] md:pt-[1.25vw] pt-[4.102564102564103vw]">
+                                        <span class="md:text-[0.72916666666vw] md:leading-[1.14583333333vw] text-[3.07692307692vw] leading-[4.87179487179vw] PingAR-Light">
                                             20 Feb 2023
                                         </span>
                                         <h5 class="md:text-[1.354166666666667vw] md:leading-[2.1875vw]
-        font-[500] text-[4.102564102564103vw]">
+         text-[4.102564102564103vw] leading-[6.66666666667vw] PingAR-Medium">
                                             Lorem ipsum dolor sit amet
                                         </h5>
                                         <p
-                                            class="text16 text-[#505050] font-[400] md:mt-[0.52083333333vw] mt-[2.22222222222vw]">
+                                            class="md:text-[0.8333333333333333vw] md:leading-[1.21527777778vw] text-[3.33333333333vw] leading-[5.55555555556vw] PingAR-Light text-[#505050]  md:mt-[0.67708333333vw] mt-[2.22222222222vw]">
                                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
                                             eirmod tempor invidunt ut labore et dolore magna aliquyam erat
                                         </p>
-                                        <a class="text18 font-[400] md:mt-[1.25vw] mt-[5.641025641025641vw] block"
+                                        <a class="md:text-[0.9375vw] md:leading-[1.51041666667vw] text-[3.58974358974vw] leading-[5.64102564103vw] PingAR-Light md:mt-[1.25vw] mt-[5.641025641025641vw] block"
                                             href="">
                                             Read more
                                         </a>
@@ -839,21 +897,21 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <img src="./assets/images/home/news/3.jpg" alt="news"
-                                        class="md:h-[unset] h-[68.71794871794872vw] w-full md:rounded-[1.04166666667vw] rounded-[3.846153846153846vw] ">
-                                    <div class=" text-[#3B3659] md:pt-[0.67708333333vw] pt-[4.102564102564103vw]">
-                                        <span class="text14">
+                                        class="md:h-[unset] h-[71.7948717949vw] w-full md:rounded-[1.04166666667vw] rounded-[3.846153846153846vw] ">
+                                    <div class=" text-[#3B3659] md:pt-[1.25vw] pt-[4.102564102564103vw]">
+                                        <span class="md:text-[0.72916666666vw] md:leading-[1.14583333333vw] text-[3.07692307692vw] leading-[4.87179487179vw] PingAR-Light">
                                             20 Feb 2023
                                         </span>
                                         <h5 class="md:text-[1.354166666666667vw] md:leading-[2.1875vw]
-        font-[500] text-[4.102564102564103vw]">
+         text-[4.102564102564103vw] leading-[6.66666666667vw] PingAR-Medium">
                                             Lorem ipsum dolor sit amet
                                         </h5>
                                         <p
-                                            class="text16 text-[#505050] font-[400] md:mt-[0.52083333333vw] mt-[2.22222222222vw]">
+                                            class="md:text-[0.8333333333333333vw] md:leading-[1.21527777778vw] text-[3.33333333333vw] leading-[5.55555555556vw] PingAR-Light text-[#505050]  md:mt-[0.67708333333vw] mt-[2.22222222222vw]">
                                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
                                             eirmod tempor invidunt ut labore et dolore magna aliquyam erat
                                         </p>
-                                        <a class="text18 font-[400] md:mt-[1.25vw] mt-[5.641025641025641vw] block"
+                                        <a class="md:text-[0.9375vw] md:leading-[1.51041666667vw] text-[3.58974358974vw] leading-[5.64102564103vw] PingAR-Light md:mt-[1.25vw] mt-[5.641025641025641vw] block"
                                             href="">
                                             Read more
                                         </a>
@@ -861,21 +919,21 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <img src="./assets/images/home/news/1.jpg" alt="news"
-                                        class="md:h-[unset] h-[68.71794871794872vw] w-full md:rounded-[1.04166666667vw] rounded-[3.846153846153846vw] ">
-                                    <div class=" text-[#3B3659] md:pt-[0.67708333333vw] pt-[4.102564102564103vw]">
-                                        <span class="text14">
+                                        class="md:h-[unset] h-[71.7948717949vw] w-full md:rounded-[1.04166666667vw] rounded-[3.846153846153846vw] ">
+                                    <div class=" text-[#3B3659] md:pt-[1.25vw] pt-[4.102564102564103vw]">
+                                        <span class="md:text-[0.72916666666vw] md:leading-[1.14583333333vw] text-[3.07692307692vw] leading-[4.87179487179vw] PingAR-Light">
                                             20 Feb 2023
                                         </span>
                                         <h5 class="md:text-[1.354166666666667vw] md:leading-[2.1875vw]
-        font-[500] text-[4.102564102564103vw]">
+         text-[4.102564102564103vw] leading-[6.66666666667vw] PingAR-Medium">
                                             Lorem ipsum dolor sit amet
                                         </h5>
                                         <p
-                                            class="text16 text-[#505050] font-[400] md:mt-[0.52083333333vw] mt-[2.22222222222vw]">
+                                            class="md:text-[0.8333333333333333vw] md:leading-[1.21527777778vw] text-[3.33333333333vw] leading-[5.55555555556vw] PingAR-Light text-[#505050]  md:mt-[0.67708333333vw] mt-[2.22222222222vw]">
                                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
                                             eirmod tempor invidunt ut labore et dolore magna aliquyam erat
                                         </p>
-                                        <a class="text18 font-[400] md:mt-[1.25vw] mt-[5.641025641025641vw] block"
+                                        <a class="md:text-[0.9375vw] md:leading-[1.51041666667vw] text-[3.58974358974vw] leading-[5.64102564103vw] PingAR-Light md:mt-[1.25vw] mt-[5.641025641025641vw] block"
                                             href="">
                                             Read more
                                         </a>
@@ -883,21 +941,21 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <img src="./assets/images/home/news/2.jpg" alt="news"
-                                        class="md:h-[unset] h-[68.71794871794872vw] w-full md:rounded-[1.04166666667vw] rounded-[3.846153846153846vw] ">
-                                    <div class=" text-[#3B3659] md:pt-[0.67708333333vw] pt-[4.102564102564103vw]">
-                                        <span class="text14">
+                                        class="md:h-[unset] h-[71.7948717949vw] w-full md:rounded-[1.04166666667vw] rounded-[3.846153846153846vw] ">
+                                    <div class=" text-[#3B3659] md:pt-[1.25vw] pt-[4.102564102564103vw]">
+                                        <span class="md:text-[0.72916666666vw] md:leading-[1.14583333333vw] text-[3.07692307692vw] leading-[4.87179487179vw] PingAR-Light">
                                             20 Feb 2023
                                         </span>
                                         <h5 class="md:text-[1.354166666666667vw] md:leading-[2.1875vw]
-        font-[500] text-[4.102564102564103vw]">
+         text-[4.102564102564103vw] leading-[6.66666666667vw] PingAR-Medium">
                                             Lorem ipsum dolor sit amet
                                         </h5>
                                         <p
-                                            class="text16 text-[#505050] font-[400] md:mt-[0.52083333333vw] mt-[2.22222222222vw]">
+                                            class="md:text-[0.8333333333333333vw] md:leading-[1.21527777778vw] text-[3.33333333333vw] leading-[5.55555555556vw] PingAR-Light text-[#505050]  md:mt-[0.67708333333vw] mt-[2.22222222222vw]">
                                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
                                             eirmod tempor invidunt ut labore et dolore magna aliquyam erat
                                         </p>
-                                        <a class="text18 font-[400] md:mt-[1.25vw] mt-[5.641025641025641vw] block"
+                                        <a class="md:text-[0.9375vw] md:leading-[1.51041666667vw] text-[3.58974358974vw] leading-[5.64102564103vw] PingAR-Light md:mt-[1.25vw] mt-[5.641025641025641vw] block"
                                             href="">
                                             Read more
                                         </a>
@@ -905,27 +963,27 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <img src="./assets/images/home/news/3.jpg" alt="news"
-                                        class="md:h-[unset] h-[68.71794871794872vw] w-full md:rounded-[1.04166666667vw] rounded-[3.846153846153846vw] ">
-                                    <div class=" text-[#3B3659] md:pt-[0.67708333333vw] pt-[4.102564102564103vw]">
-                                        <span class="text14">
+                                        class="md:h-[unset] h-[71.7948717949vw] w-full md:rounded-[1.04166666667vw] rounded-[3.846153846153846vw] ">
+                                    <div class=" text-[#3B3659] md:pt-[1.25vw] pt-[4.102564102564103vw]">
+                                        <span class="md:text-[0.72916666666vw] md:leading-[1.14583333333vw] text-[3.07692307692vw] leading-[4.87179487179vw] PingAR-Light">
                                             20 Feb 2023
                                         </span>
                                         <h5 class="md:text-[1.354166666666667vw] md:leading-[2.1875vw]
-        font-[500] text-[4.102564102564103vw]">
+         text-[4.102564102564103vw] leading-[6.66666666667vw] PingAR-Medium">
                                             Lorem ipsum dolor sit amet
                                         </h5>
                                         <p
-                                            class="text16 text-[#505050] font-[400] md:mt-[0.52083333333vw] mt-[2.22222222222vw]">
+                                            class="md:text-[0.8333333333333333vw] md:leading-[1.21527777778vw] text-[3.33333333333vw] leading-[5.55555555556vw] PingAR-Light text-[#505050]  md:mt-[0.67708333333vw] mt-[2.22222222222vw]">
                                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
                                             eirmod tempor invidunt ut labore et dolore magna aliquyam erat
                                         </p>
-                                        <a class="text18 font-[400] md:mt-[1.25vw] mt-[5.641025641025641vw] block"
+                                        <a class="md:text-[0.9375vw] md:leading-[1.51041666667vw] text-[3.58974358974vw] leading-[5.64102564103vw] PingAR-Light md:mt-[1.25vw] mt-[5.641025641025641vw] block"
                                             href="">
                                             Read more
                                         </a>
                                     </div>
                                 </div>
-
+                               
 
                             </div>
                             <div class="swiper-button-next">
@@ -939,7 +997,7 @@
                     </div>
                     <div class="Container1440">
                         <a href=""
-                            class="md:mt-[3.33333333333vw] mt-[2.307692307692308vw] mx-[auto] bg-[#8450FF]  md:text-[0.9375vw] md:leading-[1.45833333333vw] text-[3.07692307692vw] md:rounded-[5.20833333333vw] rounded-[7.948717948717949vw] md:w-[10.9895833333vw] w-[31.7948717949vw] md:py-[0.88541666666vw] py-[2.307692307692308vw] flex justify-center items-center hover:bg-[#3B3659] transition-all duration-300 font-[400] text-[#FFFFFF]">
+                            class=" PingAR-Light md:mt-[3.33333333333vw] mt-[2.307692307692308vw] mx-[auto] bg-[#8450FF]  md:text-[0.9375vw] md:leading-[1.45833333333vw] text-[3.07692307692vw] md:rounded-[5.20833333333vw] rounded-[7.948717948717949vw] md:w-[10.9895833333vw] w-[31.7948717949vw] md:py-[0.88541666666vw] py-[2.307692307692308vw] flex justify-center items-center hover:bg-[#3B3659] transition-all duration-300  text-[#FFFFFF]">
                             <span>
                                 View all news
                             </span>
@@ -947,22 +1005,22 @@
                     </div>
                 </div>
                 <div class="relative">
-                    <span class="healthCare__Overlay absolute w-full h-full bottom-0 left-0">
+                    <span class="healthCare__Overlay absolute w-full h-full md:h-[62.8125vw] bottom-0 left-0">
                     </span>
                     <div
-                        class="relative z-[2] Container1440 flex justify-between items-center py-[20.51282051282051vw] md:pt-[4.6875vw] md:pb-[10.7291666667vw] flex-col-reverse md:flex-row flex-wrap gap-y-[6.153846153846154vw]">
+                        class="relative z-[2] Container1440 flex justify-between items-center py-[20.51282051282051vw] md:pt-[4.6875vw] md:pb-[10.4166666667vw] flex-col-reverse md:flex-row flex-wrap gap-y-[6.153846153846154vw]">
 
                         <div class="md:w-[33.75vw]">
                             <h3 class="hidden md:block heading54 
-                        tracking-[unset] font-[400] text-[#3B3659] ">
+                        tracking-[unset] PingAR-Regular text-[#3B3659] ">
                                 Book your
-                                <span class="font-[700]">
+                                <span class="PingAR-Bold">
                                     appointment
                                 </span>
                                 today
                             </h3>
                             <p
-                                class="font-[300] md:font-[400] text22 text-[#707070] md:text-[#505050] md:w-[32.1875vw] md:mt-[0.83333333333vw] mt-[2.22222222222vw]">
+                                class=" md:text-[1.14583333333vw] md:leading-[1.71875vw] text-[3.58974358974vw] leading-[6.02564102564vw] PingAR-Light text-[#707070] md:text-[#505050] md:w-[32.1875vw] md:mt-[0.625vw] mt-[6.15384615385vw]">
                                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
                                 invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
                             </p>
@@ -978,7 +1036,7 @@
                                 </a>
                                 <a href="" class="anchor2">
                                     <div>
-                                        <span class="font-[400]">
+                                        <span class="">
                                             9200 11111
                                         </span>
                                         <img src="./assets/images/icons/phone.svg" alt="phone">
@@ -990,9 +1048,9 @@
                             <img src="./assets/images/home/appointment.jpg" alt="appointment" class="w-full">
                         </div>
                         <h3 class="md:hidden block heading54 
-                        tracking-[unset] font-[400] text-[#3B3659] ">
+                        tracking-[unset] PingAR-Regular text-[#3B3659] ">
                             Book your
-                            <span class="font-[700]">
+                            <span class="PingAR-Bold">
                                 appointment
                             </span>
                             today
@@ -1018,17 +1076,17 @@
                                 class="md:w-[15.1041666667vw] w-[48.46153846153846vw] mx-[auto] md:mx-[unset]">
                         </a>
                         <p
-                            class="md:text-[0.8333333333333333vw] md:leading-[1.45833333333vw] text-[3.076923076923077vw] font-[300] text-[#FFFFFF] md:mt-[1.66666666667vw] mt-[4.102564102564103vw]">
+                            class="md:text-[0.8333333333333333vw] md:leading-[1.42361111111vw] text-[3.076923076923077vw] leading-[5.38461538462vw] PingAR-Light text-[#FFFFFF] md:mt-[1.66666666667vw] mt-[4.102564102564103vw]">
                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
                             invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
                         </p>
                     </div>
                     <div class="text-[#E6E7E7]">
                         <h5
-                            class="md:text-[1.14583333333vw] md:leading-[1.66666666667vw] text-[3.846153846153846vw] font-[500] text-center md:text-start">
+                            class="PingAR-Medium md:text-[1.14583333333vw] md:leading-[1.66666666667vw] leading-[6.15384615385vw] text-[3.846153846153846vw]  text-center md:text-start">
                             Site map
                         </h5>
-                        <ul class="items-center md:items-start footerLinks md:text-[0.9375vw] md:leading-[1.45833333333vw] text-[3.076923076923077vw] font-[400] md:mt-[0.41666666666vw]  mt-[3.076923076923077vw]
+                        <ul class="items-center md:items-start footerLinks PingAR-Light md:text-[0.9375vw] md:leading-[1.45833333333vw] text-[3.076923076923077vw]  md:mt-[0.41666666666vw]  mt-[3.076923076923077vw]
                     flex flex-col md:gap-y-[0.26041666666vw] gap-y-[2.051282051282051vw]">
                             <li>
                                 <a href="">
@@ -1054,10 +1112,10 @@
                     </div>
                     <div class="text-[#E6E7E7]">
                         <h5
-                            class="md:text-[1.14583333333vw] md:leading-[1.66666666667vw] text-[3.846153846153846vw] font-[500] text-center md:text-start">
+                            class="PingAR-Medium md:text-[1.14583333333vw] md:leading-[1.66666666667vw] leading-[6.15384615385vw] text-[3.846153846153846vw]  text-center md:text-start">
                             Other links
                         </h5>
-                        <ul class="items-center md:items-start footerLinks md:text-[0.9375vw] md:leading-[1.45833333333vw] text-[3.076923076923077vw] font-[400] md:mt-[0.41666666666vw]
+                        <ul class="leading-[4.87179487179vw] items-center md:items-start footerLinks PingAR-Light md:text-[0.9375vw] md:leading-[1.45833333333vw] text-[3.076923076923077vw]  md:mt-[0.41666666666vw]
                     flex flex-col md:gap-y-[0.26041666666vw] gap-y-[2.051282051282051vw] mt-[3.076923076923077vw]">
                             <li>
                                 <a href="">
@@ -1082,12 +1140,12 @@
                         </ul>
                     </div>
                     <div>
-                        <h5 class="md:text-[1.14583333333vw] md:leading-[1.66666666667vw] text-[3.846153846153846vw] font-[500] text-[#E6E7E7]
+                        <h5 class="PingAR-Medium md:text-[1.14583333333vw] md:leading-[1.66666666667vw] leading-[6.15384615385vw] text-[3.846153846153846vw]  text-[#E6E7E7]
                         text-center md:text-start">
                             Follow us
                         </h5>
                         <ul
-                            class="footerLinks flex items-center md:gap-x-[1.25vw] md:mt-[0.41666666666vw] mt-[3.076923076923077vw] gap-x-[4.615384615384615vw]">
+                            class="leading-[4.87179487179vw] footerLinks flex items-center md:gap-x-[1.25vw] md:mt-[0.41666666666vw] mt-[3.076923076923077vw] gap-x-[4.615384615384615vw]">
                             <li>
                                 <a href="">
                                     <img src="./assets/images/icons/social-links/twitter.svg" alt="twitter"
@@ -1115,7 +1173,7 @@
         </div>
         <div class="bg-[#474166] md:py-[0.390625vw] py-[3.205128205128205vw]">
             <div
-                class="font-[400] Container1680 flex items-center justify-center md:justify-between text-[#E6E7E7] md:text-[0.8333333333333333vw] md:leading-[1.45833333333vw] text-[2.564102564102564vw] ">
+                class="PingAR-Light Container1680 flex items-center justify-center md:justify-between text-[#E6E7E7] md:text-[0.8333333333333333vw] md:leading-[1.45833333333vw] text-[2.564102564102564vw] ">
                 <span>meena. All Rights Reserved @ 2023</span>
                 <div>
                     <span>
@@ -1132,6 +1190,7 @@
     <script src="./assets/javascripts/jquery.min.js"></script>
     <script src="./assets/javascripts/global.js"></script>
     <script src="./assets/javascripts/home-swiper-sliders.js"></script>
+    <script src="./assets/javascripts/scrollprogress.js"></script>
 </body>
 
 </html>
