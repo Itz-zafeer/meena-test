@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/styles/output.css">
+    <title>Latest News</title>
+</head>
+
+<body>
+    <div class="circle-container">
+        <svg class="circle-progress svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+        <div class="">
+            <img src="./assets/images/icons/scrolltotop.svg" alt="" class="" />
+        </div>
+    </div>
+    <div class="cta">
+        <img src="./assets/images/icons/Icon feather-calendar.svg" alt="calendar"
+            class="md:w-[1.25vw] w-[5.12820512821vw]">
+        <div class="cta__Menu">
+            <span class="md:text-[0.9375vw] md:leading-[1.45833333333vw] PingAR-Light text-[#FFFFFF] leading-[5.64102564103vw]
+text-[3.58974358974vw]">
+                Book an Appointment
+            </span>
+            <div class="text-[#FFFFFF] flex items-center mt-[4.10256410256vw] 
+md:mt-[0.83333333333vw] flex-col md:gap-y-[0.625vw] 
+gap-y-[3.07692307692vw]">
+                <a href="" class="md:w-[6.35416666667vw] w-[31.2820512821vw]
+    md:rounded-[31.2820512821vw] rounded-[7.94871794872vw]
+    bg-[#845FFF] md:h-[1.66666666667vw] h-[8.20512820513vw]
+    flex items-center justify-center">
+                    <div class="flex md:gap-x-[0.41666666666vw] 
+        gap-x-[2.05128205128vw]">
+                        <span class="PingAR-Light md:text-[0.9375vw] text-[3.07692307692vw]">
+                            Get app
+                        </span>
+                        <img src="./assets/images/icons/get-app.svg" alt="get-app"
+                            class="w-[2.82051282051vw] md:w-[0.625vw]">
+                    </div>
+                </a>
+                <a href="" class="md:w-[6.35416666667vw] w-[31.2820512821vw]
+    md:rounded-[31.2820512821vw] rounded-[7.94871794872vw]
+    bg-[#845FFF] md:h-[1.66666666667vw] h-[8.20512820513vw]
+    flex items-center justify-center">
+                    <div class="flex md:gap-x-[0.41666666666vw] gap-x-[2.05128205128vw]">
+                        <span class="PingAR-Light md:text-[0.9375vw] text-[3.07692307692vw]">
+                            9200 11111
+                        </span>
+                        <img src="./assets/images/icons/phone.svg" alt="phone"
+                            class="w-[3.07692307692vw] md:w-[0.625vw]">
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </div>
+    <header class="text-[#3B3659] absolute left-0 w-full md:pt-[1.66666666667vw] pt-[8.33333333333vw] z-[3]">
+        <div class="relative z-[3] Container1680 flex items-center md:items-start justify-between">
+            <div>
+                <a href="">
+                    <img src="./assets/images/icons/header-logo-blue.svg" alt="logo"
+                        class="md:w-[12.7083333333vw] w-[31.7948717949vw]">
+                </a>
+            </div>
+            <div class="flex flex-col md:gap-y-[1.14583333333vw]">
+                <div class="flex items-center justify-end md:gap-x-[2.91666666667vw]">
+                    <ul
+                        class="hidden links PingAR-Medium md:text-[0.83333333333vw] md:leading-[1.45833333333vw] md:flex items-center md:gap-x-[2.08333333333vw] ">
+                        <li>
+                            <a href="">About meena</a>
+                            <img src="./assets/images/icons/links-style2.svg" alt="style">
+                        </li>
+                        <li>
+                            <a href="">Careers</a>
+                            <img src="./assets/images/icons/links-style.svg" alt="style">
+
+                    </ul>
+                    <div class="flex items-center gap-x-[5vw] md:gap-x-[0.625vw] text-[#3B3659]">
+                        <span onclick="handleLang(this)" class="hidden md:block enToggler  cursor-pointer">
+                            English
+                        </span>
+                        <div onclick="handleLang(this)" class="hidden md:block toggle cursor-pointer">
+                            <span> </span>
+                        </div>
+                        <span onclick="handleLang(this)" class="hidden md:block arToggler  cursor-pointer">
+                            العربية
+                        </span>
+                        <span onclick="handleLang(this)" class="md:hidden block arToggler  cursor-pointer">
+                            ع
+                        </span>
+                        <div class="menu md:hidden block w-[6.15384615385vw]">
+                            <span class="bg-[#3B3659] line-1 h-[0.8333333333333333vw]"></span>
+                            <span class="bg-[#3B3659] line-2 h-[0.8333333333333333vw]"></span>
+                            <span class="bg-[#3B3659] line-3 h-[0.8333333333333333vw]"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center md:gap-x-[2.08333333333vw]">
+                    <ul
+                        class=" links PingAR-Medium md:text-[1.04166666667vw] md:leading-[1.45833333333vw] flex items-center md:gap-x-[2.08333333333vw] ">
+                        <li>
+                            <a href="">Home</a>
+                            <img src="./assets/images/icons/links-style.svg" alt="style">
+                        </li>
+                        <li>
+                            <a href="">Services</a>
+                            <img src="./assets/images/icons/links-style.svg" alt="style">
+                        </li>
+                        <li>
+                            <a href="">Locations</a>
+                            <img src="./assets/images/icons/links-style.svg" alt="style">
+                        </li>
+                        <li>
+                            <a href="">Help & support</a>
+                            <img src="./assets/images/icons/links-style2.svg" alt="style">
+                        </li>
+                    </ul>
+                    <a href=""
+                        class="bg-[#845FFF] text-[#FFFFFF] PingAR-Light text18 md:rounded-[1.35416666667vw] md:w-[9.47916666667vw] md:py-[0.625vw] flex justify-center items-center hover:bg-[#3B3659] transition-all duration-300 ">
+                        <span>
+                            Download app
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div
+            class="block md:hidden sidebar bg-[#3B3659] bg-opacity-[0.9] w-full h-[100vh] absolute top-0 left-0 opacity-0">
+            <div class="w-[90%] mx-[auto] h-full flex flex-col pt-[54.8717948718vw] ">
+                <ul class="links w-full text-white  text-[4.87179487179vw] flex flex-col gap-y-[4.10256410256vw] ">
+                    <li>
+                        <a href="">Home</a>
+                        <img src="./assets/images/icons/links-style.svg" alt="style">
+                    </li>
+                    <li>
+                        <a href="">Services</a>
+                        <img src="./assets/images/icons/links-style.svg" alt="style">
+                    </li>
+                    <li>
+                        <a href="">Locations</a>
+                        <img src="./assets/images/icons/links-style.svg" alt="style">
+                    </li>
+                    <li>
+                        <a href="">Help & Support</a>
+                        <img src="./assets/images/icons/links-style2.svg" alt="style">
+                    </li>
+                    <li>
+                        <a href="">About Meena</a>
+                        <img src="./assets/images/icons/links-style2.svg" alt="style">
+                    </li>
+                    <li>
+                        <a href="">Meena Careers</a>
+                        <img src="./assets/images/icons/links-style2.svg" alt="style">
+                    </li>
+                </ul>
+                <a href=""
+                    class="mt-[12.3076923077vw] bg-[#845FFF] text-white text-[3.84615384615vw] rounded-[7.94871794872vw] w-full h-[10.5128205128vw] flex justify-center items-center ">
+                    <span>
+                        Download app
+                    </span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="Container1680 md:pt-[13.9583333333vw] pt-[40.7692307692vw]">
+                <div>
+                    <a href="./index.html">
+                        <img src="./assets/images/icons/home.svg" alt="home"
+                            class="md:w-[2.44791666667vw] w-[9.48717948718vw]">
+                    </a>
+
+                </div>
+                <div class="md:w-[37.5vw] md:mt-[0.625vw] mt-[3.07692307692vw]">
+                    <h1 class="heading54 PingAR-Regular tracking-[unset] text-[#3B3659] ">Latest
+                        <span class="PingAR-Bold">
+                            news
+                        </span>
+
+                    </h1>
+
+                </div>
+            </div>
+<div class="Container1440
+md:pt-[6.25vw] pt-[16.4102564103vw] md:pb-[10.4166666667vw] pb-[20.5128205128vw]">
+<div class="flex justify-between items-center flex-col md:flex-row 
+gap-y-[6.15384615385vw]">
+   <div class="md:w-[38.4895833333vw]">
+    <img src="./assets/images/latest-news/card-img.jpg" alt="card-img"
+    >
+   </div>
+   <div class="text-[#3B3659] md:w-[32.2916666667vw]">
+    <span class="md:text-[0.72916666666vw] md:leading-[1.14583333333vw]
+    text-[3.07692307692vw] leading-[4.87179487179vw] PingAR-Light">
+        20 Feb 2023
+    </span>
+    <h2 class="md:text-[1.875vw] md:leading-[2.39583333333vw]
+    text-[4.87179487179vw] leading-[7.4358974359vw] PingAR-Medium">
+        Lorem ipsum dolor sit amet, consetetur sadipsg elitr, sed diam nonumy eirmod
+    </h2>
+    <p class="text-[#505050] md:mt-[0.625vw] mt-[3.07692307692vw]
+    md:text-[0.9375vw] md:leading-[1.45833333333vw]
+    text-[3.58974358974vw] leading-[6.15384615385vw] PingAR-Light">
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
+    </p>
+    <a href="" class=" md:mt-[2.5vw] mt-[4.10256410256vw] block
+    md:text-[1.14583333333vw] md:leading-[1.82291666667vw]
+    text-[3.58974358974vw] leading-[5.64102564103vw] PingAR-Light">
+        Read more
+    </a>
+   </div>
+</div>
+<div class="md:pt-[2.5vw] pt-[8.20512820513vw]
+flex md:gap-[2.5vw] gap-[4.10256410256vw] flex-wrap md:pb-[3.33333333333vw]
+pb-[8.20512820513vw]">
+    <div class="md:w-[23.3333333333vw] w-[42.3076923077vw]">
+        <div class="w-full  md:rounded-[1.04166666667vw] rounded-[3.84615384615vw]
+        overflow-hidden">
+            <img src="./assets/images/latest-news/New folder/1.jpg"
+             alt="card-img" class="w-full md:h-[unset] h-[49.2307692308vw]
+             md:rounded-[1.04166666667vw] rounded-[3.84615384615vw]">
+           </div>
+           <div class="text-[#3B3659] md:w-[22.3958333333vw]
+           md:mt-[1.25104166667vw] mt-[3.07692307692vw]">
+            <span class="md:text-[0.72916666666vw] md:leading-[1.14583333333vw]
+            text-[3.07692307692vw] leading-[4.87179487179vw] PingAR-Light">
+                20 Feb 2023
+            </span>
+            <h4 class="md:text-[1.35416666667vw] md:leading-[2.1875vw]
+            text-[3.58974358974vw] leading-[5.89743589744vw] PingAR-Medium">
+            Lorem ipsum dolor sit amet
+            </h4>
+            <p class="text-[#505050] md:mt-[0.625vw] line_clamp3 mt-[2.05128205128vw]
+            md:text-[0.83333333333vw] md:leading-[1.21527777778vw]
+            text-[3.07692307692vw] leading-[5.38461538462vw] PingAR-Light">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat
+            </p>
+            <a href="" class=" md:mt-[1.25vw] mt-[4.10256410256vw] block
+            md:text-[0.9375vw] md:leading-[1.51041666667vw]
+            text-[3.58974358974vw] leading-[5.64102564103vw] PingAR-Light">
+                Read more
+            </a>
+           </div>
+    </div>
+    <div class="md:w-[23.3333333333vw] w-[42.3076923077vw]">
+        <div class="w-full  md:rounded-[1.04166666667vw] rounded-[3.84615384615vw]
+        overflow-hidden">
+            <img src="./assets/images/latest-news/New folder/2.jpg"
+             alt="card-img" class="w-full md:h-[unset] h-[49.2307692308vw]
+             md:rounded-[1.04166666667vw] rounded-[3.84615384615vw]">
+           </div>
+           <div class="text-[#3B3659] md:w-[22.3958333333vw]
+           md:mt-[1.25104166667vw] mt-[3.07692307692vw]">
+            <span class="md:text-[0.72916666666vw] md:leading-[1.14583333333vw]
+            text-[3.07692307692vw] leading-[4.87179487179vw] PingAR-Light">
+                20 Feb 2023
+            </span>
+            <h4 class="md:text-[1.35416666667vw] md:leading-[2.1875vw]
+            text-[3.58974358974vw] leading-[5.89743589744vw] PingAR-Medium">
+            Lorem ipsum dolor sit amet
+            </h4>
+            <p class="text-[#505050] md:mt-[0.625vw] line_clamp3 mt-[2.05128205128vw]
+            md:text-[0.83333333333vw] md:leading-[1.21527777778vw]
+            text-[3.07692307692vw] leading-[5.38461538462vw] PingAR-Light">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat
+            </p>
+            <a href="" class=" md:mt-[1.25vw] mt-[4.10256410256vw] block
+            md:text-[0.9375vw] md:leading-[1.51041666667vw]
+            text-[3.58974358974vw] leading-[5.64102564103vw] PingAR-Light">
+                Read more
+            </a>
+           </div>
+    </div>
+    <div class="md:w-[23.3333333333vw] w-[42.3076923077vw]">
+        <div class="w-full  md:rounded-[1.04166666667vw] rounded-[3.84615384615vw]
+        overflow-hidden">
+            <img src="./assets/images/latest-news/New folder/3.jpg"
+             alt="card-img" class="w-full md:h-[unset] h-[49.2307692308vw]
+             md:rounded-[1.04166666667vw] rounded-[3.84615384615vw]">
+           </div>
+           <div class="text-[#3B3659] md:w-[22.3958333333vw]
+           md:mt-[1.25104166667vw] mt-[3.07692307692vw]">
+            <span class="md:text-[0.72916666666vw] md:leading-[1.14583333333vw]
+            text-[3.07692307692vw] leading-[4.87179487179vw] PingAR-Light">
+                20 Feb 2023
+            </span>
+            <h4 class="md:text-[1.35416666667vw] md:leading-[2.1875vw]
+            text-[3.58974358974vw] leading-[5.89743589744vw] PingAR-Medium">
+            Lorem ipsum dolor sit amet
+            </h4>
+            <p class="text-[#505050] md:mt-[0.625vw] line_clamp3 mt-[2.05128205128vw]
+            md:text-[0.83333333333vw] md:leading-[1.21527777778vw]
+            text-[3.07692307692vw] leading-[5.38461538462vw] PingAR-Light">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat
+            </p>
+            <a href="" class=" md:mt-[1.25vw] mt-[4.10256410256vw] block
+            md:text-[0.9375vw] md:leading-[1.51041666667vw]
+            text-[3.58974358974vw] leading-[5.64102564103vw] PingAR-Light">
+                Read more
+            </a>
+           </div>
+    </div>
+    <div class="md:w-[23.3333333333vw] w-[42.3076923077vw]">
+        <div class="w-full  md:rounded-[1.04166666667vw] rounded-[3.84615384615vw]
+        overflow-hidden">
+            <img src="./assets/images/latest-news/New folder/1.jpg"
+             alt="card-img" class="w-full md:h-[unset] h-[49.2307692308vw]
+             md:rounded-[1.04166666667vw] rounded-[3.84615384615vw]">
+           </div>
+           <div class="text-[#3B3659] md:w-[22.3958333333vw]
+           md:mt-[1.25104166667vw] mt-[3.07692307692vw]">
+            <span class="md:text-[0.72916666666vw] md:leading-[1.14583333333vw]
+            text-[3.07692307692vw] leading-[4.87179487179vw] PingAR-Light">
+                20 Feb 2023
+            </span>
+            <h4 class="md:text-[1.35416666667vw] md:leading-[2.1875vw]
+            text-[3.58974358974vw] leading-[5.89743589744vw] PingAR-Medium">
+            Lorem ipsum dolor sit amet
+            </h4>
+            <p class="text-[#505050] md:mt-[0.625vw] line_clamp3 mt-[2.05128205128vw]
+            md:text-[0.83333333333vw] md:leading-[1.21527777778vw]
+            text-[3.07692307692vw] leading-[5.38461538462vw] PingAR-Light">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat
+            </p>
+            <a href="" class=" md:mt-[1.25vw] mt-[4.10256410256vw] block
+            md:text-[0.9375vw] md:leading-[1.51041666667vw]
+            text-[3.58974358974vw] leading-[5.64102564103vw] PingAR-Light">
+                Read more
+            </a>
+           </div>
+    </div>
+    <div class="md:w-[23.3333333333vw] w-[42.3076923077vw]">
+        <div class="w-full  md:rounded-[1.04166666667vw] rounded-[3.84615384615vw]
+        overflow-hidden">
+            <img src="./assets/images/latest-news/New folder/2.jpg"
+             alt="card-img" class="w-full md:h-[unset] h-[49.2307692308vw]
+             md:rounded-[1.04166666667vw] rounded-[3.84615384615vw]">
+           </div>
+           <div class="text-[#3B3659] md:w-[22.3958333333vw]
+           md:mt-[1.25104166667vw] mt-[3.07692307692vw]">
+            <span class="md:text-[0.72916666666vw] md:leading-[1.14583333333vw]
+            text-[3.07692307692vw] leading-[4.87179487179vw] PingAR-Light">
+                20 Feb 2023
+            </span>
+            <h4 class="md:text-[1.35416666667vw] md:leading-[2.1875vw]
+            text-[3.58974358974vw] leading-[5.89743589744vw] PingAR-Medium">
+            Lorem ipsum dolor sit amet
+            </h4>
+            <p class="text-[#505050] md:mt-[0.625vw] line_clamp3 mt-[2.05128205128vw]
+            md:text-[0.83333333333vw] md:leading-[1.21527777778vw]
+            text-[3.07692307692vw] leading-[5.38461538462vw] PingAR-Light">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat
+            </p>
+            <a href="" class=" md:mt-[1.25vw] mt-[4.10256410256vw] block
+            md:text-[0.9375vw] md:leading-[1.51041666667vw]
+            text-[3.58974358974vw] leading-[5.64102564103vw] PingAR-Light">
+                Read more
+            </a>
+           </div>
+    </div>
+    <div class="md:w-[23.3333333333vw] w-[42.3076923077vw]">
+        <div class="w-full  md:rounded-[1.04166666667vw] rounded-[3.84615384615vw]
+        overflow-hidden">
+            <img src="./assets/images/latest-news/New folder/3.jpg"
+             alt="card-img" class="w-full md:h-[unset] h-[49.2307692308vw]
+             md:rounded-[1.04166666667vw] rounded-[3.84615384615vw]">
+           </div>
+           <div class="text-[#3B3659] md:w-[22.3958333333vw]
+           md:mt-[1.25104166667vw] mt-[3.07692307692vw]">
+            <span class="md:text-[0.72916666666vw] md:leading-[1.14583333333vw]
+            text-[3.07692307692vw] leading-[4.87179487179vw] PingAR-Light">
+                20 Feb 2023
+            </span>
+            <h4 class="md:text-[1.35416666667vw] md:leading-[2.1875vw]
+            text-[3.58974358974vw] leading-[5.89743589744vw] PingAR-Medium">
+            Lorem ipsum dolor sit amet
+            </h4>
+            <p class="text-[#505050] md:mt-[0.625vw] line_clamp3 mt-[2.05128205128vw]
+            md:text-[0.83333333333vw] md:leading-[1.21527777778vw]
+            text-[3.07692307692vw] leading-[5.38461538462vw] PingAR-Light">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat
+            </p>
+            <a href="" class=" md:mt-[1.25vw] mt-[4.10256410256vw] block
+            md:text-[0.9375vw] md:leading-[1.51041666667vw]
+            text-[3.58974358974vw] leading-[5.64102564103vw] PingAR-Light">
+                Read more
+            </a>
+           </div>
+    </div>
+</div>
+<div class="flex justify-center Pagination
+md:gap-x-[0.83333333333vw] gap-x-[2.5641025641vw]">
+    <svg class="transform rotate-[90deg] md:w-[2.1875vw] w-[6.15384615385vw] transition-all duration-300" xmlns="http://www.w3.org/2000/svg" id="Group_109" data-name="Group 109" width="42" height="42" viewBox="0 0 42 42">
+        <circle id="Ellipse_1" data-name="Ellipse 1" cx="21" cy="21" r="21" fill="#3b3659" opacity="0.4"></circle>
+        <g id="Group_89665" data-name="Group 89665" transform="translate(12 15)">
+            <path id="Path_101469" data-name="Path 101469" d="M6.652,8.993c-.3.335-.669.745-.839.91-1.7,1.641-3.518,3.064-5.265,4.627a1.876,1.876,0,0,0-.287,2.285,1.2,1.2,0,0,0,1.877.35c1.774-1.587,3.612-3.033,5.341-4.7A11.377,11.377,0,0,0,9.155,10.6a3.552,3.552,0,0,0,.58-1.7,2.376,2.376,0,0,0-.443-1.435A16.08,16.08,0,0,0,7.834,5.947,29.126,29.126,0,0,1,3.523.7,1.2,1.2,0,0,0,1.656.292a1.868,1.868,0,0,0-.338,2.273A32.228,32.228,0,0,0,6.051,8.39c.068.075.337.342.6.6Z" transform="matrix(0.087, 0.996, -0.996, 0.087, 17.416, 0)" fill="#fff" fill-rule="evenodd"></path>
+        </g>
+    </svg>
+    <div class="flex md:gap-x-[0.83333333333vw] gap-x-[2.5641025641vw]
+    ">
+        <div class="number active relative md:w-[2.5vw] w-[7.17948717949vw]
+        flex justify-center items-center">
+            <span class="text-[#313D49] PingAR-Light
+            md:text-[1.2vw] text-[3.58974358974vw] md:h-[1.14583333333vw] h-[4.87179487179vw] block">1</span>
+            <img src="./assets/images/icons/pagination-circle.svg" alt="pagination-circle"
+            class="md:min-w-[3.28125vw] min-w-[9.23076923077vw] absolute
+            top-[50%] transform translate-y-[-50%] left-[50%]   translate-x-[-50%]
+            md:h-[1.45833333333vw] h-[4.10256410256vw] opacity-0">
+        </div>
+        <div class="number   relative md:w-[2.5vw] w-[7.17948717949vw]
+        flex justify-center items-center">
+            <span class="text-[#313D49] PingAR-Light
+            md:text-[1.2vw] text-[3.58974358974vw] md:h-[1.14583333333vw] h-[4.87179487179vw] block">2</span>
+            <img src="./assets/images/icons/pagination-circle.svg" alt="pagination-circle"
+            class="md:min-w-[3.28125vw] min-w-[9.23076923077vw] absolute
+            top-[50%] transform translate-y-[-50%] left-[50%]   translate-x-[-50%]
+            md:h-[1.45833333333vw] h-[4.10256410256vw] opacity-0">
+        </div>
+        <div class="number   relative md:w-[2.5vw] w-[7.17948717949vw]
+        flex justify-center items-center">
+            <span class="text-[#313D49] PingAR-Light
+            md:text-[1.2vw] text-[3.58974358974vw] md:h-[1.14583333333vw] h-[4.87179487179vw] block">3</span>
+            <img src="./assets/images/icons/pagination-circle.svg" alt="pagination-circle"
+            class="md:min-w-[3.28125vw] min-w-[9.23076923077vw] absolute
+            top-[50%] transform translate-y-[-50%] left-[50%]   translate-x-[-50%]
+            md:h-[1.45833333333vw] h-[4.10256410256vw] opacity-0">
+        </div>
+        <div class="number   relative md:w-[2.5vw] w-[7.17948717949vw]
+        flex justify-center items-center">
+            <span class="text-[#313D49] PingAR-Light
+            md:text-[1.2vw] text-[3.58974358974vw] md:h-[1.14583333333vw] h-[4.87179487179vw] block">4</span>
+            <img src="./assets/images/icons/pagination-circle.svg" alt="pagination-circle"
+            class="md:min-w-[3.28125vw] min-w-[9.23076923077vw] absolute
+            top-[50%] transform translate-y-[-50%] left-[50%]   translate-x-[-50%]
+            md:h-[1.45833333333vw] h-[4.10256410256vw] opacity-0">
+        </div>
+        <div class="number   relative md:w-[2.5vw] w-[7.17948717949vw]
+        flex justify-center items-center">
+            <span class="text-[#313D49] PingAR-Light
+            md:text-[1.2vw] text-[3.58974358974vw] md:h-[1.14583333333vw] h-[4.87179487179vw] block">5</span>
+            <img src="./assets/images/icons/pagination-circle.svg" alt="pagination-circle"
+            class="md:min-w-[3.28125vw] min-w-[9.23076923077vw] absolute
+            top-[50%] transform translate-y-[-50%] left-[50%]   translate-x-[-50%]
+            md:h-[1.45833333333vw] h-[4.10256410256vw] opacity-0">
+        </div>
+        <div class="number   relative md:w-[2.5vw] w-[7.17948717949vw]
+        flex justify-center items-center">
+            <span class="text-[#313D49] PingAR-Light
+            md:text-[1.2vw] text-[3.58974358974vw] md:h-[1.14583333333vw] h-[4.87179487179vw] block">6</span>
+            <img src="./assets/images/icons/pagination-circle.svg" alt="pagination-circle"
+            class="md:min-w-[3.28125vw] min-w-[9.23076923077vw] absolute
+            top-[50%] transform translate-y-[-50%] left-[50%]   translate-x-[-50%]
+            md:h-[1.45833333333vw] h-[4.10256410256vw] opacity-0">
+        </div>
+         
+    </div>
+    <svg class="active transform rotate-[-90deg] md:w-[2.1875vw] w-[6.15384615385vw] transition-all duration-300" xmlns="http://www.w3.org/2000/svg" id="Group_109" data-name="Group 109" width="42" height="42" viewBox="0 0 42 42">
+        <circle id="Ellipse_1" data-name="Ellipse 1" cx="21" cy="21" r="21" fill="#3b3659" opacity="0.4"></circle>
+        <g id="Group_89665" data-name="Group 89665" transform="translate(12 15)">
+            <path id="Path_101469" data-name="Path 101469" d="M6.652,8.993c-.3.335-.669.745-.839.91-1.7,1.641-3.518,3.064-5.265,4.627a1.876,1.876,0,0,0-.287,2.285,1.2,1.2,0,0,0,1.877.35c1.774-1.587,3.612-3.033,5.341-4.7A11.377,11.377,0,0,0,9.155,10.6a3.552,3.552,0,0,0,.58-1.7,2.376,2.376,0,0,0-.443-1.435A16.08,16.08,0,0,0,7.834,5.947,29.126,29.126,0,0,1,3.523.7,1.2,1.2,0,0,0,1.656.292a1.868,1.868,0,0,0-.338,2.273A32.228,32.228,0,0,0,6.051,8.39c.068.075.337.342.6.6Z" transform="matrix(0.087, 0.996, -0.996, 0.087, 17.416, 0)" fill="#fff" fill-rule="evenodd"></path>
+        </g>
+    </svg>
+</div>
+</div>
+        </section>
+    </main>
+    <footer>
+        <div class="bg-[#3B3659] relative">
+            <img src="./assets/images/icons/footerbg-design.png" alt="footerbg-design"
+                class="hidden md:block md:w-[18.6458333333vw] absolute right-0 top-0">
+            <img src="./assets/images/icons/footerbg-design-mob.svg" alt="footerbg-design"
+                class="md:hidden block w-[35.64102564102564vw] absolute right-0 bottom-0 ">
+            <div class="relative z-[2] Container1680 md:pt-[4.16666666667vw]
+        md:pb-[4.47916666667vw] py-[12.30769230769231vw]">
+                <div
+                    class="flex md:gap-x-[9.375vw] flex-wrap gap-y-[12.30769230769231vw] gap-x-[12.30769230769231vw] justify-center md:justify-normal">
+                    <div class="md:w-[22.9166666667vw] text-center md:text-start">
+                        <a href="">
+                            <img src="./assets/images/icons/footer-logo.svg" alt="logo"
+                                class="md:w-[15.1041666667vw] w-[48.46153846153846vw] mx-[auto] md:mx-[unset]">
+                        </a>
+                        <p
+                            class="md:text-[0.8333333333333333vw] md:leading-[1.42361111111vw] text-[3.076923076923077vw] leading-[5.38461538462vw] PingAR-Light text-[#FFFFFF] md:mt-[1.66666666667vw] mt-[4.102564102564103vw]">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                        </p>
+                    </div>
+                    <div class="text-[#E6E7E7]">
+                        <h5
+                            class="PingAR-Medium md:text-[1.14583333333vw] md:leading-[1.66666666667vw] leading-[6.15384615385vw] text-[3.846153846153846vw]  text-center md:text-start">
+                            Site map
+                        </h5>
+                        <ul class="items-center md:items-start footerLinks PingAR-Light md:text-[0.9375vw] md:leading-[1.45833333333vw] text-[3.076923076923077vw]  md:mt-[0.41666666666vw]  mt-[3.076923076923077vw]
+                    flex flex-col md:gap-y-[0.26041666666vw] gap-y-[2.051282051282051vw]">
+                            <li>
+                                <a href="">
+                                    <span>Home</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>Services</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>Locations</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>Help & support</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="text-[#E6E7E7]">
+                        <h5
+                            class="PingAR-Medium md:text-[1.14583333333vw] md:leading-[1.66666666667vw] leading-[6.15384615385vw] text-[3.846153846153846vw]  text-center md:text-start">
+                            Other links
+                        </h5>
+                        <ul class="leading-[4.87179487179vw] items-center md:items-start footerLinks PingAR-Light md:text-[0.9375vw] md:leading-[1.45833333333vw] text-[3.076923076923077vw]  md:mt-[0.41666666666vw]
+                    flex flex-col md:gap-y-[0.26041666666vw] gap-y-[2.051282051282051vw] mt-[3.076923076923077vw]">
+                            <li>
+                                <a href="">
+                                    <span>About meena</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>Careers</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>Terms & conditions</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>Privacy policy</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5 class="PingAR-Medium md:text-[1.14583333333vw] md:leading-[1.66666666667vw] leading-[6.15384615385vw] text-[3.846153846153846vw]  text-[#E6E7E7]
+                        text-center md:text-start">
+                            Follow us
+                        </h5>
+                        <ul
+                            class="leading-[4.87179487179vw] footerLinks flex items-center md:gap-x-[1.25vw] md:mt-[0.41666666666vw] mt-[3.076923076923077vw] gap-x-[4.615384615384615vw]">
+                            <li>
+                                <a href="">
+                                    <img src="./assets/images/icons/social-links/twitter.svg" alt="twitter"
+                                        class="md:w-[1.77083333333vw] w-[6.944444444444444vw]">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./assets/images/icons/social-links/linkedin.svg" alt="linkedin"
+                                        class="md:w-[1.77083333333vw] w-[6.944444444444444vw]">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <img src="./assets/images/icons/social-links/insta.svg" alt="instagram"
+                                        class="md:w-[1.77083333333vw] w-[6.944444444444444vw]">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="bg-[#474166] md:py-[0.390625vw] py-[3.205128205128205vw]">
+            <div
+                class="PingAR-Light Container1680 flex items-center justify-center md:justify-between text-[#E6E7E7] md:text-[0.8333333333333333vw] md:leading-[1.45833333333vw] text-[2.564102564102564vw] ">
+                <span>meena. All Rights Reserved @ 2023</span>
+                <div>
+                    <span>
+                        Developed By
+                    </span>
+                    <a href="">
+                        Brackets Technology
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/javascripts/swiper-bundle.min.js"></script>
+    <script src="./assets/javascripts/jquery.min.js"></script>
+    <script src="./assets/javascripts/global.js"></script>
+    <script src="./assets/javascripts/home-swiper-sliders.js"></script>
+    <script src="./assets/javascripts/scrollprogress.js"></script>
+</body>
+
+</html>

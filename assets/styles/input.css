@@ -156,7 +156,7 @@ body {
        }
        .faq{
         @apply  text-[#3B3659] flex flex-col bg-[#EBF0F7] md:rounded-[1.04166666667vw] rounded-[3.84615384615vw]
-        md:px-[2.08333333333vw] px-[4.10256410256vw] md:py-[2.161458333333333vw] py-[6.15384615385vw]
+        md:px-[2.08333333333vw] px-[4.10256410256vw] md:py-[2.161458333333333vw] py-[6.15384615385vw] cursor-pointer
        }
        .faq.active{
         @apply md:py-[1.69270833333vw] py-[6.28205128205vw]
@@ -287,6 +287,9 @@ display: none !important;
     opacity: 0.5;
   }
 
+  .cta .cta__Menu{
+    transform: scale(0);
+  } 
   .cta:hover .cta__Menu{
     transform: scale(1);
   } 
@@ -319,6 +322,18 @@ stroke: #3B3659;
 }
 .error span{
   display: block !important;
+}
+.Pagination svg{
+  transition: all .5s;
+  cursor: pointer;
+}
+.Pagination svg:hover #Ellipse_1,
+.Pagination svg.active #Ellipse_1{
+opacity: 1;
+}
+.Pagination .number.active img,
+.Pagination .number:hover img{
+opacity: 1;
 }
 
   /* SCROLL PROGREESS CSS      */
@@ -437,6 +452,12 @@ stroke: #3B3659;
       }
       .homeSwipers  .swiper-slide{
         width: 70.2564102564vw !important;
+    }
+    .line_clamp3{
+      -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
     }
 }
 
