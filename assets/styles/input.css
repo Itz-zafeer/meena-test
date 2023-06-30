@@ -136,14 +136,14 @@ body {
         @apply  w-full h-full absolute left-0 top-0  opacity-0 object-cover
       }
        .cta{
-        @apply  fixed md:bottom-[10.4166666667vw] bottom-[76.9230769231vw]
+        @apply  fixed md:bottom-[50px] bottom-[30px]
         md:right-[5.64102564103vw] right-[5.64102564103vw] bg-[#845FFF]
         md:rounded-[1.61458333333vw] rounded-[7.94871794872vw]
         md:w-[2.91666666667vw] md:h-[2.91666666667vw] w-[14.358974359vw] h-[14.358974359vw]
         flex items-center justify-center z-[999] cursor-pointer
        }
        .cta__Menu{
-        @apply  md:w-[10.3125vw] w-[50.7692307692vw]
+        @apply  md:p-[1vw] md:w-[12.3125vw] w-[50.7692307692vw]
         md:h-[8.4375vw] h-[41.5384615385vw] bg-[#3B3659]  transform scale-0
         md:rounded-[1.04166666667vw] rounded-[5.12820512821vw]
         absolute bottom-0 right-0 transition-all duration-500 origin-bottom-right
@@ -222,7 +222,21 @@ display: none !important;
   scrollbar-width: none;
   /* Firefox */
 }
-
+header{
+  transition: all .8s;
+}
+.stickyHeader{
+  position: fixed;
+  background-color: #3B3659;
+  padding: 1vw 0;
+}
+.stickyHeader .navTopList{
+  display: none;
+}
+.stickyHeader .navList{
+  position: relative;
+  top: .2vw;
+}
 .hideScroll::-webkit-scrollbar {
   display: none;
   /* Safari and Chrome */

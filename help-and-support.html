@@ -1,811 +1,1300 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="ltr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/styles/swiper-bundle.min.css">
-    <link rel="stylesheet" href="./assets/styles/output.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/styles/output.css" />
     <title>Help and Support</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="circle-container">
-        <svg class="circle-progress svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-        </svg>
-        <div class="">
-            <img src="./assets/images/icons/scrolltotop.svg" alt="" class="" />
-        </div>
+      <svg
+        class="circle-progress svg-content"
+        width="100%"
+        height="100%"
+        viewBox="-1 -1 102 102"
+      >
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
+      <div class="">
+        <img src="./assets/images/icons/scrolltotop.svg" alt="" class="" />
+      </div>
     </div>
     <div class="cta">
-        <img src="./assets/images/icons/Icon feather-calendar.svg" alt="calendar"
-            class="md:w-[1.25vw] w-[5.12820512821vw]">
-        <div class="cta__Menu">
-            <span class="md:text-[0.9375vw] md:leading-[1.45833333333vw] PingAR-Light text-[#FFFFFF] leading-[5.64102564103vw]
-text-[3.58974358974vw]">
-                Book an Appointment
-            </span>
-            <div class="text-[#FFFFFF] flex items-center mt-[4.10256410256vw] 
-md:mt-[0.83333333333vw] flex-col md:gap-y-[0.625vw] 
-gap-y-[3.07692307692vw]">
-                <a href="" class="md:w-[6.35416666667vw] w-[31.2820512821vw]
-    md:rounded-[31.2820512821vw] rounded-[7.94871794872vw]
-    bg-[#845FFF] md:h-[1.66666666667vw] h-[8.20512820513vw]
-    flex items-center justify-center">
-                    <div class="flex md:gap-x-[0.41666666666vw] 
-        gap-x-[2.05128205128vw]">
-                        <span class="PingAR-Light md:text-[0.9375vw] text-[3.07692307692vw]">
-                            Get app
-                        </span>
-                        <img src="./assets/images/icons/get-app.svg" alt="get-app"
-                            class="w-[2.82051282051vw] md:w-[0.625vw]">
-                    </div>
-                </a>
-                <a href="" class="md:w-[6.35416666667vw] w-[31.2820512821vw]
-    md:rounded-[31.2820512821vw] rounded-[7.94871794872vw]
-    bg-[#845FFF] md:h-[1.66666666667vw] h-[8.20512820513vw]
-    flex items-center justify-center">
-                    <div class="flex md:gap-x-[0.41666666666vw] gap-x-[2.05128205128vw]">
-                        <span class="PingAR-Light md:text-[0.9375vw] text-[3.07692307692vw]">
-                            9200 11111
-                        </span>
-                        <img src="./assets/images/icons/phone.svg" alt="phone"
-                            class="w-[3.07692307692vw] md:w-[0.625vw]">
-                    </div>
-                </a>
-
-            </div>
-        </div>
-    </div>
-    <header class="text-[#3B3659] absolute left-0 w-full md:pt-[1.66666666667vw] pt-[8.33333333333vw] z-[3]">
-        <div class="relative z-[3] Container1680 flex items-center md:items-start justify-between">
-            <div>
-                <a href="">
-                    <img src="./assets/images/icons/header-logo-blue.svg" alt="logo"
-                        class="md:w-[12.7083333333vw] w-[31.7948717949vw]">
-                </a>
-            </div>
-            <div class="flex flex-col md:gap-y-[1.14583333333vw]">
-                <div class="flex items-center justify-end md:gap-x-[2.91666666667vw]">
-                    <ul
-                        class="hidden links PingAR-Medium md:text-[0.83333333333vw] md:leading-[1.45833333333vw] md:flex items-center md:gap-x-[2.08333333333vw] ">
-                        <li>
-                            <a href="">About meena</a>
-                            <img src="./assets/images/icons/links-style2.svg" alt="style">
-                        </li>
-                        <li>
-                            <a href="">Careers</a>
-                            <img src="./assets/images/icons/links-style.svg" alt="style">
-
-                    </ul>
-                    <div class="flex items-center gap-x-[5vw] md:gap-x-[0.625vw] text-[#3B3659]">
-                        <span onclick="handleLang(this)" class="hidden md:block enToggler  cursor-pointer">
-                            English
-                        </span>
-                        <div onclick="handleLang(this)" class="hidden md:block toggle cursor-pointer">
-                            <span> </span>
-                        </div>
-                        <span onclick="handleLang(this)" class="hidden md:block arToggler  cursor-pointer">
-                            العربية
-                        </span>
-                        <span onclick="handleLang(this)" class="md:hidden block arToggler  cursor-pointer">
-                            ع
-                        </span>
-                        <div class="menu md:hidden block w-[6.15384615385vw]">
-                            <span class="bg-[#3B3659] line-1 h-[0.8333333333333333vw]"></span>
-                            <span class="bg-[#3B3659] line-2 h-[0.8333333333333333vw]"></span>
-                            <span class="bg-[#3B3659] line-3 h-[0.8333333333333333vw]"></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="hidden md:flex items-center md:gap-x-[2.08333333333vw]">
-                    <ul
-                        class=" links PingAR-Medium md:text-[1.04166666667vw] md:leading-[1.45833333333vw] flex items-center md:gap-x-[2.08333333333vw] ">
-                        <li>
-                            <a href="">Home</a>
-                            <img src="./assets/images/icons/links-style.svg" alt="style">
-                        </li>
-                        <li>
-                            <a href="">Services</a>
-                            <img src="./assets/images/icons/links-style.svg" alt="style">
-                        </li>
-                        <li>
-                            <a href="">Locations</a>
-                            <img src="./assets/images/icons/links-style.svg" alt="style">
-                        </li>
-                        <li>
-                            <a href="">Help & support</a>
-                            <img src="./assets/images/icons/links-style2.svg" alt="style" class="active">
-                        </li>
-                    </ul>
-                    <a href=""
-                        class="bg-[#845FFF] text-[#FFFFFF] PingAR-Light text18 md:rounded-[1.35416666667vw] md:w-[9.47916666667vw] md:py-[0.625vw] flex justify-center items-center hover:bg-[#3B3659] transition-all duration-300 ">
-                        <span>
-                            Download app
-                        </span>
-                    </a>
-                </div>
-            </div>
-        </div>
+      <img
+        src="./assets/images/icons/Icon feather-calendar.svg"
+        alt="calendar"
+        class="md:w-[1.25vw] w-[5.12820512821vw]"
+      />
+      <div class="cta__Menu">
+        <span
+          class="md:text-[0.9375vw] md:leading-[1.45833333333vw] PingAR-Light text-[#FFFFFF] leading-[5.64102564103vw] text-[3.58974358974vw]"
+        >
+          Book an Appointment
+        </span>
         <div
-            class="block md:hidden sidebar bg-[#3B3659] bg-opacity-[0.9] w-full h-[100vh] absolute top-0 left-0 opacity-0">
-            <div class="w-[90%] mx-[auto] h-full flex flex-col pt-[54.8717948718vw] ">
-                <ul class="links w-full text-white  text-[4.87179487179vw] flex flex-col gap-y-[4.10256410256vw] ">
-                    <li>
-                        <a href="">Home</a>
-                        <img src="./assets/images/icons/links-style.svg" alt="style">
-                    </li>
-                    <li>
-                        <a href="">Services</a>
-                        <img src="./assets/images/icons/links-style.svg" alt="style">
-                    </li>
-                    <li>
-                        <a href="">Locations</a>
-                        <img src="./assets/images/icons/links-style.svg" alt="style">
-                    </li>
-                    <li>
-                        <a href="">Help & Support</a>
-                        <img src="./assets/images/icons/links-style2.svg" alt="style" class="active">
-                    </li>
-                    <li>
-                        <a href="">About Meena</a>
-                        <img src="./assets/images/icons/links-style2.svg" alt="style">
-                    </li>
-                    <li>
-                        <a href="">Meena Careers</a>
-                        <img src="./assets/images/icons/links-style2.svg" alt="style">
-                    </li>
-                </ul>
-                <a href=""
-                    class="mt-[12.3076923077vw] bg-[#845FFF] text-white text-[3.84615384615vw] rounded-[7.94871794872vw] w-full h-[10.5128205128vw] flex justify-center items-center ">
-                    <span>
-                        Download app
-                    </span>
-                </a>
+          class="text-[#FFFFFF] flex items-center mt-[4.10256410256vw] md:mt-[0.83333333333vw] flex-col md:gap-y-[0.625vw] gap-y-[3.07692307692vw]"
+        >
+          <a
+            href=""
+            class="md:w-[6.35416666667vw] w-[31.2820512821vw] md:rounded-[31.2820512821vw] rounded-[7.94871794872vw] bg-[#845FFF] md:h-[1.66666666667vw] h-[8.20512820513vw] flex items-center justify-center"
+          >
+            <div
+              class="flex md:gap-x-[0.41666666666vw] gap-x-[2.05128205128vw]"
+            >
+              <span
+                class="PingAR-Light md:text-[0.9375vw] text-[3.07692307692vw]"
+              >
+                Get app
+              </span>
+              <img
+                src="./assets/images/icons/get-app.svg"
+                alt="get-app"
+                class="w-[2.82051282051vw] md:w-[0.625vw]"
+              />
             </div>
+          </a>
+          <a
+            href=""
+            class="md:w-[6.35416666667vw] w-[31.2820512821vw] md:rounded-[31.2820512821vw] rounded-[7.94871794872vw] bg-[#845FFF] md:h-[1.66666666667vw] h-[8.20512820513vw] flex items-center justify-center"
+          >
+            <div
+              class="flex md:gap-x-[0.41666666666vw] gap-x-[2.05128205128vw]"
+            >
+              <span
+                class="PingAR-Light md:text-[0.9375vw] text-[3.07692307692vw]"
+              >
+                9200 11111
+              </span>
+              <img
+                src="./assets/images/icons/phone.svg"
+                alt="phone"
+                class="w-[3.07692307692vw] md:w-[0.625vw]"
+              />
+            </div>
+          </a>
         </div>
+      </div>
+    </div>
+    <header
+      class="text-[#FFFFFF] absolute left-0 w-full md:pt-[1.66666666667vw] pt-[8.33333333333vw] z-[3]"
+    >
+      <div
+        class="relative z-[3] Container1680 flex items-center md:items-start justify-between"
+      >
+        <div>
+          <a href="/">
+            <img
+              src="./assets/images/icons/header-logo.svg"
+              alt="logo"
+              class="md:w-[12.7083333333vw] w-[31.7948717949vw]"
+            />
+          </a>
+        </div>
+        <div class="flex flex-col md:gap-y-[1.14583333333vw]">
+          <div
+            class="flex navTopList items-center justify-end md:gap-x-[2.91666666667vw]"
+          >
+            <ul
+              class="hidden links PingAR-Light md:text-[0.9375vw] md:leading-[1.45833333333vw] md:flex items-center md:gap-x-[2.08333333333vw]"
+            >
+              <li>
+                <a href="./about-app.html">About meena</a>
+                <img src="./assets/images/icons/links-style2.svg" alt="style" />
+              </li>
+              <li>
+                <a href="./careers.html">Careers</a>
+                <img src="./assets/images/icons/links-style.svg" alt="style" />
+              </li>
+            </ul>
+
+            <div
+              class="flex items-center gap-x-[5vw] md:gap-x-[0.625vw] text-white"
+            >
+              <span
+                onclick="handleLang(this)"
+                class="hidden md:block enToggler cursor-pointer"
+              >
+                English
+              </span>
+              <div
+                onclick="handleLang(this)"
+                class="hidden md:block toggle cursor-pointer"
+              >
+                <span> </span>
+              </div>
+              <span
+                onclick="handleLang(this)"
+                class="hidden md:block arToggler cursor-pointer"
+              >
+                العربية
+              </span>
+              <span
+                onclick="handleLang(this)"
+                class="md:hidden block arToggler cursor-pointer"
+              >
+                ع
+              </span>
+              <div class="menu md:hidden block w-[6.15384615385vw]">
+                <span
+                  class="bg-[#FFFFFF] line-1 h-[0.8333333333333333vw]"
+                ></span>
+                <span
+                  class="bg-[#FFFFFF] line-2 h-[0.8333333333333333vw]"
+                ></span>
+                <span
+                  class="bg-[#FFFFFF] line-3 h-[0.8333333333333333vw]"
+                ></span>
+              </div>
+            </div>
+          </div>
+          <div class="hidden md:flex items-center md:gap-x-[2.08333333333vw]">
+            <ul
+              class="links navList PingAR-Light md:text-[1.04166666667vw] md:leading-[1.45833333333vw] flex items-center md:gap-x-[2.08333333333vw]"
+            >
+              <li>
+                <a href="./index.html">Home</a>
+                <img
+                  src="./assets/images/icons/links-style.svg"
+                  alt="style"
+                  class="active"
+                />
+              </li>
+              <li>
+                <a href="./services.html">Services</a>
+                <img src="./assets/images/icons/links-style.svg" alt="style" />
+              </li>
+              <li>
+                <a href="./locations.html">Locations</a>
+                <img src="./assets/images/icons/links-style.svg" alt="style" />
+              </li>
+              <li>
+                <a href="./help-and-support.html">Help & support</a>
+                <img src="./assets/images/icons/links-style2.svg" alt="style" />
+              </li>
+            </ul>
+            <a
+              href="#"
+              class="bg-[#845FFF] text-[#FFFFFF] PingAR-Light text18 md:rounded-[1.35416666667vw] md:w-[9.47916666667vw] md:py-[0.625vw] flex justify-center items-center hover:bg-[#3B3659] transition-all duration-300"
+            >
+              <span class="relative top-[0.15vw]"> Download app </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="block md:hidden sidebar bg-[#3B3659] bg-opacity-[0.9] w-full h-[100vh] absolute top-0 left-0 opacity-0"
+      >
+        <div
+          class="w-[90%] mx-[auto] h-full flex flex-col pt-[54.8717948718vw]"
+        >
+          <ul
+            class="links w-full text-white text-[4.87179487179vw] flex flex-col gap-y-[4.10256410256vw]"
+          >
+            <li>
+              <a href="./index.html">Home</a>
+              <img
+                src="./assets/images/icons/links-style.svg"
+                alt="style"
+                class="active"
+              />
+            </li>
+            <li>
+              <a href="./services.html">Services</a>
+              <img src="./assets/images/icons/links-style.svg" alt="style" />
+            </li>
+            <li>
+              <a href="./locations.html">Locations</a>
+              <img src="./assets/images/icons/links-style.svg" alt="style" />
+            </li>
+            <li>
+              <a href="./help-and-support.html">Help & Support</a>
+              <img src="./assets/images/icons/links-style2.svg" alt="style" />
+            </li>
+            <li>
+              <a href="./about-app.html">About Meena</a>
+              <img src="./assets/images/icons/links-style2.svg" alt="style" />
+            </li>
+            <li>
+              <a href="./careers.html">Meena Careers</a>
+              <img src="./assets/images/icons/links-style2.svg" alt="style" />
+            </li>
+          </ul>
+          <a
+            href="#"
+            class="mt-[12.3076923077vw] bg-[#845FFF] text-white text-[3.84615384615vw] rounded-[7.94871794872vw] w-full h-[10.5128205128vw] flex justify-center items-center"
+          >
+            <span> Download app </span>
+          </a>
+        </div>
+      </div>
     </header>
     <main>
-        <section>
-            <div class="Container1680 md:pt-[13.9583333333vw] pt-[40.7692307692vw]">
-                <div>
-                    <a href="./index.html">
-                        <img src="./assets/images/icons/home.svg" alt="home"
-                            class="md:w-[2.44791666667vw] w-[9.48717948718vw]">
-                    </a>
-
+      <section>
+        <div class="Container1680 md:pt-[13.9583333333vw] pt-[40.7692307692vw]">
+          <div>
+            <a href="./index.html">
+              <img
+                src="./assets/images/icons/home.svg"
+                alt="home"
+                class="md:w-[2.44791666667vw] w-[9.48717948718vw]"
+              />
+            </a>
+          </div>
+          <div class="md:w-[37.5vw] md:mt-[0.625vw] mt-[3.07692307692vw]">
+            <h1 class="heading54 tracking-[unset] text-[#3B3659]">
+              Help & support
+            </h1>
+            <p
+              class="md:text-[1.14583333333vw] md:leading-[1.74479166667vw] text-[3.58974358974vw] leading-[5.9829059829vw] PingAR-Light text-[#707070] md:text-[#505050] md:mt-[0.625vw] mt-[1.02564102564vw]"
+            >
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna
+            </p>
+          </div>
+        </div>
+        <div class="md:pt-[6.25vw] pt-[16.4102564103vw]">
+          <h2
+            class="Container1440 heading54 PingAR-Regular tracking-[unset] text-[#3B3659]"
+          >
+            Frequently Asked <br />
+            <span class="PingAR-Bold"> Questions </span>
+          </h2>
+          <div
+            class="relative md:pt-[2.5vw] pt-[6.15384615385vw] md:pb-[10.41666666666667vw] pb-[20.5128205128vw]"
+          >
+            <img
+              src="./assets/images/help-and-support/bgDesign.png"
+              alt="bgDesign"
+              class="hidden md:block absolute md:top-[-0.625vw] right-0 w-full h-full"
+            />
+            <img
+              src="./assets/images/help-and-support/bgDesign-mob.png"
+              alt="bgDesign"
+              class="md:hidden block absolute bottom-[-2.05128205128vw] right-0 w-full h-[56.1538461538vw]"
+            />
+            <div
+              class="relative z-[2] flex justify-center flex-col md:flex-row md:gap-x-[7.29166666667vw] gap-y-[4.10256410256vw]"
+            >
+              <div
+                class="ml-[5.64102564103vw] md:ml-[unset] md:w-[15.46875vw] flex flex-row md:flex-col md:gap-y-[1.66666666667vw] gap-x-[3.07692307692vw] overflow-scroll md:overflow-auto hideScroll"
+              >
+                <div class="question active">
+                  <h5
+                    class="md:block hidden PingAR-Medium md:text-[1.14583333333vw] text-[#D6D1ED] md:leading-[1.5625vw] text-[4.10256410256vw]"
+                  >
+                    General info
+                  </h5>
+                  <h5
+                    class="block md:hidden PingAR-Light md:text-[1.14583333333vw] text-[#707070] md:leading-[1.5625vw] text-[4.10256410256vw]"
+                  >
+                    General info
+                  </h5>
+                  <svg
+                    class="md:block hidden w-[3.28125vw]"
+                    id="Group_89728"
+                    data-name="Group 89728"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="63.425"
+                    height="17.944"
+                    viewBox="0 0 63.425 17.944"
+                  >
+                    <defs>
+                      <clipPath id="clip-path">
+                        <rect
+                          id="Rectangle_69529"
+                          data-name="Rectangle 69529"
+                          width="63.425"
+                          height="17.944"
+                          fill="none"
+                        />
+                      </clipPath>
+                    </defs>
+                    <g
+                      id="Group_89727"
+                      data-name="Group 89727"
+                      clip-path="url(#clip-path)"
+                    >
+                      <path
+                        id="Path_101507"
+                        data-name="Path 101507"
+                        d="M61.144,34.092A156.336,156.336,0,0,0,4.1,32.445q-1.6.254-3.157.536"
+                        transform="translate(-0.775 -24.011)"
+                        fill="none"
+                        stroke="#D6D1ED"
+                        stroke-width="3"
+                      />
+                      <path
+                        id="Path_101508"
+                        data-name="Path 101508"
+                        d="M287.344,0l-1.587,1.114,5.495,7.811-8.193,4.91,1,1.662,9.977-5.982Z"
+                        transform="translate(-231.609 1.447)"
+                        fill="#D6D1ED"
+                        stroke="#D6D1ED"
+                        stroke-width="1"
+                      />
+                    </g>
+                  </svg>
                 </div>
-                <div class="md:w-[37.5vw] md:mt-[0.625vw] mt-[3.07692307692vw]">
-                    <h1 class="heading54 tracking-[unset] text-[#3B3659] ">Help & support</h1>
-                    <p
-                        class="md:text-[1.14583333333vw] md:leading-[1.74479166667vw] text-[3.58974358974vw] leading-[5.9829059829vw] PingAR-Light text-[#707070] md:text-[#505050] md:mt-[0.625vw] mt-[1.02564102564vw]">
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-                        ut labore et dolore magna
-                    </p>
+                <div class="question min-w-[37.4358974359vw]">
+                  <h5
+                    class="md:block hidden PingAR-Medium md:text-[1.14583333333vw] text-[#D6D1ED] md:leading-[1.5625vw] text-[4.10256410256vw]"
+                  >
+                    Prescriptions
+                  </h5>
+                  <h5
+                    class="block md:hidden PingAR-Light md:text-[1.14583333333vw] text-[#707070] md:leading-[1.5625vw] text-[4.10256410256vw]"
+                  >
+                    Prescriptions
+                  </h5>
+                  <svg
+                    class="md:block hidden w-[3.28125vw]"
+                    id="Group_89728"
+                    data-name="Group 89728"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="63.425"
+                    height="17.944"
+                    viewBox="0 0 63.425 17.944"
+                  >
+                    <defs>
+                      <clipPath id="clip-path">
+                        <rect
+                          id="Rectangle_69529"
+                          data-name="Rectangle 69529"
+                          width="63.425"
+                          height="17.944"
+                          fill="none"
+                        />
+                      </clipPath>
+                    </defs>
+                    <g
+                      id="Group_89727"
+                      data-name="Group 89727"
+                      clip-path="url(#clip-path)"
+                    >
+                      <path
+                        id="Path_101507"
+                        data-name="Path 101507"
+                        d="M61.144,34.092A156.336,156.336,0,0,0,4.1,32.445q-1.6.254-3.157.536"
+                        transform="translate(-0.775 -24.011)"
+                        fill="none"
+                        stroke="#D6D1ED"
+                        stroke-width="3"
+                      />
+                      <path
+                        id="Path_101508"
+                        data-name="Path 101508"
+                        d="M287.344,0l-1.587,1.114,5.495,7.811-8.193,4.91,1,1.662,9.977-5.982Z"
+                        transform="translate(-231.609 1.447)"
+                        fill="#D6D1ED"
+                        stroke="#D6D1ED"
+                        stroke-width="1"
+                      />
+                    </g>
+                  </svg>
                 </div>
-            </div>
-            <div class=" md:pt-[6.25vw] pt-[16.4102564103vw]">
-                <h2 class="Container1440 heading54 PingAR-Regular tracking-[unset]  text-[#3B3659] ">
-                    Frequently Asked <br>
-                    <span class="PingAR-Bold">
-                        Questions
-                    </span>
-
-                </h2>
-              <div class="relative md:pt-[2.5vw] pt-[6.15384615385vw] md:pb-[10.41666666666667vw] pb-[20.5128205128vw]">
-                <img src="./assets/images/help-and-support/bgDesign.png" alt="bgDesign"
-                class="hidden md:block absolute md:top-[-0.625vw] right-0 w-full  h-full">
-                <img src="./assets/images/help-and-support/bgDesign-mob.png" alt="bgDesign"
-                class="md:hidden block absolute  bottom-[-2.05128205128vw] right-0 w-full  h-[56.1538461538vw]">
-                <div class="relative z-[2] flex justify-center flex-col md:flex-row md:gap-x-[7.29166666667vw] gap-y-[4.10256410256vw]
-                ">
-                    <div
-                        class="ml-[5.64102564103vw] md:ml-[unset] md:w-[15.46875vw] flex flex-row md:flex-col md:gap-y-[1.66666666667vw] gap-x-[3.07692307692vw] overflow-scroll md:overflow-auto hideScroll">
-                        <div class="question active">
-                            <h5
-                                class="md:block hidden PingAR-Medium md:text-[1.14583333333vw] text-[#D6D1ED] md:leading-[1.5625vw] text-[4.10256410256vw]">
-                                General info
-                            </h5>
-                            <h5
-                                class="block md:hidden PingAR-Light md:text-[1.14583333333vw] text-[#707070] md:leading-[1.5625vw] text-[4.10256410256vw]">
-                                General info
-                            </h5>
-                            <svg class="md:block hidden w-[3.28125vw]" id="Group_89728" data-name="Group 89728"
-                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                width="63.425" height="17.944" viewBox="0 0 63.425 17.944">
-                                <defs>
-                                    <clipPath id="clip-path">
-                                        <rect id="Rectangle_69529" data-name="Rectangle 69529" width="63.425"
-                                            height="17.944" fill="none" />
-                                    </clipPath>
-                                </defs>
-                                <g id="Group_89727" data-name="Group 89727" clip-path="url(#clip-path)">
-                                    <path id="Path_101507" data-name="Path 101507"
-                                        d="M61.144,34.092A156.336,156.336,0,0,0,4.1,32.445q-1.6.254-3.157.536"
-                                        transform="translate(-0.775 -24.011)" fill="none" stroke="#D6D1ED"
-                                        stroke-width="3" />
-                                    <path id="Path_101508" data-name="Path 101508"
-                                        d="M287.344,0l-1.587,1.114,5.495,7.811-8.193,4.91,1,1.662,9.977-5.982Z"
-                                        transform="translate(-231.609 1.447)" fill="#D6D1ED" stroke="#D6D1ED"
-                                        stroke-width="1" />
-                                </g>
-                            </svg>
-                        </div>
-                        <div class="question min-w-[37.4358974359vw]">
-                            <h5
-                                class="md:block hidden PingAR-Medium md:text-[1.14583333333vw] text-[#D6D1ED] md:leading-[1.5625vw] text-[4.10256410256vw]">
-                                Prescriptions
-                            </h5>
-                            <h5
-                                class="block md:hidden PingAR-Light md:text-[1.14583333333vw] text-[#707070] md:leading-[1.5625vw] text-[4.10256410256vw]">
-                                Prescriptions
-                            </h5>
-                            <svg class="md:block hidden w-[3.28125vw]" id="Group_89728" data-name="Group 89728"
-                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                width="63.425" height="17.944" viewBox="0 0 63.425 17.944">
-                                <defs>
-                                    <clipPath id="clip-path">
-                                        <rect id="Rectangle_69529" data-name="Rectangle 69529" width="63.425"
-                                            height="17.944" fill="none" />
-                                    </clipPath>
-                                </defs>
-                                <g id="Group_89727" data-name="Group 89727" clip-path="url(#clip-path)">
-                                    <path id="Path_101507" data-name="Path 101507"
-                                        d="M61.144,34.092A156.336,156.336,0,0,0,4.1,32.445q-1.6.254-3.157.536"
-                                        transform="translate(-0.775 -24.011)" fill="none" stroke="#D6D1ED"
-                                        stroke-width="3" />
-                                    <path id="Path_101508" data-name="Path 101508"
-                                        d="M287.344,0l-1.587,1.114,5.495,7.811-8.193,4.91,1,1.662,9.977-5.982Z"
-                                        transform="translate(-231.609 1.447)" fill="#D6D1ED" stroke="#D6D1ED"
-                                        stroke-width="1" />
-                                </g>
-                            </svg>
-                        </div>
-                        <div class="question min-w-[53.8461538462vw]">
-                            <h5
-                                class="md:block hidden PingAR-Medium md:text-[1.14583333333vw] text-[#D6D1ED] md:leading-[1.5625vw] text-[4.10256410256vw]">
-                                Billing and insurance
-                            </h5>
-                            <h5
-                                class="block md:hidden PingAR-Light md:text-[1.14583333333vw] text-[#707070] md:leading-[1.5625vw] text-[4.10256410256vw]">
-                                Billing and insurance
-                            </h5>
-                            <svg class="md:block hidden w-[3.28125vw]" id="Group_89728" data-name="Group 89728"
-                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                width="63.425" height="17.944" viewBox="0 0 63.425 17.944">
-                                <defs>
-                                    <clipPath id="clip-path">
-                                        <rect id="Rectangle_69529" data-name="Rectangle 69529" width="63.425"
-                                            height="17.944" fill="none" />
-                                    </clipPath>
-                                </defs>
-                                <g id="Group_89727" data-name="Group 89727" clip-path="url(#clip-path)">
-                                    <path id="Path_101507" data-name="Path 101507"
-                                        d="M61.144,34.092A156.336,156.336,0,0,0,4.1,32.445q-1.6.254-3.157.536"
-                                        transform="translate(-0.775 -24.011)" fill="none" stroke="#D6D1ED"
-                                        stroke-width="3" />
-                                    <path id="Path_101508" data-name="Path 101508"
-                                        d="M287.344,0l-1.587,1.114,5.495,7.811-8.193,4.91,1,1.662,9.977-5.982Z"
-                                        transform="translate(-231.609 1.447)" fill="#D6D1ED" stroke="#D6D1ED"
-                                        stroke-width="1" />
-                                </g>
-                            </svg>
-                        </div>
-                        <div class="question min-w-[46.1538461538vw]">
-                            <h5
-                                class="md:block hidden PingAR-Medium md:text-[1.14583333333vw] text-[#D6D1ED] md:leading-[1.5625vw] text-[4.10256410256vw]">
-                                General medical
-                            </h5>
-                            <h5
-                                class="block md:hidden PingAR-Light md:text-[1.14583333333vw] text-[#707070] md:leading-[1.5625vw] text-[4.10256410256vw]">
-                                General medical
-                            </h5>
-                            <svg class="md:block hidden w-[3.28125vw]" id="Group_89728" data-name="Group 89728"
-                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                width="63.425" height="17.944" viewBox="0 0 63.425 17.944">
-                                <defs>
-                                    <clipPath id="clip-path">
-                                        <rect id="Rectangle_69529" data-name="Rectangle 69529" width="63.425"
-                                            height="17.944" fill="none" />
-                                    </clipPath>
-                                </defs>
-                                <g id="Group_89727" data-name="Group 89727" clip-path="url(#clip-path)">
-                                    <path id="Path_101507" data-name="Path 101507"
-                                        d="M61.144,34.092A156.336,156.336,0,0,0,4.1,32.445q-1.6.254-3.157.536"
-                                        transform="translate(-0.775 -24.011)" fill="none" stroke="#D6D1ED"
-                                        stroke-width="3" />
-                                    <path id="Path_101508" data-name="Path 101508"
-                                        d="M287.344,0l-1.587,1.114,5.495,7.811-8.193,4.91,1,1.662,9.977-5.982Z"
-                                        transform="translate(-231.609 1.447)" fill="#D6D1ED" stroke="#D6D1ED"
-                                        stroke-width="1" />
-                                </g>
-                            </svg>
-                        </div>
-                        <div class="question min-w-[38.4615384615vw]">
-                            <h5
-                                class="md:block hidden PingAR-Medium md:text-[1.14583333333vw] text-[#D6D1ED] md:leading-[1.5625vw] text-[4.10256410256vw]">
-                                Mental health
-                            </h5>
-                            <h5
-                                class="block md:hidden PingAR-Light md:text-[1.14583333333vw] text-[#707070] md:leading-[1.5625vw] text-[4.10256410256vw]">
-                                Mental health
-                            </h5>
-                            <svg class="md:block hidden w-[3.28125vw]" id="Group_89728" data-name="Group 89728"
-                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                width="63.425" height="17.944" viewBox="0 0 63.425 17.944">
-                                <defs>
-                                    <clipPath id="clip-path">
-                                        <rect id="Rectangle_69529" data-name="Rectangle 69529" width="63.425"
-                                            height="17.944" fill="none" />
-                                    </clipPath>
-                                </defs>
-                                <g id="Group_89727" data-name="Group 89727" clip-path="url(#clip-path)">
-                                    <path id="Path_101507" data-name="Path 101507"
-                                        d="M61.144,34.092A156.336,156.336,0,0,0,4.1,32.445q-1.6.254-3.157.536"
-                                        transform="translate(-0.775 -24.011)" fill="none" stroke="#D6D1ED"
-                                        stroke-width="3" />
-                                    <path id="Path_101508" data-name="Path 101508"
-                                        d="M287.344,0l-1.587,1.114,5.495,7.811-8.193,4.91,1,1.662,9.977-5.982Z"
-                                        transform="translate(-231.609 1.447)" fill="#D6D1ED" stroke="#D6D1ED"
-                                        stroke-width="1" />
-                                </g>
-                            </svg>
-                        </div>
-                        <div class="question min-w-[38.4615384615vw]">
-                            <h5
-                                class="md:block hidden PingAR-Medium md:text-[1.14583333333vw] text-[#D6D1ED] md:leading-[1.5625vw] text-[4.10256410256vw]">
-                                Account info
-                            </h5>
-                            <h5
-                                class="block md:hidden PingAR-Light md:text-[1.14583333333vw] text-[#707070] md:leading-[1.5625vw] text-[4.10256410256vw]">
-                                Account info
-                            </h5>
-                            <svg class="md:block hidden w-[3.28125vw]" id="Group_89728" data-name="Group 89728"
-                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                width="63.425" height="17.944" viewBox="0 0 63.425 17.944">
-                                <defs>
-                                    <clipPath id="clip-path">
-                                        <rect id="Rectangle_69529" data-name="Rectangle 69529" width="63.425"
-                                            height="17.944" fill="none" />
-                                    </clipPath>
-                                </defs>
-                                <g id="Group_89727" data-name="Group 89727" clip-path="url(#clip-path)">
-                                    <path id="Path_101507" data-name="Path 101507"
-                                        d="M61.144,34.092A156.336,156.336,0,0,0,4.1,32.445q-1.6.254-3.157.536"
-                                        transform="translate(-0.775 -24.011)" fill="none" stroke="#D6D1ED"
-                                        stroke-width="3" />
-                                    <path id="Path_101508" data-name="Path 101508"
-                                        d="M287.344,0l-1.587,1.114,5.495,7.811-8.193,4.91,1,1.662,9.977-5.982Z"
-                                        transform="translate(-231.609 1.447)" fill="#D6D1ED" stroke="#D6D1ED"
-                                        stroke-width="1" />
-                                </g>
-                            </svg>
-                        </div>
-                        <div class="question min-w-[38.4615384615vw]">
-                            <h5
-                                class="md:block hidden PingAR-Medium md:text-[1.14583333333vw] text-[#D6D1ED] md:leading-[1.5625vw] text-[4.10256410256vw]">
-                                Ways we help
-                            </h5>
-                            <h5
-                                class="block md:hidden PingAR-Light md:text-[1.14583333333vw] text-[#707070] md:leading-[1.5625vw] text-[4.10256410256vw]">
-                                Ways we help
-                            </h5>
-                            <svg class="md:block hidden w-[3.28125vw]" id="Group_89728" data-name="Group 89728"
-                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                width="63.425" height="17.944" viewBox="0 0 63.425 17.944">
-                                <defs>
-                                    <clipPath id="clip-path">
-                                        <rect id="Rectangle_69529" data-name="Rectangle 69529" width="63.425"
-                                            height="17.944" fill="none" />
-                                    </clipPath>
-                                </defs>
-                                <g id="Group_89727" data-name="Group 89727" clip-path="url(#clip-path)">
-                                    <path id="Path_101507" data-name="Path 101507"
-                                        d="M61.144,34.092A156.336,156.336,0,0,0,4.1,32.445q-1.6.254-3.157.536"
-                                        transform="translate(-0.775 -24.011)" fill="none" stroke="#D6D1ED"
-                                        stroke-width="3" />
-                                    <path id="Path_101508" data-name="Path 101508"
-                                        d="M287.344,0l-1.587,1.114,5.495,7.811-8.193,4.91,1,1.662,9.977-5.982Z"
-                                        transform="translate(-231.609 1.447)" fill="#D6D1ED" stroke="#D6D1ED"
-                                        stroke-width="1" />
-                                </g>
-                            </svg>
-                        </div>
-                        <div class="question min-w-[38.4615384615vw]">
-                            <h5
-                                class="md:block hidden PingAR-Medium md:text-[1.14583333333vw] text-[#D6D1ED] md:leading-[1.5625vw] text-[4.10256410256vw]">
-                                How it works
-                            </h5>
-                            <h5
-                                class="block md:hidden PingAR-Light md:text-[1.14583333333vw] text-[#707070] md:leading-[1.5625vw] text-[4.10256410256vw]">
-                                How it works
-                            </h5>
-                            <svg class="md:block hidden w-[3.28125vw]" id="Group_89728" data-name="Group 89728"
-                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                width="63.425" height="17.944" viewBox="0 0 63.425 17.944">
-                                <defs>
-                                    <clipPath id="clip-path">
-                                        <rect id="Rectangle_69529" data-name="Rectangle 69529" width="63.425"
-                                            height="17.944" fill="none" />
-                                    </clipPath>
-                                </defs>
-                                <g id="Group_89727" data-name="Group 89727" clip-path="url(#clip-path)">
-                                    <path id="Path_101507" data-name="Path 101507"
-                                        d="M61.144,34.092A156.336,156.336,0,0,0,4.1,32.445q-1.6.254-3.157.536"
-                                        transform="translate(-0.775 -24.011)" fill="none" stroke="#D6D1ED"
-                                        stroke-width="3" />
-                                    <path id="Path_101508" data-name="Path 101508"
-                                        d="M287.344,0l-1.587,1.114,5.495,7.811-8.193,4.91,1,1.662,9.977-5.982Z"
-                                        transform="translate(-231.609 1.447)" fill="#D6D1ED" stroke="#D6D1ED"
-                                        stroke-width="1" />
-                                </g>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class=" md:w-[52.1875vw] w-[88.7179487179vw] mx-[auto] md:mx-[unset]
-                 flex flex-col md:gap-y-[1.25vw] gap-y-[4.10256410256vw]">
-                        <div class="faq active">
-                            <div class="faq__Question">
-                                <h5 class="PingAR-Medium">
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr?
-                                </h5>
-                                <svg class="md:w-[2.1875vw] w-[8.20512820513vw] transition-all duration-300"
-                                    xmlns="http://www.w3.org/2000/svg" id="Group_109" data-name="Group 109" width="42"
-                                    height="42" viewBox="0 0 42 42">
-                                    <circle id="Ellipse_1" data-name="Ellipse 1" cx="21" cy="21" r="21" fill="#3b3659"
-                                        opacity="1" />
-                                    <g id="Group_89665" data-name="Group 89665" transform="translate(12 15)">
-                                        <path id="Path_101469" data-name="Path 101469"
-                                            d="M6.652,8.993c-.3.335-.669.745-.839.91-1.7,1.641-3.518,3.064-5.265,4.627a1.876,1.876,0,0,0-.287,2.285,1.2,1.2,0,0,0,1.877.35c1.774-1.587,3.612-3.033,5.341-4.7A11.377,11.377,0,0,0,9.155,10.6a3.552,3.552,0,0,0,.58-1.7,2.376,2.376,0,0,0-.443-1.435A16.08,16.08,0,0,0,7.834,5.947,29.126,29.126,0,0,1,3.523.7,1.2,1.2,0,0,0,1.656.292a1.868,1.868,0,0,0-.338,2.273A32.228,32.228,0,0,0,6.051,8.39c.068.075.337.342.6.6Z"
-                                            transform="matrix(0.087, 0.996, -0.996, 0.087, 17.416, 0)" fill="#fff"
-                                            fill-rule="evenodd" />
-                                    </g>
-                                </svg>
-                            </div>
-                            <div class="faq__Answer">
-                                <p class=" PingAR-Light">
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                                    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="faq">
-                            <div class="faq__Question">
-                                <h5 class="PingAR-Medium">
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr?
-                                </h5>
-                                <svg class="md:w-[2.1875vw] w-[8.20512820513vw] transition-all duration-300"
-                                    xmlns="http://www.w3.org/2000/svg" id="Group_109" data-name="Group 109" width="42"
-                                    height="42" viewBox="0 0 42 42">
-                                    <circle id="Ellipse_1" data-name="Ellipse 1" cx="21" cy="21" r="21" fill="#3b3659"
-                                        opacity="1" />
-                                    <g id="Group_89665" data-name="Group 89665" transform="translate(12 15)">
-                                        <path id="Path_101469" data-name="Path 101469"
-                                            d="M6.652,8.993c-.3.335-.669.745-.839.91-1.7,1.641-3.518,3.064-5.265,4.627a1.876,1.876,0,0,0-.287,2.285,1.2,1.2,0,0,0,1.877.35c1.774-1.587,3.612-3.033,5.341-4.7A11.377,11.377,0,0,0,9.155,10.6a3.552,3.552,0,0,0,.58-1.7,2.376,2.376,0,0,0-.443-1.435A16.08,16.08,0,0,0,7.834,5.947,29.126,29.126,0,0,1,3.523.7,1.2,1.2,0,0,0,1.656.292a1.868,1.868,0,0,0-.338,2.273A32.228,32.228,0,0,0,6.051,8.39c.068.075.337.342.6.6Z"
-                                            transform="matrix(0.087, 0.996, -0.996, 0.087, 17.416, 0)" fill="#fff"
-                                            fill-rule="evenodd" />
-                                    </g>
-                                </svg>
-                            </div>
-                            <div class="faq__Answer">
-                                <p class=" PingAR-Light">
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                                    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="faq">
-                            <div class="faq__Question">
-                                <h5 class="PingAR-Medium">
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr?
-                                </h5>
-                                <svg class="md:w-[2.1875vw] w-[8.20512820513vw] transition-all duration-300"
-                                    xmlns="http://www.w3.org/2000/svg" id="Group_109" data-name="Group 109" width="42"
-                                    height="42" viewBox="0 0 42 42">
-                                    <circle id="Ellipse_1" data-name="Ellipse 1" cx="21" cy="21" r="21" fill="#3b3659"
-                                        opacity="1" />
-                                    <g id="Group_89665" data-name="Group 89665" transform="translate(12 15)">
-                                        <path id="Path_101469" data-name="Path 101469"
-                                            d="M6.652,8.993c-.3.335-.669.745-.839.91-1.7,1.641-3.518,3.064-5.265,4.627a1.876,1.876,0,0,0-.287,2.285,1.2,1.2,0,0,0,1.877.35c1.774-1.587,3.612-3.033,5.341-4.7A11.377,11.377,0,0,0,9.155,10.6a3.552,3.552,0,0,0,.58-1.7,2.376,2.376,0,0,0-.443-1.435A16.08,16.08,0,0,0,7.834,5.947,29.126,29.126,0,0,1,3.523.7,1.2,1.2,0,0,0,1.656.292a1.868,1.868,0,0,0-.338,2.273A32.228,32.228,0,0,0,6.051,8.39c.068.075.337.342.6.6Z"
-                                            transform="matrix(0.087, 0.996, -0.996, 0.087, 17.416, 0)" fill="#fff"
-                                            fill-rule="evenodd" />
-                                    </g>
-                                </svg>
-                            </div>
-                            <div class="faq__Answer">
-                                <p class=" PingAR-Light">
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                                    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="faq">
-                            <div class="faq__Question">
-                                <h5 class="PingAR-Medium">
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr?
-                                </h5>
-                                <svg class="md:w-[2.1875vw] w-[8.20512820513vw] transition-all duration-300"
-                                    xmlns="http://www.w3.org/2000/svg" id="Group_109" data-name="Group 109" width="42"
-                                    height="42" viewBox="0 0 42 42">
-                                    <circle id="Ellipse_1" data-name="Ellipse 1" cx="21" cy="21" r="21" fill="#3b3659"
-                                        opacity="1" />
-                                    <g id="Group_89665" data-name="Group 89665" transform="translate(12 15)">
-                                        <path id="Path_101469" data-name="Path 101469"
-                                            d="M6.652,8.993c-.3.335-.669.745-.839.91-1.7,1.641-3.518,3.064-5.265,4.627a1.876,1.876,0,0,0-.287,2.285,1.2,1.2,0,0,0,1.877.35c1.774-1.587,3.612-3.033,5.341-4.7A11.377,11.377,0,0,0,9.155,10.6a3.552,3.552,0,0,0,.58-1.7,2.376,2.376,0,0,0-.443-1.435A16.08,16.08,0,0,0,7.834,5.947,29.126,29.126,0,0,1,3.523.7,1.2,1.2,0,0,0,1.656.292a1.868,1.868,0,0,0-.338,2.273A32.228,32.228,0,0,0,6.051,8.39c.068.075.337.342.6.6Z"
-                                            transform="matrix(0.087, 0.996, -0.996, 0.087, 17.416, 0)" fill="#fff"
-                                            fill-rule="evenodd" />
-                                    </g>
-                                </svg>
-                            </div>
-                            <div class="faq__Answer">
-                                <p class=" PingAR-Light">
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                                    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="question min-w-[53.8461538462vw]">
+                  <h5
+                    class="md:block hidden PingAR-Medium md:text-[1.14583333333vw] text-[#D6D1ED] md:leading-[1.5625vw] text-[4.10256410256vw]"
+                  >
+                    Billing and insurance
+                  </h5>
+                  <h5
+                    class="block md:hidden PingAR-Light md:text-[1.14583333333vw] text-[#707070] md:leading-[1.5625vw] text-[4.10256410256vw]"
+                  >
+                    Billing and insurance
+                  </h5>
+                  <svg
+                    class="md:block hidden w-[3.28125vw]"
+                    id="Group_89728"
+                    data-name="Group 89728"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="63.425"
+                    height="17.944"
+                    viewBox="0 0 63.425 17.944"
+                  >
+                    <defs>
+                      <clipPath id="clip-path">
+                        <rect
+                          id="Rectangle_69529"
+                          data-name="Rectangle 69529"
+                          width="63.425"
+                          height="17.944"
+                          fill="none"
+                        />
+                      </clipPath>
+                    </defs>
+                    <g
+                      id="Group_89727"
+                      data-name="Group 89727"
+                      clip-path="url(#clip-path)"
+                    >
+                      <path
+                        id="Path_101507"
+                        data-name="Path 101507"
+                        d="M61.144,34.092A156.336,156.336,0,0,0,4.1,32.445q-1.6.254-3.157.536"
+                        transform="translate(-0.775 -24.011)"
+                        fill="none"
+                        stroke="#D6D1ED"
+                        stroke-width="3"
+                      />
+                      <path
+                        id="Path_101508"
+                        data-name="Path 101508"
+                        d="M287.344,0l-1.587,1.114,5.495,7.811-8.193,4.91,1,1.662,9.977-5.982Z"
+                        transform="translate(-231.609 1.447)"
+                        fill="#D6D1ED"
+                        stroke="#D6D1ED"
+                        stroke-width="1"
+                      />
+                    </g>
+                  </svg>
+                </div>
+                <div class="question min-w-[46.1538461538vw]">
+                  <h5
+                    class="md:block hidden PingAR-Medium md:text-[1.14583333333vw] text-[#D6D1ED] md:leading-[1.5625vw] text-[4.10256410256vw]"
+                  >
+                    General medical
+                  </h5>
+                  <h5
+                    class="block md:hidden PingAR-Light md:text-[1.14583333333vw] text-[#707070] md:leading-[1.5625vw] text-[4.10256410256vw]"
+                  >
+                    General medical
+                  </h5>
+                  <svg
+                    class="md:block hidden w-[3.28125vw]"
+                    id="Group_89728"
+                    data-name="Group 89728"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="63.425"
+                    height="17.944"
+                    viewBox="0 0 63.425 17.944"
+                  >
+                    <defs>
+                      <clipPath id="clip-path">
+                        <rect
+                          id="Rectangle_69529"
+                          data-name="Rectangle 69529"
+                          width="63.425"
+                          height="17.944"
+                          fill="none"
+                        />
+                      </clipPath>
+                    </defs>
+                    <g
+                      id="Group_89727"
+                      data-name="Group 89727"
+                      clip-path="url(#clip-path)"
+                    >
+                      <path
+                        id="Path_101507"
+                        data-name="Path 101507"
+                        d="M61.144,34.092A156.336,156.336,0,0,0,4.1,32.445q-1.6.254-3.157.536"
+                        transform="translate(-0.775 -24.011)"
+                        fill="none"
+                        stroke="#D6D1ED"
+                        stroke-width="3"
+                      />
+                      <path
+                        id="Path_101508"
+                        data-name="Path 101508"
+                        d="M287.344,0l-1.587,1.114,5.495,7.811-8.193,4.91,1,1.662,9.977-5.982Z"
+                        transform="translate(-231.609 1.447)"
+                        fill="#D6D1ED"
+                        stroke="#D6D1ED"
+                        stroke-width="1"
+                      />
+                    </g>
+                  </svg>
+                </div>
+                <div class="question min-w-[38.4615384615vw]">
+                  <h5
+                    class="md:block hidden PingAR-Medium md:text-[1.14583333333vw] text-[#D6D1ED] md:leading-[1.5625vw] text-[4.10256410256vw]"
+                  >
+                    Mental health
+                  </h5>
+                  <h5
+                    class="block md:hidden PingAR-Light md:text-[1.14583333333vw] text-[#707070] md:leading-[1.5625vw] text-[4.10256410256vw]"
+                  >
+                    Mental health
+                  </h5>
+                  <svg
+                    class="md:block hidden w-[3.28125vw]"
+                    id="Group_89728"
+                    data-name="Group 89728"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="63.425"
+                    height="17.944"
+                    viewBox="0 0 63.425 17.944"
+                  >
+                    <defs>
+                      <clipPath id="clip-path">
+                        <rect
+                          id="Rectangle_69529"
+                          data-name="Rectangle 69529"
+                          width="63.425"
+                          height="17.944"
+                          fill="none"
+                        />
+                      </clipPath>
+                    </defs>
+                    <g
+                      id="Group_89727"
+                      data-name="Group 89727"
+                      clip-path="url(#clip-path)"
+                    >
+                      <path
+                        id="Path_101507"
+                        data-name="Path 101507"
+                        d="M61.144,34.092A156.336,156.336,0,0,0,4.1,32.445q-1.6.254-3.157.536"
+                        transform="translate(-0.775 -24.011)"
+                        fill="none"
+                        stroke="#D6D1ED"
+                        stroke-width="3"
+                      />
+                      <path
+                        id="Path_101508"
+                        data-name="Path 101508"
+                        d="M287.344,0l-1.587,1.114,5.495,7.811-8.193,4.91,1,1.662,9.977-5.982Z"
+                        transform="translate(-231.609 1.447)"
+                        fill="#D6D1ED"
+                        stroke="#D6D1ED"
+                        stroke-width="1"
+                      />
+                    </g>
+                  </svg>
+                </div>
+                <div class="question min-w-[38.4615384615vw]">
+                  <h5
+                    class="md:block hidden PingAR-Medium md:text-[1.14583333333vw] text-[#D6D1ED] md:leading-[1.5625vw] text-[4.10256410256vw]"
+                  >
+                    Account info
+                  </h5>
+                  <h5
+                    class="block md:hidden PingAR-Light md:text-[1.14583333333vw] text-[#707070] md:leading-[1.5625vw] text-[4.10256410256vw]"
+                  >
+                    Account info
+                  </h5>
+                  <svg
+                    class="md:block hidden w-[3.28125vw]"
+                    id="Group_89728"
+                    data-name="Group 89728"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="63.425"
+                    height="17.944"
+                    viewBox="0 0 63.425 17.944"
+                  >
+                    <defs>
+                      <clipPath id="clip-path">
+                        <rect
+                          id="Rectangle_69529"
+                          data-name="Rectangle 69529"
+                          width="63.425"
+                          height="17.944"
+                          fill="none"
+                        />
+                      </clipPath>
+                    </defs>
+                    <g
+                      id="Group_89727"
+                      data-name="Group 89727"
+                      clip-path="url(#clip-path)"
+                    >
+                      <path
+                        id="Path_101507"
+                        data-name="Path 101507"
+                        d="M61.144,34.092A156.336,156.336,0,0,0,4.1,32.445q-1.6.254-3.157.536"
+                        transform="translate(-0.775 -24.011)"
+                        fill="none"
+                        stroke="#D6D1ED"
+                        stroke-width="3"
+                      />
+                      <path
+                        id="Path_101508"
+                        data-name="Path 101508"
+                        d="M287.344,0l-1.587,1.114,5.495,7.811-8.193,4.91,1,1.662,9.977-5.982Z"
+                        transform="translate(-231.609 1.447)"
+                        fill="#D6D1ED"
+                        stroke="#D6D1ED"
+                        stroke-width="1"
+                      />
+                    </g>
+                  </svg>
+                </div>
+                <div class="question min-w-[38.4615384615vw]">
+                  <h5
+                    class="md:block hidden PingAR-Medium md:text-[1.14583333333vw] text-[#D6D1ED] md:leading-[1.5625vw] text-[4.10256410256vw]"
+                  >
+                    Ways we help
+                  </h5>
+                  <h5
+                    class="block md:hidden PingAR-Light md:text-[1.14583333333vw] text-[#707070] md:leading-[1.5625vw] text-[4.10256410256vw]"
+                  >
+                    Ways we help
+                  </h5>
+                  <svg
+                    class="md:block hidden w-[3.28125vw]"
+                    id="Group_89728"
+                    data-name="Group 89728"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="63.425"
+                    height="17.944"
+                    viewBox="0 0 63.425 17.944"
+                  >
+                    <defs>
+                      <clipPath id="clip-path">
+                        <rect
+                          id="Rectangle_69529"
+                          data-name="Rectangle 69529"
+                          width="63.425"
+                          height="17.944"
+                          fill="none"
+                        />
+                      </clipPath>
+                    </defs>
+                    <g
+                      id="Group_89727"
+                      data-name="Group 89727"
+                      clip-path="url(#clip-path)"
+                    >
+                      <path
+                        id="Path_101507"
+                        data-name="Path 101507"
+                        d="M61.144,34.092A156.336,156.336,0,0,0,4.1,32.445q-1.6.254-3.157.536"
+                        transform="translate(-0.775 -24.011)"
+                        fill="none"
+                        stroke="#D6D1ED"
+                        stroke-width="3"
+                      />
+                      <path
+                        id="Path_101508"
+                        data-name="Path 101508"
+                        d="M287.344,0l-1.587,1.114,5.495,7.811-8.193,4.91,1,1.662,9.977-5.982Z"
+                        transform="translate(-231.609 1.447)"
+                        fill="#D6D1ED"
+                        stroke="#D6D1ED"
+                        stroke-width="1"
+                      />
+                    </g>
+                  </svg>
+                </div>
+                <div class="question min-w-[38.4615384615vw]">
+                  <h5
+                    class="md:block hidden PingAR-Medium md:text-[1.14583333333vw] text-[#D6D1ED] md:leading-[1.5625vw] text-[4.10256410256vw]"
+                  >
+                    How it works
+                  </h5>
+                  <h5
+                    class="block md:hidden PingAR-Light md:text-[1.14583333333vw] text-[#707070] md:leading-[1.5625vw] text-[4.10256410256vw]"
+                  >
+                    How it works
+                  </h5>
+                  <svg
+                    class="md:block hidden w-[3.28125vw]"
+                    id="Group_89728"
+                    data-name="Group 89728"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="63.425"
+                    height="17.944"
+                    viewBox="0 0 63.425 17.944"
+                  >
+                    <defs>
+                      <clipPath id="clip-path">
+                        <rect
+                          id="Rectangle_69529"
+                          data-name="Rectangle 69529"
+                          width="63.425"
+                          height="17.944"
+                          fill="none"
+                        />
+                      </clipPath>
+                    </defs>
+                    <g
+                      id="Group_89727"
+                      data-name="Group 89727"
+                      clip-path="url(#clip-path)"
+                    >
+                      <path
+                        id="Path_101507"
+                        data-name="Path 101507"
+                        d="M61.144,34.092A156.336,156.336,0,0,0,4.1,32.445q-1.6.254-3.157.536"
+                        transform="translate(-0.775 -24.011)"
+                        fill="none"
+                        stroke="#D6D1ED"
+                        stroke-width="3"
+                      />
+                      <path
+                        id="Path_101508"
+                        data-name="Path 101508"
+                        d="M287.344,0l-1.587,1.114,5.495,7.811-8.193,4.91,1,1.662,9.977-5.982Z"
+                        transform="translate(-231.609 1.447)"
+                        fill="#D6D1ED"
+                        stroke="#D6D1ED"
+                        stroke-width="1"
+                      />
+                    </g>
+                  </svg>
                 </div>
               </div>
-             <div class="relative">
-                <span class="healthCare__Overlay absolute w-full md:h-[74.0625vw] h-[396.153846154vw] md:top-[-4.79166666667vw] top-[-14.358974359vw] left-0">
-                </span>
-                <div class="relative z-[2] Container1440">
-                    <h2 class="  heading54 PingAR-Regular tracking-[unset]  text-[#3B3659] ">
-                        Get in   
-                        <span class="PingAR-Bold">
-                            touch
-                        </span>
-                         with <br> meena
-                    </h2>
-                    <div class="md:pt-[2.5vw] pt-[6.41025641026vw]
-                    flex justify-between flex-col md:flex-row gap-y-[10.2564102564vw]
-                    md:pb-[8.69791666667vw] pb-[20.5128205128vw]">
-                        <div class="md:w-[21.40625vw]">
-                            <div class=" flex flex-col md:gap-y-[0.98958333333vw] gap-y-[4.10256410256vw]
-                        PingAR-Light text-[#3B3659]">
-                            <a href="" class="flex items-center md:items-start  md:gap-x-[0.625vw] gap-y-[2.05128205128vw] flex-col md:flex-row">
-                                <img src="./assets/images/icons/location.svg" alt="location"
-                                class="md:w-[1.04166666667vw] w-[5.12820512821vw]">
-                                <span class="md:text-[0.9375vw] text-[3.58974358974vw] md:w-[unset] w-[80vw] text-center md:text-left">
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                                </span>
-                            </a>
-                            <a href="mailto:meena@meena.com" class="flex items-center md:items-start  md:gap-x-[0.625vw] gap-y-[2.05128205128vw] flex-col md:flex-row">
-                                <img src="./assets/images/icons/mail.svg" alt="mail"
-                                class="md:w-[1.25vw] w-[6.15384615385vw]">
-                                <span class="md:text-[0.9375vw] text-[3.58974358974vw] md:w-[unset] w-[80vw] text-center md:text-left">
-                                    meena@meena.com
-                                </span>
-                            </a>
-                            <a href="tel:+966 000 0000 000" class="flex items-center md:items-start  md:gap-x-[0.625vw] gap-y-[2.05128205128vw] flex-col md:flex-row">
-                                <img src="./assets/images/icons/mobile.svg" alt="mobile"
-                                class="md:w-[1.25vw] w-[6.15384615385vw]">
-                                <span class="md:text-[0.9375vw] text-[3.58974358974vw] md:w-[unset] w-[80vw] text-center md:text-left">
-                                    +966 000 0000 000
-                                </span>
-                            </a>
-                        </div>
-                        <div>
-                            <ul class=" footerLinks flex justify-center md:justify-start items-end md:gap-x-[1.09375vw] md:mt-[3.22916666667vw] mt-[8.20512820513vw] gap-x-[3.84615384615vw]">
-                                <li>
-                                    <a href="">
-                                        <img src="./assets/images/icons/social-links/twitter-blue.svg" alt="twitter" class="md:w-[1.5625vw] w-[5.12820512821vw]">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <img src="./assets/images/icons/social-links/linkedin-blue.svg" alt="linkedin" class="md:w-[1.5625vw] w-[5.12820512821vw]">
-                                    </a>
-                                </li>
-    
-                                <li>
-                                    <a href="">
-                                        <img src="./assets/images/icons/social-links/insta-blue.svg" alt="instagram" class="md:w-[1.45833333333vw] w-[4.87179487179vw]">
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        </div>
-                        <div class="md:w-[39.2708333333vw]">
-                            <h4 class="PingAR-Medium md:text-[1.14583333333vw]
-                            text-[4.87179487179vw] text-[#3B3659]">
-                                Leave us a message
-                            </h4>
-                            <form action="">
-    <div class="md:pt-[0.78125vw] pt-[4.10256410256vw]
-    flex flex-col md:gap-y-[0.83333333333vw] gap-y-[3.07692307692vw]">
-        <div class="flex flex-col md:gap-y-[0.625vw] gap-y-[1.53846153846vw]">
-            <div class="md:h-[3.22916666667vw] h-[13.3333333333vw]
-        bg-[#F0F0F0] md:rounded-[0.52083333333vw] rounded-[1.53846153846vw]
-        md:px-[1.25vw] px-[4.10256410256vw] ">
-            <input type="text" placeholder="Name"
-            class="w-full outline-none bg-transparent
-            h-full md:text-[0.9375vw] text-[3.58974358974vw] text-[#3B3659]">
-        </div>
-        <span class=" hidden md:text-[0.83333333333vw] text-[3.07692307692vw] text-[red]">*Fill Name*</span>
-        </div>
-        <div class="flex flex-col md:gap-y-[0.625vw] gap-y-[1.53846153846vw]">
-            <div class="md:h-[3.22916666667vw] h-[13.3333333333vw]
-        bg-[#F0F0F0] md:rounded-[0.52083333333vw] rounded-[1.53846153846vw]
-        md:px-[1.25vw] px-[4.10256410256vw] ">
-            <input type="email" placeholder="Email"
-            class="w-full outline-none bg-transparent
-            h-full md:text-[0.9375vw] text-[3.58974358974vw] text-[#3B3659]">
-        </div>
-        <span class=" hidden md:text-[0.83333333333vw] text-[3.07692307692vw] text-[red]">*Fill Name*</span>
-        </div>
-        <div class="flex flex-col md:gap-y-[0.625vw] gap-y-[1.53846153846vw]">
-            <div class="md:h-[3.22916666667vw] h-[13.3333333333vw]
-        bg-[#F0F0F0] md:rounded-[0.52083333333vw] rounded-[1.53846153846vw]
-        md:px-[1.25vw] px-[4.10256410256vw] ">
-            <input type="number" placeholder="Phone number"
-            class="w-full outline-none bg-transparent
-            h-full md:text-[0.9375vw] text-[3.58974358974vw] text-[#3B3659]">
-        </div>
-        <span class=" hidden md:text-[0.83333333333vw] text-[3.07692307692vw] text-[red]">*Fill Name*</span>
-        </div>
-        <div class="flex flex-col md:gap-y-[0.625vw] gap-y-[1.53846153846vw]">
-            <div class="md:h-[11.9791666667vw] h-[43.3333333333vw]
-        bg-[#F0F0F0] md:rounded-[0.52083333333vw] rounded-[1.53846153846vw]
-        md:px-[1.25vw] px-[4.10256410256vw] md:pt-[0.98958333333vw] pt-[3.84615384615vw]">
-            
-            <textarea placeholder="How can we help" name=""  class="resize-none PingAR-Light w-full outline-none bg-transparent
-            h-full md:text-[0.9375vw] text-[3.58974358974vw] text-[#3B3659] 
-            " ></textarea>
-        </div>
-        <span class=" hidden md:text-[0.83333333333vw] text-[3.07692307692vw] text-[red]">*Fill Name*</span>
-        </div>
-    </div>
-    <button class="md:w-[8.22916666667vw] md:h-[3.22916666667vw]
-    bg-[#8450FF] md:-[5.20833333333vw] rounded-[7.94871794872vw]
-    h-[9.23076923077vw] w-full md:mt-[1.66666666667vw] mt-[6.15384615385vw]">
-        <span class="md:text-[0.9375vw] text-[3.07692307692vw]
-        text-[#FFFFFF] PingAR-Light">
-            Submit
-        </span>
-    </button>
-    
-                            </form>
-                        </div>
-                    </div>
+              <div
+                class="md:w-[52.1875vw] w-[88.7179487179vw] mx-[auto] md:mx-[unset] flex flex-col md:gap-y-[1.25vw] gap-y-[4.10256410256vw]"
+              >
+                <div class="faq active">
+                  <div class="faq__Question">
+                    <h5 class="PingAR-Medium">
+                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr?
+                    </h5>
+                    <svg
+                      class="md:w-[2.1875vw] w-[8.20512820513vw] transition-all duration-300"
+                      xmlns="http://www.w3.org/2000/svg"
+                      id="Group_109"
+                      data-name="Group 109"
+                      width="42"
+                      height="42"
+                      viewBox="0 0 42 42"
+                    >
+                      <circle
+                        id="Ellipse_1"
+                        data-name="Ellipse 1"
+                        cx="21"
+                        cy="21"
+                        r="21"
+                        fill="#3b3659"
+                        opacity="1"
+                      />
+                      <g
+                        id="Group_89665"
+                        data-name="Group 89665"
+                        transform="translate(12 15)"
+                      >
+                        <path
+                          id="Path_101469"
+                          data-name="Path 101469"
+                          d="M6.652,8.993c-.3.335-.669.745-.839.91-1.7,1.641-3.518,3.064-5.265,4.627a1.876,1.876,0,0,0-.287,2.285,1.2,1.2,0,0,0,1.877.35c1.774-1.587,3.612-3.033,5.341-4.7A11.377,11.377,0,0,0,9.155,10.6a3.552,3.552,0,0,0,.58-1.7,2.376,2.376,0,0,0-.443-1.435A16.08,16.08,0,0,0,7.834,5.947,29.126,29.126,0,0,1,3.523.7,1.2,1.2,0,0,0,1.656.292a1.868,1.868,0,0,0-.338,2.273A32.228,32.228,0,0,0,6.051,8.39c.068.075.337.342.6.6Z"
+                          transform="matrix(0.087, 0.996, -0.996, 0.087, 17.416, 0)"
+                          fill="#fff"
+                          fill-rule="evenodd"
+                        />
+                      </g>
+                    </svg>
                   </div>
-             </div>
+                  <div class="faq__Answer">
+                    <p class="PingAR-Light">
+                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                      sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                      magna aliquyam erat, sed diam voluptua.
+                    </p>
+                  </div>
+                </div>
+                <div class="faq">
+                  <div class="faq__Question">
+                    <h5 class="PingAR-Medium">
+                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr?
+                    </h5>
+                    <svg
+                      class="md:w-[2.1875vw] w-[8.20512820513vw] transition-all duration-300"
+                      xmlns="http://www.w3.org/2000/svg"
+                      id="Group_109"
+                      data-name="Group 109"
+                      width="42"
+                      height="42"
+                      viewBox="0 0 42 42"
+                    >
+                      <circle
+                        id="Ellipse_1"
+                        data-name="Ellipse 1"
+                        cx="21"
+                        cy="21"
+                        r="21"
+                        fill="#3b3659"
+                        opacity="1"
+                      />
+                      <g
+                        id="Group_89665"
+                        data-name="Group 89665"
+                        transform="translate(12 15)"
+                      >
+                        <path
+                          id="Path_101469"
+                          data-name="Path 101469"
+                          d="M6.652,8.993c-.3.335-.669.745-.839.91-1.7,1.641-3.518,3.064-5.265,4.627a1.876,1.876,0,0,0-.287,2.285,1.2,1.2,0,0,0,1.877.35c1.774-1.587,3.612-3.033,5.341-4.7A11.377,11.377,0,0,0,9.155,10.6a3.552,3.552,0,0,0,.58-1.7,2.376,2.376,0,0,0-.443-1.435A16.08,16.08,0,0,0,7.834,5.947,29.126,29.126,0,0,1,3.523.7,1.2,1.2,0,0,0,1.656.292a1.868,1.868,0,0,0-.338,2.273A32.228,32.228,0,0,0,6.051,8.39c.068.075.337.342.6.6Z"
+                          transform="matrix(0.087, 0.996, -0.996, 0.087, 17.416, 0)"
+                          fill="#fff"
+                          fill-rule="evenodd"
+                        />
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="faq__Answer">
+                    <p class="PingAR-Light">
+                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                      sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                      magna aliquyam erat, sed diam voluptua.
+                    </p>
+                  </div>
+                </div>
+                <div class="faq">
+                  <div class="faq__Question">
+                    <h5 class="PingAR-Medium">
+                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr?
+                    </h5>
+                    <svg
+                      class="md:w-[2.1875vw] w-[8.20512820513vw] transition-all duration-300"
+                      xmlns="http://www.w3.org/2000/svg"
+                      id="Group_109"
+                      data-name="Group 109"
+                      width="42"
+                      height="42"
+                      viewBox="0 0 42 42"
+                    >
+                      <circle
+                        id="Ellipse_1"
+                        data-name="Ellipse 1"
+                        cx="21"
+                        cy="21"
+                        r="21"
+                        fill="#3b3659"
+                        opacity="1"
+                      />
+                      <g
+                        id="Group_89665"
+                        data-name="Group 89665"
+                        transform="translate(12 15)"
+                      >
+                        <path
+                          id="Path_101469"
+                          data-name="Path 101469"
+                          d="M6.652,8.993c-.3.335-.669.745-.839.91-1.7,1.641-3.518,3.064-5.265,4.627a1.876,1.876,0,0,0-.287,2.285,1.2,1.2,0,0,0,1.877.35c1.774-1.587,3.612-3.033,5.341-4.7A11.377,11.377,0,0,0,9.155,10.6a3.552,3.552,0,0,0,.58-1.7,2.376,2.376,0,0,0-.443-1.435A16.08,16.08,0,0,0,7.834,5.947,29.126,29.126,0,0,1,3.523.7,1.2,1.2,0,0,0,1.656.292a1.868,1.868,0,0,0-.338,2.273A32.228,32.228,0,0,0,6.051,8.39c.068.075.337.342.6.6Z"
+                          transform="matrix(0.087, 0.996, -0.996, 0.087, 17.416, 0)"
+                          fill="#fff"
+                          fill-rule="evenodd"
+                        />
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="faq__Answer">
+                    <p class="PingAR-Light">
+                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                      sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                      magna aliquyam erat, sed diam voluptua.
+                    </p>
+                  </div>
+                </div>
+                <div class="faq">
+                  <div class="faq__Question">
+                    <h5 class="PingAR-Medium">
+                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr?
+                    </h5>
+                    <svg
+                      class="md:w-[2.1875vw] w-[8.20512820513vw] transition-all duration-300"
+                      xmlns="http://www.w3.org/2000/svg"
+                      id="Group_109"
+                      data-name="Group 109"
+                      width="42"
+                      height="42"
+                      viewBox="0 0 42 42"
+                    >
+                      <circle
+                        id="Ellipse_1"
+                        data-name="Ellipse 1"
+                        cx="21"
+                        cy="21"
+                        r="21"
+                        fill="#3b3659"
+                        opacity="1"
+                      />
+                      <g
+                        id="Group_89665"
+                        data-name="Group 89665"
+                        transform="translate(12 15)"
+                      >
+                        <path
+                          id="Path_101469"
+                          data-name="Path 101469"
+                          d="M6.652,8.993c-.3.335-.669.745-.839.91-1.7,1.641-3.518,3.064-5.265,4.627a1.876,1.876,0,0,0-.287,2.285,1.2,1.2,0,0,0,1.877.35c1.774-1.587,3.612-3.033,5.341-4.7A11.377,11.377,0,0,0,9.155,10.6a3.552,3.552,0,0,0,.58-1.7,2.376,2.376,0,0,0-.443-1.435A16.08,16.08,0,0,0,7.834,5.947,29.126,29.126,0,0,1,3.523.7,1.2,1.2,0,0,0,1.656.292a1.868,1.868,0,0,0-.338,2.273A32.228,32.228,0,0,0,6.051,8.39c.068.075.337.342.6.6Z"
+                          transform="matrix(0.087, 0.996, -0.996, 0.087, 17.416, 0)"
+                          fill="#fff"
+                          fill-rule="evenodd"
+                        />
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="faq__Answer">
+                    <p class="PingAR-Light">
+                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                      sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                      magna aliquyam erat, sed diam voluptua.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
+          </div>
+          <div class="relative">
+            <span
+              class="healthCare__Overlay absolute w-full md:h-[74.0625vw] h-[396.153846154vw] md:top-[-4.79166666667vw] top-[-14.358974359vw] left-0"
+            >
+            </span>
+            <div class="relative z-[2] Container1440">
+              <h2
+                class="heading54 PingAR-Regular tracking-[unset] text-[#3B3659]"
+              >
+                Get in
+                <span class="PingAR-Bold"> touch </span>
+                with <br />
+                meena
+              </h2>
+              <div
+                class="md:pt-[2.5vw] pt-[6.41025641026vw] flex justify-between flex-col md:flex-row gap-y-[10.2564102564vw] md:pb-[8.69791666667vw] pb-[20.5128205128vw]"
+              >
+                <div class="md:w-[21.40625vw]">
+                  <div
+                    class="flex flex-col md:gap-y-[0.98958333333vw] gap-y-[4.10256410256vw] PingAR-Light text-[#3B3659]"
+                  >
+                    <a
+                      href=""
+                      class="flex items-center md:items-start md:gap-x-[0.625vw] gap-y-[2.05128205128vw] flex-col md:flex-row"
+                    >
+                      <img
+                        src="./assets/images/icons/location.svg"
+                        alt="location"
+                        class="md:w-[1.04166666667vw] w-[5.12820512821vw]"
+                      />
+                      <span
+                        class="md:text-[0.9375vw] text-[3.58974358974vw] md:w-[unset] w-[80vw] text-center md:text-left"
+                      >
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                        sed diam nonumy eirmod
+                      </span>
+                    </a>
+                    <a
+                      href="mailto:meena@meena.com"
+                      class="flex items-center md:items-start md:gap-x-[0.625vw] gap-y-[2.05128205128vw] flex-col md:flex-row"
+                    >
+                      <img
+                        src="./assets/images/icons/mail.svg"
+                        alt="mail"
+                        class="md:w-[1.25vw] w-[6.15384615385vw]"
+                      />
+                      <span
+                        class="md:text-[0.9375vw] text-[3.58974358974vw] md:w-[unset] w-[80vw] text-center md:text-left"
+                      >
+                        meena@meena.com
+                      </span>
+                    </a>
+                    <a
+                      href="tel:+966 000 0000 000"
+                      class="flex items-center md:items-start md:gap-x-[0.625vw] gap-y-[2.05128205128vw] flex-col md:flex-row"
+                    >
+                      <img
+                        src="./assets/images/icons/mobile.svg"
+                        alt="mobile"
+                        class="md:w-[1.25vw] w-[6.15384615385vw]"
+                      />
+                      <span
+                        class="md:text-[0.9375vw] text-[3.58974358974vw] md:w-[unset] w-[80vw] text-center md:text-left"
+                      >
+                        +966 000 0000 000
+                      </span>
+                    </a>
+                  </div>
+                  <div>
+                    <ul
+                      class="footerLinks flex justify-center md:justify-start items-end md:gap-x-[1.09375vw] md:mt-[3.22916666667vw] mt-[8.20512820513vw] gap-x-[3.84615384615vw]"
+                    >
+                      <li>
+                        <a href="">
+                          <img
+                            src="./assets/images/icons/social-links/twitter-blue.svg"
+                            alt="twitter"
+                            class="md:w-[1.5625vw] w-[5.12820512821vw]"
+                          />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">
+                          <img
+                            src="./assets/images/icons/social-links/linkedin-blue.svg"
+                            alt="linkedin"
+                            class="md:w-[1.5625vw] w-[5.12820512821vw]"
+                          />
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="">
+                          <img
+                            src="./assets/images/icons/social-links/insta-blue.svg"
+                            alt="instagram"
+                            class="md:w-[1.45833333333vw] w-[4.87179487179vw]"
+                          />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="md:w-[39.2708333333vw]">
+                  <h4
+                    class="PingAR-Medium md:text-[1.14583333333vw] text-[4.87179487179vw] text-[#3B3659]"
+                  >
+                    Leave us a message
+                  </h4>
+                  <form action="">
+                    <div
+                      class="md:pt-[0.78125vw] pt-[4.10256410256vw] flex flex-col md:gap-y-[0.83333333333vw] gap-y-[3.07692307692vw]"
+                    >
+                      <div
+                        class="flex flex-col md:gap-y-[0.625vw] gap-y-[1.53846153846vw]"
+                      >
+                        <div
+                          class="md:h-[3.22916666667vw] h-[13.3333333333vw] bg-[#F0F0F0] md:rounded-[0.52083333333vw] rounded-[1.53846153846vw] md:px-[1.25vw] px-[4.10256410256vw]"
+                        >
+                          <input
+                            type="text"
+                            placeholder="Name"
+                            class="w-full outline-none bg-transparent h-full md:text-[0.9375vw] text-[3.58974358974vw] text-[#3B3659]"
+                          />
+                        </div>
+                        <span
+                          class="hidden md:text-[0.83333333333vw] text-[3.07692307692vw] text-[red]"
+                          >*Fill Name*</span
+                        >
+                      </div>
+                      <div
+                        class="flex flex-col md:gap-y-[0.625vw] gap-y-[1.53846153846vw]"
+                      >
+                        <div
+                          class="md:h-[3.22916666667vw] h-[13.3333333333vw] bg-[#F0F0F0] md:rounded-[0.52083333333vw] rounded-[1.53846153846vw] md:px-[1.25vw] px-[4.10256410256vw]"
+                        >
+                          <input
+                            type="email"
+                            placeholder="Email"
+                            class="w-full outline-none bg-transparent h-full md:text-[0.9375vw] text-[3.58974358974vw] text-[#3B3659]"
+                          />
+                        </div>
+                        <span
+                          class="hidden md:text-[0.83333333333vw] text-[3.07692307692vw] text-[red]"
+                          >*Fill Name*</span
+                        >
+                      </div>
+                      <div
+                        class="flex flex-col md:gap-y-[0.625vw] gap-y-[1.53846153846vw]"
+                      >
+                        <div
+                          class="md:h-[3.22916666667vw] h-[13.3333333333vw] bg-[#F0F0F0] md:rounded-[0.52083333333vw] rounded-[1.53846153846vw] md:px-[1.25vw] px-[4.10256410256vw]"
+                        >
+                          <input
+                            type="number"
+                            placeholder="Phone number"
+                            class="w-full outline-none bg-transparent h-full md:text-[0.9375vw] text-[3.58974358974vw] text-[#3B3659]"
+                          />
+                        </div>
+                        <span
+                          class="hidden md:text-[0.83333333333vw] text-[3.07692307692vw] text-[red]"
+                          >*Fill Name*</span
+                        >
+                      </div>
+                      <div
+                        class="flex flex-col md:gap-y-[0.625vw] gap-y-[1.53846153846vw]"
+                      >
+                        <div
+                          class="md:h-[11.9791666667vw] h-[43.3333333333vw] bg-[#F0F0F0] md:rounded-[0.52083333333vw] rounded-[1.53846153846vw] md:px-[1.25vw] px-[4.10256410256vw] md:pt-[0.98958333333vw] pt-[3.84615384615vw]"
+                        >
+                          <textarea
+                            placeholder="How can we help"
+                            name=""
+                            class="resize-none PingAR-Light w-full outline-none bg-transparent h-full md:text-[0.9375vw] text-[3.58974358974vw] text-[#3B3659]"
+                          ></textarea>
+                        </div>
+                        <span
+                          class="hidden md:text-[0.83333333333vw] text-[3.07692307692vw] text-[red]"
+                          >*Fill Name*</span
+                        >
+                      </div>
+                    </div>
+                    <button
+                      class="md:w-[8.22916666667vw] md:h-[3.22916666667vw] bg-[#8450FF] md:-[5.20833333333vw] rounded-[7.94871794872vw] h-[9.23076923077vw] w-full md:mt-[1.66666666667vw] mt-[6.15384615385vw]"
+                    >
+                      <span
+                        class="md:text-[0.9375vw] text-[3.07692307692vw] text-[#FFFFFF] PingAR-Light"
+                      >
+                        Submit
+                      </span>
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
-        <div class="bg-[#3B3659] relative">
-            <img src="./assets/images/icons/footerbg-design.png" alt="footerbg-design"
-                class="hidden md:block md:w-[18.6458333333vw] absolute right-0 top-0">
-            <img src="./assets/images/icons/footerbg-design-mob.svg" alt="footerbg-design"
-                class="md:hidden block w-[35.64102564102564vw] absolute right-0 bottom-0 ">
-            <div class="relative z-[2] Container1680 md:pt-[4.16666666667vw]
-        md:pb-[4.47916666667vw] py-[12.30769230769231vw]">
-                <div
-                    class="flex md:gap-x-[9.375vw] flex-wrap gap-y-[12.30769230769231vw] gap-x-[12.30769230769231vw] justify-center md:justify-normal">
-                    <div class="md:w-[22.9166666667vw] text-center md:text-start">
-                        <a href="">
-                            <img src="./assets/images/icons/footer-logo.svg" alt="logo"
-                                class="md:w-[15.1041666667vw] w-[48.46153846153846vw] mx-[auto] md:mx-[unset]">
-                        </a>
-                        <p
-                            class="md:text-[0.8333333333333333vw] md:leading-[1.42361111111vw] text-[3.076923076923077vw] leading-[5.38461538462vw] PingAR-Light text-[#FFFFFF] md:mt-[1.66666666667vw] mt-[4.102564102564103vw]">
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                        </p>
-                    </div>
-                    <div class="text-[#E6E7E7]">
-                        <h5
-                            class="PingAR-Medium md:text-[1.14583333333vw] md:leading-[1.66666666667vw] leading-[6.15384615385vw] text-[3.846153846153846vw]  text-center md:text-start">
-                            Site map
-                        </h5>
-                        <ul class="items-center md:items-start footerLinks PingAR-Light md:text-[0.9375vw] md:leading-[1.45833333333vw] text-[3.076923076923077vw]  md:mt-[0.41666666666vw]  mt-[3.076923076923077vw]
-                    flex flex-col md:gap-y-[0.26041666666vw] gap-y-[2.051282051282051vw]">
-                            <li>
-                                <a href="">
-                                    <span>Home</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <span>Services</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <span>Locations</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <span>Help & support</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="text-[#E6E7E7]">
-                        <h5
-                            class="PingAR-Medium md:text-[1.14583333333vw] md:leading-[1.66666666667vw] leading-[6.15384615385vw] text-[3.846153846153846vw]  text-center md:text-start">
-                            Other links
-                        </h5>
-                        <ul class="leading-[4.87179487179vw] items-center md:items-start footerLinks PingAR-Light md:text-[0.9375vw] md:leading-[1.45833333333vw] text-[3.076923076923077vw]  md:mt-[0.41666666666vw]
-                    flex flex-col md:gap-y-[0.26041666666vw] gap-y-[2.051282051282051vw] mt-[3.076923076923077vw]">
-                            <li>
-                                <a href="">
-                                    <span>About meena</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <span>Careers</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <span>Terms & conditions</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <span>Privacy policy</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h5 class="PingAR-Medium md:text-[1.14583333333vw] md:leading-[1.66666666667vw] leading-[6.15384615385vw] text-[3.846153846153846vw]  text-[#E6E7E7]
-                        text-center md:text-start">
-                            Follow us
-                        </h5>
-                        <ul
-                            class="leading-[4.87179487179vw] footerLinks flex items-center md:gap-x-[1.25vw] md:mt-[0.41666666666vw] mt-[3.076923076923077vw] gap-x-[4.615384615384615vw]">
-                            <li>
-                                <a href="">
-                                    <img src="./assets/images/icons/social-links/twitter.svg" alt="twitter"
-                                        class="md:w-[1.77083333333vw] w-[6.944444444444444vw]">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="./assets/images/icons/social-links/linkedin.svg" alt="linkedin"
-                                        class="md:w-[1.77083333333vw] w-[6.944444444444444vw]">
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="">
-                                    <img src="./assets/images/icons/social-links/insta.svg" alt="instagram"
-                                        class="md:w-[1.77083333333vw] w-[6.944444444444444vw]">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
+      <div class="bg-[#3B3659] relative">
+        <img
+          src="./assets/images/icons/footerbg-design.png"
+          alt="footerbg-design"
+          class="hidden md:block md:w-[18.6458333333vw] absolute right-0 top-0 opacity-[0.6]"
+        />
+        <img
+          src="./assets/images/icons/footerbg-design-mob.svg"
+          alt="footerbg-design"
+          class="md:hidden block w-[35.64102564102564vw] absolute right-0 bottom-0"
+        />
+        <div
+          class="relative z-[2] Container1680 md:pt-[4.16666666667vw] md:pb-[4.47916666667vw] py-[12.30769230769231vw]"
+        >
+          <div
+            class="flex md:gap-x-[9.375vw] flex-wrap gap-y-[12.30769230769231vw] gap-x-[12.30769230769231vw] justify-center md:justify-normal"
+          >
+            <div class="md:w-[22.9166666667vw] text-center md:text-start">
+              <a href="./index.html">
+                <img
+                  src="./assets/images/icons/footer-logo.svg"
+                  alt="logo"
+                  class="md:w-[15.1041666667vw] w-[48.46153846153846vw] mx-[auto] md:mx-[unset]"
+                />
+              </a>
+              <p
+                class="md:text-[0.8333333333333333vw] md:leading-[1.42361111111vw] text-[3.076923076923077vw] leading-[5.38461538462vw] PingAR-Light text-[#FFFFFF] md:mt-[1.66666666667vw] mt-[4.102564102564103vw]"
+              >
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua.
+              </p>
             </div>
-        </div>
-        <div class="bg-[#474166] md:py-[0.390625vw] py-[3.205128205128205vw]">
-            <div
-                class="PingAR-Light Container1680 flex items-center justify-center md:justify-between text-[#E6E7E7] md:text-[0.8333333333333333vw] md:leading-[1.45833333333vw] text-[2.564102564102564vw] ">
-                <span>meena. All Rights Reserved @ 2023</span>
-                <div>
-                    <span>
-                        Developed By
-                    </span>
-                    <a href="">
-                        Brackets Technology
-                    </a>
-                </div>
+            <div class="text-[#E6E7E7]">
+              <h5
+                class="PingAR-Medium md:text-[1.14583333333vw] md:leading-[1.66666666667vw] leading-[6.15384615385vw] text-[3.846153846153846vw] text-center md:text-start"
+              >
+                Site map
+              </h5>
+              <ul
+                class="items-center md:items-start footerLinks PingAR-Light md:text-[0.9375vw] md:leading-[1.45833333333vw] text-[3.076923076923077vw] md:mt-[0.41666666666vw] mt-[3.076923076923077vw] flex flex-col md:gap-y-[0.26041666666vw] gap-y-[2.051282051282051vw]"
+              >
+                <li>
+                  <a href="./index.html">
+                    <span>Home</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="./services.html">
+                    <span>Services</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="./locations.html">
+                    <span>Locations</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="./help-and-support.html">
+                    <span>Help & support</span>
+                  </a>
+                </li>
+              </ul>
             </div>
+            <div class="text-[#E6E7E7]">
+              <h5
+                class="PingAR-Medium md:text-[1.14583333333vw] md:leading-[1.66666666667vw] leading-[6.15384615385vw] text-[3.846153846153846vw] text-center md:text-start"
+              >
+                Other links
+              </h5>
+              <ul
+                class="leading-[4.87179487179vw] items-center md:items-start footerLinks PingAR-Light md:text-[0.9375vw] md:leading-[1.45833333333vw] text-[3.076923076923077vw] md:mt-[0.41666666666vw] flex flex-col md:gap-y-[0.26041666666vw] gap-y-[2.051282051282051vw] mt-[3.076923076923077vw]"
+              >
+                <li>
+                  <a href="./about-app.html">
+                    <span>About meena</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="./careers.html">
+                    <span>Careers</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="./terms-and-conditions.html">
+                    <span>Terms & conditions</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="./privacy-policy.html">
+                    <span>Privacy policy</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h5
+                class="PingAR-Medium md:text-[1.14583333333vw] md:leading-[1.66666666667vw] leading-[6.15384615385vw] text-[3.846153846153846vw] text-[#E6E7E7] text-center md:text-start"
+              >
+                Follow us
+              </h5>
+              <ul
+                class="leading-[4.87179487179vw] footerLinks flex items-center md:gap-x-[1.25vw] md:mt-[0.41666666666vw] mt-[3.076923076923077vw] gap-x-[4.615384615384615vw]"
+              >
+                <li>
+                  <a href="#" target="_blank">
+                    <img
+                      src="./assets/images/icons/social-links/twitter.svg"
+                      alt="twitter"
+                      class="md:w-[1.77083333333vw] w-[6.944444444444444vw]"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <img
+                      src="./assets/images/icons/social-links/linkedin.svg"
+                      alt="linkedin"
+                      class="md:w-[1.77083333333vw] w-[6.944444444444444vw]"
+                    />
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" target="_blank">
+                    <img
+                      src="./assets/images/icons/social-links/insta.svg"
+                      alt="instagram"
+                      class="md:w-[1.77083333333vw] w-[6.944444444444444vw]"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="bg-[#474166] md:py-[0.390625vw] py-[3.205128205128205vw]">
+        <div
+          class="PingAR-Light Container1680 flex items-center justify-center md:justify-between text-[#E6E7E7] md:text-[0.8333333333333333vw] md:leading-[1.45833333333vw] text-[2.564102564102564vw]"
+        >
+          <span>meena. All Rights Reserved @ 2023</span>
+          <div>
+            <span> Developed By </span>
+            <a href="https://brackets-tech.com/" target="_blank">
+              Brackets Technology
+            </a>
+          </div>
+        </div>
+      </div>
     </footer>
     <script src="./assets/javascripts/swiper-bundle.min.js"></script>
     <script src="./assets/javascripts/jquery.min.js"></script>
     <script src="./assets/javascripts/global.js"></script>
     <script src="./assets/javascripts/home-swiper-sliders.js"></script>
     <script src="./assets/javascripts/scrollprogress.js"></script>
-</body>
-
+  </body>
 </html>

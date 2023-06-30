@@ -1,557 +1,748 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="ltr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/styles/swiper-bundle.min.css">
-    <link rel="stylesheet" href="./assets/styles/output.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/styles/output.css" />
     <title>About App</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="circle-container">
-        <svg class="circle-progress svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-        </svg>
-        <div class="">
-            <img src="./assets/images/icons/scrolltotop.svg" alt="" class="" />
-        </div>
+      <svg
+        class="circle-progress svg-content"
+        width="100%"
+        height="100%"
+        viewBox="-1 -1 102 102"
+      >
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
+      <div class="">
+        <img src="./assets/images/icons/scrolltotop.svg" alt="" class="" />
+      </div>
     </div>
     <div class="cta">
-        <img src="./assets/images/icons/Icon feather-calendar.svg" alt="calendar"
-            class="md:w-[1.25vw] w-[5.12820512821vw]">
-        <div class="cta__Menu">
-            <span class="md:text-[0.9375vw] md:leading-[1.45833333333vw] PingAR-Light text-[#FFFFFF] leading-[5.64102564103vw]
-text-[3.58974358974vw]">
-                Book an Appointment
-            </span>
-            <div class="text-[#FFFFFF] flex items-center mt-[4.10256410256vw] 
-md:mt-[0.83333333333vw] flex-col md:gap-y-[0.625vw] 
-gap-y-[3.07692307692vw]">
-                <a href="" class="md:w-[6.35416666667vw] w-[31.2820512821vw]
-    md:rounded-[31.2820512821vw] rounded-[7.94871794872vw]
-    bg-[#845FFF] md:h-[1.66666666667vw] h-[8.20512820513vw]
-    flex items-center justify-center">
-                    <div class="flex md:gap-x-[0.41666666666vw] 
-        gap-x-[2.05128205128vw]">
-                        <span class="PingAR-Light md:text-[0.9375vw] text-[3.07692307692vw]">
-                            Get app
-                        </span>
-                        <img src="./assets/images/icons/get-app.svg" alt="get-app"
-                            class="w-[2.82051282051vw] md:w-[0.625vw]">
-                    </div>
-                </a>
-                <a href="" class="md:w-[6.35416666667vw] w-[31.2820512821vw]
-    md:rounded-[31.2820512821vw] rounded-[7.94871794872vw]
-    bg-[#845FFF] md:h-[1.66666666667vw] h-[8.20512820513vw]
-    flex items-center justify-center">
-                    <div class="flex md:gap-x-[0.41666666666vw] gap-x-[2.05128205128vw]">
-                        <span class="PingAR-Light md:text-[0.9375vw] text-[3.07692307692vw]">
-                            9200 11111
-                        </span>
-                        <img src="./assets/images/icons/phone.svg" alt="phone"
-                            class="w-[3.07692307692vw] md:w-[0.625vw]">
-                    </div>
-                </a>
-
-            </div>
-        </div>
-    </div>
-    <header class="text-[#3B3659] absolute left-0 w-full md:pt-[1.66666666667vw] pt-[8.33333333333vw] z-[3]">
-        <div class="relative z-[3] Container1680 flex items-center md:items-start justify-between">
-            <div>
-                <a href="">
-                    <img src="./assets/images/icons/header-logo-blue.svg" alt="logo"
-                        class="md:w-[12.7083333333vw] w-[31.7948717949vw]">
-                </a>
-            </div>
-            <div class="flex flex-col md:gap-y-[1.14583333333vw]">
-                <div class="flex items-center justify-end md:gap-x-[2.91666666667vw]">
-                    <ul
-                        class="hidden links PingAR-Medium md:text-[0.83333333333vw] md:leading-[1.45833333333vw] md:flex items-center md:gap-x-[2.08333333333vw] ">
-                        <li>
-                            <a href="">About meena</a>
-                            <img src="./assets/images/icons/links-style2.svg" alt="style">
-                        </li>
-                        <li>
-                            <a href="">Careers</a>
-                            <img src="./assets/images/icons/links-style.svg" alt="style">
-
-                    </ul>
-                    <div class="flex items-center gap-x-[5vw] md:gap-x-[0.625vw] text-[#3B3659]">
-                        <span onclick="handleLang(this)" class="hidden md:block enToggler  cursor-pointer">
-                            English
-                        </span>
-                        <div onclick="handleLang(this)" class="hidden md:block toggle cursor-pointer">
-                            <span> </span>
-                        </div>
-                        <span onclick="handleLang(this)" class="hidden md:block arToggler  cursor-pointer">
-                            العربية
-                        </span>
-                        <span onclick="handleLang(this)" class="md:hidden block arToggler  cursor-pointer">
-                            ع
-                        </span>
-                        <div class="menu md:hidden block w-[6.15384615385vw]">
-                            <span class="bg-[#3B3659] line-1 h-[0.8333333333333333vw]"></span>
-                            <span class="bg-[#3B3659] line-2 h-[0.8333333333333333vw]"></span>
-                            <span class="bg-[#3B3659] line-3 h-[0.8333333333333333vw]"></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="hidden md:flex items-center md:gap-x-[2.08333333333vw]">
-                    <ul
-                        class=" links PingAR-Medium md:text-[1.04166666667vw] md:leading-[1.45833333333vw] flex items-center md:gap-x-[2.08333333333vw] ">
-                        <li>
-                            <a href="">Home</a>
-                            <img src="./assets/images/icons/links-style.svg" alt="style">
-                        </li>
-                        <li>
-                            <a href="">Services</a>
-                            <img src="./assets/images/icons/links-style.svg" alt="style">
-                        </li>
-                        <li>
-                            <a href="">Locations</a>
-                            <img src="./assets/images/icons/links-style.svg" alt="style">
-                        </li>
-                        <li>
-                            <a href="">Help & support</a>
-                            <img src="./assets/images/icons/links-style2.svg" alt="style">
-                        </li>
-                    </ul>
-                    <a href=""
-                        class="bg-[#845FFF] text-[#FFFFFF] PingAR-Light text18 md:rounded-[1.35416666667vw] md:w-[9.47916666667vw] md:py-[0.625vw] flex justify-center items-center hover:bg-[#3B3659] transition-all duration-300 ">
-                        <span>
-                            Download app
-                        </span>
-                    </a>
-                </div>
-            </div>
-        </div>
+      <img
+        src="./assets/images/icons/Icon feather-calendar.svg"
+        alt="calendar"
+        class="md:w-[1.25vw] w-[5.12820512821vw]"
+      />
+      <div class="cta__Menu">
+        <span
+          class="md:text-[0.9375vw] md:leading-[1.45833333333vw] PingAR-Light text-[#FFFFFF] leading-[5.64102564103vw] text-[3.58974358974vw]"
+        >
+          Book an Appointment
+        </span>
         <div
-            class="block md:hidden sidebar bg-[#3B3659] bg-opacity-[0.9] w-full h-[100vh] absolute top-0 left-0 opacity-0">
-            <div class="w-[90%] mx-[auto] h-full flex flex-col pt-[54.8717948718vw] ">
-                <ul class="links w-full text-white  text-[4.87179487179vw] flex flex-col gap-y-[4.10256410256vw] ">
-                    <li>
-                        <a href="">Home</a>
-                        <img src="./assets/images/icons/links-style.svg" alt="style">
-                    </li>
-                    <li>
-                        <a href="">Services</a>
-                        <img src="./assets/images/icons/links-style.svg" alt="style">
-                    </li>
-                    <li>
-                        <a href="">Locations</a>
-                        <img src="./assets/images/icons/links-style.svg" alt="style">
-                    </li>
-                    <li>
-                        <a href="">Help & Support</a>
-                        <img src="./assets/images/icons/links-style2.svg" alt="style">
-                    </li>
-                    <li>
-                        <a href="">About Meena</a>
-                        <img src="./assets/images/icons/links-style2.svg" alt="style">
-                    </li>
-                    <li>
-                        <a href="">Meena Careers</a>
-                        <img src="./assets/images/icons/links-style2.svg" alt="style">
-                    </li>
-                </ul>
-                <a href=""
-                    class="mt-[12.3076923077vw] bg-[#845FFF] text-white text-[3.84615384615vw] rounded-[7.94871794872vw] w-full h-[10.5128205128vw] flex justify-center items-center ">
-                    <span>
-                        Download app
-                    </span>
-                </a>
+          class="text-[#FFFFFF] flex items-center mt-[4.10256410256vw] md:mt-[0.83333333333vw] flex-col md:gap-y-[0.625vw] gap-y-[3.07692307692vw]"
+        >
+          <a
+            href=""
+            class="md:w-[6.35416666667vw] w-[31.2820512821vw] md:rounded-[31.2820512821vw] rounded-[7.94871794872vw] bg-[#845FFF] md:h-[1.66666666667vw] h-[8.20512820513vw] flex items-center justify-center"
+          >
+            <div
+              class="flex md:gap-x-[0.41666666666vw] gap-x-[2.05128205128vw]"
+            >
+              <span
+                class="PingAR-Light md:text-[0.9375vw] text-[3.07692307692vw]"
+              >
+                Get app
+              </span>
+              <img
+                src="./assets/images/icons/get-app.svg"
+                alt="get-app"
+                class="w-[2.82051282051vw] md:w-[0.625vw]"
+              />
             </div>
+          </a>
+          <a
+            href=""
+            class="md:w-[6.35416666667vw] w-[31.2820512821vw] md:rounded-[31.2820512821vw] rounded-[7.94871794872vw] bg-[#845FFF] md:h-[1.66666666667vw] h-[8.20512820513vw] flex items-center justify-center"
+          >
+            <div
+              class="flex md:gap-x-[0.41666666666vw] gap-x-[2.05128205128vw]"
+            >
+              <span
+                class="PingAR-Light md:text-[0.9375vw] text-[3.07692307692vw]"
+              >
+                9200 11111
+              </span>
+              <img
+                src="./assets/images/icons/phone.svg"
+                alt="phone"
+                class="w-[3.07692307692vw] md:w-[0.625vw]"
+              />
+            </div>
+          </a>
         </div>
+      </div>
+    </div>
+    <header
+      class="text-[#FFFFFF] absolute left-0 w-full md:pt-[1.66666666667vw] pt-[8.33333333333vw] z-[3]"
+    >
+      <div
+        class="relative z-[3] Container1680 flex items-center md:items-start justify-between"
+      >
+        <div>
+          <a href="/">
+            <img
+              src="./assets/images/icons/header-logo.svg"
+              alt="logo"
+              class="md:w-[12.7083333333vw] w-[31.7948717949vw]"
+            />
+          </a>
+        </div>
+        <div class="flex flex-col md:gap-y-[1.14583333333vw]">
+          <div
+            class="flex navTopList items-center justify-end md:gap-x-[2.91666666667vw]"
+          >
+            <ul
+              class="hidden links PingAR-Light md:text-[0.9375vw] md:leading-[1.45833333333vw] md:flex items-center md:gap-x-[2.08333333333vw]"
+            >
+              <li>
+                <a href="./about-app.html">About meena</a>
+                <img src="./assets/images/icons/links-style2.svg" alt="style" />
+              </li>
+              <li>
+                <a href="./careers.html">Careers</a>
+                <img src="./assets/images/icons/links-style.svg" alt="style" />
+              </li>
+            </ul>
+
+            <div
+              class="flex items-center gap-x-[5vw] md:gap-x-[0.625vw] text-white"
+            >
+              <span
+                onclick="handleLang(this)"
+                class="hidden md:block enToggler cursor-pointer"
+              >
+                English
+              </span>
+              <div
+                onclick="handleLang(this)"
+                class="hidden md:block toggle cursor-pointer"
+              >
+                <span> </span>
+              </div>
+              <span
+                onclick="handleLang(this)"
+                class="hidden md:block arToggler cursor-pointer"
+              >
+                العربية
+              </span>
+              <span
+                onclick="handleLang(this)"
+                class="md:hidden block arToggler cursor-pointer"
+              >
+                ع
+              </span>
+              <div class="menu md:hidden block w-[6.15384615385vw]">
+                <span
+                  class="bg-[#FFFFFF] line-1 h-[0.8333333333333333vw]"
+                ></span>
+                <span
+                  class="bg-[#FFFFFF] line-2 h-[0.8333333333333333vw]"
+                ></span>
+                <span
+                  class="bg-[#FFFFFF] line-3 h-[0.8333333333333333vw]"
+                ></span>
+              </div>
+            </div>
+          </div>
+          <div class="hidden md:flex items-center md:gap-x-[2.08333333333vw]">
+            <ul
+              class="links navList PingAR-Light md:text-[1.04166666667vw] md:leading-[1.45833333333vw] flex items-center md:gap-x-[2.08333333333vw]"
+            >
+              <li>
+                <a href="./index.html">Home</a>
+                <img
+                  src="./assets/images/icons/links-style.svg"
+                  alt="style"
+                  class="active"
+                />
+              </li>
+              <li>
+                <a href="./services.html">Services</a>
+                <img src="./assets/images/icons/links-style.svg" alt="style" />
+              </li>
+              <li>
+                <a href="./locations.html">Locations</a>
+                <img src="./assets/images/icons/links-style.svg" alt="style" />
+              </li>
+              <li>
+                <a href="./help-and-support.html">Help & support</a>
+                <img src="./assets/images/icons/links-style2.svg" alt="style" />
+              </li>
+            </ul>
+            <a
+              href="#"
+              class="bg-[#845FFF] text-[#FFFFFF] PingAR-Light text18 md:rounded-[1.35416666667vw] md:w-[9.47916666667vw] md:py-[0.625vw] flex justify-center items-center hover:bg-[#3B3659] transition-all duration-300"
+            >
+              <span class="relative top-[0.15vw]"> Download app </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="block md:hidden sidebar bg-[#3B3659] bg-opacity-[0.9] w-full h-[100vh] absolute top-0 left-0 opacity-0"
+      >
+        <div
+          class="w-[90%] mx-[auto] h-full flex flex-col pt-[54.8717948718vw]"
+        >
+          <ul
+            class="links w-full text-white text-[4.87179487179vw] flex flex-col gap-y-[4.10256410256vw]"
+          >
+            <li>
+              <a href="./index.html">Home</a>
+              <img
+                src="./assets/images/icons/links-style.svg"
+                alt="style"
+                class="active"
+              />
+            </li>
+            <li>
+              <a href="./services.html">Services</a>
+              <img src="./assets/images/icons/links-style.svg" alt="style" />
+            </li>
+            <li>
+              <a href="./locations.html">Locations</a>
+              <img src="./assets/images/icons/links-style.svg" alt="style" />
+            </li>
+            <li>
+              <a href="./help-and-support.html">Help & Support</a>
+              <img src="./assets/images/icons/links-style2.svg" alt="style" />
+            </li>
+            <li>
+              <a href="./about-app.html">About Meena</a>
+              <img src="./assets/images/icons/links-style2.svg" alt="style" />
+            </li>
+            <li>
+              <a href="./careers.html">Meena Careers</a>
+              <img src="./assets/images/icons/links-style2.svg" alt="style" />
+            </li>
+          </ul>
+          <a
+            href="#"
+            class="mt-[12.3076923077vw] bg-[#845FFF] text-white text-[3.84615384615vw] rounded-[7.94871794872vw] w-full h-[10.5128205128vw] flex justify-center items-center"
+          >
+            <span> Download app </span>
+          </a>
+        </div>
+      </div>
     </header>
     <main>
-        <section>
-            <div class="Container1680 md:pt-[13.9583333333vw] pt-[40.7692307692vw]">
-                <div>
-                    <a href="./index.html">
-                        <img src="./assets/images/icons/home.svg" alt="home"
-                            class="md:w-[2.44791666667vw] w-[9.48717948718vw]">
-                    </a>
-
-                </div>
-                <div class="md:w-[37.5vw] md:mt-[0.625vw] mt-[3.07692307692vw]">
-                    <h1 class="heading54 PingAR-Regular tracking-[unset] text-[#3B3659] ">About 
-<span class="PingAR-Bold">
-    APP
-</span>
-
-                    </h1>
-                    <p
-                        class="md:text-[1.14583333333vw] md:leading-[1.74479166667vw] text-[3.58974358974vw] leading-[5.9829059829vw] PingAR-Light text-[#707070] md:text-[#505050] md:mt-[0.625vw] mt-[1.02564102564vw]">
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-                        ut labore et dolore magna
-                    </p>
-                </div>
-            </div>
-            <div class="Container1440 flex justify-between items-center
-            md:flex-row flex-col-reverse gap-y-[6.15384615385vw]
-            md:pt-[6.25vw] pt-[16.4102564103vw] md:pb-[5.67708333333vw]
-            pb-[6.15384615385vw]">
-                <div class="md:w-[32.2916666667vw]">
-                    <h2 class=" heading54 PingAR-Regular tracking-[unset]  text-[#3B3659] ">
-                        Personalized primary care at your 
-                        <span class="PingAR-Bold">
-                            fingertips
-                        </span>
-        
-                    </h2>
-                    <span class="block md:text-[1.354166666666667vw]
-                    text-[#3B3659] PingAR-Medium text-[4.87179487179vw]
-                    md:leading-[2.08333333333vw] leading-[7.52136752136vw]
-                    md:mt-[0.625vw] mt-[3.07692307692vw]">
-                        Get the meena App and experience state-of-the-art features tailored to your unique needs.
-                    </span>
-                    <p class="md:mt-[0.83333333333vw] mt-[3.07692307692vw] md:text-[1.14583333333vw] md:leading-[1.70572916667vw]
-                     text-[#505050] PingAR-Light
-                     text-[3.58974358974vw] leading-[6.02564102564vw]">
-                        Download our app and enjoy our innovative features, from seamless appointment booking to symptoms checker all designed to simplify and enhance your health journey.
-                    </p>
-                    <div class="md:h-[2.86458333333vw] h-[10.7692307692vw]
-                    flex md:gap-x-[1.25vw] gap-x-[4.61538461538vw]
-                    md:mt-[2.5vw] mt-[6.15384615385vw]">
-                        <a href="">
-                            <img src="./assets/images/icons/google-play.svg" alt="google-play"
-                            class="md:w-[9.375vw] w-[35.3846153846vw] h-full">
-                        </a>
-                        <a href="">
-                            <img src="./assets/images/icons/app-store.svg" alt="app-store"
-                            class="md:w-[9.375vw] 4.61538461538w-[35.3846153846vw] h-full">
-                        </a>
-                    </div>
-                </div>
-<div class="relative md:h-[32.7083333333vw] h-[69.0256410256vw] w-full md:w-[33.4895833333vw]
-flex justify-end items-center">
-    <img src="./assets/images/about-app/mobile.jpg" alt="mobile"
-    class="absolute md:w-[16.875vw] w-[35.6102564103vw] top-0 left-0">
-    <div class="relative z-[2] flex-col md:gap-y-[0.83333333333vw] flex gap-y-[4.10256410256vw]">
-        <div class="Booking bg-[#EBF0F7] md:rounded-[0.52083333333vw]
-        rounded-[1.53846153846vw] md:w-[19.7916666667vw]
-        md:h-[6.25vw] w-[61.5384615385vw] h-[18.4615384615vw]
-        flex items-center md:gap-x-[0.72916666666vw]
-         gap-x-[3.07692307692vw] justify-center">
-            <img src="./assets/images/icons/Booking.svg" alt="Booking"
-            class="md:w-[1.82291666667vw] w-[6.66666666667vw]">
-            <span class="md:text-[1.14583333333vw] text-[4.10256410256vw] PingAR-Light text-[#3B3659]">
-                Appointment booking
-            </span>
+      <section>
+        <div class="Container1680 md:pt-[13.9583333333vw] pt-[40.7692307692vw]">
+          <div>
+            <a href="./index.html">
+              <img
+                src="./assets/images/icons/home.svg"
+                alt="home"
+                class="md:w-[2.44791666667vw] w-[9.48717948718vw]"
+              />
+            </a>
+          </div>
+          <div class="md:w-[37.5vw] md:mt-[0.625vw] mt-[3.07692307692vw]">
+            <h1
+              class="heading54 PingAR-Regular tracking-[unset] text-[#3B3659]"
+            >
+              About
+              <span class="PingAR-Bold"> APP </span>
+            </h1>
+            <p
+              class="md:text-[1.14583333333vw] md:leading-[1.74479166667vw] text-[3.58974358974vw] leading-[5.9829059829vw] PingAR-Light text-[#707070] md:text-[#505050] md:mt-[0.625vw] mt-[1.02564102564vw]"
+            >
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna
+            </p>
+          </div>
         </div>
-        <div class="Booking bg-[#D6D1ED] md:rounded-[0.52083333333vw]
-        rounded-[1.53846153846vw] md:w-[19.7916666667vw]
-        md:h-[6.25vw] w-[61.5384615385vw] h-[18.4615384615vw]
-        flex items-center md:gap-x-[0.72916666666vw]
-         gap-x-[3.07692307692vw] justify-center">
-            <img src="./assets/images/icons/Symptom.svg" alt="Symptom"
-            class="md:w-[1.5625vw] w-[5.89743589744vw]">
-            <span class="md:text-[1.14583333333vw] text-[4.10256410256vw] PingAR-Light text-[#3B3659]">
-                Symptom checker
+        <div
+          class="Container1440 flex justify-between items-center md:flex-row flex-col-reverse gap-y-[6.15384615385vw] md:pt-[6.25vw] pt-[16.4102564103vw] md:pb-[5.67708333333vw] pb-[6.15384615385vw]"
+        >
+          <div class="md:w-[32.2916666667vw]">
+            <h2
+              class="heading54 PingAR-Regular tracking-[unset] text-[#3B3659]"
+            >
+              Personalized primary care at your
+              <span class="PingAR-Bold"> fingertips </span>
+            </h2>
+            <span
+              class="block md:text-[1.354166666666667vw] text-[#3B3659] PingAR-Medium text-[4.87179487179vw] md:leading-[2.08333333333vw] leading-[7.52136752136vw] md:mt-[0.625vw] mt-[3.07692307692vw]"
+            >
+              Get the meena App and experience state-of-the-art features
+              tailored to your unique needs.
             </span>
-        </div>
-    </div>
-</div>
+            <p
+              class="md:mt-[0.83333333333vw] mt-[3.07692307692vw] md:text-[1.14583333333vw] md:leading-[1.70572916667vw] text-[#505050] PingAR-Light text-[3.58974358974vw] leading-[6.02564102564vw]"
+            >
+              Download our app and enjoy our innovative features, from seamless
+              appointment booking to symptoms checker all designed to simplify
+              and enhance your health journey.
+            </p>
+            <div
+              class="md:h-[2.86458333333vw] h-[10.7692307692vw] flex md:gap-x-[1.25vw] gap-x-[4.61538461538vw] md:mt-[2.5vw] mt-[6.15384615385vw]"
+            >
+              <a href="">
+                <img
+                  src="./assets/images/icons/google-play.svg"
+                  alt="google-play"
+                  class="md:w-[9.375vw] w-[35.3846153846vw] h-full"
+                />
+              </a>
+              <a href="">
+                <img
+                  src="./assets/images/icons/app-store.svg"
+                  alt="app-store"
+                  class="md:w-[9.375vw] 4.61538461538w-[35.3846153846vw] h-full"
+                />
+              </a>
             </div>
-            <div class="relative md:pt-[4.73958333333vw] pt-[14.358974359vw]">
-                <span class="healthCare__Overlay absolute w-full md:h-[57.34375vw] h-[202.307692308vw] top-0 left-0">
+          </div>
+          <div
+            class="relative md:h-[32.7083333333vw] h-[69.0256410256vw] w-full md:w-[33.4895833333vw] flex justify-end items-center"
+          >
+            <img
+              src="./assets/images/about-app/mobile.jpg"
+              alt="mobile"
+              class="absolute md:w-[16.875vw] w-[35.6102564103vw] top-0 left-0"
+            />
+            <div
+              class="relative z-[2] flex-col md:gap-y-[0.83333333333vw] flex gap-y-[4.10256410256vw]"
+            >
+              <div
+                class="Booking bg-[#EBF0F7] md:rounded-[0.52083333333vw] rounded-[1.53846153846vw] md:w-[19.7916666667vw] md:h-[6.25vw] w-[61.5384615385vw] h-[18.4615384615vw] flex items-center md:gap-x-[0.72916666666vw] gap-x-[3.07692307692vw] justify-center"
+              >
+                <img
+                  src="./assets/images/icons/Booking.svg"
+                  alt="Booking"
+                  class="md:w-[1.82291666667vw] w-[6.66666666667vw]"
+                />
+                <span
+                  class="md:text-[1.14583333333vw] text-[4.10256410256vw] PingAR-Light text-[#3B3659]"
+                >
+                  Appointment booking
                 </span>
-               <div class="relative z-[2]">
-                <h2 class="Container1440 heading54 PingAR-Regular tracking-[unset]  text-[#3B3659] ">
-                    Experience the  
-                    <span class="PingAR-Bold">
-                        future  <br>
-                    </span>
-                    of healthcare
-                </h2>
-                <div class="flex items-center justify-center md:gap-x-[4.21875vw]
-                flex-col md:flex-row gap-y-[4.10256410256vw]
-                md:pt-[2.5vw] pt-[6.15384615385vw] pl-[5.64102564103vw] md:pl-[unset]
-                md:pb-[10.4166666667vw] pb-[20.5128205128vw]">
-                    <div class="md:w-[38.4895833333vw] w-[88.7179487179vw]
-                    md:rounded-[1.04166666667vw] rounded-[3.84615384615vw]">
-<img src="./assets/images/about-app/future healthcare.jpg" alt="future healthcare"
-class="w-full md:rounded-[1.04166666667vw] rounded-[3.84615384615vw]">
-                    </div>
-                    <div class="md:w-[32.2916666667vw] w-[88.7179487179vw]
-                    flex flex-col items-center md:items-start">
-<img src="./assets/images/icons/check-board.svg" alt="check-board"
-class="md:w-[1.97916666667vw] w-[7.94871794872vw]">
-<h4 class="md:text-[1.875vw] md:leading-[3.02083333333vw] md:mt-[1.25vw] mt-[3.07692307692vw]
- text-[#3B3659] PingAR-Medium text-[4.87179487179vw] leading-[7.69230769231vw]">
-    Check your symptoms at any time
-</h4>
-<p class="PingAR-Light md:text-[1.14583333333vw] md:leading-[1.69270833333vw]
- text-[#505050] text-[3.58974358974vw] leading-[6.08058608059vw]
- md:mt-[0.83333333333vw] mt-[2.05128205128vw]
- text-center md:text-left">
-    Intuitive health tool designed to help you quickly and easily assess your symptoms. By inputting your current health concerns, the symptom checker evaluates possible causes and offers guidance on potential next steps such as whether you should seek further medical advice or recommend you an educational content
-</p>
-                    </div>
-                </div>
-                <div class="Container1440"> 
-                    <h2 class="mx-[auto] md:w-[28.8020833333vw] text-center relative  heading54 PingAR-Regular tracking-[unset]  text-[#3B3659] ">
-                        Other   
-                        <span class="PingAR-Bold">
-                            features   
-                        </span>
-                         <img src="./assets/images/about-app/design.png" alt="design"
-                         class="md:w-[3.02083333333vw] w-[7.69230769231vw] md:top-[-2.08333333333vw] md:left-[-1.51041666667vw] left-[8.20512820513vw] top-[-8.20512820513vw] absolute">
-                    </h2>
-                    <div class="md:pt-[2.5vw] pt-[6.15384615385vw] flex
-                    items-center justify-between
-                    flex-wrap md:gap-x-[9.58333333333vw]
-                    md:gap-y-[2.8125vw] md:pb-[10.4166666667vw] pb-[20.5128205128vw] gap-y-[6.15384615385vw]">
-<div class="w-[37.4358974359vw] min-w-[37.4358974359vw] md:min-w-[9.6875vw] md:w-[9.6875vw] flex flex-col items-center md:gap-y-[0.83333333333vw] gap-y-[2.05128205128vw] ">
-    <img src="./assets/images/about-app/features/1.svg" alt="features"
-    class="md:w-[2.5vw] w-[8.20512820513vw]">
-    <span class="md:text-[0.9375vw] md:leading-[1.51041666667vw]
-     PingAR-Light text-[#3B3659] 
-     text-[3.58974358974] leading-[5.64102564103vw] text-center">
-        Online payment
-    </span>
-</div>
-<div class="w-[43.5897435897vw] min-w-[43.5897435897vw] md:min-w-[11.3541666667vw] md:w-[11.3541666667vw] flex flex-col items-center md:gap-y-[0.83333333333vw] gap-y-[2.05128205128vw] ">
-    <img src="./assets/images/about-app/features/2.svg" alt="features"
-    class="md:w-[1.875vw] w-[6.15384615385vw]">
-    <span class="md:text-[0.9375vw] md:leading-[1.51041666667vw]
-     PingAR-Light text-[#3B3659] 
-     text-[3.58974358974] leading-[5.64102564103vw] text-center">
-     Medical record
-    </span>
-</div>
-<div class=" w-[37.4358974359vw] min-w-[37.4358974359vw] md:min-w-[8.33333333333vw] md:w-[8.33333333333vw] flex flex-col items-center md:gap-y-[0.83333333333vw] gap-y-[2.05128205128vw] ">
-    <img src="./assets/images/about-app/features/3.svg" alt="features"
-    class="md:w-[2.34375vw] w-[8.20512820513vw]">
-    <span class="md:text-[0.9375vw] md:leading-[1.51041666667vw]
-     PingAR-Light text-[#3B3659] 
-     text-[3.58974358974] leading-[5.64102564103vw] text-center">
-     Voice integration
-    </span>
-</div>
-<div class="w-[43.5897435897vw] min-w-[43.5897435897vw] md:min-w-[8.64583333333vw] md:w-[8.64583333333vw] flex flex-col items-center md:gap-y-[0.83333333333vw] gap-y-[2.05128205128vw] ">
-    <img src="./assets/images/about-app/features/4.svg" alt="features"
-    class="md:w-[1.77083333333vw] w-[5.64102564103vw]">
-    <span class="md:text-[0.9375vw] md:leading-[1.51041666667vw]
-     PingAR-Light text-[#3B3659] 
-     text-[3.58974358974] leading-[5.64102564103vw] text-center">
-     Online QR check-in
-    </span>
-</div>
-<div class="w-[37.4358974359vw] min-w-[37.4358974359vw] md:min-w-[9.6875vw] md:w-[9.6875vw] flex flex-col items-center md:gap-y-[0.83333333333vw] gap-y-[2.05128205128vw] ">
-    <img src="./assets/images/about-app/features/5.svg" alt="features"
-    class="md:w-[1.82291666667vw] w-[5.64102564103vw]">
-    <span class="md:text-[0.9375vw] md:leading-[1.51041666667vw]
-     PingAR-Light text-[#3B3659] 
-     text-[3.58974358974] leading-[5.64102564103vw] text-center">
-     Educational material
-    </span>
-</div>
-<div class="w-[43.5897435897vw] min-w-[43.5897435897vw] md:min-w-[11.3541666667vw] md:w-[11.3541666667vw] flex flex-col items-center md:gap-y-[0.83333333333vw] gap-y-[2.05128205128vw] ">
-    <img src="./assets/images/about-app/features/6.svg" alt="features"
-    class="md:w-[2.86458333333vw] w-[7.69230769231vw]">
-    <span class="md:text-[0.9375vw] md:leading-[1.51041666667vw]
-     PingAR-Light text-[#3B3659] 
-     text-[3.58974358974] leading-[5.64102564103vw] text-center">
-     Immediate consultation
-    </span>
-</div>
-<div class=" w-[37.4358974359vw] min-w-[37.4358974359vw] md:min-w-[8.33333333333vw] md:w-[8.33333333333vw] flex flex-col items-center md:gap-y-[0.83333333333vw] gap-y-[2.05128205128vw] ">
-    <img src="./assets/images/about-app/features/7.svg" alt="features"
-    class="md:w-[2.5vw] w-[8.20512820513vw]">
-    <span class="md:text-[0.9375vw] md:leading-[1.51041666667vw]
-     PingAR-Light text-[#3B3659] 
-     text-[3.58974358974] leading-[5.64102564103vw] text-center">
-     Buddy/nutrition <br> programs
-    </span>
-</div>
-<div class="w-[43.5897435897vw] min-w-[43.5897435897vw] md:min-w-[8.64583333333vw] md:w-[8.64583333333vw] flex flex-col items-center md:gap-y-[0.83333333333vw] gap-y-[2.05128205128vw] ">
-    <img src="./assets/images/about-app/features/8.svg" alt="features"
-    class="md:w-[2.5vw] w-[8.20512820513vw]">
-    <span class="md:text-[0.9375vw] md:leading-[1.51041666667vw]
-     PingAR-Light text-[#3B3659] 
-     text-[3.58974358974] leading-[5.64102564103vw] text-center">
-     Health devices  <br> integration
-    </span>
-</div>
-<div class="w-[37.4358974359vw] min-w-[37.4358974359vw] md:min-w-[9.6875vw] md:w-[9.6875vw] flex flex-col items-center md:gap-y-[0.83333333333vw] gap-y-[2.05128205128vw] ">
-    <img src="./assets/images/about-app/features/9.svg" alt="features"
-    class="md:w-[2.5vw] w-[8.20512820513vw]">
-    <span class="md:text-[0.9375vw] md:leading-[1.51041666667vw]
-     PingAR-Light text-[#3B3659] 
-     text-[3.58974358974] leading-[5.64102564103vw] text-center">
-     Insurance eligibility   <br> checker
-    </span>
-</div>
-<div class="w-[43.5897435897vw] min-w-[43.5897435897vw] md:min-w-[11.3541666667vw] md:w-[11.3541666667vw] flex flex-col items-center md:gap-y-[0.83333333333vw] gap-y-[2.05128205128vw] ">
-    <img src="./assets/images/about-app/features/10.svg" alt="features"
-    class="md:w-[2.23958333333vw] w-[7.4358974359vw]">
-    <span class="md:text-[0.9375vw] md:leading-[1.51041666667vw]
-     PingAR-Light text-[#3B3659] 
-     text-[3.58974358974] leading-[5.64102564103vw] text-center">
-     Social media    <br> sharing of milestones
-    </span>
-</div>
-<div class=" w-[37.4358974359vw] min-w-[37.4358974359vw] md:min-w-[8.33333333333vw] md:w-[8.33333333333vw] flex flex-col items-center md:gap-y-[0.83333333333vw] gap-y-[2.05128205128vw] ">
-    <img src="./assets/images/about-app/features/11.svg" alt="features"
-    class="md:w-[1.875vw] w-[6.15384615385vw]">
-    <span class="md:text-[0.9375vw] md:leading-[1.51041666667vw]
-     PingAR-Light text-[#3B3659] 
-     text-[3.58974358974] leading-[5.64102564103vw] text-center">
-     Display care team     <br> information
-    </span>
-</div>
-<div class="w-[43.5897435897vw] min-w-[43.5897435897vw] md:min-w-[8.64583333333vw] md:w-[8.64583333333vw] flex flex-col items-center md:gap-y-[0.83333333333vw] gap-y-[2.05128205128vw] ">
-    <img src="./assets/images/about-app/features/12.svg" alt="features"
-    class="md:w-[2.08333333333vw] w-[6.66666666667vw]">
-    <span class="md:text-[0.9375vw] md:leading-[1.51041666667vw]
-     PingAR-Light text-[#3B3659] 
-     text-[3.58974358974] leading-[5.64102564103vw] text-center">
-     Mobile health app      <br> integration
-    </span>
-</div>
-                    </div>
-                </div>
-
-
-               </div>
+              </div>
+              <div
+                class="Booking bg-[#D6D1ED] md:rounded-[0.52083333333vw] rounded-[1.53846153846vw] md:w-[19.7916666667vw] md:h-[6.25vw] w-[61.5384615385vw] h-[18.4615384615vw] flex items-center md:gap-x-[0.72916666666vw] gap-x-[3.07692307692vw] justify-center"
+              >
+                <img
+                  src="./assets/images/icons/Symptom.svg"
+                  alt="Symptom"
+                  class="md:w-[1.5625vw] w-[5.89743589744vw]"
+                />
+                <span
+                  class="md:text-[1.14583333333vw] text-[4.10256410256vw] PingAR-Light text-[#3B3659]"
+                >
+                  Symptom checker
+                </span>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+        <div class="relative md:pt-[4.73958333333vw] pt-[14.358974359vw]">
+          <span
+            class="healthCare__Overlay absolute w-full md:h-[57.34375vw] h-[202.307692308vw] top-0 left-0"
+          >
+          </span>
+          <div class="relative z-[2]">
+            <h2
+              class="Container1440 heading54 PingAR-Regular tracking-[unset] text-[#3B3659]"
+            >
+              Experience the
+              <span class="PingAR-Bold"> future <br /> </span>
+              of healthcare
+            </h2>
+            <div
+              class="flex items-center justify-center md:gap-x-[4.21875vw] flex-col md:flex-row gap-y-[4.10256410256vw] md:pt-[2.5vw] pt-[6.15384615385vw] pl-[5.64102564103vw] md:pl-[unset] md:pb-[10.4166666667vw] pb-[20.5128205128vw]"
+            >
+              <div
+                class="md:w-[38.4895833333vw] w-[88.7179487179vw] md:rounded-[1.04166666667vw] rounded-[3.84615384615vw]"
+              >
+                <img
+                  src="./assets/images/about-app/future healthcare.jpg"
+                  alt="future healthcare"
+                  class="w-full md:rounded-[1.04166666667vw] rounded-[3.84615384615vw]"
+                />
+              </div>
+              <div
+                class="md:w-[32.2916666667vw] w-[88.7179487179vw] flex flex-col items-center md:items-start"
+              >
+                <img
+                  src="./assets/images/icons/check-board.svg"
+                  alt="check-board"
+                  class="md:w-[1.97916666667vw] w-[7.94871794872vw]"
+                />
+                <h4
+                  class="md:text-[1.875vw] md:leading-[3.02083333333vw] md:mt-[1.25vw] mt-[3.07692307692vw] text-[#3B3659] PingAR-Medium text-[4.87179487179vw] leading-[7.69230769231vw]"
+                >
+                  Check your symptoms at any time
+                </h4>
+                <p
+                  class="PingAR-Light md:text-[1.14583333333vw] md:leading-[1.69270833333vw] text-[#505050] text-[3.58974358974vw] leading-[6.08058608059vw] md:mt-[0.83333333333vw] mt-[2.05128205128vw] text-center md:text-left"
+                >
+                  Intuitive health tool designed to help you quickly and easily
+                  assess your symptoms. By inputting your current health
+                  concerns, the symptom checker evaluates possible causes and
+                  offers guidance on potential next steps such as whether you
+                  should seek further medical advice or recommend you an
+                  educational content
+                </p>
+              </div>
+            </div>
+            <div class="Container1440">
+              <h2
+                class="mx-[auto] md:w-[28.8020833333vw] text-center relative heading54 PingAR-Regular tracking-[unset] text-[#3B3659]"
+              >
+                Other
+                <span class="PingAR-Bold"> features </span>
+                <img
+                  src="./assets/images/about-app/design.png"
+                  alt="design"
+                  class="md:w-[3.02083333333vw] w-[7.69230769231vw] md:top-[-2.08333333333vw] md:left-[-1.51041666667vw] left-[8.20512820513vw] top-[-8.20512820513vw] absolute"
+                />
+              </h2>
+              <div
+                class="md:pt-[2.5vw] pt-[6.15384615385vw] flex items-center justify-between flex-wrap md:gap-x-[9.58333333333vw] md:gap-y-[2.8125vw] md:pb-[10.4166666667vw] pb-[20.5128205128vw] gap-y-[6.15384615385vw]"
+              >
+                <div
+                  class="w-[37.4358974359vw] min-w-[37.4358974359vw] md:min-w-[9.6875vw] md:w-[9.6875vw] flex flex-col items-center md:gap-y-[0.83333333333vw] gap-y-[2.05128205128vw]"
+                >
+                  <img
+                    src="./assets/images/about-app/features/1.svg"
+                    alt="features"
+                    class="md:w-[2.5vw] w-[8.20512820513vw]"
+                  />
+                  <span
+                    class="md:text-[0.9375vw] md:leading-[1.51041666667vw] PingAR-Light text-[#3B3659] text-[3.58974358974] leading-[5.64102564103vw] text-center"
+                  >
+                    Online payment
+                  </span>
+                </div>
+                <div
+                  class="w-[43.5897435897vw] min-w-[43.5897435897vw] md:min-w-[11.3541666667vw] md:w-[11.3541666667vw] flex flex-col items-center md:gap-y-[0.83333333333vw] gap-y-[2.05128205128vw]"
+                >
+                  <img
+                    src="./assets/images/about-app/features/2.svg"
+                    alt="features"
+                    class="md:w-[1.875vw] w-[6.15384615385vw]"
+                  />
+                  <span
+                    class="md:text-[0.9375vw] md:leading-[1.51041666667vw] PingAR-Light text-[#3B3659] text-[3.58974358974] leading-[5.64102564103vw] text-center"
+                  >
+                    Medical record
+                  </span>
+                </div>
+                <div
+                  class="w-[37.4358974359vw] min-w-[37.4358974359vw] md:min-w-[8.33333333333vw] md:w-[8.33333333333vw] flex flex-col items-center md:gap-y-[0.83333333333vw] gap-y-[2.05128205128vw]"
+                >
+                  <img
+                    src="./assets/images/about-app/features/3.svg"
+                    alt="features"
+                    class="md:w-[2.34375vw] w-[8.20512820513vw]"
+                  />
+                  <span
+                    class="md:text-[0.9375vw] md:leading-[1.51041666667vw] PingAR-Light text-[#3B3659] text-[3.58974358974] leading-[5.64102564103vw] text-center"
+                  >
+                    Voice integration
+                  </span>
+                </div>
+                <div
+                  class="w-[43.5897435897vw] min-w-[43.5897435897vw] md:min-w-[8.64583333333vw] md:w-[8.64583333333vw] flex flex-col items-center md:gap-y-[0.83333333333vw] gap-y-[2.05128205128vw]"
+                >
+                  <img
+                    src="./assets/images/about-app/features/4.svg"
+                    alt="features"
+                    class="md:w-[1.77083333333vw] w-[5.64102564103vw]"
+                  />
+                  <span
+                    class="md:text-[0.9375vw] md:leading-[1.51041666667vw] PingAR-Light text-[#3B3659] text-[3.58974358974] leading-[5.64102564103vw] text-center"
+                  >
+                    Online QR check-in
+                  </span>
+                </div>
+                <div
+                  class="w-[37.4358974359vw] min-w-[37.4358974359vw] md:min-w-[9.6875vw] md:w-[9.6875vw] flex flex-col items-center md:gap-y-[0.83333333333vw] gap-y-[2.05128205128vw]"
+                >
+                  <img
+                    src="./assets/images/about-app/features/5.svg"
+                    alt="features"
+                    class="md:w-[1.82291666667vw] w-[5.64102564103vw]"
+                  />
+                  <span
+                    class="md:text-[0.9375vw] md:leading-[1.51041666667vw] PingAR-Light text-[#3B3659] text-[3.58974358974] leading-[5.64102564103vw] text-center"
+                  >
+                    Educational material
+                  </span>
+                </div>
+                <div
+                  class="w-[43.5897435897vw] min-w-[43.5897435897vw] md:min-w-[11.3541666667vw] md:w-[11.3541666667vw] flex flex-col items-center md:gap-y-[0.83333333333vw] gap-y-[2.05128205128vw]"
+                >
+                  <img
+                    src="./assets/images/about-app/features/6.svg"
+                    alt="features"
+                    class="md:w-[2.86458333333vw] w-[7.69230769231vw]"
+                  />
+                  <span
+                    class="md:text-[0.9375vw] md:leading-[1.51041666667vw] PingAR-Light text-[#3B3659] text-[3.58974358974] leading-[5.64102564103vw] text-center"
+                  >
+                    Immediate consultation
+                  </span>
+                </div>
+                <div
+                  class="w-[37.4358974359vw] min-w-[37.4358974359vw] md:min-w-[8.33333333333vw] md:w-[8.33333333333vw] flex flex-col items-center md:gap-y-[0.83333333333vw] gap-y-[2.05128205128vw]"
+                >
+                  <img
+                    src="./assets/images/about-app/features/7.svg"
+                    alt="features"
+                    class="md:w-[2.5vw] w-[8.20512820513vw]"
+                  />
+                  <span
+                    class="md:text-[0.9375vw] md:leading-[1.51041666667vw] PingAR-Light text-[#3B3659] text-[3.58974358974] leading-[5.64102564103vw] text-center"
+                  >
+                    Buddy/nutrition <br />
+                    programs
+                  </span>
+                </div>
+                <div
+                  class="w-[43.5897435897vw] min-w-[43.5897435897vw] md:min-w-[8.64583333333vw] md:w-[8.64583333333vw] flex flex-col items-center md:gap-y-[0.83333333333vw] gap-y-[2.05128205128vw]"
+                >
+                  <img
+                    src="./assets/images/about-app/features/8.svg"
+                    alt="features"
+                    class="md:w-[2.5vw] w-[8.20512820513vw]"
+                  />
+                  <span
+                    class="md:text-[0.9375vw] md:leading-[1.51041666667vw] PingAR-Light text-[#3B3659] text-[3.58974358974] leading-[5.64102564103vw] text-center"
+                  >
+                    Health devices <br />
+                    integration
+                  </span>
+                </div>
+                <div
+                  class="w-[37.4358974359vw] min-w-[37.4358974359vw] md:min-w-[9.6875vw] md:w-[9.6875vw] flex flex-col items-center md:gap-y-[0.83333333333vw] gap-y-[2.05128205128vw]"
+                >
+                  <img
+                    src="./assets/images/about-app/features/9.svg"
+                    alt="features"
+                    class="md:w-[2.5vw] w-[8.20512820513vw]"
+                  />
+                  <span
+                    class="md:text-[0.9375vw] md:leading-[1.51041666667vw] PingAR-Light text-[#3B3659] text-[3.58974358974] leading-[5.64102564103vw] text-center"
+                  >
+                    Insurance eligibility <br />
+                    checker
+                  </span>
+                </div>
+                <div
+                  class="w-[43.5897435897vw] min-w-[43.5897435897vw] md:min-w-[11.3541666667vw] md:w-[11.3541666667vw] flex flex-col items-center md:gap-y-[0.83333333333vw] gap-y-[2.05128205128vw]"
+                >
+                  <img
+                    src="./assets/images/about-app/features/10.svg"
+                    alt="features"
+                    class="md:w-[2.23958333333vw] w-[7.4358974359vw]"
+                  />
+                  <span
+                    class="md:text-[0.9375vw] md:leading-[1.51041666667vw] PingAR-Light text-[#3B3659] text-[3.58974358974] leading-[5.64102564103vw] text-center"
+                  >
+                    Social media <br />
+                    sharing of milestones
+                  </span>
+                </div>
+                <div
+                  class="w-[37.4358974359vw] min-w-[37.4358974359vw] md:min-w-[8.33333333333vw] md:w-[8.33333333333vw] flex flex-col items-center md:gap-y-[0.83333333333vw] gap-y-[2.05128205128vw]"
+                >
+                  <img
+                    src="./assets/images/about-app/features/11.svg"
+                    alt="features"
+                    class="md:w-[1.875vw] w-[6.15384615385vw]"
+                  />
+                  <span
+                    class="md:text-[0.9375vw] md:leading-[1.51041666667vw] PingAR-Light text-[#3B3659] text-[3.58974358974] leading-[5.64102564103vw] text-center"
+                  >
+                    Display care team <br />
+                    information
+                  </span>
+                </div>
+                <div
+                  class="w-[43.5897435897vw] min-w-[43.5897435897vw] md:min-w-[8.64583333333vw] md:w-[8.64583333333vw] flex flex-col items-center md:gap-y-[0.83333333333vw] gap-y-[2.05128205128vw]"
+                >
+                  <img
+                    src="./assets/images/about-app/features/12.svg"
+                    alt="features"
+                    class="md:w-[2.08333333333vw] w-[6.66666666667vw]"
+                  />
+                  <span
+                    class="md:text-[0.9375vw] md:leading-[1.51041666667vw] PingAR-Light text-[#3B3659] text-[3.58974358974] leading-[5.64102564103vw] text-center"
+                  >
+                    Mobile health app <br />
+                    integration
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
-        <div class="bg-[#3B3659] relative">
-            <img src="./assets/images/icons/footerbg-design.png" alt="footerbg-design"
-                class="hidden md:block md:w-[18.6458333333vw] absolute right-0 top-0">
-            <img src="./assets/images/icons/footerbg-design-mob.svg" alt="footerbg-design"
-                class="md:hidden block w-[35.64102564102564vw] absolute right-0 bottom-0 ">
-            <div class="relative z-[2] Container1680 md:pt-[4.16666666667vw]
-        md:pb-[4.47916666667vw] py-[12.30769230769231vw]">
-                <div
-                    class="flex md:gap-x-[9.375vw] flex-wrap gap-y-[12.30769230769231vw] gap-x-[12.30769230769231vw] justify-center md:justify-normal">
-                    <div class="md:w-[22.9166666667vw] text-center md:text-start">
-                        <a href="">
-                            <img src="./assets/images/icons/footer-logo.svg" alt="logo"
-                                class="md:w-[15.1041666667vw] w-[48.46153846153846vw] mx-[auto] md:mx-[unset]">
-                        </a>
-                        <p
-                            class="md:text-[0.8333333333333333vw] md:leading-[1.42361111111vw] text-[3.076923076923077vw] leading-[5.38461538462vw] PingAR-Light text-[#FFFFFF] md:mt-[1.66666666667vw] mt-[4.102564102564103vw]">
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                        </p>
-                    </div>
-                    <div class="text-[#E6E7E7]">
-                        <h5
-                            class="PingAR-Medium md:text-[1.14583333333vw] md:leading-[1.66666666667vw] leading-[6.15384615385vw] text-[3.846153846153846vw]  text-center md:text-start">
-                            Site map
-                        </h5>
-                        <ul class="items-center md:items-start footerLinks PingAR-Light md:text-[0.9375vw] md:leading-[1.45833333333vw] text-[3.076923076923077vw]  md:mt-[0.41666666666vw]  mt-[3.076923076923077vw]
-                    flex flex-col md:gap-y-[0.26041666666vw] gap-y-[2.051282051282051vw]">
-                            <li>
-                                <a href="">
-                                    <span>Home</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <span>Services</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <span>Locations</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <span>Help & support</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="text-[#E6E7E7]">
-                        <h5
-                            class="PingAR-Medium md:text-[1.14583333333vw] md:leading-[1.66666666667vw] leading-[6.15384615385vw] text-[3.846153846153846vw]  text-center md:text-start">
-                            Other links
-                        </h5>
-                        <ul class="leading-[4.87179487179vw] items-center md:items-start footerLinks PingAR-Light md:text-[0.9375vw] md:leading-[1.45833333333vw] text-[3.076923076923077vw]  md:mt-[0.41666666666vw]
-                    flex flex-col md:gap-y-[0.26041666666vw] gap-y-[2.051282051282051vw] mt-[3.076923076923077vw]">
-                            <li>
-                                <a href="">
-                                    <span>About meena</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <span>Careers</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <span>Terms & conditions</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <span>Privacy policy</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h5 class="PingAR-Medium md:text-[1.14583333333vw] md:leading-[1.66666666667vw] leading-[6.15384615385vw] text-[3.846153846153846vw]  text-[#E6E7E7]
-                        text-center md:text-start">
-                            Follow us
-                        </h5>
-                        <ul
-                            class="leading-[4.87179487179vw] footerLinks flex items-center md:gap-x-[1.25vw] md:mt-[0.41666666666vw] mt-[3.076923076923077vw] gap-x-[4.615384615384615vw]">
-                            <li>
-                                <a href="">
-                                    <img src="./assets/images/icons/social-links/twitter.svg" alt="twitter"
-                                        class="md:w-[1.77083333333vw] w-[6.944444444444444vw]">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="./assets/images/icons/social-links/linkedin.svg" alt="linkedin"
-                                        class="md:w-[1.77083333333vw] w-[6.944444444444444vw]">
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="">
-                                    <img src="./assets/images/icons/social-links/insta.svg" alt="instagram"
-                                        class="md:w-[1.77083333333vw] w-[6.944444444444444vw]">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
+      <div class="bg-[#3B3659] relative">
+        <img
+          src="./assets/images/icons/footerbg-design.png"
+          alt="footerbg-design"
+          class="hidden md:block md:w-[18.6458333333vw] absolute right-0 top-0 opacity-[0.6]"
+        />
+        <img
+          src="./assets/images/icons/footerbg-design-mob.svg"
+          alt="footerbg-design"
+          class="md:hidden block w-[35.64102564102564vw] absolute right-0 bottom-0"
+        />
+        <div
+          class="relative z-[2] Container1680 md:pt-[4.16666666667vw] md:pb-[4.47916666667vw] py-[12.30769230769231vw]"
+        >
+          <div
+            class="flex md:gap-x-[9.375vw] flex-wrap gap-y-[12.30769230769231vw] gap-x-[12.30769230769231vw] justify-center md:justify-normal"
+          >
+            <div class="md:w-[22.9166666667vw] text-center md:text-start">
+              <a href="./index.html">
+                <img
+                  src="./assets/images/icons/footer-logo.svg"
+                  alt="logo"
+                  class="md:w-[15.1041666667vw] w-[48.46153846153846vw] mx-[auto] md:mx-[unset]"
+                />
+              </a>
+              <p
+                class="md:text-[0.8333333333333333vw] md:leading-[1.42361111111vw] text-[3.076923076923077vw] leading-[5.38461538462vw] PingAR-Light text-[#FFFFFF] md:mt-[1.66666666667vw] mt-[4.102564102564103vw]"
+              >
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua.
+              </p>
             </div>
-        </div>
-        <div class="bg-[#474166] md:py-[0.390625vw] py-[3.205128205128205vw]">
-            <div
-                class="PingAR-Light Container1680 flex items-center justify-center md:justify-between text-[#E6E7E7] md:text-[0.8333333333333333vw] md:leading-[1.45833333333vw] text-[2.564102564102564vw] ">
-                <span>meena. All Rights Reserved @ 2023</span>
-                <div>
-                    <span>
-                        Developed By
-                    </span>
-                    <a href="">
-                        Brackets Technology
-                    </a>
-                </div>
+            <div class="text-[#E6E7E7]">
+              <h5
+                class="PingAR-Medium md:text-[1.14583333333vw] md:leading-[1.66666666667vw] leading-[6.15384615385vw] text-[3.846153846153846vw] text-center md:text-start"
+              >
+                Site map
+              </h5>
+              <ul
+                class="items-center md:items-start footerLinks PingAR-Light md:text-[0.9375vw] md:leading-[1.45833333333vw] text-[3.076923076923077vw] md:mt-[0.41666666666vw] mt-[3.076923076923077vw] flex flex-col md:gap-y-[0.26041666666vw] gap-y-[2.051282051282051vw]"
+              >
+                <li>
+                  <a href="./index.html">
+                    <span>Home</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="./services.html">
+                    <span>Services</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="./locations.html">
+                    <span>Locations</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="./help-and-support.html">
+                    <span>Help & support</span>
+                  </a>
+                </li>
+              </ul>
             </div>
+            <div class="text-[#E6E7E7]">
+              <h5
+                class="PingAR-Medium md:text-[1.14583333333vw] md:leading-[1.66666666667vw] leading-[6.15384615385vw] text-[3.846153846153846vw] text-center md:text-start"
+              >
+                Other links
+              </h5>
+              <ul
+                class="leading-[4.87179487179vw] items-center md:items-start footerLinks PingAR-Light md:text-[0.9375vw] md:leading-[1.45833333333vw] text-[3.076923076923077vw] md:mt-[0.41666666666vw] flex flex-col md:gap-y-[0.26041666666vw] gap-y-[2.051282051282051vw] mt-[3.076923076923077vw]"
+              >
+                <li>
+                  <a href="./about-app.html">
+                    <span>About meena</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="./careers.html">
+                    <span>Careers</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="./terms-and-conditions.html">
+                    <span>Terms & conditions</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="./privacy-policy.html">
+                    <span>Privacy policy</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h5
+                class="PingAR-Medium md:text-[1.14583333333vw] md:leading-[1.66666666667vw] leading-[6.15384615385vw] text-[3.846153846153846vw] text-[#E6E7E7] text-center md:text-start"
+              >
+                Follow us
+              </h5>
+              <ul
+                class="leading-[4.87179487179vw] footerLinks flex items-center md:gap-x-[1.25vw] md:mt-[0.41666666666vw] mt-[3.076923076923077vw] gap-x-[4.615384615384615vw]"
+              >
+                <li>
+                  <a href="#" target="_blank">
+                    <img
+                      src="./assets/images/icons/social-links/twitter.svg"
+                      alt="twitter"
+                      class="md:w-[1.77083333333vw] w-[6.944444444444444vw]"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <img
+                      src="./assets/images/icons/social-links/linkedin.svg"
+                      alt="linkedin"
+                      class="md:w-[1.77083333333vw] w-[6.944444444444444vw]"
+                    />
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" target="_blank">
+                    <img
+                      src="./assets/images/icons/social-links/insta.svg"
+                      alt="instagram"
+                      class="md:w-[1.77083333333vw] w-[6.944444444444444vw]"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="bg-[#474166] md:py-[0.390625vw] py-[3.205128205128205vw]">
+        <div
+          class="PingAR-Light Container1680 flex items-center justify-center md:justify-between text-[#E6E7E7] md:text-[0.8333333333333333vw] md:leading-[1.45833333333vw] text-[2.564102564102564vw]"
+        >
+          <span>meena. All Rights Reserved @ 2023</span>
+          <div>
+            <span> Developed By </span>
+            <a href="https://brackets-tech.com/" target="_blank">
+              Brackets Technology
+            </a>
+          </div>
+        </div>
+      </div>
     </footer>
     <script src="./assets/javascripts/swiper-bundle.min.js"></script>
     <script src="./assets/javascripts/jquery.min.js"></script>
     <script src="./assets/javascripts/global.js"></script>
     <script src="./assets/javascripts/home-swiper-sliders.js"></script>
     <script src="./assets/javascripts/scrollprogress.js"></script>
-</body>
-
+  </body>
 </html>

@@ -21,8 +21,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
       if (scrollTop > offset) {
         circleContainer.classList.add("active");
+        document.querySelector('.cta').style.opacity= 1
+        document.querySelector('header').classList.add('stickyHeader')
       } else {
         circleContainer.classList.remove("active");
+        document.querySelector('.cta').style.opacity= 0
+        document.querySelector('header').classList.remove('stickyHeader')
+
+
       }
             
     }
