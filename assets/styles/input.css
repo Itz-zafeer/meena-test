@@ -206,20 +206,6 @@ body {
 .doctorsSwiper .swiper-wrapper .swiper-slide {
   overflow: hidden;
   background-color: #f5ebe8;
-
-.vision__Overlay1{
-  background: transparent linear-gradient(180deg, #3B3659 0%, #3B365900 100%) 0% 0% no-repeat padding-box;
-}
-.vision__Overlay2{
-  background: transparent linear-gradient(1deg, #AB99D6 0%, #3B365900 100%) 0% 0% no-repeat padding-box;
-}
-.vision__Overlay3{
-  background: transparent linear-gradient(0deg, #3B3659 0%, #3B365900 100%) 0% 0% no-repeat padding-box;
-}
-
-.doctorsSwiper .swiper-wrapper .swiper-slide{
-overflow: hidden;
-    background-color: #F5EBE8;
 }
 .homeSwipers .swiper-button-next:after,
 .homeSwipers .swiper-button-prev:after {
@@ -465,33 +451,6 @@ body.active {
   .question.active h5,
   .question:hover h5 {
     color: #3b3659;
-.aboutMeenaSwiper .swiper-button-next:after, .aboutMeenaSwiper .swiper-button-prev:after{
-  display: none !important;
-}
-.aboutMeenaSwiper .swiper-button-next,
-       .aboutMeenaSwiper .swiper-button-prev{
-        top: unset !important;
-        bottom: 0 !important;
-       }
-
-  @media (min-width:768px){
-    .aboutMeenaSwiper .swiper-button-next{
-      right: 12.5vw !important;
-    }
-    .aboutMeenaSwiper .swiper-button-prev{
-      right: 17.03125vw !important;
-      left: unset;
-    }
-    .aboutMeenaSwiper .swiper-slide{
-      width: 8.95833333333vw !important;
-    }
-    .doctorsSwiper .swiper-wrapper .swiper-slide{
-       width: 16.875vw !important;
-       border-radius: 1.04166666667vw;
- }
- .question.active h5,
-  .question:hover h5{
-    color: #3B3659;
   }
   .homeSwipers .swiper-slide {
     width: 23.33333333333333vw !important;
@@ -506,25 +465,6 @@ body.active {
     left: unset !important;
     right: 4.6875vw !important;
   }
- .homeSwipers  .swiper-slide{
-       width: 23.33333333333333vw !important;
-   }
-       
-      .aboutMeenaSwiper .swiper-button-next,
-       .aboutMeenaSwiper .swiper-button-prev{
-        width: 3.28125vw !important; 
-        
-      }
-      .homeSwipers .swiper-button-next,
-       .homeSwipers .swiper-button-prev{
-        width: 3.28125vw !important;
-        top:0.625vw !important;
-      }
-      .homeSwipers .swiper-button-prev{
-        left: unset !important;
-        right: 4.6875vw !important;
-      }
-     
 }
 @media (max-width: 768px) {
   .aboutMeenaSwiper .swiper-button-next,
@@ -532,15 +472,6 @@ body.active {
     width: 11.5384615385vw !important;
   }
   .aboutMeenaSwiper .swiper-slide {
-    width: 20.5128205128vw !important;
-  }
-@media (max-width:768px){
-  .aboutMeenaSwiper .swiper-button-next,
-       .aboutMeenaSwiper .swiper-button-prev{
-        width:11.5384615385vw !important; 
-        
-      }
-  .aboutMeenaSwiper .swiper-slide{
     width: 20.5128205128vw !important;
   }
   .question.active h5,
@@ -577,4 +508,3 @@ body.active {
     display: -webkit-box;
   }
 }
-
