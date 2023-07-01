@@ -200,6 +200,17 @@ opacity: 1;
 .hero__Overlay3{ 
   mix-blend-mode: hard-light;
 }
+
+.vision__Overlay1{
+  background: transparent linear-gradient(180deg, #3B3659 0%, #3B365900 100%) 0% 0% no-repeat padding-box;
+}
+.vision__Overlay2{
+  background: transparent linear-gradient(1deg, #AB99D6 0%, #3B365900 100%) 0% 0% no-repeat padding-box;
+}
+.vision__Overlay3{
+  background: transparent linear-gradient(0deg, #3B3659 0%, #3B365900 100%) 0% 0% no-repeat padding-box;
+}
+
 .doctorsSwiper .swiper-wrapper .swiper-slide{
 overflow: hidden;
     background-color: #F5EBE8;
@@ -398,10 +409,26 @@ opacity: 1;
 }
 
 /* SCROLL PROGREESS CSS  END    */
- 
-
+.aboutMeenaSwiper .swiper-button-next:after, .aboutMeenaSwiper .swiper-button-prev:after{
+  display: none !important;
+}
+.aboutMeenaSwiper .swiper-button-next,
+       .aboutMeenaSwiper .swiper-button-prev{
+        top: unset !important;
+        bottom: 0 !important;
+       }
 
   @media (min-width:768px){
+    .aboutMeenaSwiper .swiper-button-next{
+      right: 12.5vw !important;
+    }
+    .aboutMeenaSwiper .swiper-button-prev{
+      right: 17.03125vw !important;
+      left: unset;
+    }
+    .aboutMeenaSwiper .swiper-slide{
+      width: 8.95833333333vw !important;
+    }
     .doctorsSwiper .swiper-wrapper .swiper-slide{
        width: 16.875vw !important;
        border-radius: 1.04166666667vw;
@@ -414,6 +441,11 @@ opacity: 1;
        width: 23.33333333333333vw !important;
    }
        
+      .aboutMeenaSwiper .swiper-button-next,
+       .aboutMeenaSwiper .swiper-button-prev{
+        width: 3.28125vw !important; 
+        
+      }
       .homeSwipers .swiper-button-next,
        .homeSwipers .swiper-button-prev{
         width: 3.28125vw !important;
@@ -426,6 +458,14 @@ opacity: 1;
      
 }
 @media (max-width:768px){
+  .aboutMeenaSwiper .swiper-button-next,
+       .aboutMeenaSwiper .swiper-button-prev{
+        width:11.5384615385vw !important; 
+        
+      }
+  .aboutMeenaSwiper .swiper-slide{
+    width: 20.5128205128vw !important;
+  }
   .question.active h5,
   .question:hover h5{
     color: #FFFFFF;
