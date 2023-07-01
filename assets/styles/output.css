@@ -873,7 +873,7 @@ video {
 
 .cta {
   position: fixed;
-  bottom: 76.9230769231vw;
+  bottom: 30px;
   right: 5.64102564103vw;
   z-index: 999;
   display: flex;
@@ -889,7 +889,7 @@ video {
 
 @media (min-width: 768px) {
   .cta {
-    bottom: 10.4166666667vw;
+    bottom: 50px;
     right: 5.64102564103vw;
     height: 2.91666666667vw;
     width: 2.91666666667vw;
@@ -922,8 +922,9 @@ video {
 @media (min-width: 768px) {
   .cta__Menu {
     height: 8.4375vw;
-    width: 10.3125vw;
+    width: 12.3125vw;
     border-radius: 1.04166666667vw;
+    padding: 1vw;
   }
 }
 
@@ -1189,6 +1190,10 @@ video {
 
 .top-\[50\%\] {
   top: 50%;
+}
+
+.top-\[0\.15vw\] {
+  top: 0.15vw;
 }
 
 .isolate {
@@ -4282,6 +4287,25 @@ body {
   /* Internet Explorer 10+ */
   scrollbar-width: none;
   /* Firefox */
+}
+
+header{
+  transition: all .8s;
+}
+
+.stickyHeader{
+  position: fixed;
+  background-color: #3B3659;
+  padding: 1vw 0;
+}
+
+.stickyHeader .navTopList{
+  display: none;
+}
+
+.stickyHeader .navList{
+  position: relative;
+  top: .2vw;
 }
 
 .hideScroll::-webkit-scrollbar {
