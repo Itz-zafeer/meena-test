@@ -91,14 +91,14 @@ body {
   .anchor1 {
     @apply bg-[#845FFF] md:text-[0.8333333333333333vw]  
         
-        PingAR-Light text-[3.076923076923077vw] md:leading-[0.88541666666vw] md:rounded-[1.614583333333333vw] rounded-[31px] md:w-[9.895833333333333vw] w-[31.2820512821vw] h-[9.23076923077vw]
+        PingAR-Light text-[3.076923076923077vw]   md:rounded-[1.614583333333333vw] rounded-[31px] md:w-[9.895833333333333vw] w-[31.2820512821vw] h-[9.23076923077vw]
         md:h-[3.229166666666667vw] flex justify-center items-center;
   }
   .anchor1 div {
-    @apply flex md:gap-x-[0.4166666666666667vw] items-center  md:items-start gap-x-[2.051282051282051vw];
+    @apply flex md:gap-x-[0.4166666666666667vw] h-[3.84615384615vw] md:h-[0.9895833333333333vw]   gap-x-[2.051282051282051vw];
   }
   .anchor1 div img {
-    @apply md:w-[0.5729166666666667vw] w-[2.82051282051vw] object-contain;
+    @apply md:w-[0.5729166666666667vw] w-[2.82051282051vw] ;
   }
   .anchor2 {
     @apply bg-[#845FFF] PingAR-Light md:text-[0.9375vw] text-[3.07692307692vw]  md:leading-[0.88541666666vw] md:rounded-[1.614583333333333vw] rounded-[31px] md:w-[9.895833333333333vw] w-[31.2820512821vw] h-[9.23076923077vw]
@@ -173,6 +173,16 @@ body {
   .faq__Answer p {
     @apply md:pt-[0.83333333333vw] pt-[4.10256410256vw] md:text-[1.04166666667vw] md:leading-[1.5625vw] leading-[6.05128205128vw] text-[3.58974358974vw];
   }
+  .stickyHeader .navTopList {
+   @apply md:hidden
+  }
+  .stickyHeader {
+    @apply   bg-[#3b3659] md:pb-[1.66666666667vw] pb-[8.33333333333vw]
+     
+  }
+}
+.stickyHeader{
+  position: fixed;
 }
 .category input[type="checkbox"]:checked + .checkedIcon {
   opacity: 1;
@@ -180,6 +190,47 @@ body {
 .links li:hover img,
 .links li img.active {
   transform: translateX(0);
+}
+.home__Page .blueLogo{
+  display: none;
+}
+.home__Page{
+  color: #FFFFFF;
+}
+ 
+.home__Page .menu span{
+  background-color: #FFFFFF;
+}
+.stickyHeader .menu span{
+  background-color: #FFFFFF !important;
+}
+.home__Page .whiteLogo{
+  display: block;
+}
+.sub__Page .blueLogo{
+  display: block;
+}
+.sub__Page{
+  color:#3B3659 ;
+}
+.sub__Page .menu span{
+  background-color: #3B3659;
+}
+.sub__Page .whiteLogo{
+  display: none;
+}
+.stickyHeader{
+  color: #FFFFFF;
+}
+ 
+.stickyHeader .download__App:hover{
+  background-color:#845FFF !important;
+}
+.stickyHeader .blueLogo{
+  display: none;
+}
+.stickyHeader .whiteLogo{
+  display: block;
 }
 .healthCare__Overlay {
   background: transparent
@@ -189,15 +240,14 @@ body {
 .hero__Overlay1 {
   background: transparent linear-gradient(180deg, #ab99d600 0%, #3b3659b3 100%)
     0% 0% no-repeat padding-box;
-  opacity: 0.8;
+  opacity: 0.6;
   mix-blend-mode: hard-light;
   transform: matrix(-1, 0, 0, -1, 0, 0);
 }
 .hero__Overlay2 {
   background: transparent linear-gradient(180deg, #ab99d600 0%, #3b365999 100%)
     0% 0% no-repeat padding-box;
-  opacity: 0.8;
-  opacity: 0.8;
+  opacity: 0.6;
   mix-blend-mode: hard-light;
 }
 .hero__Overlay3 {
@@ -228,14 +278,8 @@ body {
 header {
   transition: all 0.8s;
 }
-.stickyHeader {
-  position: fixed;
-  background-color: #3b3659;
-  padding: 1vw 0;
-}
-.stickyHeader .navTopList {
-  display: none;
-}
+
+
 .stickyHeader .navList {
   position: relative;
   top: 0.2vw;
@@ -507,4 +551,16 @@ body.active {
     overflow: hidden;
     display: -webkit-box;
   }
+}
+.line_clamp3g {
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: -webkit-box;
+}
+.line_clamp1g {
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: -webkit-box;
 }

@@ -672,20 +672,19 @@ video {
     width: 9.895833333333333vw;
     border-radius: 1.614583333333333vw;
     font-size: 0.8333333333333333vw;
-    line-height: 0.88541666666vw;
   }
 }
 
 .anchor1 div {
   display: flex;
-  align-items: center;
+  height: 3.84615384615vw;
   -moz-column-gap: 2.051282051282051vw;
        column-gap: 2.051282051282051vw;
 }
 
 @media (min-width: 768px) {
   .anchor1 div {
-    align-items: flex-start;
+    height: 0.9895833333333333vw;
     -moz-column-gap: 0.4166666666666667vw;
          column-gap: 0.4166666666666667vw;
   }
@@ -693,8 +692,6 @@ video {
 
 .anchor1 div img {
   width: 2.82051282051vw;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 
 @media (min-width: 768px) {
@@ -1034,6 +1031,22 @@ video {
     padding-top: 0.83333333333vw;
     font-size: 1.04166666667vw;
     line-height: 1.5625vw;
+  }
+
+  .stickyHeader .navTopList {
+    display: none;
+  }
+}
+
+.stickyHeader {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 54 89 / var(--tw-bg-opacity));
+  padding-bottom: 8.33333333333vw;
+}
+
+@media (min-width: 768px) {
+  .stickyHeader {
+    padding-bottom: 1.66666666667vw;
   }
 }
 
@@ -1548,6 +1561,10 @@ video {
 
 .h-\[258\.717948718vw\] {
   height: 258.717948718vw;
+}
+
+.h-\[3\.58974358974vw\] {
+  height: 3.58974358974vw;
 }
 
 .h-\[396\.153846154vw\] {
@@ -3084,11 +3101,6 @@ video {
   border-color: rgb(206 207 208 / var(--tw-border-opacity));
 }
 
-.border-\[\#F0F0F0\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(240 240 240 / var(--tw-border-opacity));
-}
-
 .bg-\[\#3B3659\] {
   --tw-bg-opacity: 1;
   background-color: rgb(59 54 89 / var(--tw-bg-opacity));
@@ -3316,11 +3328,6 @@ video {
 .py-\[15\.5615384615vw\] {
   padding-top: 15.5615384615vw;
   padding-bottom: 15.5615384615vw;
-}
-
-.py-\[2\.307692307692308vw\] {
-  padding-top: 2.307692307692308vw;
-  padding-bottom: 2.307692307692308vw;
 }
 
 .py-\[20\.51282051282051vw\] {
@@ -4220,6 +4227,10 @@ body {
   font-family: "PingAR-Bold";
 }
 
+.stickyHeader{
+  position: fixed;
+}
+
 .category input[type="checkbox"]:checked + .checkedIcon {
   opacity: 1;
 }
@@ -4227,6 +4238,58 @@ body {
 .links li:hover img,
 .links li img.active {
   transform: translateX(0);
+}
+
+.home__Page .blueLogo{
+  display: none;
+}
+
+.home__Page{
+  color: #FFFFFF;
+}
+
+.home__Page .menu span{
+  background-color: #FFFFFF;
+}
+
+.stickyHeader .menu span{
+  background-color: #FFFFFF !important;
+}
+
+.home__Page .whiteLogo{
+  display: block;
+}
+
+.sub__Page .blueLogo{
+  display: block;
+}
+
+.sub__Page{
+  color:#3B3659 ;
+}
+
+.sub__Page .menu span{
+  background-color: #3B3659;
+}
+
+.sub__Page .whiteLogo{
+  display: none;
+}
+
+.stickyHeader{
+  color: #FFFFFF;
+}
+
+.stickyHeader .download__App:hover{
+  background-color:#845FFF !important;
+}
+
+.stickyHeader .blueLogo{
+  display: none;
+}
+
+.stickyHeader .whiteLogo{
+  display: block;
 }
 
 .healthCare__Overlay {
@@ -4238,7 +4301,7 @@ body {
 .hero__Overlay1 {
   background: transparent linear-gradient(180deg, #ab99d600 0%, #3b3659b3 100%)
     0% 0% no-repeat padding-box;
-  opacity: 0.8;
+  opacity: 0.6;
   mix-blend-mode: hard-light;
   transform: matrix(-1, 0, 0, -1, 0, 0);
 }
@@ -4246,7 +4309,7 @@ body {
 .hero__Overlay2 {
   background: transparent linear-gradient(180deg, #ab99d600 0%, #3b365999 100%)
     0% 0% no-repeat padding-box;
-  opacity: 0.8;
+  opacity: 0.6;
   mix-blend-mode: hard-light;
 }
 
@@ -4283,16 +4346,6 @@ body {
 
 header {
   transition: all 0.8s;
-}
-
-.stickyHeader {
-  position: fixed;
-  background-color: #3b3659;
-  padding: 1vw 0;
-}
-
-.stickyHeader .navTopList {
-  display: none;
 }
 
 .stickyHeader .navList {
@@ -4629,6 +4682,20 @@ body.active {
   }
 }
 
+.line_clamp3g {
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: -webkit-box;
+}
+
+.line_clamp1g {
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: -webkit-box;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -4715,6 +4782,10 @@ body.active {
 
   .md\:bottom-\[-0\.7vw\] {
     bottom: -0.7vw;
+  }
+
+  .md\:bottom-\[-1vw\] {
+    bottom: -1vw;
   }
 
   .md\:bottom-\[-9\.27083333333vw\] {
@@ -4914,6 +4985,10 @@ body.active {
 
   .md\:h-\[1\.14583333333vw\] {
     height: 1.14583333333vw;
+  }
+
+  .md\:h-\[1\.19791666667vw\] {
+    height: 1.19791666667vw;
   }
 
   .md\:h-\[1\.25vw\] {
@@ -5670,11 +5745,6 @@ body.active {
     padding-bottom: 0.625vw;
   }
 
-  .md\:py-\[0\.88541666666vw\] {
-    padding-top: 0.88541666666vw;
-    padding-bottom: 0.88541666666vw;
-  }
-
   .md\:py-\[4\.6875vw\] {
     padding-top: 4.6875vw;
     padding-bottom: 4.6875vw;
@@ -5916,6 +5986,10 @@ body.active {
 
   .md\:text-\[1\.04166666667vw\] {
     font-size: 1.04166666667vw;
+  }
+
+  .md\:text-\[1\.04583333333vw\] {
+    font-size: 1.04583333333vw;
   }
 
   .md\:text-\[1\.14583333333vw\] {

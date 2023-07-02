@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(event) {
         
-    let offset = 400;
+    let offset = window.innerHeight+100;
     let circleContainer = document.querySelector(".circle-container");
     let circlePath = document.querySelector('.circle-container path');
     let pathLength = circlePath.getTotalLength();
