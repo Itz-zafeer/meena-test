@@ -32,6 +32,8 @@
 
 body {
   font-family: "PingAR-Regular";
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 .PingAR-Light {
   font-family: "PingAR-Light";
@@ -98,7 +100,7 @@ body {
     @apply flex md:gap-x-[0.4166666666666667vw] h-[3.84615384615vw] md:h-[0.9895833333333333vw]   gap-x-[2.051282051282051vw];
   }
   .anchor1 div img {
-    @apply md:w-[0.5729166666666667vw] w-[2.82051282051vw] ;
+    @apply md:w-[0.5729166666666667vw] w-[2.82051282051vw];
   }
   .anchor2 {
     @apply bg-[#845FFF] PingAR-Light md:text-[0.9375vw] text-[3.07692307692vw] md:rounded-[1.614583333333333vw] rounded-[31px] md:w-[9.895833333333333vw] w-[31.2820512821vw] h-[9.23076923077vw]
@@ -140,14 +142,14 @@ body {
         md:rounded-full rounded-[7.94871794872vw]
         md:w-[3.75vw] md:h-[3.75vw] w-[14.358974359vw] h-[14.358974359vw]
         flex items-center justify-center z-[999] cursor-pointer;
- }
- .cta__Menu {
-  @apply md:p-[1vw] md:w-[13.0208333333vw] w-[50.7692307692vw]
+  }
+  .cta__Menu {
+    @apply md:p-[1vw] md:w-[13.0208333333vw] w-[50.7692307692vw]
       md:h-[10.4166666667vw] h-[41.5384615385vw] bg-[#3B3659]  transform  
       md:rounded-[1.04166666667vw] rounded-[5.12820512821vw]
       absolute bottom-0 right-0 transition-all duration-[800ms] origin-bottom-right
       flex flex-col items-center justify-center;
- }
+  }
   .question {
     @apply flex items-center gap-x-[0.625vw] min-w-[36.4102564103vw]
         h-[11.5384615385vw] md:w-[unset] md:min-w-[unset] md:h-[unset]  rounded-[12.3076923077vw] md:rounded-[unset]
@@ -175,15 +177,13 @@ body {
     @apply md:pt-[0.83333333333vw] pt-[4.10256410256vw] md:text-[1.04166666667vw] md:leading-[1.5625vw] leading-[6.05128205128vw] text-[3.58974358974vw];
   }
   .stickyHeader .navTopList {
-   @apply md:hidden
+    @apply md:hidden;
   }
   .stickyHeader {
-    @apply   bg-[#3b3659] md:pb-[1.66666666667vw] pb-[8.33333333333vw]
-     
+    @apply bg-[#3b3659] md:pb-[1.66666666667vw] pb-[8.33333333333vw];
   }
-  
 }
-.stickyHeader{
+.stickyHeader {
   position: fixed;
 }
 #heartLine {
@@ -193,7 +193,7 @@ body {
 @keyframes line-anime {
   to {
     stroke-dashoffset: 0;
- }
+  }
 }
 .category input[type="checkbox"]:checked + .checkedIcon {
   opacity: 1;
@@ -202,45 +202,45 @@ body {
 .links li img.active {
   transform: translateX(0);
 }
-.home__Page .blueLogo{
+.home__Page .blueLogo {
   display: none;
 }
-.home__Page{
-  color: #FFFFFF;
+.home__Page {
+  color: #ffffff;
 }
- 
-.home__Page .menu span{
-  background-color: #FFFFFF;
+
+.home__Page .menu span {
+  background-color: #ffffff;
 }
-.stickyHeader .menu span{
-  background-color: #FFFFFF !important;
+.stickyHeader .menu span {
+  background-color: #ffffff !important;
 }
-.home__Page .whiteLogo{
+.home__Page .whiteLogo {
   display: block;
 }
-.sub__Page .blueLogo{
+.sub__Page .blueLogo {
   display: block;
 }
-.sub__Page{
-  color:#3B3659 ;
+.sub__Page {
+  color: #3b3659;
 }
-.sub__Page .menu span{
-  background-color: #3B3659;
+.sub__Page .menu span {
+  background-color: #3b3659;
 }
-.sub__Page .whiteLogo{
+.sub__Page .whiteLogo {
   display: none;
 }
-.stickyHeader{
-  color: #FFFFFF;
+.stickyHeader {
+  color: #ffffff;
 }
- 
-.stickyHeader .download__App:hover{
-  background-color:#845FFF !important;
+
+.stickyHeader .download__App:hover {
+  background-color: #845fff !important;
 }
-.stickyHeader .blueLogo{
+.stickyHeader .blueLogo {
   display: none;
 }
-.stickyHeader .whiteLogo{
+.stickyHeader .whiteLogo {
   display: block;
 }
 .healthCare__Overlay {
@@ -289,7 +289,6 @@ body {
 header {
   transition: all 0.8s;
 }
-
 
 .stickyHeader .navList {
   position: relative;
@@ -395,7 +394,7 @@ body.active {
   transform: translateX(-50%);
   left: 50%;
   clip-path: circle(10% at 45% 80%);
- opacity: 0;
+  opacity: 0;
 }
 .cta:hover .cta__Menu {
   opacity: 1;
@@ -421,7 +420,6 @@ body.active {
 .faq.active .faq__Question #Ellipse_1 {
   opacity: 1;
 }
-
 
 .error span {
   display: block !important;
@@ -501,8 +499,8 @@ body.active {
 
 @media (min-width: 768px) {
   .faq.active .faq__Answer {
-    max-height: 6vw; 
-   }
+    max-height: 6vw;
+  }
   .aboutMeenaSwiper .swiper-button-next {
     right: 12.5vw !important;
   }
@@ -544,7 +542,7 @@ body.active {
   .homeSwipers .swiper-button-prev {
     left: unset !important;
     right: 4.6875vw !important;
-  } 
+  }
   .aboutAppSwiper .swiper-button-prev {
     left: unset !important;
     right: 4.6875vw !important;
@@ -552,8 +550,8 @@ body.active {
 }
 @media (max-width: 768px) {
   .faq.active .faq__Answer {
-    max-height: 51.2820512821vw; 
-   }
+    max-height: 51.2820512821vw;
+  }
   .aboutMeenaSwiper .swiper-button-next,
   .aboutMeenaSwiper .swiper-button-prev {
     width: 11.5384615385vw !important;
@@ -585,7 +583,6 @@ body.active {
   .aboutAppSwiper .swiper-button-next,
   .aboutAppSwiper .swiper-button-prev {
     width: 11.5384615385vw !important;
-    
   }
   .aboutAppSwiper .swiper-button-next {
     right: 5.64102564103vw !important;

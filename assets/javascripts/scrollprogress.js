@@ -49,10 +49,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   const animation2 = document.getElementById('lineanimation2')
   const heartPath = document.getElementById("heartLine");
-heartPath.parentElement.style.opacity =0
+  if(heartPath){
+    heartPath.parentElement.style.opacity =0
+  }
   let isFirstVisitAnimation2 = false 
   window.onscroll = () => {
-    updateLoader(); 
+    updateLoader();
+    if(heartPath) {
     if(isElementInViewport(animation2)){
       if(!isFirstVisitAnimation2){  
 heartPath.parentElement.style.opacity =1
@@ -67,7 +70,7 @@ heartPath.parentElement.style.opacity =1
       }
       // paths.forEach((path, index) => {
       // });
-    }
+    }}
   }
 
   updateLoader();

@@ -1,3 +1,7 @@
+
+// AOS 
+AOS.init({ once: true });
+
 const handleLang = (selected) => {
     selected.parentElement.classList.add("active");
     setTimeout(() => {

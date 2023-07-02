@@ -4180,6 +4180,8 @@ video {
 
 body {
   font-family: "PingAR-Regular";
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
 .PingAR-Light {
@@ -4198,7 +4200,7 @@ body {
   font-family: "PingAR-Bold";
 }
 
-.stickyHeader{
+.stickyHeader {
   position: fixed;
 }
 
@@ -4222,55 +4224,55 @@ body {
   transform: translateX(0);
 }
 
-.home__Page .blueLogo{
+.home__Page .blueLogo {
   display: none;
 }
 
-.home__Page{
-  color: #FFFFFF;
+.home__Page {
+  color: #ffffff;
 }
 
-.home__Page .menu span{
-  background-color: #FFFFFF;
+.home__Page .menu span {
+  background-color: #ffffff;
 }
 
-.stickyHeader .menu span{
-  background-color: #FFFFFF !important;
+.stickyHeader .menu span {
+  background-color: #ffffff !important;
 }
 
-.home__Page .whiteLogo{
+.home__Page .whiteLogo {
   display: block;
 }
 
-.sub__Page .blueLogo{
+.sub__Page .blueLogo {
   display: block;
 }
 
-.sub__Page{
-  color:#3B3659 ;
+.sub__Page {
+  color: #3b3659;
 }
 
-.sub__Page .menu span{
-  background-color: #3B3659;
+.sub__Page .menu span {
+  background-color: #3b3659;
 }
 
-.sub__Page .whiteLogo{
+.sub__Page .whiteLogo {
   display: none;
 }
 
-.stickyHeader{
-  color: #FFFFFF;
+.stickyHeader {
+  color: #ffffff;
 }
 
-.stickyHeader .download__App:hover{
-  background-color:#845FFF !important;
+.stickyHeader .download__App:hover {
+  background-color: #845fff !important;
 }
 
-.stickyHeader .blueLogo{
+.stickyHeader .blueLogo {
   display: none;
 }
 
-.stickyHeader .whiteLogo{
+.stickyHeader .whiteLogo {
   display: block;
 }
 
@@ -5036,10 +5038,6 @@ body.active {
     height: 1.45833333333vw;
   }
 
-  .md\:h-\[1\.66666666667vw\] {
-    height: 1.66666666667vw;
-  }
-
   .md\:h-\[11\.0416666667vw\] {
     height: 11.0416666667vw;
   }
@@ -5450,10 +5448,6 @@ body.active {
 
   .md\:w-\[57\.5vw\] {
     width: 57.5vw;
-  }
-
-  .md\:w-\[6\.35416666667vw\] {
-    width: 6.35416666667vw;
   }
 
   .md\:w-\[62\.5vw\] {
