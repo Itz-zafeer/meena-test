@@ -26,13 +26,13 @@ menu.onclick = () => {
   sidebar.classList.toggle("active");
   body.classList.toggle("active");
 };
-const faqQuestionEl = document.querySelectorAll(".faq__Question")
+const faqEl = document.querySelectorAll(".faq")
 
-faqQuestionEl.forEach((faqQuestion)=>{
-  faqQuestion.addEventListener("click",()=>{
-  const selectedFaq = faqQuestion.parentElement
-  faqQuestionEl.forEach((v)=>{
-   const otherFaq = v.parentElement
+faqEl.forEach((faq)=>{
+  faq.addEventListener("click",()=>{
+  const selectedFaq = faq
+  faqEl.forEach((v)=>{
+   const otherFaq = v
    if(otherFaq === selectedFaq){
     otherFaq.classList.toggle("active")
    }else{

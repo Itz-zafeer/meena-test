@@ -952,6 +952,9 @@ video {
   padding-bottom: 6.15384615385vw;
   --tw-text-opacity: 1;
   color: rgb(59 54 89 / var(--tw-text-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 800ms;
 }
 
 @media (min-width: 768px) {
@@ -983,6 +986,7 @@ video {
 }
 
 .faq__Question h5 {
+  width: 85%;
   font-size: 4.10256410256vw;
   line-height: 6.66666666667vw;
 }
@@ -1000,7 +1004,7 @@ video {
   overflow: hidden;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
+  transition-duration: 800ms;
 }
 
 @media (min-width: 768px) {
@@ -1351,6 +1355,10 @@ video {
 
 .mt-\[4\.10256410256vw\] {
   margin-top: 4.10256410256vw;
+}
+
+.mt-\[5\.12820512821vw\] {
+  margin-top: 5.12820512821vw;
 }
 
 .mt-\[5\.641025641025641vw\] {
@@ -1870,6 +1878,10 @@ video {
 
 .min-w-\[70\.25641025641026vw\] {
   min-width: 70.25641025641026vw;
+}
+
+.min-w-\[8\.20512820513vw\] {
+  min-width: 8.20512820513vw;
 }
 
 .min-w-\[9\.23076923077vw\] {
@@ -3444,6 +3456,18 @@ video {
   padding-top: 8.33333333333vw;
 }
 
+.pb-\[8\.717948717948718vw\] {
+  padding-bottom: 8.717948717948718vw;
+}
+
+.pb-\[20\.51282051282051vw\] {
+  padding-bottom: 20.51282051282051vw;
+}
+
+.pb-\[15\.12820512820513vw\] {
+  padding-bottom: 15.12820512820513vw;
+}
+
 .text-left {
   text-align: left;
 }
@@ -3760,10 +3784,6 @@ video {
 .text-\[\#FFFFFF\] {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[3\.58974358974\] {
-  color: 3.58974358974;
 }
 
 .text-\[red\] {
@@ -4188,6 +4208,17 @@ body {
   position: fixed;
 }
 
+#heartLine {
+  stroke-dasharray: 0;
+  stroke-dashoffset: 0;
+}
+
+@keyframes line-anime {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
 .category input[type="checkbox"]:checked + .checkedIcon {
   opacity: 1;
 }
@@ -4336,6 +4367,17 @@ header {
   bottom: 0 !important;
 }
 
+.aboutAppSwiper .swiper-button-next:after,
+.aboutAppSwiper .swiper-button-prev:after {
+  display: none !important;
+}
+
+.aboutAppSwiper .swiper-button-next,
+.aboutAppSwiper .swiper-button-prev {
+  top: unset !important;
+  bottom: 0 !important;
+}
+
 .hideScroll::-webkit-scrollbar {
   display: none;
   /* Safari and Chrome */
@@ -4430,11 +4472,6 @@ body.active {
 
 .faq.active .faq__Question #Ellipse_1 {
   opacity: 1;
-}
-
-.faq.active .faq__Answer {
-  max-height: 300px;
-  overflow: unset;
 }
 
 .error span {
@@ -4543,6 +4580,10 @@ body.active {
 /* SCROLL PROGREESS CSS  END    */
 
 @media (min-width: 768px) {
+  .faq.active .faq__Answer {
+    max-height: 6vw;
+  }
+
   .aboutMeenaSwiper .swiper-button-next {
     right: 12.5vw !important;
   }
@@ -4556,8 +4597,17 @@ body.active {
     width: 8.95833333333vw !important;
   }
 
+  .aboutAppSwiper .swiper-slide {
+    width: 75vw !important;
+  }
+
   .aboutMeenaSwiper .swiper-button-next,
   .aboutMeenaSwiper .swiper-button-prev {
+    width: 3.28125vw !important;
+  }
+
+  .aboutAppSwiper .swiper-button-next,
+  .aboutAppSwiper .swiper-button-prev {
     width: 3.28125vw !important;
   }
 
@@ -4585,9 +4635,18 @@ body.active {
     left: unset !important;
     right: 4.6875vw !important;
   }
+
+  .aboutAppSwiper .swiper-button-prev {
+    left: unset !important;
+    right: 4.6875vw !important;
+  }
 }
 
 @media (max-width: 768px) {
+  .faq.active .faq__Answer {
+    max-height: 51.2820512821vw;
+  }
+
   .aboutMeenaSwiper .swiper-button-next,
   .aboutMeenaSwiper .swiper-button-prev {
     width: 11.5384615385vw !important;
@@ -4620,6 +4679,15 @@ body.active {
   }
 
   .homeSwipers .swiper-button-next {
+    right: 5.64102564103vw !important;
+  }
+
+  .aboutAppSwiper .swiper-button-next,
+  .aboutAppSwiper .swiper-button-prev {
+    width: 11.5384615385vw !important;
+  }
+
+  .aboutAppSwiper .swiper-button-next {
     right: 5.64102564103vw !important;
   }
 
@@ -4878,6 +4946,10 @@ body.active {
 
   .md\:mt-\[0\.83333333333vw\] {
     margin-top: 0.83333333333vw;
+  }
+
+  .md\:mt-\[1\.14583333333vw\] {
+    margin-top: 1.14583333333vw;
   }
 
   .md\:mt-\[1\.25104166667vw\] {
@@ -5432,6 +5504,10 @@ body.active {
     min-width: 11.3541666667vw;
   }
 
+  .md\:min-w-\[2\.1875vw\] {
+    min-width: 2.1875vw;
+  }
+
   .md\:min-w-\[3\.28125vw\] {
     min-width: 3.28125vw;
   }
@@ -5761,6 +5837,10 @@ body.active {
     padding-bottom: 2.34375vw;
   }
 
+  .md\:pb-\[2\.91666666667vw\] {
+    padding-bottom: 2.91666666667vw;
+  }
+
   .md\:pb-\[3\.33333333333vw\] {
     padding-bottom: 3.33333333333vw;
   }
@@ -5795,6 +5875,10 @@ body.active {
 
   .md\:pb-\[5\.98958333333vw\] {
     padding-bottom: 5.98958333333vw;
+  }
+
+  .md\:pb-\[8\.4375vw\] {
+    padding-bottom: 8.4375vw;
   }
 
   .md\:pb-\[8\.69791666667vw\] {

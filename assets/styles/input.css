@@ -155,7 +155,8 @@ body {
   }
   .faq {
     @apply text-[#3B3659] flex flex-col bg-[#EBF0F7] md:rounded-[1.04166666667vw] rounded-[3.84615384615vw]
-        md:px-[2.08333333333vw] px-[4.10256410256vw] md:py-[2.161458333333333vw] py-[6.15384615385vw] cursor-pointer;
+        md:px-[2.08333333333vw] px-[4.10256410256vw] md:py-[2.161458333333333vw] py-[6.15384615385vw] cursor-pointer
+        transition-all duration-[800ms];
   }
   .faq.active {
     @apply md:py-[1.69270833333vw] py-[6.28205128205vw];
@@ -164,11 +165,11 @@ body {
     @apply flex items-center justify-between;
   }
   .faq__Question h5 {
-    @apply md:text-[1.14583333333vw] 
+    @apply md:text-[1.14583333333vw] w-[85%]
         md:leading-[1.82291666667vw]  leading-[6.66666666667vw] text-[4.10256410256vw];
   }
   .faq__Answer {
-    @apply max-h-0 overflow-hidden md:w-[41.25vw] w-[72.3076923077vw] transition-all;
+    @apply max-h-0 overflow-hidden md:w-[41.25vw] w-[72.3076923077vw] transition-all duration-[800ms];
   }
   .faq__Answer p {
     @apply md:pt-[0.83333333333vw] pt-[4.10256410256vw] md:text-[1.04166666667vw] md:leading-[1.5625vw] leading-[6.05128205128vw] text-[3.58974358974vw];
@@ -180,9 +181,19 @@ body {
     @apply   bg-[#3b3659] md:pb-[1.66666666667vw] pb-[8.33333333333vw]
      
   }
+  
 }
 .stickyHeader{
   position: fixed;
+}
+#heartLine {
+  stroke-dasharray: 0;
+  stroke-dashoffset: 0;
+}
+@keyframes line-anime {
+  to {
+    stroke-dashoffset: 0;
+ }
 }
 .category input[type="checkbox"]:checked + .checkedIcon {
   opacity: 1;
@@ -305,6 +316,15 @@ header {
   top: unset !important;
   bottom: 0 !important;
 }
+.aboutAppSwiper .swiper-button-next:after,
+.aboutAppSwiper .swiper-button-prev:after {
+  display: none !important;
+}
+.aboutAppSwiper .swiper-button-next,
+.aboutAppSwiper .swiper-button-prev {
+  top: unset !important;
+  bottom: 0 !important;
+}
 .hideScroll::-webkit-scrollbar {
   display: none;
   /* Safari and Chrome */
@@ -393,10 +413,7 @@ body.active {
   opacity: 1;
 }
 
-.faq.active .faq__Answer {
-  max-height: 300px;
-  overflow: unset;
-}
+
 .error span {
   display: block !important;
 }
@@ -474,6 +491,9 @@ body.active {
 /* SCROLL PROGREESS CSS  END    */
 
 @media (min-width: 768px) {
+  .faq.active .faq__Answer {
+    max-height: 6vw; 
+   }
   .aboutMeenaSwiper .swiper-button-next {
     right: 12.5vw !important;
   }
@@ -484,8 +504,15 @@ body.active {
   .aboutMeenaSwiper .swiper-slide {
     width: 8.95833333333vw !important;
   }
+  .aboutAppSwiper .swiper-slide {
+    width: 75vw !important;
+  }
   .aboutMeenaSwiper .swiper-button-next,
   .aboutMeenaSwiper .swiper-button-prev {
+    width: 3.28125vw !important;
+  }
+  .aboutAppSwiper .swiper-button-next,
+  .aboutAppSwiper .swiper-button-prev {
     width: 3.28125vw !important;
   }
   .doctorsSwiper .swiper-wrapper .swiper-slide {
@@ -508,9 +535,16 @@ body.active {
   .homeSwipers .swiper-button-prev {
     left: unset !important;
     right: 4.6875vw !important;
+  } 
+  .aboutAppSwiper .swiper-button-prev {
+    left: unset !important;
+    right: 4.6875vw !important;
   }
 }
 @media (max-width: 768px) {
+  .faq.active .faq__Answer {
+    max-height: 51.2820512821vw; 
+   }
   .aboutMeenaSwiper .swiper-button-next,
   .aboutMeenaSwiper .swiper-button-prev {
     width: 11.5384615385vw !important;
@@ -537,6 +571,14 @@ body.active {
     top: unset !important;
   }
   .homeSwipers .swiper-button-next {
+    right: 5.64102564103vw !important;
+  }
+  .aboutAppSwiper .swiper-button-next,
+  .aboutAppSwiper .swiper-button-prev {
+    width: 11.5384615385vw !important;
+    
+  }
+  .aboutAppSwiper .swiper-button-next {
     right: 5.64102564103vw !important;
   }
   .homeSwipers .swiper-button-prev {

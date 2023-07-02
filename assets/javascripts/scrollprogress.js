@@ -1,6 +1,16 @@
+function isElementInViewport(element) {
+  var rect = element.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+} 
+
 document.addEventListener("DOMContentLoaded", function(event) {
         
-    let offset = window.innerHeight+100;
+    let offset = window.innerHeight + 100;
     let circleContainer = document.querySelector(".circle-container");
     let circlePath = document.querySelector('.circle-container path');
     let pathLength = circlePath.getTotalLength();
@@ -37,8 +47,27 @@ document.addEventListener("DOMContentLoaded", function(event) {
     window.scrollTo({ top: 0, behavior: 'smooth'});
   }
 
+  const animation2 = document.getElementById('lineanimation2')
+  const heartPath = document.getElementById("heartLine");
+heartPath.parentElement.style.opacity =0
+  let isFirstVisitAnimation2 = false 
   window.onscroll = () => {
-    updateLoader();
+    updateLoader(); 
+    if(isElementInViewport(animation2)){
+      if(!isFirstVisitAnimation2){  
+heartPath.parentElement.style.opacity =1
+        const pathSize = heartPath.getTotalLength();
+        console.log(pathSize)
+        heartPath.style.strokeDasharray = `${pathSize}px`;
+        heartPath.style.strokeDashoffset = `${pathSize}px`;
+        heartPath.style.animation = "line-anime 5s ease forwards";
+        heartPath.style.animationDelay = `${0 * 0.3}s`;
+        isFirstVisitAnimation2 = true 
+
+      }
+      // paths.forEach((path, index) => {
+      // });
+    }
   }
 
   updateLoader();
