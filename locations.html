@@ -170,7 +170,7 @@
             class="flex navTopList items-center justify-end md:gap-x-[2.91666666667vw]"
           >
             <ul
-              class="hidden links PingAR-Light md:text-[0.9375vw] md:leading-[1.45833333333vw] md:flex items-center md:gap-x-[2.08333333333vw]"
+              class="hidden links PingAR-Regular md:text-[0.9375vw] md:leading-[1.45833333333vw] md:flex items-center md:gap-x-[2.08333333333vw]"
             >
               <li>
                 <a href="./about-meena.html">About meena</a>
@@ -216,7 +216,7 @@
           </div>
           <div class="hidden md:flex items-center md:gap-x-[2.08333333333vw]">
             <ul
-              class="links navList PingAR-Light md:text-[1.04166666667vw] md:leading-[1.45833333333vw] flex items-center md:gap-x-[2.08333333333vw]"
+              class="links navList PingAR-Regular md:text-[1.04166666667vw] md:leading-[1.45833333333vw] flex items-center md:gap-x-[2.08333333333vw]"
             >
               <li>
                 <a href="./index.html">Home</a>
@@ -255,7 +255,7 @@
           class="w-[90%] mx-[auto] h-full flex flex-col pt-[54.8717948718vw]"
         >
           <ul
-            class="links w-full text-white text-[4.87179487179vw] flex flex-col gap-y-[4.10256410256vw]"
+            class="PingAr-Regular links w-full text-white text-[4.87179487179vw] flex flex-col gap-y-[4.10256410256vw]"
           >
             <li>
               <a href="./index.html">Home</a>
@@ -297,17 +297,23 @@
     </header>
     <main>
       <section>
+        <div class="arrow__Lottie absolute top-0 right-0 
+        hidden md:block md:w-[38.89375vw]
+        md:h-[38.89375vw]">
+          <lottie-player src="./assets/json/arrow in location page.json"
+          loop autoplay class="md:w-[50.9895833333vw]
+          md:h-[50.9895833333vw]">
+
+          </lottieplayer>
+        </div>
         <div class="Container1680 md:pt-[13.9583333333vw] pt-[40.7692307692vw]">
-          <div>
+          <div class="flex items-center md:gap-x-[0.625vw] gap-x-[3.58974358974vw]">
             <a href="./index.html">
-              <img
-                src="./assets/images/icons/home.svg"
-                alt="home"
-                class="md:w-[2.44791666667vw] w-[9.48717948718vw]"
-              />
+              <img src="./assets/images/icons/home.svg" alt="home" class="md:w-[2.44791666667vw] w-[9.48717948718vw]">
             </a>
+            <img src="./assets/images/icons/next.svg" alt="chevron" class="md:w-[0.83333333333vw] w-[3.07692307692vw] md:mt-[0.46875vw] mt-[1.53846153846vw]">
           </div>
-          <div class="md:w-[37.5vw] md:mt-[0.625vw] mt-[3.07692307692vw]">
+          <div class="md:w-[37.5vw] md:mt-[1.14583333333vw] mt-[4.10256410256vw]">
             <h1
               class="heading54 PingAR-Regular tracking-[unset] text-[#3B3659]"
             >
@@ -323,7 +329,7 @@
           </div>
         </div>
         <div
-          class="md:w-full w-[88.7179487179vw] mx-[auto] md:mx-[unset] relative md:pt-[4.16666666667vw] gap-y-[8.33333333333vw] md:pb-[10.4166666667vw] flex justify-center items-stretch flex-col md:flex-row"
+          class="  z-[2] md:w-full w-[88.7179487179vw] mx-[auto] md:mx-[unset] relative md:pt-[4.16666666667vw] gap-y-[8.33333333333vw] md:pb-[10.4166666667vw] flex justify-center items-stretch flex-col md:flex-row"
         >
           <div
             class="hidden md:block md:w-[25vw] bg-[#F0F0F0] md:rounded-tl-[1.04166666667vw] md:rounded-bl-[1.04166666667vw] rounded-[3.84615384615vw] md:rounded-br-[unset] md:rounded-tr-[unset] md:overflow-hidden"
@@ -1129,5 +1135,6 @@
     <script src="./assets/javascripts/global.js"></script>
     <script src="./assets/javascripts/home-swiper-sliders.js"></script>
     <script src="./assets/javascripts/scrollprogress.js"></script>
+    <script src="./assets/javascripts/lottie.js"></script>
   </body>
 </html>

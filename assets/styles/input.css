@@ -179,9 +179,10 @@ body {
   .stickyHeader .navTopList {
     @apply md:hidden;
   }
-  .stickyHeader {
-    @apply bg-[#3b3659] md:pb-[1.66666666667vw] pb-[8.33333333333vw];
-  }
+  
+}
+.arrow__Lottie lottie-player{
+  transform: matrix(-0.92, -0.39, 0.39, -0.92, 0, 0);
 }
 .stickyHeader {
   position: fixed;
@@ -302,10 +303,10 @@ header {
   background: transparent linear-gradient(1deg, #ab99d6 0%, #3b365900 100%) 0%
     0% no-repeat padding-box;
 }
-.vision__Overlay3 {
-  background: transparent linear-gradient(0deg, #3b3659 0%, #3b365900 100%) 0%
-    0% no-repeat padding-box;
-}
+ 
+  .vision__Overlay3 {
+  background: transparent linear-gradient(0deg, #3B3659 0%, #3B365900 100%) 0% 0% no-repeat padding-box;
+}  
 .aboutMeenaSwiper .swiper-button-next:after,
 .aboutMeenaSwiper .swiper-button-prev:after {
   display: none !important;
@@ -404,11 +405,13 @@ body.active {
 .question.active #Path_101508,
 .question:hover #Path_101507,
 .question:hover #Path_101508 {
-  stroke: #3b3659;
+  stroke: #8450ff
+;
 }
 .question.active #Path_101508,
 .question:hover #Path_101508 {
-  fill: #3b3659;
+  fill: #8450ff
+;
 }
 
 .faq.active .faq__Question svg {
@@ -498,6 +501,11 @@ body.active {
 /* SCROLL PROGREESS CSS  END    */
 
 @media (min-width: 768px) {
+  .stickyHeader {
+    padding-top: 1.43229166667vw !important;
+    padding-bottom: 1.43229166667vw !important;
+   background-color: #3b3659;
+  }
   .faq.active .faq__Answer {
     max-height: 6vw;
   }
@@ -549,6 +557,11 @@ body.active {
   }
 }
 @media (max-width: 768px) {
+  .stickyHeader {
+    padding-top: 8.20512820513vw !important;
+    padding-bottom: 8.20512820513vw !important;
+   background-color: #3b3659;
+  }
   .faq.active .faq__Answer {
     max-height: 51.2820512821vw;
   }
