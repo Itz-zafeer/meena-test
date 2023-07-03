@@ -31,11 +31,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
       if (scrollTop > offset) {
         circleContainer.classList.add("active");
-        document.querySelector('.cta').style.opacity= 1
+        if((window.location.pathname == "/" || window.location.pathname == "/index.html")){
+          document.querySelector('.cta').style.opacity= 1
+        }
         document.querySelector('header').classList.add('stickyHeader')
       } else {
         circleContainer.classList.remove("active");
-        document.querySelector('.cta').style.opacity= 0
+        if((window.location.pathname == "/" || window.location.pathname == "/index.html")){
+          document.querySelector('.cta').style.opacity= 0
+        }
         document.querySelector('header').classList.remove('stickyHeader')
 
 
@@ -49,10 +53,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   const animation2 = document.getElementById('lineanimation2')
   const heartPath = document.getElementById("heartLine");
+  const animation3 = document.getElementById('lineanimation3')
+  const heartPath3 = document.getElementById("heartLine3");
   if(heartPath){
     heartPath.parentElement.style.opacity =0
   }
+  if(heartPath3){
+    heartPath3.parentElement.style.opacity =0
+  }
   let isFirstVisitAnimation2 = false 
+  let isFirstVisitAnimation3 = false 
   window.onscroll = () => {
     updateLoader();
     if(heartPath) {
@@ -63,8 +73,23 @@ heartPath.parentElement.style.opacity =1
         console.log(pathSize)
         heartPath.style.strokeDasharray = `${pathSize}px`;
         heartPath.style.strokeDashoffset = `${pathSize}px`;
-        heartPath.style.animation = "line-anime 5s ease forwards";
+        heartPath.style.animation = "line-anime 3s ease-in forwards";
         heartPath.style.animationDelay = `${0 * 0.3}s`;
+        isFirstVisitAnimation2 = true 
+
+      }
+      // paths.forEach((path, index) => {
+      // });
+    }}
+    if(heartPath3) {
+    if(isElementInViewport(animation3)){
+      if(!isFirstVisitAnimation3){  
+heartPath3.parentElement.style.opacity =1
+        const pathSize = heartPath3.getTotalLength(); 
+        heartPath3.style.strokeDasharray = `${pathSize}px`;
+        heartPath3.style.strokeDashoffset = `${pathSize}px`;
+        heartPath3.style.animation = "line-anime 3s ease-in forwards";
+        heartPath3.style.animationDelay = `${0 * 0.3}s`;
         isFirstVisitAnimation2 = true 
 
       }
@@ -76,3 +101,25 @@ heartPath.parentElement.style.opacity =1
   updateLoader();
 
 });
+if(!(window.location.pathname == "/" || window.location.pathname == "/index.html")){
+  document.querySelector('.cta').style.opacity= 1
+}
+document.querySelectorAll('.heroLine').forEach((heroLine,index)=>{
+  heroLine.style.opacity = 1
+  const path  = heroLine.querySelector('path')
+  const pathSize = path.getTotalLength();
+  
+  path.style.strokeDasharray = `${pathSize}px`;
+  path.style.strokeDashoffset = `${pathSize}px`;
+  path.style.animation = "line-anime 1s ease forwards";
+  path.style.animationDelay = `${index * 0.5}s`; 
+})
+
+// document.querySelectorAll('.asterisk path').forEach((path,index)=>{
+//   const pathSize = path.getTotalLength();
+  
+//   path.style.strokeDasharray = `${pathSize}px`;
+//   path.style.strokeDashoffset = `${pathSize}px`;
+//   path.style.animation = "line-anime 0.5s ease forwards";
+//   path.style.animationDelay = `${index * 0.5}s`; 
+// })

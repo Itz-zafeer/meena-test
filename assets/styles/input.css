@@ -140,7 +140,7 @@ body {
   .cta {
     @apply fixed md:bottom-[50px] bottom-[30px]
         md:right-[5.64102564103vw] right-[4.64102564103vw] bg-[#845FFF]
-        md:rounded-full rounded-[7.94871794872vw]
+        md:rounded-full rounded-[7.94871794872vw] opacity-0
         md:w-[3.75vw] md:h-[3.75vw] w-[14.358974359vw] h-[14.358974359vw]
         flex items-center justify-center z-[999] cursor-pointer;
   }
@@ -250,20 +250,19 @@ body {
     no-repeat padding-box;
 }
 .hero__Overlay1 {
-  background: transparent linear-gradient(180deg, #ab99d600 0%, #3b3659b3 100%)
+  background: transparent linear-gradient(180deg, #9c99bf00 0%, #7a72abe6 100%)
     0% 0% no-repeat padding-box;
-  opacity: 0.6;
-  mix-blend-mode: hard-light;
+  opacity: 0.7;
   transform: matrix(-1, 0, 0, -1, 0, 0);
 }
 .hero__Overlay2 {
-  background: transparent linear-gradient(180deg, #ab99d600 0%, #3b365999 100%)
-    0% 0% no-repeat padding-box;
-  opacity: 0.6;
-  mix-blend-mode: hard-light;
+  background: transparent linear-gradient(180deg, #7a72ab00 0%, #2d2755 100%) 0%
+    0% no-repeat padding-box;
+  opacity: 0.3;
 }
 .hero__Overlay3 {
-  mix-blend-mode: hard-light;
+  background: #3e29bb 0% 0% no-repeat padding-box;
+  opacity: 0.1;
 }
 .doctorsSwiper .swiper-wrapper .swiper-slide {
   overflow: hidden;
@@ -296,15 +295,24 @@ header {
   top: 0.2vw;
 }
 .vision__Overlay1 {
+  background: transparent
+    linear-gradient(180deg, var(--unnamed-color-3b3659) 0%, #3b365900 100%) 0%
+    0% no-repeat padding-box;
   background: transparent linear-gradient(180deg, #3b3659 0%, #3b365900 100%) 0%
     0% no-repeat padding-box;
 }
 .vision__Overlay2 {
+  background: transparent
+    linear-gradient(1deg, var(--unnamed-color-ab99d6) 0%, #3b365900 100%) 0% 0%
+    no-repeat padding-box;
   background: transparent linear-gradient(1deg, #ab99d6 0%, #3b365900 100%) 0%
     0% no-repeat padding-box;
 }
 
 .vision__Overlay3 {
+  background: transparent
+    linear-gradient(0deg, var(--unnamed-color-3b3659) 0%, #3b365900 100%) 0% 0%
+    no-repeat padding-box;
   background: transparent linear-gradient(0deg, #3b3659 0%, #3b365900 100%) 0%
     0% no-repeat padding-box;
 }
@@ -510,6 +518,8 @@ body.active {
   }
   .stickyHeader .whiteLogo {
     width: 10.708vw;
+    position: relative;
+    top: 0.2vw;
   }
   .stickyHeader {
     padding-top: 0.83229166667vw !important;
