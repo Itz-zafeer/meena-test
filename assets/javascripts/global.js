@@ -34,7 +34,13 @@ const faqEl = document.querySelectorAll(".faq")
 
 faqEl.forEach((faq)=>{
   faq.addEventListener("click",()=>{
-  const selectedFaq = faq
+  const selectedFaq = faq 
+  setTimeout(() => {
+    const yOffset  = -(window.innerWidth / 100 * 4.97135416667)
+  const y = selectedFaq.getBoundingClientRect().top + window.pageYOffset + yOffset;
+  window.scrollTo({top: y, behavior: 'smooth'});
+  }, 800);
+  
   faqEl.forEach((v)=>{
    const otherFaq = v
    if(otherFaq === selectedFaq){
@@ -63,4 +69,4 @@ setTimeout(()=>{
   
 }
 
-document.querySelector("form").addEventListener("submit",handelForm)
+document.querySelector("form")?.addEventListener("submit",handelForm)

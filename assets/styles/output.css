@@ -1196,6 +1196,22 @@ video {
   top: 7.17948717949vw;
 }
 
+.bottom-\[13\.0472222222vh\] {
+  bottom: 13.0472222222vh;
+}
+
+.bottom-\[17\.55vh\] {
+  bottom: 17.55vh;
+}
+
+.right-\[31\.753125vw\] {
+  right: 31.753125vw;
+}
+
+.bottom-\[41\.4694444444vh\] {
+  bottom: 41.4694444444vh;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -1852,6 +1868,18 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[34\.84375vw\] {
+  width: 34.84375vw;
+}
+
+.w-\[10\.15625vw\] {
+  width: 10.15625vw;
+}
+
+.w-\[7\.55208333333vw\] {
+  width: 7.55208333333vw;
 }
 
 .min-w-\[37\.4358974359vw\] {
@@ -4187,6 +4215,7 @@ body {
   font-family: "PingAR-Regular";
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
 }
 
 .PingAR-Light {
@@ -4205,7 +4234,7 @@ body {
   font-family: "PingAR-Bold";
 }
 
-.arrow__Lottie lottie-player{
+.arrow__Lottie lottie-player {
   transform: matrix(-0.92, -0.39, 0.39, -0.92, 0, 0);
 }
 
@@ -4338,7 +4367,7 @@ body {
 }
 
 header {
-  transition: all 0.8s;
+  transition: all 0.5s;
 }
 
 .stickyHeader .navList {
@@ -4357,7 +4386,8 @@ header {
 }
 
 .vision__Overlay3 {
-  background: transparent linear-gradient(0deg, #3B3659 0%, #3B365900 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(0deg, #3b3659 0%, #3b365900 100%) 0%
+    0% no-repeat padding-box;
 }
 
 .aboutMeenaSwiper .swiper-button-next:after,
@@ -4472,14 +4502,12 @@ body.active {
 .question.active #Path_101508,
 .question:hover #Path_101507,
 .question:hover #Path_101508 {
-  stroke: #8450ff
-;
+  stroke: #8450ff;
 }
 
 .question.active #Path_101508,
 .question:hover #Path_101508 {
-  fill: #8450ff
-;
+  fill: #8450ff;
 }
 
 .faq.active .faq__Question svg {
@@ -4600,9 +4628,23 @@ body.active {
 /* SCROLL PROGREESS CSS  END    */
 
 @media (min-width: 768px) {
+  .stickyHeader .download__App {
+    padding-top: 0.425vw;
+    padding-bottom: 0.425vw;
+    font-size: 0.85vw;
+  }
+
+  .stickyHeader .navList {
+    font-size: 0.94166666667vw;
+  }
+
+  .stickyHeader .whiteLogo {
+    width: 10.708vw;
+  }
+
   .stickyHeader {
-    padding-top: 1.43229166667vw !important;
-    padding-bottom: 1.43229166667vw !important;
+    padding-top: 0.83229166667vw !important;
+    padding-bottom: 0.83229166667vw !important;
     background-color: #3b3659;
   }
 
