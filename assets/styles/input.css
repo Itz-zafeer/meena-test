@@ -537,7 +537,7 @@ body.active {
     background-color: #3b3659;
   }
   .faq.active .faq__Answer {
-    max-height: 6vw;
+    max-height: 12vw;
   }
   .aboutMeenaSwiper .swiper-button-next {
     right: 12.5vw !important;
@@ -607,7 +607,7 @@ body.active {
     background-color: #3b3659;
   }
   .faq.active .faq__Answer {
-    max-height: 51.2820512821vw;
+    max-height: 102.2820512821vw;
   }
   .aboutMeenaSwiper .swiper-button-next,
   .aboutMeenaSwiper .swiper-button-prev {
