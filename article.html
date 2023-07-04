@@ -182,7 +182,7 @@
               </li>
             </ul>
 
-            <div class="flex items-center gap-x-[5vw] md:gap-x-[0.625vw]">
+            <div class="flex items-end md:items-center gap-x-[5vw] md:gap-x-[0.625vw]">
               <span
                 onclick="handleLang(this)"
                 class="hidden md:block enToggler cursor-pointer"
@@ -203,14 +203,15 @@
               </span>
               <span
                 onclick="handleLang(this)"
-                class="md:hidden block arToggler cursor-pointer"
+                class=" 
+text-[4.61538461538vw] md:hidden block arToggler cursor-pointer"
               >
                 ع
               </span>
               <div class="menu md:hidden block w-[6.15384615385vw]">
-                <span class="line-1 h-[0.8333333333333333vw]"></span>
-                <span class="line-2 h-[0.8333333333333333vw]"></span>
-                <span class="line-3 h-[0.8333333333333333vw]"></span>
+                <span class="line-1 h-[0.51282051282vw]"></span>
+                <span class="line-2 h-[0.51282051282vw]"></span>
+                <span class="line-3 h-[0.51282051282vw]"></span>
               </div>
             </div>
           </div>
@@ -318,7 +319,8 @@
           </div>
         </div>
         <div class="md:pt-[6.25vw] pt-[16.4102564103vw]">
-          <img
+          <div class="relative overflow-hidden">
+            <img
             src="./assets/images/article/banner.jpg"
             alt="banner"
             class="hidden md:block md:w-[75vw] w-full md:rounded-[1.04166666667vw] mx-[auto]"
@@ -328,6 +330,11 @@
             alt="banner"
             class="md:hidden block md:w-[75vw] w-full mx-[auto]"
           />
+          <svg class="absolute w-full md:top-[-21.875vw] top-[-133.337435897vw] md:left-[-1.82291666667vw] left-[-5.64102564103vw] " xmlns="http://www.w3.org/2000/svg" width="1382.431" height="1203.026" viewBox="0 0 1382.431 1203.026">
+            <path id="Path_101471" data-name="Path 101471" d="M2359.754,1286.058c-8.344,367.866-12.991,881.376-134.169,913.845-74.348,19.922-116.409-10.793-115.958-33.666s70.667-13.527,70.667-13.527-38.2-58.664-6.265-70.213c12.159-4.526,36.358-2.351,66.241,46.709,57.409,90.418-33.8,370.866-393.725,481" transform="matrix(0.588, 0.809, -0.809, 0.588, 1031.561, -2244.979)" fill="none" stroke="#8450ff" stroke-linecap="round" stroke-width="6"/>
+          </svg>
+          
+          </div>
           <div
             class="md:mt-[-10.4166666667vw] mt-[-9.23076923077vw] md:pt-[5.46875vw] pt-[8.20512820513vw] bg-[#FFFFFF] md:w-[62.5vw] w-[88.7179487179vw] mx-[auto] relative z-[1] md:pb-[10.4166666667vw] pb-[20.5128205128vw] md:rounded-[1.04166666667vw] rounded-[3.84615384615vw]"
           >
@@ -477,7 +484,7 @@
         <img
           src="./assets/images/icons/footerbg-design.png"
           alt="footerbg-design"
-          class="hidden md:block md:w-[18.6458333333vw] absolute right-0 top-0 opacity-[0.6]"
+          class="hidden md:block md:w-[18.6458333333vw] absolute right-0 top-0"
         />
         <img
           src="./assets/images/icons/footerbg-design-mob.svg"

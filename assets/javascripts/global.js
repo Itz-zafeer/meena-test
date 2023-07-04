@@ -63,7 +63,7 @@ const handelForm = (e)=>{
 setTimeout(()=>{
   allInput.parentElement.parentElement.classList.remove("error")
 
-},1000)
+},8000)
     }
   })
   

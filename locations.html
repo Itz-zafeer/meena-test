@@ -182,7 +182,7 @@
               </li>
             </ul>
 
-            <div class="flex items-center gap-x-[5vw] md:gap-x-[0.625vw]">
+            <div class="flex items-end md:items-center gap-x-[5vw] md:gap-x-[0.625vw]">
               <span
                 onclick="handleLang(this)"
                 class="hidden md:block enToggler cursor-pointer"
@@ -203,14 +203,15 @@
               </span>
               <span
                 onclick="handleLang(this)"
-                class="md:hidden block arToggler cursor-pointer"
+                class=" 
+text-[4.61538461538vw] md:hidden block arToggler cursor-pointer"
               >
                 ع
               </span>
               <div class="menu md:hidden block w-[6.15384615385vw]">
-                <span class="line-1 h-[0.8333333333333333vw]"></span>
-                <span class="line-2 h-[0.8333333333333333vw]"></span>
-                <span class="line-3 h-[0.8333333333333333vw]"></span>
+                <span class="line-1 h-[0.51282051282vw]"></span>
+                <span class="line-2 h-[0.51282051282vw]"></span>
+                <span class="line-3 h-[0.51282051282vw]"></span>
               </div>
             </div>
           </div>
@@ -297,7 +298,16 @@
     </header>
     <main>
       <section>
-        <div class="arrow__Lottie absolute top-0 right-0 
+        <div class="hidden md:block absolute top-[15.3125vw] right-0 w-[31.4583333333vw]">
+          <svg xmlns="http://www.w3.org/2000/svg" width="611.04" height="231.577" viewBox="0 0 611.04 231.577">
+            <g id="Group_89960" data-name="Group 89960" transform="translate(-1313.203 -290.408)">
+              <path id="Path_101703" data-name="Path 101703" d="M-5038.082,422.788S-5209.445,251.069-5359.918,214.5s-280.054,62.019-280.054,62.019" transform="translate(6958.082 94.955)" fill="none" stroke="#8450ff" stroke-linecap="round" stroke-width="6"/>
+              <path id="Path_101704" data-name="Path 101704" d="M-5608.006,199.983s-27.579,75.273-33.419,78.193,94.415,0,94.415,0" transform="translate(6957.901 94.275)" fill="none" stroke="#8450ff" stroke-linecap="round" stroke-width="6"/>
+            </g>
+          </svg>
+          
+        </div>
+        <!-- <div class="arrow__Lottie absolute top-0 right-0 
         hidden md:block md:w-[38.89375vw]
         md:h-[38.89375vw]">
           <lottie-player src="./assets/json/arrow in location page.json"
@@ -305,22 +315,22 @@
           md:h-[50.9895833333vw]">
 
           </lottieplayer>
-        </div>
+        </div> -->
         <div class="Container1680 md:pt-[13.9583333333vw] pt-[40.7692307692vw]">
-          <div class="flex items-center md:gap-x-[0.625vw] gap-x-[3.58974358974vw]">
+          <div data-aos="fade" data-aos-delay="400" class="flex items-center md:gap-x-[0.625vw] gap-x-[3.58974358974vw]">
             <a href="./index.html">
               <img src="./assets/images/icons/home.svg" alt="home" class="md:w-[2.44791666667vw] w-[9.48717948718vw]">
             </a>
             <img src="./assets/images/icons/next.svg" alt="chevron" class="md:w-[0.63333333333vw] w-[3.07692307692vw] md:mt-[0.46875vw] mt-[1.53846153846vw]">
           </div>
           <div class="md:w-[37.5vw] md:mt-[1.14583333333vw] mt-[4.10256410256vw]">
-            <h1
+            <h1 data-aos="fade-up"
               class="heading54 PingAR-Regular tracking-[unset] text-[#3B3659]"
             >
               Meena
               <span class="PingAR-Bold"> locations </span>
             </h1>
-            <p
+            <p data-aos="fade-down"
               class="md:text-[1.14583333333vw] md:leading-[1.74479166667vw] text-[3.58974358974vw] leading-[5.9829059829vw] PingAR-Light text-[#707070] md:text-[#505050] md:mt-[0.625vw] mt-[1.02564102564vw]"
             >
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -982,7 +992,7 @@
         <img
           src="./assets/images/icons/footerbg-design.png"
           alt="footerbg-design"
-          class="hidden md:block md:w-[18.6458333333vw] absolute right-0 top-0 opacity-[0.6]"
+          class="hidden md:block md:w-[18.6458333333vw] absolute right-0 top-0"
         />
         <img
           src="./assets/images/icons/footerbg-design-mob.svg"

@@ -182,7 +182,7 @@
               </li>
             </ul>
 
-            <div class="flex items-center gap-x-[5vw] md:gap-x-[0.625vw]">
+            <div class="flex items-end md:items-center gap-x-[5vw] md:gap-x-[0.625vw]">
               <span
                 onclick="handleLang(this)"
                 class="hidden md:block enToggler cursor-pointer"
@@ -203,14 +203,15 @@
               </span>
               <span
                 onclick="handleLang(this)"
-                class="md:hidden block arToggler cursor-pointer"
+                class=" 
+text-[4.61538461538vw] md:hidden block arToggler cursor-pointer"
               >
                 ع
               </span>
               <div class="menu md:hidden block w-[6.15384615385vw]">
-                <span class="line-1 h-[0.8333333333333333vw]"></span>
-                <span class="line-2 h-[0.8333333333333333vw]"></span>
-                <span class="line-3 h-[0.8333333333333333vw]"></span>
+                <span class="line-1 h-[0.51282051282vw]"></span>
+                <span class="line-2 h-[0.51282051282vw]"></span>
+                <span class="line-3 h-[0.51282051282vw]"></span>
               </div>
             </div>
           </div>
@@ -298,7 +299,7 @@
     <main>
       <section>
         <div class="Container1680 md:pt-[13.9583333333vw] pt-[40.7692307692vw]">
-          <div
+          <div data-aos="fade" data-aos-delay="400"
             class="flex items-center md:gap-x-[0.625vw] gap-x-[3.58974358974vw]"
           >
             <a href="./index.html">
@@ -317,10 +318,10 @@
           <div
             class="md:w-[37.5vw] md:mt-[1.14583333333vw] mt-[4.10256410256vw]"
           >
-            <h1 class="heading54 tracking-[unset] text-[#3B3659]">
+            <h1 data-aos="fade-up" class="heading54 tracking-[unset] text-[#3B3659]">
               Help & support
             </h1>
-            <p
+            <p data-aos="fade-down"
               class="md:text-[1.14583333333vw] md:leading-[1.74479166667vw] text-[3.58974358974vw] leading-[5.9829059829vw] PingAR-Light text-[#707070] md:text-[#505050] md:mt-[0.625vw] mt-[1.02564102564vw]"
             >
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -329,7 +330,7 @@
           </div>
         </div>
         <div class="md:pt-[6.25vw] pt-[16.4102564103vw]">
-          <h2
+          <h2 data-aos="fade-up"
             class="Container1440 heading54 PingAR-Regular tracking-[unset] text-[#3B3659]"
           >
             Frequently Asked <br />
@@ -360,11 +361,15 @@
                 stroke-width="4"
               />
             </svg>
-            <img
+            <svg class="md:hidden block absolute bottom-[-2.05128205128vw] right-0 w-full h-[56.1538461538vw]" xmlns="http://www.w3.org/2000/svg" width="392.647" height="221.402" viewBox="0 0 392.647 221.402">
+              <path id="Path_101667" data-name="Path 101667" d="M-616.682,934.916c-6.086,17.749,1.971,140.048-18.284,145.476s-15.1-17.085-1.38-10.9.858,58.176-69.5,62.9-260.65-43.732-300.835,21.274" transform="translate(1008.058 -933.645)" fill="none" stroke="#8450ff" stroke-linecap="round" stroke-width="2"/>
+            </svg>
+            
+            <!-- <img
               src="./assets/images/help-and-support/bgDesign-mob.png"
               alt="bgDesign"
               class="md:hidden block absolute bottom-[-2.05128205128vw] right-0 w-full h-[56.1538461538vw]"
-            />
+            /> -->
             <div
               class="relative z-[2] flex justify-center items-start flex-col md:flex-row md:gap-x-[7.29166666667vw] gap-y-[4.10256410256vw]"
             >
@@ -1053,7 +1058,7 @@
             >
             </span>
             <div class="relative z-[2] Container1440">
-              <h2
+              <h2 data-aos="fade-up"
                 class="heading54 PingAR-Regular tracking-[unset] text-[#3B3659]"
               >
                 Get in
@@ -1251,7 +1256,7 @@
         <img
           src="./assets/images/icons/footerbg-design.png"
           alt="footerbg-design"
-          class="hidden md:block md:w-[18.6458333333vw] absolute right-0 top-0 opacity-[0.6]"
+          class="hidden md:block md:w-[18.6458333333vw] absolute right-0 top-0"
         />
         <img
           src="./assets/images/icons/footerbg-design-mob.svg"

@@ -114,10 +114,10 @@ body {
     @apply md:w-[0.8333333333333333vw] w-[2.82051282051vw] object-contain;
   }
   .ltr .arToggler {
-    @apply font-[300] text16;
+    @apply font-[300] md:text16;
   }
   .rtl .arToggler {
-    @apply font-[700] text16 pointer-events-none;
+    @apply font-[700] md:text16 pointer-events-none;
   }
   .ltr .enToggler {
     @apply font-[700] text16 pointer-events-none;
@@ -274,6 +274,14 @@ body {
 }
 .homeSwipers .swiper-button-next img,
 .homeSwipers .swiper-button-prev img {
+  width: 100% !important;
+}
+.doctorsSwiper .swiper-button-next:after,
+.doctorsSwiper .swiper-button-prev:after {
+  display: none !important;
+}
+.doctorsSwiper .swiper-button-next img,
+.doctorsSwiper .swiper-button-prev img {
   width: 100% !important;
 }
 .filter.active {
@@ -571,6 +579,15 @@ body.active {
     left: unset !important;
     right: 4.6875vw !important;
   }
+  .doctorsSwiper .swiper-button-next,
+  .doctorsSwiper .swiper-button-prev {
+    width: 3.28125vw !important;
+    top: 0.625vw !important;
+  }
+  .doctorsSwiper .swiper-button-prev {
+    left: unset !important;
+    right: 4.6875vw !important;
+  }
   .aboutAppSwiper .swiper-button-prev {
     left: unset !important;
     right: 4.6875vw !important;
@@ -613,6 +630,15 @@ body.active {
   .homeSwipers .swiper-button-next {
     right: 5.64102564103vw !important;
   }
+  .doctorsSwiper .swiper-button-next,
+  .doctorsSwiper .swiper-button-prev {
+    width: 11.5384615385vw !important;
+    bottom: 2.82051282051vw !important;
+    top: unset !important;
+  }
+  .doctorsSwiper .swiper-button-next {
+    right: 5.64102564103vw !important;
+  }
   .aboutAppSwiper .swiper-button-next,
   .aboutAppSwiper .swiper-button-prev {
     width: 11.5384615385vw !important;
@@ -621,6 +647,9 @@ body.active {
     right: 5.64102564103vw !important;
   }
   .homeSwipers .swiper-button-prev {
+    left: 0 !important;
+  }
+  .doctorsSwiper .swiper-button-prev {
     left: 0 !important;
   }
   .homeSwipers .swiper-slide {
