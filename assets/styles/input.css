@@ -89,7 +89,13 @@ body {
   }
   .links li img {
     @apply md:w-full absolute bottom-0 left-0
-        transform translate-x-[-50vw] md:translate-x-[-10vw] transition-all duration-300;
+        transform  transition-all duration-300;
+  }
+  .ltr .links li img{
+    @apply translate-x-[-50vw] md:translate-x-[-10vw]
+  }
+  .rtl .links li img{
+    @apply translate-x-[250vw] md:translate-x-[10vw]
   }
   .anchor1 {
     @apply bg-[#845FFF] md:text-[0.8333333333333333vw]  
@@ -139,18 +145,25 @@ body {
   }
   .cta {
     @apply fixed md:bottom-[50px] bottom-[30px]
-        md:right-[5.64102564103vw] right-[4.64102564103vw] bg-[#845FFF]
+         bg-[#845FFF]
         md:rounded-full rounded-[7.94871794872vw] opacity-0
         md:w-[3.75vw] md:h-[3.75vw] w-[14.358974359vw] h-[14.358974359vw]
         flex items-center justify-center z-[999] cursor-pointer;
+  }
+  .ltr .cta{
+    @apply md:right-[5.64102564103vw] right-[4.64102564103vw]
+  }
+  .rtl .cta{
+    @apply md:left-[5.64102564103vw] left-[4.64102564103vw]
   }
   .cta__Menu {
     @apply md:p-[1vw] md:w-[13.0208333333vw] w-[50.7692307692vw]
       md:h-[10.4166666667vw] h-[41.5384615385vw] bg-[#3B3659]  transform  
       md:rounded-[1.04166666667vw] rounded-[5.12820512821vw]
-      absolute bottom-0 right-0 transition-all duration-[800ms] origin-bottom-right
+      absolute bottom-0 leftRightFixer2 transition-all duration-[800ms] origin-bottom-right
       flex flex-col items-center justify-center;
   }
+  
   .question {
     @apply flex items-center gap-x-[0.625vw] min-w-[36.4102564103vw]
         h-[11.5384615385vw] md:w-[unset] md:min-w-[unset] md:h-[unset]  rounded-[12.3076923077vw] md:rounded-[unset]
@@ -180,9 +193,107 @@ body {
   .stickyHeader .navTopList {
     @apply md:hidden;
   }
+  .ltr .leftRightFixer1{
+    left: 0;
+  }
+  .rtl .leftRightFixer1{
+    right: 0;
+  }
+  .ltr .leftRightFixer2{
+    right: 0;
+  }
+  .rtl .leftRightFixer2{
+    left: 0;
+  }
+  .ltr .patient__Quoteup{
+    @apply md:left-[1.09375vw]
+  }
+  .rtl .patient__Quoteup{
+    @apply md:right-[1.09375vw]
+  }
+  .ltr .patient__Quotedown{
+    @apply right-[30%] md:right-[2.13541666667vw]
+  }
+  .rtl .patient__Quotedown{
+    @apply left-[30%] md:left-[2.13541666667vw]
+  }
+  .ltr .location__Asterik{
+    @apply md:right-[32.6041666667vw] right-[12.0512820513vw]
+  }
+  .rtl .location__Asterik{
+    @apply md:left-[32.6041666667vw] left-[12.0512820513vw]
+  }
+  .ltr .heroLine{
+    @apply  right-[31.753125vw]
+  }
+  .rtl .heroLine{
+    @apply  left-[31.753125vw]
+  }
+  .ltr #heroLine3{
+    @apply  right-0
+  }
+  .rtl #heroLine3{
+    @apply  left-0
+  }
+  .doctorsSwiper .swiper-button-next,
+  .doctorsSwiper .swiper-button-prev,
+  .homeSwipers .swiper-button-next,
+  .homeSwipers .swiper-button-prev,
+  .aboutMeenaSwiper .swiper-button-next,
+  .aboutMeenaSwiper .swiper-button-prev,
+  .aboutAppSwiper .swiper-button-next,
+  .aboutAppSwiper .swiper-button-prev
+  {
+  
+    @apply flipped
+  }
+ .rtl .mob__Ar{
+  @apply h-[5.64102564103vw]
+ }
+ .ltr .textAlignFixer{
+  @apply text-center md:text-left
+ }
+ .rtl .textAlignFixer{
+  @apply text-center md:text-right
+ }
+.ltr .aboutLast_Swiper{
+  @apply 
+  md:left-[-20.8333333333vw]
+}
+.rtl .aboutLast_Swiper{
+  @apply 
+  md:right-[-20.8333333333vw]
+}
+.ltr .about__Asterisk{
+  @apply md:left-[-3.02083333333vw] left-[-7.69230769231vw]
+}
+.rtl .about__Asterisk{
+  @apply md:right-[-3.02083333333vw] right-[-7.69230769231vw]
+}
+.ltr .aboutAppSwiper{
+  @apply pl-[5.64102564103vw] md:pl-[unset]
+}
+.rtl .aboutAppSwiper{
+  @apply pr-[5.64102564103vw] md:pr-[unset]
+}
+.ltr .aboutApp__Asterisk{
+  @apply   md:right-[3.125vw] right-[7.17948717949vw]
+}
+.rtl .aboutApp__Asterisk{
+  @apply   md:left-[3.125vw] left-[7.17948717949vw]
+}
+.ltr .aboutAppFeature__Asterisk{
+  @apply   md:left-[-1.51041666667vw] left-[8.20512820513vw]
+}
+.rtl .aboutAppFeature__Asterisk{
+  @apply   md:right-[-1.51041666667vw] right-[8.20512820513vw]
+}
 }
 .arrow__Lottie lottie-player {
   transform: matrix(-0.92, -0.39, 0.39, -0.92, 0, 0);
+}
+.rtl .flipped{
+  transform: scaleX(-1);
 }
 .stickyHeader {
   position: fixed;
@@ -199,10 +310,7 @@ body {
 .category input[type="checkbox"]:checked + .checkedIcon {
   opacity: 1;
 }
-.links li:hover img,
-.links li img.active {
-  transform: translateX(0);
-}
+
 .home__Page .blueLogo {
   display: none;
 }
@@ -518,6 +626,14 @@ body.active {
 /* SCROLL PROGREESS CSS  END    */
 
 @media (min-width: 768px) {
+  .ltr .links li:hover img,
+.ltr .links li img.active {
+  transform: translateX(0);
+}
+  .rtl .links li:hover img,
+.rtl .links li img.active {
+  transform: translateX(0);
+}
   .stickyHeader .download__App {
     padding-top: 0.425vw;
     padding-bottom: 0.425vw;
@@ -539,12 +655,20 @@ body.active {
   .faq.active .faq__Answer {
     max-height: 12vw;
   }
-  .aboutMeenaSwiper .swiper-button-next {
+ .ltr .aboutMeenaSwiper .swiper-button-next {
     right: 12.5vw !important;
   }
-  .aboutMeenaSwiper .swiper-button-prev {
+ .rtl .aboutMeenaSwiper .swiper-button-next {
+    left: 12.5vw !important;
+    right: unset;
+  }
+ .ltr .aboutMeenaSwiper .swiper-button-prev {
     right: 17.03125vw !important;
     left: unset;
+  }
+ .rtl .aboutMeenaSwiper .swiper-button-prev {
+  left: 17.03125vw !important;
+  right: unset;
   }
   .aboutMeenaSwiper .swiper-slide {
     width: 8.95833333333vw !important;
@@ -559,6 +683,16 @@ body.active {
   .aboutAppSwiper .swiper-button-next,
   .aboutAppSwiper .swiper-button-prev {
     width: 3.28125vw !important;
+  }
+  .ltr .aboutAppSwiper .swiper-button-next{
+    right: 0 !important;
+  }
+  .rtl .aboutAppSwiper .swiper-button-next{
+    left: 0 !important;
+    right: unset;
+  }
+  .rtl .aboutAppSwiper .swiper-button-prev{
+left: unset;
   }
   .doctorsSwiper .swiper-wrapper .swiper-slide {
     width: 16.875vw !important;
@@ -577,25 +711,50 @@ body.active {
     width: 3.28125vw !important;
     top: 0.625vw !important;
   }
-  .homeSwipers .swiper-button-prev {
+  .ltr .homeSwipers .swiper-button-prev {
     left: unset !important;
     right: 4.6875vw !important;
+  }
+  .rtl .homeSwipers .swiper-button-prev {
+    right: unset !important;
+    left: 4.6875vw !important;
   }
   .doctorsSwiper .swiper-button-next,
   .doctorsSwiper .swiper-button-prev {
     width: 3.28125vw !important;
     top: 0.625vw !important;
   }
-  .doctorsSwiper .swiper-button-prev {
+  .ltr .doctorsSwiper .swiper-button-prev {
     left: unset !important;
     right: 4.6875vw !important;
   }
-  .aboutAppSwiper .swiper-button-prev {
+  .rtl .doctorsSwiper .swiper-button-next{
+right: unset;
+left: 0;
+  }
+  
+  .rtl .doctorsSwiper .swiper-button-prev { 
+    left: 4.6875vw !important;
+    right: unset; 
+  }
+  .ltr .aboutAppSwiper .swiper-button-prev {
     left: unset !important;
     right: 4.6875vw !important;
+  }
+  .rtl .aboutAppSwiper .swiper-button-prev {
+    right: unset !important;
+    left: 4.6875vw !important;
   }
 }
 @media (max-width: 768px) {
+  .rtl .links li:hover img,
+  .rtl .links li img.active {
+    transform: translateX(65vw);
+  }
+  .ltr .links li:hover img,
+  .ltr .links li img.active {
+    transform: translateX(0);
+  }
   .cta .cta__Menu {
     left: -74%;
     clip-path: circle(10% at 85% 80%);
@@ -634,8 +793,12 @@ body.active {
     bottom: 2.82051282051vw !important;
     top: unset !important;
   }
-  .homeSwipers .swiper-button-next {
+  .ltr .homeSwipers .swiper-button-next {
     right: 5.64102564103vw !important;
+  }
+  .rtl .homeSwipers .swiper-button-next {
+    left: 5.64102564103vw !important;
+    right: unset;
   }
   .doctorsSwiper .swiper-button-next,
   .doctorsSwiper .swiper-button-prev {
@@ -643,21 +806,51 @@ body.active {
     bottom: 2.82051282051vw !important;
     top: unset !important;
   }
-  .doctorsSwiper .swiper-button-next {
+ .ltr .doctorsSwiper .swiper-button-next {
     right: 5.64102564103vw !important;
+  }
+ .rtl .doctorsSwiper .swiper-button-next {
+    left: 5.64102564103vw !important;
+    right: unset;
+  }
+ .ltr .aboutMeenaSwiper .swiper-button-next {
+    right: 5.64102564103vw !important;
+  }
+ .rtl .aboutMeenaSwiper .swiper-button-next {
+    left: 5.64102564103vw !important;
+    right: unset;
   }
   .aboutAppSwiper .swiper-button-next,
   .aboutAppSwiper .swiper-button-prev {
     width: 11.5384615385vw !important;
   }
-  .aboutAppSwiper .swiper-button-next {
+ .ltr .aboutAppSwiper .swiper-button-next {
+    right: 5.64102564103vw !important;
+  }
+ .rtl .aboutAppSwiper .swiper-button-next {
+    left: 5.64102564103vw !important;
+    right: unset;
+  } 
+ .rtl .aboutAppSwiper .swiper-button-prev {
+    left: unset ;
     right: 5.64102564103vw !important;
   }
   .homeSwipers .swiper-button-prev {
     left: 0 !important;
   }
-  .doctorsSwiper .swiper-button-prev {
+ .ltr .doctorsSwiper .swiper-button-prev {
     left: 0 !important;
+  }
+ .rtl .doctorsSwiper .swiper-button-prev {
+    right: 0 !important;
+    left: unset;
+  }
+ .ltr .aboutMeenaSwiper .swiper-button-prev {
+    left: 0 !important;
+  }
+ .rtl .aboutMeenaSwiper .swiper-button-prev {
+    right: 0 !important;
+    left: unset;
   }
   .homeSwipers .swiper-slide {
     width: 70.2564102564vw !important;
