@@ -252,7 +252,7 @@ body {
 .hero__Overlay1 {
   background: transparent linear-gradient(180deg, #9c99bf00 0%, #7a72abe6 100%)
     0% 0% no-repeat padding-box;
-  opacity: 0.7;
+  opacity: 0.55;
   transform: matrix(-1, 0, 0, -1, 0, 0);
 }
 .hero__Overlay2 {
@@ -262,7 +262,7 @@ body {
 }
 .hero__Overlay3 {
   background: #3e29bb 0% 0% no-repeat padding-box;
-  opacity: 0.1;
+  opacity: 0.15;
 }
 .doctorsSwiper .swiper-wrapper .swiper-slide {
   overflow: hidden;
@@ -413,10 +413,12 @@ body.active {
   left: 50%;
   clip-path: circle(10% at 45% 80%);
   opacity: 0;
+  pointer-events: none;
 }
 .cta:hover .cta__Menu {
   opacity: 1;
   clip-path: circle(100%);
+  pointer-events: initial;
 }
 .question.active #Path_101507,
 .question.active #Path_101508,
@@ -594,9 +596,14 @@ body.active {
   }
 }
 @media (max-width: 768px) {
+  .cta .cta__Menu {
+    left: -74%;
+    clip-path: circle(10% at 85% 80%);
+  }
+
   .stickyHeader {
-    padding-top: 8.20512820513vw !important;
-    padding-bottom: 8.20512820513vw !important;
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
     background-color: #3b3659;
   }
   .faq.active .faq__Answer {

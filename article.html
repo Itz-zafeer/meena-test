@@ -182,7 +182,9 @@
               </li>
             </ul>
 
-            <div class="flex items-end md:items-center gap-x-[5vw] md:gap-x-[0.625vw]">
+            <div
+              class="flex items-end md:items-center gap-x-[5vw] md:gap-x-[0.625vw]"
+            >
               <span
                 onclick="handleLang(this)"
                 class="hidden md:block enToggler cursor-pointer"
@@ -203,8 +205,7 @@
               </span>
               <span
                 onclick="handleLang(this)"
-                class=" 
-text-[4.61538461538vw] md:hidden block arToggler cursor-pointer"
+                class="text-[4.61538461538vw] md:hidden block arToggler cursor-pointer"
               >
                 ع
               </span>
@@ -319,21 +320,37 @@ text-[4.61538461538vw] md:hidden block arToggler cursor-pointer"
           </div>
         </div>
         <div class="md:pt-[6.25vw] pt-[16.4102564103vw]">
-          <div class="relative overflow-hidden">
+          <div id="lineanimation2" class="relative overflow-hidden">
             <img
-            src="./assets/images/article/banner.jpg"
-            alt="banner"
-            class="hidden md:block md:w-[75vw] w-full md:rounded-[1.04166666667vw] mx-[auto]"
-          />
-          <img
-            src="./assets/images/article/banner-mob.jpg"
-            alt="banner"
-            class="md:hidden block md:w-[75vw] w-full mx-[auto]"
-          />
-          <svg class="absolute w-full md:top-[-21.875vw] top-[-133.337435897vw] md:left-[-1.82291666667vw] left-[-5.64102564103vw] " xmlns="http://www.w3.org/2000/svg" width="1382.431" height="1203.026" viewBox="0 0 1382.431 1203.026">
-            <path id="Path_101471" data-name="Path 101471" d="M2359.754,1286.058c-8.344,367.866-12.991,881.376-134.169,913.845-74.348,19.922-116.409-10.793-115.958-33.666s70.667-13.527,70.667-13.527-38.2-58.664-6.265-70.213c12.159-4.526,36.358-2.351,66.241,46.709,57.409,90.418-33.8,370.866-393.725,481" transform="matrix(0.588, 0.809, -0.809, 0.588, 1031.561, -2244.979)" fill="none" stroke="#8450ff" stroke-linecap="round" stroke-width="6"/>
-          </svg>
-          
+              src="./assets/images/article/banner.jpg"
+              alt="banner"
+              class="hidden md:block md:w-[75vw] w-full md:rounded-[1.04166666667vw] mx-[auto]"
+            />
+            <img
+              src="./assets/images/article/banner.jpg"
+              alt="banner"
+              class="md:hidden object-cover h-[270px] block md:w-[75vw] w-full mx-[auto]"
+            />
+            <svg
+              class="absolute h-[400px] md:h-[62.65625vw] w-full md:top-[-21.875vw] top-[-100px] md:left-[-1.82291666667vw] left-[0]"
+              xmlns="http://www.w3.org/2000/svg"
+              width="1382.431"
+              height="1203.026"
+              viewBox="0 0 1382.431 1203.026"
+            >
+              <path
+                id="heartLine"
+                style="animation-duration: 1s"
+                id="Path_101471"
+                data-name="Path 101471"
+                d="M2359.754,1286.058c-8.344,367.866-12.991,881.376-134.169,913.845-74.348,19.922-116.409-10.793-115.958-33.666s70.667-13.527,70.667-13.527-38.2-58.664-6.265-70.213c12.159-4.526,36.358-2.351,66.241,46.709,57.409,90.418-33.8,370.866-393.725,481"
+                transform="matrix(0.588, 0.809, -0.809, 0.588, 1031.561, -2244.979)"
+                fill="none"
+                stroke="#8450ff"
+                stroke-linecap="round"
+                stroke-width="6"
+              />
+            </svg>
           </div>
           <div
             class="md:mt-[-10.4166666667vw] mt-[-9.23076923077vw] md:pt-[5.46875vw] pt-[8.20512820513vw] bg-[#FFFFFF] md:w-[62.5vw] w-[88.7179487179vw] mx-[auto] relative z-[1] md:pb-[10.4166666667vw] pb-[20.5128205128vw] md:rounded-[1.04166666667vw] rounded-[3.84615384615vw]"
