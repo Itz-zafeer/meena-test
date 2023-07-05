@@ -625,8 +625,6 @@ video {
 
 .links li img {
   position: absolute;
-  bottom: 0px;
-  left: 0px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -640,6 +638,8 @@ video {
 }
 
 .ltr .links li img {
+  bottom: 0px;
+  left: 0px;
   --tw-translate-x: -50vw;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -652,7 +652,9 @@ video {
 }
 
 .rtl .links li img {
-  --tw-translate-x: 250vw;
+  bottom: 0px;
+  right: 0px;
+  --tw-translate-x: 50vw;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1400,10 +1402,6 @@ video {
   inset-inline-end: 0.25rem;
 }
 
-.left-0 {
-  left: 0px;
-}
-
 .left-\[-7\.69230769231vw\] {
   left: -7.69230769231vw;
 }
@@ -1418,10 +1416,6 @@ video {
 
 .left-\[8\.20512820513vw\] {
   left: 8.20512820513vw;
-}
-
-.right-0 {
-  right: 0px;
 }
 
 .right-\[7\.17948717949vw\] {
@@ -2261,16 +2255,6 @@ video {
 
 .translate-y-\[-50\%\] {
   --tw-translate-y: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.rotate-\[-90deg\] {
-  --tw-rotate: -90deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.rotate-\[90deg\] {
-  --tw-rotate: 90deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -4558,6 +4542,11 @@ body {
   }
 }
 
+.links li:hover img,
+.links li img.active {
+  transform: translateX(0);
+}
+
 .category input[type="checkbox"]:checked + .checkedIcon {
   opacity: 1;
 }
@@ -4948,16 +4937,6 @@ body.active {
 /* SCROLL PROGREESS CSS  END    */
 
 @media (min-width: 768px) {
-  .ltr .links li:hover img,
-.ltr .links li img.active {
-    transform: translateX(0);
-  }
-
-  .rtl .links li:hover img,
-.rtl .links li img.active {
-    transform: translateX(0);
-  }
-
   .stickyHeader .download__App {
     padding-top: 0.425vw;
     padding-bottom: 0.425vw;
@@ -5097,16 +5076,6 @@ body.active {
 }
 
 @media (max-width: 768px) {
-  .rtl .links li:hover img,
-  .rtl .links li img.active {
-    transform: translateX(65vw);
-  }
-
-  .ltr .links li:hover img,
-  .ltr .links li img.active {
-    transform: translateX(0);
-  }
-
   .cta .cta__Menu {
     left: -74%;
     -webkit-clip-path: circle(10% at 85% 80%);
