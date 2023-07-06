@@ -625,22 +625,6 @@ video {
   }
 }
 
-.sub__Page {
-  padding-top: 8.33333333333vw;
-}
-
-@media (min-width: 640px) {
-  .sub__Page {
-    padding-top: 3.90243902439vw;
-  }
-}
-
-@media (min-width: 1024px) {
-  .sub__Page {
-    padding-top: 1.66666666667vw;
-  }
-}
-
 .sub__Page .blueLogo,
 .sub__Page .whiteLogo {
   width: 31.7948717949vw;

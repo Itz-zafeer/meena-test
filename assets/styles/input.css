@@ -84,9 +84,7 @@ body {
           lg:tracking-[0.084375vw] sm:text-[4.26829268293vw] sm:leading-[6.09756097561vw] text-[7.69230769231vw]
         leading-[10.2564102564vw] PingAR-Bold;
   }
-.sub__Page{
-  @apply sm:pt-[3.90243902439vw] lg:pt-[1.66666666667vw] pt-[8.33333333333vw]
-}
+ 
 .sub__Page .blueLogo,
 .sub__Page .whiteLogo{
     @apply   lg:w-[12.7083333333vw] sm:w-[21.9512195122vw] w-[31.7948717949vw]
