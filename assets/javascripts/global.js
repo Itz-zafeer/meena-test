@@ -18,6 +18,8 @@ var menu = document.querySelector(".menu");
 var spantwo = document.querySelector(".line-2");
 var spanone = document.querySelector(".line-1");
 var spanthree = document.querySelector(".line-3");
+const allSpansEl = document.querySelectorAll([".line-2",".line-1",".line-3"])
+
 var sidebar = document.querySelector(".sidebar");
 const body = document.querySelector("body");
 

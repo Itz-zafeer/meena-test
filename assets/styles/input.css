@@ -81,7 +81,7 @@ body {
   }
   .heading54 {
     @apply lg:text-[2.8125vw] lg:leading-[3.333333333333333vw]
-          lg:tracking-[0.084375vw] sm:text-[5.48780487805vw] sm:leading-[7.5vw] text-[7.69230769231vw]
+          lg:tracking-[0.084375vw] sm:text-[4.26829268293vw] sm:leading-[6.09756097561vw] text-[7.69230769231vw]
         leading-[10.2564102564vw] PingAR-Bold;
   }
 .sub__Page{
@@ -135,7 +135,7 @@ cursor-pointer
     @apply lg:w-[0.8333333333333333vw] w-[2.82051282051vw] object-contain;
   }
   .ltr .arToggler {
-    @apply font-[300] sm:h-[5.12195121951vw] lg:h-[unset] lg:text16;
+    @apply font-[300] sm:h-[4.0243902439vw] lg:h-[unset] lg:text16;
   }
   .rtl .arToggler {
     @apply font-[700] lg:text16 pointer-events-none;
@@ -500,12 +500,14 @@ header {
   transform: rotate(-45deg);
   position: relative;
   top: 7.5px;
+  background-color: #ffffff !important;
 }
 
 .lin3e {
   transform: rotate(45deg);
   bottom: 6px;
   position: relative;
+  background-color: #ffffff !important;
 }
 
 .sidebar {

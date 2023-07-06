@@ -612,8 +612,8 @@ video {
 
 @media (min-width: 640px) {
   .heading54 {
-    font-size: 5.48780487805vw;
-    line-height: 7.5vw;
+    font-size: 4.26829268293vw;
+    line-height: 6.09756097561vw;
   }
 }
 
@@ -835,7 +835,7 @@ video {
 
 @media (min-width: 640px) {
   .ltr .arToggler {
-    height: 5.12195121951vw;
+    height: 4.0243902439vw;
   }
 }
 
@@ -4817,12 +4817,14 @@ header {
   transform: rotate(-45deg);
   position: relative;
   top: 7.5px;
+  background-color: #ffffff !important;
 }
 
 .lin3e {
   transform: rotate(45deg);
   bottom: 6px;
   position: relative;
+  background-color: #ffffff !important;
 }
 
 .sidebar {
@@ -5582,12 +5584,12 @@ body.active {
     padding-top: 24.3902439024vw;
   }
 
-  .sm\:pt-\[9\.75609756098vw\] {
-    padding-top: 9.75609756098vw;
-  }
-
   .sm\:pt-\[37\.8048780488vw\] {
     padding-top: 37.8048780488vw;
+  }
+
+  .sm\:pt-\[7\.31707317073vw\] {
+    padding-top: 7.31707317073vw;
   }
 
   .sm\:text-\[1\.82926829268vw\] {
@@ -5604,6 +5606,10 @@ body.active {
 
   .sm\:text-\[2\.43902439024vw\] {
     font-size: 2.43902439024vw;
+  }
+
+  .sm\:text-\[2\.68292682927vw\] {
+    font-size: 2.68292682927vw;
   }
 
   .sm\:text-\[3\.41463414634vw\] {
