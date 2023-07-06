@@ -162,18 +162,18 @@ cursor-pointer
     @apply fixed lg:bottom-[50px] bottom-[30px]
          bg-[#845FFF]
         lg:rounded-full rounded-[7.94871794872vw] opacity-0
-        lg:w-[3.75vw] lg:h-[3.75vw] w-[14.358974359vw] h-[14.358974359vw]
+        lg:w-[3.75vw] lg:h-[3.75vw] sm:h-[6.34146341463vw] sm:w-[6.34146341463vw] w-[14.358974359vw] h-[14.358974359vw]
         flex items-center justify-center z-[999] cursor-pointer;
   }
   .ltr .cta{
-    @apply lg:right-[5.64102564103vw] right-[4.64102564103vw]
+    @apply lg:right-[5.64102564103vw] sm:right-[7.31707317073vw] right-[4.64102564103vw]
   }
   .rtl .cta{
-    @apply lg:left-[5.64102564103vw] left-[4.64102564103vw]
+    @apply lg:left-[5.64102564103vw] sm:left-[7.31707317073vw] left-[4.64102564103vw]
   }
   .cta__Menu {
     @apply lg:p-[1vw] lg:w-[13.0208333333vw] w-[50.7692307692vw]
-      lg:h-[10.4166666667vw] h-[41.5384615385vw] bg-[#3B3659]  transform  
+      lg:h-[10.4166666667vw] h-[41.5384615385vw] sm:w-[26.8292682927vw] sm:h-[21.9512195122vw] bg-[#3B3659]  transform  
       lg:rounded-[1.04166666667vw] rounded-[5.12820512821vw]
       absolute bottom-0 leftRightFixer2 transition-all duration-[800ms] origin-bottom-right
       flex flex-col items-center justify-center;
@@ -600,9 +600,9 @@ body.active {
 }
 .circle-container {
   @apply cursor-pointer lg:w-[3.75vw]
-   bottom-[50px] w-[35px]
+   bottom-[50px] sm:w-[6.34146341463vw]
   fixed bg-transparent
-    rounded-[50%] hidden lg:block;
+    rounded-[50%] hidden sm:block;
 }
 .circle-container div {
   @apply absolute top-[50%] left-[50%] transform 
@@ -621,11 +621,11 @@ body.active {
 
 .ltr .circle-container {
   @apply lg:left-[1.77083333333vw]
-  left-[25px];
+  left-[30px];
 }
 .rtl .circle-container {
   @apply lg:right-[1.77083333333vw]
-   right-[25px];
+   right-[30px];
 }
 
 @keyframes top {

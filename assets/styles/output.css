@@ -967,6 +967,13 @@ video {
   opacity: 0;
 }
 
+@media (min-width: 640px) {
+  .cta {
+    height: 6.34146341463vw;
+    width: 6.34146341463vw;
+  }
+}
+
 @media (min-width: 1024px) {
   .cta {
     bottom: 50px;
@@ -980,6 +987,12 @@ video {
   right: 4.64102564103vw;
 }
 
+@media (min-width: 640px) {
+  .ltr .cta {
+    right: 7.31707317073vw;
+  }
+}
+
 @media (min-width: 1024px) {
   .ltr .cta {
     right: 5.64102564103vw;
@@ -988,6 +1001,12 @@ video {
 
 .rtl .cta {
   left: 4.64102564103vw;
+}
+
+@media (min-width: 640px) {
+  .rtl .cta {
+    left: 7.31707317073vw;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1021,6 +1040,13 @@ video {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 800ms;
+}
+
+@media (min-width: 640px) {
+  .cta__Menu {
+    height: 21.9512195122vw;
+    width: 26.8292682927vw;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -4930,15 +4956,20 @@ body.active {
   position: fixed;
   bottom: 50px;
   display: none;
-  width: 35px;
   cursor: pointer;
   border-radius: 50%;
   background-color: transparent;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 640px) {
   .circle-container {
     display: block;
+    width: 6.34146341463vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .circle-container {
     width: 3.75vw;
   }
 }
@@ -4966,7 +4997,7 @@ body.active {
 }
 
 .ltr .circle-container {
-  left: 25px;
+  left: 30px;
 }
 
 @media (min-width: 1024px) {
@@ -4976,7 +5007,7 @@ body.active {
 }
 
 .rtl .circle-container {
-  right: 25px;
+  right: 30px;
 }
 
 @media (min-width: 1024px) {
@@ -5521,12 +5552,28 @@ body.active {
     margin-top: 6.82926829268vw;
   }
 
+  .sm\:h-\[2\.19512195122vw\] {
+    height: 2.19512195122vw;
+  }
+
+  .sm\:h-\[4\.63414634146vw\] {
+    height: 4.63414634146vw;
+  }
+
   .sm\:h-\[7\.31707317073vw\] {
     height: 7.31707317073vw;
   }
 
   .sm\:w-\[1\.6vw\] {
     width: 1.6vw;
+  }
+
+  .sm\:w-\[18\.2926829268vw\] {
+    width: 18.2926829268vw;
+  }
+
+  .sm\:w-\[2\.68292682927vw\] {
+    width: 2.68292682927vw;
   }
 
   .sm\:w-\[26\.8292682927vw\] {
