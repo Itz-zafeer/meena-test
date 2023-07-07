@@ -178,30 +178,30 @@ cursor-pointer
   }
   
   .question {
-    @apply flex items-center gap-x-[0.625vw] min-w-[36.4102564103vw]
-        h-[11.5384615385vw] lg:w-[unset] lg:min-w-[unset] lg:h-[unset]  rounded-[12.3076923077vw] lg:rounded-[unset]
+    @apply flex items-center gap-x-[0.625vw] min-w-[36.4102564103vw] sm:min-w-[25.410256vw]
+        h-[11.5384615385vw] sm:h-[7.31707317073vw] lg:w-[unset] lg:min-w-[unset] lg:h-[unset]  rounded-[12.3076923077vw] lg:rounded-[unset]
         justify-center lg:justify-normal cursor-pointer bg-[#D6D1ED] lg:bg-[unset];
   }
   .faq {
     @apply text-[#3B3659] flex flex-col bg-[#EBF0F7] lg:rounded-[1.04166666667vw] rounded-[3.84615384615vw]
-        lg:px-[2.08333333333vw] px-[4.10256410256vw] lg:py-[2.161458333333333vw] py-[6.15384615385vw] cursor-pointer
+        lg:px-[2.08333333333vw] px-[4.10256410256vw] lg:py-[2.161458333333333vw] sm:py-[3.65853658537vw] py-[6.15384615385vw] cursor-pointer
         transition-all duration-[800ms];
   }
   .faq.active {
-    @apply lg:py-[1.69270833333vw] py-[6.28205128205vw];
+    @apply lg:py-[1.69270833333vw] sm:py-[3.90243902439vw] py-[6.28205128205vw];
   }
   .faq__Question {
     @apply flex items-center justify-between;
   }
   .faq__Question h5 {
-    @apply lg:text-[1.14583333333vw] w-[85%]
+    @apply sm:text-[2.19512195122vw] sm:leading-[3.65853658537vw] lg:text-[1.14583333333vw] w-[85%]
         lg:leading-[1.82291666667vw]  leading-[6.66666666667vw] text-[4.10256410256vw];
   }
   .faq__Answer {
     @apply max-h-0 overflow-hidden lg:w-[41.25vw] w-[72.3076923077vw] transition-all duration-[800ms];
   }
   .faq__Answer p {
-    @apply lg:pt-[0.83333333333vw] pt-[4.10256410256vw] lg:text-[1.04166666667vw] lg:leading-[1.5625vw] leading-[6.05128205128vw] text-[3.58974358974vw];
+    @apply sm:pt-[0.97560975609vw] lg:pt-[0.83333333333vw] pt-[4.10256410256vw] lg:text-[1.04166666667vw] lg:leading-[1.5625vw] sm:text-[1.9512195122vw] sm:leading-[3.41463414634vw] leading-[6.05128205128vw] text-[3.58974358974vw];
   }
   .stickyHeader .navTopList {
     @apply lg:hidden;
@@ -296,10 +296,10 @@ cursor-pointer
   @apply   lg:left-[3.125vw] left-[7.17948717949vw]
 }
 .ltr .aboutAppFeature__Asterisk{
-  @apply   lg:left-[-1.51041666667vw] left-[8.20512820513vw]
+  @apply   lg:left-[-1.51041666667vw] left-[8.20512820513vw] sm:left-[20.1219512195vw]
 }
 .rtl .aboutAppFeature__Asterisk{
-  @apply   lg:right-[-1.51041666667vw] right-[8.20512820513vw]
+  @apply   lg:right-[-1.51041666667vw] right-[8.20512820513vw] sm:right-[20.1219512195vw]
 }
 }
 .arrow__Lottie lottie-player {
@@ -645,6 +645,116 @@ body.active {
 
 /* SCROLL PROGREESS CSS  END    */
 
+
+@media (min-width: 640px) {
+  
+  .cta .cta__Menu {
+    left: -74%;
+    clip-path: circle(10% at 85% 80%);
+  }
+
+  .stickyHeader {
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+    background-color: #3b3659;
+  }
+  .faq.active .faq__Answer {
+    max-height: 102.2820512821vw;
+  }
+  .aboutMeenaSwiper .swiper-button-next,
+  .aboutMeenaSwiper .swiper-button-prev {
+    width: 11.5384615385vw !important;
+  }
+  .aboutMeenaSwiper .swiper-slide {
+    width: 20.5128205128vw !important;
+  }
+  .question.active h5,
+  .question:hover h5 {
+    color: #ffffff;
+  }
+  .question.active,
+  .question:hover {
+    background-color: #8450ff;
+  }
+  .doctorsSwiper .swiper-wrapper .swiper-slide {
+    width: 70vw !important;
+    border-radius: 20px;
+  }
+  .homeSwipers .swiper-button-next,
+  .homeSwipers .swiper-button-prev {
+    width: 11.5384615385vw !important;
+    bottom: 2.82051282051vw !important;
+    top: unset !important;
+  }
+  .ltr .homeSwipers .swiper-button-next {
+    right: 5.64102564103vw !important;
+  }
+  .rtl .homeSwipers .swiper-button-next {
+    left: 5.64102564103vw !important;
+    right: unset;
+  }
+  .doctorsSwiper .swiper-button-next,
+  .doctorsSwiper .swiper-button-prev {
+    width: 11.5384615385vw !important;
+    bottom: 2.82051282051vw !important;
+    top: unset !important;
+  }
+ .ltr .doctorsSwiper .swiper-button-next {
+    right: 5.64102564103vw !important;
+  }
+ .rtl .doctorsSwiper .swiper-button-next {
+    left: 5.64102564103vw !important;
+    right: unset;
+  }
+ .ltr .aboutMeenaSwiper .swiper-button-next {
+    right: 5.64102564103vw !important;
+  }
+ .rtl .aboutMeenaSwiper .swiper-button-next {
+    left: 5.64102564103vw !important;
+    right: unset;
+  }
+  .aboutAppSwiper .swiper-button-next,
+  .aboutAppSwiper .swiper-button-prev {
+    width: 11.5384615385vw !important;
+  }
+ .ltr .aboutAppSwiper .swiper-button-next {
+    right: 5.64102564103vw !important;
+  }
+ .rtl .aboutAppSwiper .swiper-button-next {
+    left: 5.64102564103vw !important;
+    right: unset;
+  } 
+ .rtl .aboutAppSwiper .swiper-button-prev {
+    left: unset ;
+    right: 5.64102564103vw !important;
+  }
+  .homeSwipers .swiper-button-prev {
+    left: 0 !important;
+  }
+ .ltr .doctorsSwiper .swiper-button-prev {
+    left: 0 !important;
+  }
+ .rtl .doctorsSwiper .swiper-button-prev {
+    right: 0 !important;
+    left: unset;
+  }
+ .ltr .aboutMeenaSwiper .swiper-button-prev {
+    left: 0 !important;
+  }
+ .rtl .aboutMeenaSwiper .swiper-button-prev {
+    right: 0 !important;
+    left: unset;
+  }
+  .homeSwipers .swiper-slide {
+    width: 70.2564102564vw !important;
+  }
+  .line_clamp3 {
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+  }
+}
 @media (min-width: 1024px) {
  
   .stickyHeader .download__App {
@@ -759,115 +869,6 @@ left: 0;
     left: 4.6875vw !important;
   }
 }
-@media (min-width: 640px) {
-  
-  .cta .cta__Menu {
-    left: -74%;
-    clip-path: circle(10% at 85% 80%);
-  }
-
-  .stickyHeader {
-    padding-top: 15px !important;
-    padding-bottom: 15px !important;
-    background-color: #3b3659;
-  }
-  .faq.active .faq__Answer {
-    max-height: 102.2820512821vw;
-  }
-  .aboutMeenaSwiper .swiper-button-next,
-  .aboutMeenaSwiper .swiper-button-prev {
-    width: 11.5384615385vw !important;
-  }
-  .aboutMeenaSwiper .swiper-slide {
-    width: 20.5128205128vw !important;
-  }
-  .question.active h5,
-  .question:hover h5 {
-    color: #ffffff;
-  }
-  .question.active,
-  .question:hover {
-    background-color: #8450ff;
-  }
-  .doctorsSwiper .swiper-wrapper .swiper-slide {
-    width: 70vw !important;
-    border-radius: 20px;
-  }
-  .homeSwipers .swiper-button-next,
-  .homeSwipers .swiper-button-prev {
-    width: 11.5384615385vw !important;
-    bottom: 2.82051282051vw !important;
-    top: unset !important;
-  }
-  .ltr .homeSwipers .swiper-button-next {
-    right: 5.64102564103vw !important;
-  }
-  .rtl .homeSwipers .swiper-button-next {
-    left: 5.64102564103vw !important;
-    right: unset;
-  }
-  .doctorsSwiper .swiper-button-next,
-  .doctorsSwiper .swiper-button-prev {
-    width: 11.5384615385vw !important;
-    bottom: 2.82051282051vw !important;
-    top: unset !important;
-  }
- .ltr .doctorsSwiper .swiper-button-next {
-    right: 5.64102564103vw !important;
-  }
- .rtl .doctorsSwiper .swiper-button-next {
-    left: 5.64102564103vw !important;
-    right: unset;
-  }
- .ltr .aboutMeenaSwiper .swiper-button-next {
-    right: 5.64102564103vw !important;
-  }
- .rtl .aboutMeenaSwiper .swiper-button-next {
-    left: 5.64102564103vw !important;
-    right: unset;
-  }
-  .aboutAppSwiper .swiper-button-next,
-  .aboutAppSwiper .swiper-button-prev {
-    width: 11.5384615385vw !important;
-  }
- .ltr .aboutAppSwiper .swiper-button-next {
-    right: 5.64102564103vw !important;
-  }
- .rtl .aboutAppSwiper .swiper-button-next {
-    left: 5.64102564103vw !important;
-    right: unset;
-  } 
- .rtl .aboutAppSwiper .swiper-button-prev {
-    left: unset ;
-    right: 5.64102564103vw !important;
-  }
-  .homeSwipers .swiper-button-prev {
-    left: 0 !important;
-  }
- .ltr .doctorsSwiper .swiper-button-prev {
-    left: 0 !important;
-  }
- .rtl .doctorsSwiper .swiper-button-prev {
-    right: 0 !important;
-    left: unset;
-  }
- .ltr .aboutMeenaSwiper .swiper-button-prev {
-    left: 0 !important;
-  }
- .rtl .aboutMeenaSwiper .swiper-button-prev {
-    right: 0 !important;
-    left: unset;
-  }
-  .homeSwipers .swiper-slide {
-    width: 70.2564102564vw !important;
-  }
-  .line_clamp3 {
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    display: -webkit-box;
-  }
-}
 @media (max-width: 640px) {
   
   .cta .cta__Menu {
@@ -977,6 +978,8 @@ left: 0;
     display: -webkit-box;
   }
 }
+
+
 .line_clamp3g {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
