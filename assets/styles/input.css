@@ -112,28 +112,28 @@ cursor-pointer
   }
   .anchor1 {
     @apply bg-[#845FFF] lg:text-[0.8333333333333333vw]  
-        
-        PingAR-Light text-[3.076923076923077vw]   lg:rounded-[1.614583333333333vw] rounded-[31px] lg:w-[9.895833333333333vw] w-[31.2820512821vw] h-[9.23076923077vw]
+        sm:w-[24.39024390243902vw] sm:h-[6.707317073170732vw]
+        PingAR-Light text-[3.076923076923077vw] sm:text-[1.82926829268vw]   lg:rounded-[1.614583333333333vw] rounded-[31px] lg:w-[9.895833333333333vw] w-[31.2820512821vw] h-[9.23076923077vw]
         lg:h-[3.229166666666667vw] flex justify-center items-center;
   }
   .anchor1 div {
-    @apply flex lg:gap-x-[0.4166666666666667vw] h-[3.84615384615vw] lg:h-[0.9895833333333333vw]   gap-x-[2.051282051282051vw];
+    @apply flex lg:gap-x-[0.4166666666666667vw] h-[3.84615384615vw] lg:h-[0.9895833333333333vw] sm:h-[2.439024390243902vw] sm:gap-x-[1.463414634146341vw] gap-x-[2.051282051282051vw];
   }
   .anchor1 div img {
-    @apply lg:w-[0.5729166666666667vw] w-[2.82051282051vw];
+    @apply lg:w-[0.5729166666666667vw] w-[2.82051282051vw] sm:w-[1.829268292682927vw];
   }
   .anchor2 {
     @apply bg-[#845FFF] PingAR-Light lg:text-[0.9375vw] text-[3.07692307692vw] lg:rounded-[1.614583333333333vw] rounded-[31px] lg:w-[9.895833333333333vw] w-[31.2820512821vw] h-[9.23076923077vw]
-        lg:h-[3.229166666666667vw] flex justify-center items-center;
+        lg:h-[3.229166666666667vw] sm:text-[1.82926829268vw] sm:w-[24.39024390243902vw] sm:h-[6.707317073170732vw] flex justify-center items-center;
   }
   .anchor2 div {
-    @apply flex lg:gap-x-[0.625vw] h-[3.84615384615vw] lg:h-[0.9895833333333333vw] gap-x-[2.051282051282051vw];
+    @apply flex lg:gap-x-[0.625vw] h-[3.84615384615vw] lg:h-[0.9895833333333333vw] sm:h-[2.317073170731707vw] sm:gap-x-[1.463414634146341vw] gap-x-[2.051282051282051vw];
   }
   .anchor2 div img {
-    @apply lg:w-[0.8333333333333333vw] w-[2.82051282051vw] object-contain;
+    @apply lg:w-[0.8333333333333333vw] w-[2.82051282051vw] sm:w-[2.439024390243902vw] object-contain;
   }
   .ltr .arToggler {
-    @apply font-[300] sm:h-[4.0243902439vw] lg:h-[unset] lg:text16;
+    @apply font-[300] h-[5.38461538462vw] sm:h-[4.0243902439vw] lg:h-[unset] lg:text16;
   }
   .rtl .arToggler {
     @apply font-[700] lg:text16 pointer-events-none;
@@ -157,7 +157,7 @@ cursor-pointer
     @apply w-full h-full absolute left-0 top-0  opacity-0 object-cover;
   }
   .cta {
-    @apply fixed lg:bottom-[50px] bottom-[30px]
+    @apply fixed lg:bottom-[50px] sm:bottom-[50px] bottom-[30px]
          bg-[#845FFF]
         lg:rounded-full rounded-[7.94871794872vw] opacity-0
         lg:w-[3.75vw] lg:h-[3.75vw] sm:h-[6.34146341463vw] sm:w-[6.34146341463vw] w-[14.358974359vw] h-[14.358974359vw]
@@ -178,9 +178,9 @@ cursor-pointer
   }
   
   .question {
-    @apply flex items-center gap-x-[0.625vw] min-w-[36.4102564103vw] sm:min-w-[25.410256vw]
+    @apply   flex items-center gap-x-[0.625vw] min-w-[36.4102564103vw] sm:min-w-[25.410256vw]
         h-[11.5384615385vw] sm:h-[7.31707317073vw] lg:w-[unset] lg:min-w-[unset] lg:h-[unset]  rounded-[12.3076923077vw] lg:rounded-[unset]
-        justify-center lg:justify-normal cursor-pointer bg-[#D6D1ED] lg:bg-[unset];
+        justify-center lg:justify-normal cursor-pointer bg-[#D6D1ED] ;
   }
   .faq {
     @apply text-[#3B3659] flex flex-col bg-[#EBF0F7] lg:rounded-[1.04166666667vw] rounded-[3.84615384615vw]
@@ -219,10 +219,10 @@ cursor-pointer
     left: 0;
   }
   .ltr .patient__Quoteup{
-    @apply lg:left-[1.09375vw]
+    @apply lg:left-[1.09375vw] sm:left-[-3.17073170732vw]
   }
   .rtl .patient__Quoteup{
-    @apply lg:right-[1.09375vw]
+    @apply lg:right-[1.09375vw] sm:right-[-3.17073170732vw]
   }
   .ltr .patient__Quotedown{
     @apply right-[30%] lg:right-[2.13541666667vw]
@@ -231,10 +231,10 @@ cursor-pointer
     @apply left-[30%] lg:left-[2.13541666667vw]
   }
   .ltr .location__Asterik{
-    @apply lg:right-[32.6041666667vw] right-[12.0512820513vw]
+    @apply lg:right-[32.6041666667vw] right-[12.0512820513vw] sm:right-[23.1707317073vw]
   }
   .rtl .location__Asterik{
-    @apply lg:left-[32.6041666667vw] left-[12.0512820513vw]
+    @apply lg:left-[32.6041666667vw] left-[12.0512820513vw] sm:left-[23.1707317073vw]
   }
   .ltr .heroLine{
     @apply  right-[31.753125vw]
@@ -496,9 +496,11 @@ header {
 
 .l1ine {
   transform: rotate(-45deg);
-  position: relative;
-  top: 7.5px;
+  position: relative; 
   background-color: #ffffff !important;
+}
+.l1ine{
+  @apply top-[7.5px] sm:top-[12.5px] 
 }
 
 .lin3e {
@@ -553,10 +555,12 @@ body.active {
 .question:hover #Path_101507,
 .question:hover #Path_101508 {
   stroke: #8450ff;
+  opacity: 1;
 }
 .question.active #Path_101508,
 .question:hover #Path_101508 {
   fill: #8450ff;
+  opacity: 1;
 }
 
 .faq.active .faq__Question svg {
@@ -646,6 +650,7 @@ body.active {
 /* SCROLL PROGREESS CSS  END    */
 
 
+ 
 @media (min-width: 640px) {
   
   .cta .cta__Menu {
@@ -728,8 +733,125 @@ body.active {
     left: unset ;
     right: 5.64102564103vw !important;
   }
-  .homeSwipers .swiper-button-prev {
+  .ltr .homeSwipers .swiper-button-prev {
     left: 0 !important;
+  }
+  .rtl .homeSwipers .swiper-button-prev {
+    left: unset ;
+    right: 0 !important;
+  }
+ .ltr .doctorsSwiper .swiper-button-prev {
+    left: 0 !important;
+  }
+ .rtl .doctorsSwiper .swiper-button-prev {
+    right: 0 !important;
+    left: unset;
+  }
+ .ltr .aboutMeenaSwiper .swiper-button-prev {
+    left: 0 !important;
+  }
+ .rtl .aboutMeenaSwiper .swiper-button-prev {
+    right: 0 !important;
+    left: unset;
+  }
+  .homeSwipers .swiper-slide {
+    width: 70.2564102564vw !important;
+  }
+  .line_clamp3 {
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+  }
+}
+@media (max-width: 640px) {
+  
+  .cta .cta__Menu {
+    left: -74%;
+    clip-path: circle(10% at 85% 80%);
+  }
+
+  .stickyHeader {
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+    background-color: #3b3659;
+  }
+  .faq.active .faq__Answer {
+    max-height: 102.2820512821vw;
+  }
+  .aboutMeenaSwiper .swiper-button-next,
+  .aboutMeenaSwiper .swiper-button-prev {
+    width: 11.5384615385vw !important;
+  }
+  .aboutMeenaSwiper .swiper-slide {
+    width: 20.5128205128vw !important;
+  }
+  .question.active h5,
+  .question:hover h5 {
+    color: #ffffff;
+  }
+  .question.active,
+  .question:hover {
+    background-color: #8450ff;
+  }
+  .doctorsSwiper .swiper-wrapper .swiper-slide {
+    width: 70vw !important;
+    border-radius: 20px;
+  }
+  .homeSwipers .swiper-button-next,
+  .homeSwipers .swiper-button-prev {
+    width: 11.5384615385vw !important;
+    bottom: 2.82051282051vw !important;
+    top: unset !important;
+  }
+  .ltr .homeSwipers .swiper-button-next {
+    right: 5.64102564103vw !important;
+  }
+  .rtl .homeSwipers .swiper-button-next {
+    left: 5.64102564103vw !important;
+    right: unset;
+  }
+  .doctorsSwiper .swiper-button-next,
+  .doctorsSwiper .swiper-button-prev {
+    width: 11.5384615385vw !important;
+    bottom: 2.82051282051vw !important;
+    top: unset !important;
+  }
+ .ltr .doctorsSwiper .swiper-button-next {
+    right: 5.64102564103vw !important;
+  }
+ .rtl .doctorsSwiper .swiper-button-next {
+    left: 5.64102564103vw !important;
+    right: unset;
+  }
+ .ltr .aboutMeenaSwiper .swiper-button-next {
+    right: 5.64102564103vw !important;
+  }
+ .rtl .aboutMeenaSwiper .swiper-button-next {
+    left: 5.64102564103vw !important;
+    right: unset;
+  }
+  .aboutAppSwiper .swiper-button-next,
+  .aboutAppSwiper .swiper-button-prev {
+    width: 11.5384615385vw !important;
+  }
+ .ltr .aboutAppSwiper .swiper-button-next {
+    right: 5.64102564103vw !important;
+  }
+ .rtl .aboutAppSwiper .swiper-button-next {
+    left: 5.64102564103vw !important;
+    right: unset;
+  } 
+ .rtl .aboutAppSwiper .swiper-button-prev {
+    left: unset ;
+    right: 5.64102564103vw !important;
+  }
+  .ltr .homeSwipers .swiper-button-prev {
+    left: 0 !important;
+  }
+  .rtl .homeSwipers .swiper-button-prev {
+    right: 0 !important;
+    left: unset;
   }
  .ltr .doctorsSwiper .swiper-button-prev {
     left: 0 !important;
@@ -756,7 +878,22 @@ body.active {
   }
 }
 @media (min-width: 1024px) {
- 
+  .question{
+    background: unset !important;
+  }
+  .ltr .doctorsSwiper .swiper-button-next {
+    right: 0 !important;
+  }
+ .rtl .doctorsSwiper .swiper-button-next {
+    left: 0 !important;
+  }
+  .ltr .homeSwipers .swiper-button-next {
+    right: 0 !important;
+  }
+  .rtl .homeSwipers .swiper-button-next {
+    left: 0 !important; 
+    right: unset;
+  }
   .stickyHeader .download__App {
     padding-top: 0.425vw;
     padding-bottom: 0.425vw;
@@ -869,115 +1006,7 @@ left: 0;
     left: 4.6875vw !important;
   }
 }
-@media (max-width: 640px) {
-  
-  .cta .cta__Menu {
-    left: -74%;
-    clip-path: circle(10% at 85% 80%);
-  }
 
-  .stickyHeader {
-    padding-top: 15px !important;
-    padding-bottom: 15px !important;
-    background-color: #3b3659;
-  }
-  .faq.active .faq__Answer {
-    max-height: 102.2820512821vw;
-  }
-  .aboutMeenaSwiper .swiper-button-next,
-  .aboutMeenaSwiper .swiper-button-prev {
-    width: 11.5384615385vw !important;
-  }
-  .aboutMeenaSwiper .swiper-slide {
-    width: 20.5128205128vw !important;
-  }
-  .question.active h5,
-  .question:hover h5 {
-    color: #ffffff;
-  }
-  .question.active,
-  .question:hover {
-    background-color: #8450ff;
-  }
-  .doctorsSwiper .swiper-wrapper .swiper-slide {
-    width: 70vw !important;
-    border-radius: 20px;
-  }
-  .homeSwipers .swiper-button-next,
-  .homeSwipers .swiper-button-prev {
-    width: 11.5384615385vw !important;
-    bottom: 2.82051282051vw !important;
-    top: unset !important;
-  }
-  .ltr .homeSwipers .swiper-button-next {
-    right: 5.64102564103vw !important;
-  }
-  .rtl .homeSwipers .swiper-button-next {
-    left: 5.64102564103vw !important;
-    right: unset;
-  }
-  .doctorsSwiper .swiper-button-next,
-  .doctorsSwiper .swiper-button-prev {
-    width: 11.5384615385vw !important;
-    bottom: 2.82051282051vw !important;
-    top: unset !important;
-  }
- .ltr .doctorsSwiper .swiper-button-next {
-    right: 5.64102564103vw !important;
-  }
- .rtl .doctorsSwiper .swiper-button-next {
-    left: 5.64102564103vw !important;
-    right: unset;
-  }
- .ltr .aboutMeenaSwiper .swiper-button-next {
-    right: 5.64102564103vw !important;
-  }
- .rtl .aboutMeenaSwiper .swiper-button-next {
-    left: 5.64102564103vw !important;
-    right: unset;
-  }
-  .aboutAppSwiper .swiper-button-next,
-  .aboutAppSwiper .swiper-button-prev {
-    width: 11.5384615385vw !important;
-  }
- .ltr .aboutAppSwiper .swiper-button-next {
-    right: 5.64102564103vw !important;
-  }
- .rtl .aboutAppSwiper .swiper-button-next {
-    left: 5.64102564103vw !important;
-    right: unset;
-  } 
- .rtl .aboutAppSwiper .swiper-button-prev {
-    left: unset ;
-    right: 5.64102564103vw !important;
-  }
-  .homeSwipers .swiper-button-prev {
-    left: 0 !important;
-  }
- .ltr .doctorsSwiper .swiper-button-prev {
-    left: 0 !important;
-  }
- .rtl .doctorsSwiper .swiper-button-prev {
-    right: 0 !important;
-    left: unset;
-  }
- .ltr .aboutMeenaSwiper .swiper-button-prev {
-    left: 0 !important;
-  }
- .rtl .aboutMeenaSwiper .swiper-button-prev {
-    right: 0 !important;
-    left: unset;
-  }
-  .homeSwipers .swiper-slide {
-    width: 70.2564102564vw !important;
-  }
-  .line_clamp3 {
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    display: -webkit-box;
-  }
-}
 
 
 .line_clamp3g {
